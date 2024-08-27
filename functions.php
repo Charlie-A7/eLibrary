@@ -310,3 +310,5 @@ function custom_remove_specific_billing_fields( $fields ) {
     
     return $fields;
 }
+
+add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields', 20 );
