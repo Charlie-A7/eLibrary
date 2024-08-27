@@ -294,39 +294,13 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 
 
-add_filter('woocommerce_checkout_fields', 'custom_remove_billing_fields');
-
-function custom_remove_billing_fields($fields)
-{
-    unset($fields['billing']['billing_first_name']);
-    unset($fields['billing']['billing_last_name']);
-    unset($fields['billing']['billing_company']);
-    unset($fields['billing']['billing_address_1']);
-    unset($fields['billing']['billing_address_2']);
-    unset($fields['billing']['billing_city']);
-    unset($fields['billing']['billing_postcode']);
-    unset($fields['billing']['billing_country']);
-    unset($fields['billing']['billing_state']);
-    unset($fields['billing']['billing_phone']);
-    unset($fields['billing']['billing_email']);
-    return $fields;
-}
-
-add_filter( 'woocommerce_checkout_fields', 'custom_remove_shipping_fields' );
-
-function custom_remove_shipping_fields( $fields ) {
-    unset($fields['shipping']['shipping_first_name']);
-    unset($fields['shipping']['shipping_last_name']);
-    unset($fields['shipping']['shipping_company']);
-    unset($fields['shipping']['shipping_address_1']);
-    unset($fields['shipping']['shipping_address_2']);
-    unset($fields['shipping']['shipping_city']);
-    unset($fields['shipping']['shipping_postcode']);
-    unset($fields['shipping']['shipping_country']);
-    unset($fields['shipping']['shipping_state']);
-    unset($fields['shipping']['shipping_phone']);
-    return $fields;
-}
-
 add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
+add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields' );
+
+function custom_remove_billing_fields( $fields ) {
+    // Unset all billing fields
+    unset( $fields['billing'] );
+    
+    return $fields;
+}
