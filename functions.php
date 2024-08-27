@@ -327,3 +327,6 @@ function custom_remove_shipping_fields( $fields ) {
     unset($fields['shipping']['shipping_phone']);
     return $fields;
 }
+
+add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
+
