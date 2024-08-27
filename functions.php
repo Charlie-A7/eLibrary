@@ -296,30 +296,16 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
-add_filter( 'woocommerce_checkout_fields', 'custom_remove_specific_billing_fields' );
-
-function custom_remove_specific_billing_fields( $fields ) {
-    unset( $fields['billing']['billing_company'] );
-    unset( $fields['billing']['billing_address_1'] );
-    unset( $fields['billing']['billing_address_2'] );
-    unset( $fields['billing']['billing_city'] );
-    unset( $fields['billing']['billing_postcode'] );
-    unset( $fields['billing']['billing_country'] );
-    unset( $fields['billing']['billing_state'] );
-    unset( $fields['billing']['billing_phone'] );
-
+add_filter( 'woocommerce_billing_fields', 'misha_remove_fields' );
+function misha_remove_fields( $fields ) {
+	unset( $fields[ 'company' ] );
+	unset( $fields[ 'address_1' ] );
+	unset( $fields[ 'address_2' ] );
+	unset( $fields[ 'state' ] );
+	unset( $fields[ 'city' ] );
+	unset( $fields[ 'country' ] );
+	unset( $fields[ 'postcode' ] );
     
-
-    // Get the checkout fields
-    $fields = WC()->checkout->get_checkout_fields();
-
-    // Print the fields array
-    echo '<pre>';
-    print_r( $fields );
-    echo '</pre>';
-    
-    return $fields;
+	return $fields;
 }
-
-add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields', 20 );
 
