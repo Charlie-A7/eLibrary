@@ -312,3 +312,16 @@ function custom_remove_specific_billing_fields( $fields ) {
 }
 
 add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields', 20 );
+
+
+add_action( 'woocommerce_after_checkout_form', 'custom_print_woocommerce_checkout_fields' );
+
+function custom_print_woocommerce_checkout_fields() {
+    // Get the checkout fields
+    $fields = WC()->checkout->get_checkout_fields();
+
+    // Print the fields array
+    echo '<pre>';
+    print_r( $fields );
+    echo '</pre>';
+}
