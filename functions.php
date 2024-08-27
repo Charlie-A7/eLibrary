@@ -298,13 +298,13 @@ add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
 add_filter( 'woocommerce_billing_fields', 'misha_remove_fields' );
 function misha_remove_fields( $fields ) {
-	unset( $fields[ 'company' ] );
-	unset( $fields[ 'address_1' ] );
-	unset( $fields[ 'address_2' ] );
-	unset( $fields[ 'state' ] );
-	unset( $fields[ 'city' ] );
-	unset( $fields[ 'country' ] );
-	unset( $fields[ 'postcode' ] );
+	unset( $fields[ 'billing_company' ] );
+	unset( $fields[ 'billing_address_1' ] );
+	unset( $fields[ 'billing_address_2' ] );
+	unset( $fields[ 'billing_state' ] );
+	unset( $fields[ 'billing_city' ] );
+	unset( $fields[ 'billing_country' ] );
+	unset( $fields[ 'billing_postcode' ] );
     
 	return $fields;
 }
