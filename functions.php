@@ -307,18 +307,8 @@ function custom_remove_specific_billing_fields( $fields ) {
     unset( $fields['billing']['billing_country'] );
     unset( $fields['billing']['billing_state'] );
     unset( $fields['billing']['billing_phone'] );
+
     
-    return $fields;
-}
-
-add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields', 20 );
-
-
-add_action( 'woocommerce_after_checkout_form', 'custom_print_woocommerce_checkout_fields' );
-
-function custom_print_woocommerce_checkout_fields() {
-    // Test if this function is being called
-    echo '<p>Test: This function is running.</p>';
 
     // Get the checkout fields
     $fields = WC()->checkout->get_checkout_fields();
@@ -327,5 +317,9 @@ function custom_print_woocommerce_checkout_fields() {
     echo '<pre>';
     print_r( $fields );
     echo '</pre>';
+    
+    return $fields;
 }
+
+add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields', 20 );
 
