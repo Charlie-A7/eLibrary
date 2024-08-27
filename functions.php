@@ -317,6 +317,9 @@ add_filter( 'woocommerce_checkout_fields', 'custom_remove_billing_fields', 20 );
 add_action( 'woocommerce_after_checkout_form', 'custom_print_woocommerce_checkout_fields' );
 
 function custom_print_woocommerce_checkout_fields() {
+    // Test if this function is being called
+    echo '<p>Test: This function is running.</p>';
+
     // Get the checkout fields
     $fields = WC()->checkout->get_checkout_fields();
 
@@ -325,3 +328,4 @@ function custom_print_woocommerce_checkout_fields() {
     print_r( $fields );
     echo '</pre>';
 }
+
