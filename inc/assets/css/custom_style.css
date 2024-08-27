@@ -1749,4 +1749,8 @@ header nav ul {
 header nav li {
   display: inline-block;
   margin-right: 20px; /* Adjust space between items as needed */
+}
+
+.wc-block-checkout__payment-method {
+  display: none;
 }/*# sourceMappingURL=custom_style.css.map */
