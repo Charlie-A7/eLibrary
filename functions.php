@@ -308,3 +308,4 @@ function remove_checkout_fields( $fields ) {
 	unset( $fields['billing_address_2'] );
 	return $fields;
 }
+ echo 'test';
