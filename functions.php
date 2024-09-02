@@ -305,3 +305,9 @@ function shoplentor_remove_billing_fields( $fields ) {
   }
   
 
+
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+
