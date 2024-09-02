@@ -293,11 +293,10 @@ function your_theme_setup()
 add_action('after_setup_theme', 'your_theme_setup');
 
 // Hook in
-add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields', 10 );
 
 // Our hooked in function - $fields is passed via the filter!
 function custom_override_checkout_fields( $fields ) {
-    echo '<pre>'; print_r($fields); echo '</pre>';
     unset( $fields['billing']['billing_first_name']);
     unset( $fields['billing']['billing_last_name']);
     unset( $fields['billing']['billing_company']);
