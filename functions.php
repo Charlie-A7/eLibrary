@@ -150,8 +150,8 @@ function wp_bootstrap_starter_scripts()
     if (is_front_page()) {
         // wp_enqueue_style( 'maze-animate_headlines', get_template_directory_uri() . '/inc/assets/css/animate_headlines.css' );
     }
-    wp_enqueue_style('maze-custom_style', get_template_directory_uri() . '/inc/assets/css/custom_style.css', array(), '1.41');
-    wp_enqueue_style('maze-responsive_style', get_template_directory_uri() . '/inc/assets/css/responsive.css', array(), '1.41');
+    wp_enqueue_style('maze-custom_style', get_template_directory_uri() . '/inc/assets/css/custom_style.css', array(), '1.42');
+    wp_enqueue_style('maze-responsive_style', get_template_directory_uri() . '/inc/assets/css/responsive.css', array(), '1.42');
 
     wp_enqueue_script('jquery');
 
@@ -292,8 +292,6 @@ function your_theme_setup()
 }
 add_action('after_setup_theme', 'your_theme_setup');
 
-// add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
-
 // Hook in
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
@@ -316,4 +314,4 @@ function custom_override_checkout_fields( $fields ) {
     return $fields;
 }
 
-echo 'test';
+add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
