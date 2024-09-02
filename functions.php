@@ -295,3 +295,27 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 
 add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
+
+add_filter( 'woocommerce_checkout_fields', 'custom_keep_selected_checkout_fields' );
+
+function custom_keep_selected_checkout_fields( $fields ) {
+    // Keep only the fields you want
+    $fields_to_keep = array(
+        'billing_first_name',
+        'billing_last_name',
+        'billing_phone',
+        'billing_email'
+    );
+
+    // Loop through each section (billing, shipping, account, etc.)
+    foreach ( $fields as $section => $field_group ) {
+        // Unset all fields in the current section
+        foreach ( $field_group as $key => $field ) {
+            if ( ! in_array( $key, $fields_to_keep ) ) {
+                unset( $fields[ $section ][ $key ] );
+            }
+        }
+    }
+
+    return $fields;
+}
