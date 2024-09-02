@@ -294,15 +294,4 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 
 
-//add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
-
-
-add_action('woocommerce_before_checkout_form', 'display_custom_message_on_checkout');
-
-function display_custom_message_on_checkout() {
-    echo 'helloooooooooooo';
-}
-
-  
-
-
+add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
