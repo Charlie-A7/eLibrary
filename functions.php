@@ -163,7 +163,7 @@ function wp_bootstrap_starter_scripts()
     wp_enqueue_script('wp-bootstrap-starter-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array(), '', true);
     wp_enqueue_script('wp-bootstrap-starter-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array(), '', true);
 
-    // ======================================================================== 
+    // ========================================================================
     // Add all custom js libraries here
     wp_enqueue_script('maze-swiper-js', get_template_directory_uri() . '/inc/assets/js/swiper.min.js', array(), '1', true);
 
@@ -296,4 +296,15 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
+add_filter( 'cfw_get_billing_checkout_fields', 'remove_checkout_fields', 100 );
 
+function remove_checkout_fields( $fields ) {
+	unset( $fields['billing_company'] );
+	unset( $fields['billing_city'] );
+	unset( $fields['billing_postcode'] );
+	unset( $fields['billing_country'] );
+	unset( $fields['billing_state'] );
+	unset( $fields['billing_address_1'] );
+	unset( $fields['billing_address_2'] );
+	return $fields;
+}
