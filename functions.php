@@ -293,7 +293,7 @@ function your_theme_setup()
 add_action('after_setup_theme', 'your_theme_setup');
 
 // Hook in
-add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields', 10 );
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields', 10, 1 );
 
 // Our hooked in function - $fields is passed via the filter!
 function custom_override_checkout_fields( $fields ) {
