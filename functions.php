@@ -299,15 +299,10 @@ add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
 
 
-add_filter( 'woocommerce_checkout_billing', 'shoplentor_remove_billing_fields' );
+add_filter( 'woocommerce_before_checkout_billing_form', 'shoplentor_remove_billing_fields' );
 function shoplentor_remove_billing_fields( $fields ) {
     echo '<p>This is a custom content before the checkout form.</p>';
   }
   
 
-
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
-remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
-remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
-remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
 
