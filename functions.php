@@ -297,10 +297,10 @@ add_action('after_setup_theme', 'your_theme_setup');
 //add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
 
-add_filter('woocommerce_checkout_fields','simplify_checkout_process');
+add_action('woocommerce_before_checkout_form', 'display_custom_message_on_checkout');
 
-function simplify_checkout_process(){
-echo 'hello';
+function display_custom_message_on_checkout() {
+    echo 'hello';
 }
 
   
