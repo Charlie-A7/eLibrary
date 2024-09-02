@@ -296,16 +296,11 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
-add_filter( 'woocommerce_billing_fields', 'misha_remove_fields' );
-function misha_remove_fields( $fields ) {
-	unset( $fields[ 'billing-company' ] );
-	unset( $fields[ 'billing-address_1' ] );
-	unset( $fields[ 'billing-address_2' ] );
-	unset( $fields[ 'billing-state' ] );
-	unset( $fields[ 'billing-city' ] );
-	unset( $fields[ 'billing-country' ] );
-	unset( $fields[ 'billing-postcode' ] );
-    
-	return $fields;
+add_filter( 'woocommerce_checkout_fields', 'custom_override_checkout_fields' );
+
+function custom_override_checkout_fields( $fields ) {
+    unset( $fields['billing'] ); 
+    return $fields;
 }
+
 
