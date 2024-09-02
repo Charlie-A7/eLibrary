@@ -294,6 +294,6 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 
 
-//add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
+add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
 
