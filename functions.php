@@ -301,10 +301,7 @@ add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
 add_filter( 'woocommerce_checkout_billing', 'shoplentor_remove_billing_fields' );
 function shoplentor_remove_billing_fields( $fields ) {
-    unset( $fields['billing']['billing_company'] );
-    unset( $fields['billing']['billing_phone'] );
     echo '<p>This is a custom content before the checkout form.</p>';
-    return $fields;
   }
   
 
