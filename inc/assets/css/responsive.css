@@ -73,22 +73,22 @@
   }
   .mobile_menu .menu_el {
     padding: 0px 10px;
-    border-bottom: 1px solid #2D2D2D;
+    border-bottom: 1px solid #2d2d2d;
   }
   .mobile_menu .menu_el:last-child {
     border-bottom: none;
   }
   .mobile_menu .menu_el a:hover {
-    color: #FFDD00;
+    color: #ffdd00;
   }
   .mobile_menu .menu_el.current-menu-item a {
-    color: #FFDD00;
+    color: #ffdd00;
   }
   .mobile_menu .menu_el a.active {
-    color: #FFDD00;
+    color: #ffdd00;
   }
   .mobile_menu .menu_el a.active {
-    color: #FFDD00;
+    color: #ffdd00;
   }
   .mobile_menu.active {
     transform: translateX(0px);
@@ -558,8 +558,8 @@
     height: 50px;
   }
   .main_company_section .nav_buttons_mobile .active {
-    color: #FFDD00;
-    border-bottom: 3px solid #FFDD00;
+    color: #ffdd00;
+    border-bottom: 3px solid #ffdd00;
   }
   .main_company_section .nav_buttons_mobile li a {
     color: #fff;
@@ -569,8 +569,8 @@
     text-transform: uppercase;
   }
   .main_company_section .nav_buttons_mobile li a:hover {
-    color: #FFDD00;
-    border-bottom: 3px solid #FFDD00;
+    color: #ffdd00;
+    border-bottom: 3px solid #ffdd00;
   }
   .second_section_about_us {
     padding-bottom: 0;
