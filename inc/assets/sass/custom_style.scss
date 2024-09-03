@@ -1922,11 +1922,12 @@ p strong {
 }
 
 // header
-
 header {
   margin-bottom: 1rem;
   background-color: white;
   height: 10dvh;
+  position: sticky;
+  top: 0;
   nav {
     /* CSS */
     ul {
@@ -1938,6 +1939,9 @@ header {
     li {
       display: inline-block;
       margin-right: 20px; /* Adjust space between items as needed */
+    }
+    li:hover {
+      background-color: #093f6c;
     }
   }
 }
