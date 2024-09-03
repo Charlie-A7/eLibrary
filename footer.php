@@ -17,26 +17,25 @@
         <div class="container">
             <div class="row">
                 <!-- Footer Widget Area 1 -->
-                <div class="col-md-4">
+                <div>
                     <!-- <?php if (is_active_sidebar('footer-1')): ?>
                         <?php dynamic_sidebar('footer-1'); ?>
                     <?php endif; ?> -->
+                </div>
+                <div class="col-4 location-widget">
+                    <h4>Location</h4>
+                    <p>
+                        <img src="/inc/assets/images/pngs/location.png" alt="Location Icon"
+                            style="vertical-align: middle; margin-right: 5px;">
+                        Dekweneh, George Matta St.,<br>
+                        Semitian Bldg, bloc A, 1st Floor.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="site-info text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
 
-
-
-                </div>
-            </div>
-        </div>
-    </div><!-- .site-info -->
 </footer><!-- #colophon -->
 
 </div><!-- #page -->
