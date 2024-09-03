@@ -41,8 +41,8 @@
                         </div>
                     </div>
 
-                    <div class="col-9">
-                        <div class="d-flex flex-column align-items-center">
+                    <div class="col-9 d-flex align-items-center">
+                        <div class="d-flex flex-column w-100">
                                 <!-- Navigation Menu -->
                             <nav id="site-navigation" class="main-navigation" role="navigation"
                                 aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
