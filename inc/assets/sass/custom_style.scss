@@ -1932,7 +1932,10 @@ header {
   height: 15dvh;
   position: sticky;
   top: 0;
-  h1{
+  .site-header {
+    padding: 0;
+  }
+  h1 {
     font-weight: bold;
     font-size: 18px;
   }
