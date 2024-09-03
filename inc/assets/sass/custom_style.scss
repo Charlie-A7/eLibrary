@@ -1928,13 +1928,11 @@ body {
 // header
 header {
   margin-bottom: 1rem;
+  padding: 0;
   background-color: white;
-  height: 15dvh;
+  height: 25dvh;
   position: sticky;
   top: 0;
-  .site-header {
-    padding: 0;
-  }
   h1 {
     font-weight: bold;
     font-size: 18px;
