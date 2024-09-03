@@ -29,7 +29,7 @@
         <header id="masthead" class="site-header" role="banner">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4 site-branding d-flex justify-content-start align-items-center">
+                    <div class="col-3 site-branding d-flex justify-content-start align-items-center">
                         <div class="row">
                             <div class="col-4 text-center">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
@@ -41,20 +41,20 @@
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-9">
                         <div class="d-flex flex-column">
                                 <!-- Navigation Menu -->
-                        <nav id="site-navigation" class="main-navigation" role="navigation"
-                            aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
-                            <?php
-                            // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
-                            wp_nav_menu(array(
-                                'theme_location' => 'primary',  // Use the registered location
-                                'menu_id' => 'primary-menu',
-                                'container' => false,      // Remove the surrounding div
-                            ));
-                            ?>
-                        </nav>
+                            <nav id="site-navigation" class="main-navigation d-flex" role="navigation"
+                                aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
+                                <?php
+                                // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
+                                wp_nav_menu(array(
+                                    'theme_location' => 'primary',  // Use the registered location
+                                    'menu_id' => 'primary-menu',
+                                    'container' => false,      // Remove the surrounding div
+                                ));
+                                ?>
+                            </nav>
                         </div>
                     </div>
                 </div>
