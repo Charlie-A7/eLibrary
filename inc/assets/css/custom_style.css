@@ -1771,6 +1771,9 @@ header nav li:hover {
   background-color: #093f6c;
   color: white;
 }
+header nav #menu-item-67 {
+  margin-left: auto;
+}
 
 .wc-block-checkout__payment-method {
   display: none;
