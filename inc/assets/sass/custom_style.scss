@@ -1932,6 +1932,10 @@ header {
   height: 15dvh;
   position: sticky;
   top: 0;
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
   nav {
     ul {
       padding: 0;
