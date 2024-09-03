@@ -34,7 +34,7 @@
             </div>
 
             <!-- Navigation Menu -->
-            <nav id="site-navigation" class="main-navigation d-flex justify-content-center" role="navigation"
+            <nav id="site-navigation" class="main-navigation" role="navigation"
                 aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
                 <?php
                 // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
