@@ -13,5 +13,9 @@ while (have_posts()):
 endwhile;
 ?>
 
+<div class="homeDiv">
+
+</div>
+
 <?php
 get_footer();

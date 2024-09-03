@@ -1926,7 +1926,8 @@ p strong {
 
 header {
   margin-bottom: 1rem;
-  background-color: lightblue;
+  background-color: white;
+  height: 10vh;
   nav {
     /* CSS */
     ul {
@@ -1946,4 +1947,9 @@ header {
 
 .wc-block-checkout__payment-method {
   display: none;
+}
+
+// Homepage
+.homeDiv {
+  height: calc(100vh - 10vh);
 }
