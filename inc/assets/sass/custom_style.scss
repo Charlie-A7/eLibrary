@@ -1926,7 +1926,7 @@ p strong {
 header {
   margin-bottom: 1rem;
   background-color: white;
-  height: 10vh;
+  height: 10dvh;
   nav {
     /* CSS */
     ul {
@@ -1950,5 +1950,5 @@ header {
 
 // Homepage
 .homeDiv {
-  height: calc(100vh - 10vh);
+  height: calc(100dvh - 10dvh);
 }
