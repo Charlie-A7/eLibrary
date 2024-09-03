@@ -26,7 +26,7 @@
 
     <div id="page" class="site main_page_wrapper">
 
-        <header id="masthead" class="site-header d-inline-flex " role="banner">
+        <header id="masthead" class="site-header d-flex flex-row" role="banner">
             <div class="site-branding">
                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
                 <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
