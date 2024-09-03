@@ -30,30 +30,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <nav class="footer-nav">
-                        <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'footer',
-                            'menu_id' => 'footer-menu',
-                            'menu_class' => 'footer-menu',
-                        ));
-                        ?>
-                    </nav>
 
 
 
-                    <!-- Social Media Links (Optional) -->
-                    <!-- <div class="footer-social">
-                        <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div> -->
                 </div>
             </div>
         </div>
