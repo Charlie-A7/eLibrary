@@ -18,32 +18,32 @@
             <div class="row">
                 <!-- Footer Widget Area 1 -->
                 <div class="col-md-4">
-                    <?php if (is_active_sidebar('footer-1')) : ?>
+                    <!-- <?php if (is_active_sidebar('footer-1')): ?>
                         <?php dynamic_sidebar('footer-1'); ?>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
                 </div>
-            <!-- </div>
+            </div>
         </div>
     </div>
 
     <div class="site-info text-center">
         <div class="container">
-            <div class="row"> -->
+            <div class="row">
                 <div class="col-md-12">
                     <nav class="footer-nav">
                         <?php
                         wp_nav_menu(array(
                             'theme_location' => 'footer',
-                            'menu_id'        => 'footer-menu',
-                            'menu_class'     => 'footer-menu',
+                            'menu_id' => 'footer-menu',
+                            'menu_class' => 'footer-menu',
                         ));
                         ?>
                     </nav>
 
-                    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
+
 
                     <!-- Social Media Links (Optional) -->
-                    <div class="footer-social">
+                    <!-- <div class="footer-social">
                         <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -53,7 +53,7 @@
                         <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -64,4 +64,5 @@
 
 <?php wp_footer(); ?>
 </body>
+
 </html>
