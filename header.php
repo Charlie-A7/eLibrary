@@ -26,31 +26,35 @@
 
     <div id="page" class="site main_page_wrapper">
 
-        <header id="masthead" class="site-header d-flex flex-row" role="banner">
-            <div class="container">
+        <header id="masthead" class="site-header" role="banner">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-4 site-branding">
-                        <div class="col-4">
-                            <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
-                        </div>
-                        <div class="col-4">
-                        <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
+                            </div>
+                            <div class="col-6">
+                                <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                                 rel="home"><?php bloginfo('name'); ?></a></h1>
                             </div>
+                        </div>
                     </div>
 
-                    <!-- Navigation Menu -->
-                    <nav id="site-navigation" class="main-navigation" role="navigation"
-                        aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
-                        <?php
-                        // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
-                        wp_nav_menu(array(
-                            'theme_location' => 'primary',  // Use the registered location
-                            'menu_id' => 'primary-menu',
-                            'container' => false,      // Remove the surrounding div
-                        ));
-                        ?>
-                    </nav>
+                    <div class="col-8">
+                            <!-- Navigation Menu -->
+                        <nav id="site-navigation" class="main-navigation" role="navigation"
+                            aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
+                            <?php
+                            // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
+                            wp_nav_menu(array(
+                                'theme_location' => 'primary',  // Use the registered location
+                                'menu_id' => 'primary-menu',
+                                'container' => false,      // Remove the surrounding div
+                            ));
+                            ?>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
