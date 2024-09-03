@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="col-9">
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column align-items-center">
                                 <!-- Navigation Menu -->
                             <nav id="site-navigation" class="main-navigation" role="navigation"
                                 aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
