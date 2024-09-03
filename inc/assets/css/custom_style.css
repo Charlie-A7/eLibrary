@@ -1756,6 +1756,7 @@ header nav ul {
 header nav li {
   display: inline-block;
   margin-right: 20px; /* Adjust space between items as needed */
+  font-weight: bold;
 }
 header nav li:hover {
   background-color: #093f6c;
