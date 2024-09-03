@@ -1752,11 +1752,12 @@ header nav ul {
   padding: 0;
   margin: 0;
   list-style: none; /* Removes default bullets */
+  font-weight: bold;
+  font-size: 22px;
 }
 header nav li {
   display: inline-block;
   margin-right: 20px; /* Adjust space between items as needed */
-  font-weight: bold;
 }
 header nav li:hover {
   background-color: #093f6c;
