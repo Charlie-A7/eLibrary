@@ -28,7 +28,7 @@
 
         <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
-                <!-- Site Title/Logo -->
+            <img src="inc/assets/images/Life_Agape_Logo.jpeg" alt="LifeAgape">
                 <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                         rel="home"><?php bloginfo('name'); ?></a></h1>
             </div>
@@ -44,7 +44,7 @@
                     'container' => false,      // Remove the surrounding div
                 ));
                 ?>
-            </nav><!-- #site-navigation -->
-        </header><!-- #masthead -->
+            </nav>
+        </header>
 
         <div id="content" class="site-content"></div>
