@@ -31,10 +31,10 @@
                 <div class="row">
                     <div class="col-4 site-branding">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 text-center">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 text-center">
                                 <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                                 rel="home"><?php bloginfo('name'); ?></a></h1>
                             </div>
@@ -42,7 +42,8 @@
                     </div>
 
                     <div class="col-8">
-                            <!-- Navigation Menu -->
+                        <div class="d-flex justify-content-center">
+                                <!-- Navigation Menu -->
                         <nav id="site-navigation" class="main-navigation" role="navigation"
                             aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
                             <?php
@@ -54,6 +55,7 @@
                             ));
                             ?>
                         </nav>
+                        </div>
                     </div>
                 </div>
             </div>
