@@ -34,7 +34,7 @@
                             <div class="col-4 text-center">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
-                            <div class="col-8 text-center">
+                            <div class="col-8 d-flex align-items-center text-center">
                                 <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                                 rel="home"><?php bloginfo('name'); ?></a></h1>
                             </div>
