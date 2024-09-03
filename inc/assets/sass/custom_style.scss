@@ -1922,6 +1922,7 @@ p strong {
 }
 body {
   font-family: "quicksand";
+  color: #231f20;
 }
 
 // header
@@ -1938,11 +1939,10 @@ header {
       margin: 0;
       list-style: none; /* Removes default bullets */
       font-weight: bold;
-      font-size: 22px;
+      font-size: 20px;
     }
 
     li {
-      width: 5rem;
       display: inline-block;
       margin-right: 20px; /* Adjust space between items as needed */
       border: 1px #000 solid;
