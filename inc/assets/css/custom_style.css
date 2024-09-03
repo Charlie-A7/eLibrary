@@ -1755,6 +1755,7 @@ header nav li {
 }
 header nav li:hover {
   background-color: #093f6c;
+  color: white;
 }
 
 .wc-block-checkout__payment-method {
