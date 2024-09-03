@@ -1920,6 +1920,7 @@ p strong {
     }
   }
 }
+
 body {
   font-family: "quicksand";
   color: #231f20;
@@ -1952,7 +1953,7 @@ header {
 
     li {
       margin-right: 20px;
-      border: 1px #000 solid;
+      border: 1px #231f20 solid;
       border-radius: 20px;
       width: 7rem;
       text-align: center;
@@ -1971,8 +1972,23 @@ header {
 
     #menu-item-67 {
       margin-left: auto;
+
+      a{
+        position: relative;
+        padding-left: 25px; /* Adjust based on the icon size */
+      }
+
+      a::before {
+        content: "\f007"; /* Font Awesome Unicode for a user icon (example) */
+        font-family: 'Font Awesome 5 Free'; /* Ensure Font Awesome is loaded */
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px; /* Adjust the icon size */
+      }
     }
-  }
 }
 
 // checkout page
