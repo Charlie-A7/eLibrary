@@ -28,7 +28,7 @@
 
         <header id="masthead" class="site-header" role="banner">
             <div class="site-branding">
-                <img src="/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
+                <img src="https://charlie.e-vents.me/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
                 <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                         rel="home"><?php bloginfo('name'); ?></a></h1>
             </div>
