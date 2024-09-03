@@ -1756,10 +1756,13 @@ header nav ul {
   font-size: 22px;
 }
 header nav li {
+  width: 5rem;
   display: inline-block;
   margin-right: 20px; /* Adjust space between items as needed */
   border: 1px #000 solid;
-  border-radius: 10px;
+  border-radius: 20px;
+  width: 7rem;
+  text-align: center;
 }
 header nav li:hover {
   background-color: #093f6c;
