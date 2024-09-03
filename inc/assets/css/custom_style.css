@@ -1746,9 +1746,6 @@ header {
   position: sticky;
   top: 0;
 }
-header nav {
-  /* CSS */
-}
 header nav ul {
   padding: 0;
   margin: 0;
@@ -1757,7 +1754,6 @@ header nav ul {
   font-size: 20px;
 }
 header nav li {
-  display: inline-block;
   margin-right: 20px;
   border: 1px #000 solid;
   border-radius: 20px;
