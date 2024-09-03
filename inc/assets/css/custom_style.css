@@ -1754,6 +1754,7 @@ header img {
   height: 5rem;
 }
 header nav ul {
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
