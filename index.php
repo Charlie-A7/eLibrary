@@ -14,7 +14,8 @@ endwhile;
 ?>
 
 <div class="homeDiv">
-
+    <div class="homeDivInnerWhite"></div>
+    <div class="homeDivInnerBlue"></div>
 </div>
 
 <?php
