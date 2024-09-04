@@ -15,8 +15,12 @@ endwhile;
 
 <div class="container-fluid homeDiv p-0 py-5">
     <div class="row h-100">
-        <div class="col-3 homeDivInnerBlue my-3"></div>
-        <div class="col-3 homeDivInnerWhite"></div>
+        <div class="col-6">
+            <div class="row h-100">
+                <div class="col-5 homeDivInnerBlue my-3"></div>
+                <div class="col-7 homeDivInnerWhite"></div>
+            </div>
+        </div>
         <div class="col-5">
             <div class="row h-100">
                 <div class="col-11 homeDivInnerImage"></div>
