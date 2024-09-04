@@ -1921,6 +1921,11 @@ p strong {
   }
 }
 
+:root {
+  --header-height: 15dvh;
+  --header-footer: 13dvh;
+}
+
 body {
   font-family: "quicksand";
   color: #231f20;
@@ -1929,7 +1934,7 @@ body {
 // header
 header {
   background-color: white;
-  height: 15dvh;
+  height: var(--header-height);
   position: sticky;
   top: 0;
   h1 {
@@ -1981,6 +1986,13 @@ header {
   }
 }
 
+// foopter
+
+footer {
+  color: white;
+  height: var(--header-footer);
+}
+
 // checkout page
 
 .wc-block-checkout__payment-method {
@@ -1989,6 +2001,6 @@ header {
 
 // Homepage
 .homeDiv {
-  height: calc(100dvh - 10dvh);
+  height: calc(100dvh - var(--header-height));
   background-color: lightblue;
 }
