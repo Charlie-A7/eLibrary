@@ -15,7 +15,7 @@ endwhile;
 
 <div class="container-fluid homeDiv p-0 py-5">
     <div class="row h-100">
-        <div class="col-6 position-relative">
+        <div class="col-6 position-relative p-0">
             <div class="overlapping-content">
                     <h1>Welcome to our resource library</h1>
                     <h4>Browse our selection, and order you need.</h4>
