@@ -13,7 +13,7 @@ while (have_posts()):
 endwhile;
 ?>
 
-<div class="homeDiv">
+<div class="homeDiv d-flex flex-column">
     <div class="homeDivInnerWhite"></div>
     <div class="homeDivInnerBlue"></div>
 </div>
