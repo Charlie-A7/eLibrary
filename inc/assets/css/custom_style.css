@@ -1787,10 +1787,6 @@ header nav li:hover {
 header nav #menu-item-94 {
   margin-left: auto;
 }
-header nav #menu-item-94 a {
-  position: relative;
-  padding-left: 25px; /* Adjust based on the icon size */
-}
 
 footer {
   color: white;
