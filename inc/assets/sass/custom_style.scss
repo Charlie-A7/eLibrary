@@ -2006,4 +2006,11 @@ footer {
   .homeDivInnerBlue {
     background-color: #9eb6c5;
   }
+  .homeDivInnerImage {
+    background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/Images/siyasiyoun.jpg");
+    background-size: cover; /* This ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+  }
 }
