@@ -20,12 +20,15 @@
                     <?php endif; ?> -->
             </div>
             <div class="col-4 footer_location">
-                <h4 class="" style="color: white;  text-align: center;">Location</h4>
+                <h5 class="" style="color: white;  text-align: center;">Location</h5>
                 <p>
                     <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
-                        alt="Location Icon" style="vertical-align: middle; margin-right: 5px; color: white;">
-                    Dekweneh, George Matta St.,<br>
-                    Semitian Bldg, bloc A, 1st Floor.
+                        alt="Location Icon"
+                        style="vertical-align: middle; margin-right: 5px; filter: brightness(0) invert(1);">
+                    <span style="color: darkgray;">
+                        Dekweneh, George Matta St.,<br>
+                        Semitian Bldg, bloc A, 1st Floor.
+                    </span>
                 </p>
             </div>
         </div>
