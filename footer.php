@@ -9,8 +9,14 @@
  * @package WP_Bootstrap_Starter
  */
 ?>
-
-</div><!-- #content -->
+<style>
+    /* footer */
+    footer {
+        background-color: #093f6c;
+        bottom: 0;
+        padding: 2rem;
+    }
+</style>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="container">
@@ -41,5 +47,11 @@
 
 <?php wp_footer(); ?>
 </body>
+
+footer{
+background-color: #093f6c;
+bottom: 0;
+padding: 2rem;
+}
 
 </html>
