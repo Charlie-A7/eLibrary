@@ -18,7 +18,7 @@ endwhile;
         <div class="col-6 position-relative">
             <div class="overlapping-content">
                     <h1>Welcome to our resource library</h1>
-                    <h6>Browse our selection, and order you need.</h6>
+                    <h4>Browse our selection, and order you need.</h4>
             </div>
             <div class="row h-100">
                 <div class="col-5 homeDivInnerBlue my-3"></div>

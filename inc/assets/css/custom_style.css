@@ -1820,8 +1820,13 @@ footer {
 }
 .homeDiv .overlapping-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+.homeDiv .overlapping-content h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=custom_style.css.map */
