@@ -21,11 +21,11 @@
                         <?php dynamic_sidebar('footer-1'); ?>
                     <?php endif; ?> -->
             </div>
-            <div class="col-4 location-widget">
-                <h4>Location</h4>
+            <div class="col-4 footer_location">
+                <h4 class="" style="color: white;  text-align: center;">Location</h4>
                 <p>
                     <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
-                        alt="Location Icon" style="vertical-align: middle; margin-right: 5px;">
+                        alt="Location Icon" style="vertical-align: middle; margin-right: 5px; color: white;">
                     Dekweneh, George Matta St.,<br>
                     Semitian Bldg, bloc A, 1st Floor.
                 </p>
