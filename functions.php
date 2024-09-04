@@ -314,17 +314,3 @@ function custom_override_checkout_fields( $fields ) {
 
 // add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
-function add_cart_icon_to_menu_item($item_output, $item, $depth, $args) {
-    // Check if the menu item is titled "Cart"
-    if ($item->title == 'Cart') {
-        $icon_url = get_template_directory_uri() . 'https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png'; // Adjust the path to your icon
-        $icon_html = '<img src="' . esc_url($icon_url) . '" alt="Cart Icon" style="width: 16px; height: 16px; margin-right: 5px;"> ';
-        
-        // Prepend the icon HTML to the original menu item title
-        $item_output = str_replace($item->title, $icon_html . $item->title, $item_output);
-    }
-
-    return $item_output;
-}
-add_filter('walker_nav_menu_start_el', 'add_cart_icon_to_menu_item', 10, 4);
-
