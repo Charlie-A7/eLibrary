@@ -1792,9 +1792,11 @@ header nav #menu-item-67 {
   background-color: lightblue;
 }/*# sourceMappingURL=custom_style.css.map */
 
+/* footer */
 footer{
     background-color: #093f6c;
-    height: 10dvh;
-    position: sticky;
     bottom: 0;
+    padding: 2rem;
 }
+
+
