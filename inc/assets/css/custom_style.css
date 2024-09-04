@@ -1791,3 +1791,10 @@ header nav #menu-item-67 {
   height: 90dvh;
   background-color: lightblue;
 }/*# sourceMappingURL=custom_style.css.map */
+
+footer{
+    background-color: #093f6c;
+    height: 10dvh;
+    position: sticky;
+    bottom: 0;
+}
