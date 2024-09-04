@@ -14,18 +14,18 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Footer Widget Area 1 -->
-            <div>
+            <div style=" text-align: center;">
                 <!-- <?php if (is_active_sidebar('footer-1')): ?>
                         <?php dynamic_sidebar('footer-1'); ?>
                     <?php endif; ?> -->
             </div>
             <div class="col-4 footer_location">
-                <h5 class="p" style="color: white;  text-align: center;  font-weight: bold;">Location</h5>
-                <p>
+                <h5 class="p" style="color: white; font-weight: bold;">Location</h5>
+                <p style="padding-left: 1rem;">
                     <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
                         alt="Location Icon"
-                        style="vertical-align: middle; margin-right: 5px; filter: brightness(0) invert(1);">
-                    <span style="color: darkgray; font-size: 12px;">
+                        style="vertical-align: middle; margin-right: 5px; filter: brightness(0) invert(1); width: 20px; height: 20px;">
+                    <span style="color: darkgray; font-size: 15px;">
                         Dekweneh, George Matta St.,<br>
                         Semitian Bldg, bloc A, 1st Floor.
                     </span>
