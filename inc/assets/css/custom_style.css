@@ -1819,7 +1819,7 @@ footer {
   height: var(--header-footer);
   background-color: #093f6c;
   bottom: 0;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .wc-block-checkout__payment-method {
