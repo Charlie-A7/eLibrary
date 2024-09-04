@@ -9,6 +9,18 @@
  * @package WP_Bootstrap_Starter
  */
 ?>
+<style>
+    .footer_location::after {
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: 0;
+        height: 80%;
+        /* Adjust height of the line */
+        width: 1px;
+        background-color: white;
+    }
+</style>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="container-fluid">
@@ -19,6 +31,7 @@
                         <?php dynamic_sidebar('footer-1'); ?>
                     <?php endif; ?> -->
             </div>
+
             <div class="col-4 footer_location">
                 <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align:center">Location</h5>
                 <p style="padding-left: 1rem;">
@@ -43,8 +56,6 @@
 
 
 </footer><!-- #colophon -->
-
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 </body>
