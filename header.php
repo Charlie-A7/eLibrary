@@ -53,6 +53,8 @@
                                     'container' => false,      // Remove the surrounding div
                                 ));
                                 ?>
+                                <li id="menu-item-67">
+                                <img src="https://example.com/path-to-your-icon.png" alt="Cart" style="width: 16px; height: 16px; margin-right: 5px;"> Cart</li>
                             </nav>
                         </div>
                     </div>
