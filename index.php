@@ -13,10 +13,10 @@ while (have_posts()):
 endwhile;
 ?>
 
-<div class="container-fluid homeDiv">
-    <div class="row">
-        <div class="col-10 homeDivInnerWhite"></div>
-        <div class="col-2 homeDivInnerBlue"></div>
+<div class="container-fluid homeDiv p-0">
+    <div class="row h-100">
+        <div class="col-11 homeDivInnerWhite"></div>
+        <div class="col-1 homeDivInnerBlue"></div>
     </div>
 </div>
 
