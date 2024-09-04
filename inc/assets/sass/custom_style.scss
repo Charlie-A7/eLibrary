@@ -1977,13 +1977,6 @@ header {
         position: relative;
         padding-left: 25px; /* Adjust based on the icon size */
       }
-
-      a::before {
-        content: "\f07a"; /* Font Awesome's cart icon Unicode */
-        font-family: "Font Awesome 5 Free"; /* Adjust this to your Font Awesome version */
-        font-weight: 900;
-        margin-right: 5px; /* Space between the icon and text */
-      }
     }
   }
 }

@@ -1782,6 +1782,10 @@ header nav li:hover {
 header nav #menu-item-67 {
   margin-left: auto;
 }
+header nav #menu-item-67 a {
+  position: relative;
+  padding-left: 25px; /* Adjust based on the icon size */
+}
 
 .wc-block-checkout__payment-method {
   display: none;

@@ -313,3 +313,14 @@ function custom_override_checkout_fields( $fields ) {
 }
 
 // add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
+
+function add_cart_icon_to_menu($items, $args) {
+    foreach ($items as $item) {
+        if ($item->title == 'Cart') { 
+            $icon_url = get_template_directory_uri() . 'https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png';
+            $item->title = '<img src="' . esc_url($icon_url) . '" alt="Cart Icon" style="width: 16px; height: 16px; margin-right: 5px;"> ' . $item->title;
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'add_cart_icon_to_menu', 10, 2);
