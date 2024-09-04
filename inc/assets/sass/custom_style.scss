@@ -86,10 +86,9 @@ p {
   border: 0;
   vertical-align: baseline;
 }
-html{
+html {
   margin: 0 !important;
 }
-
 
 article,
 aside,
@@ -2037,7 +2036,9 @@ footer {
       font-size: 5.5rem;
       text-transform: uppercase;
     }
-    h4 {
-    }
   }
+}
+
+#wpadminbar {
+  display: none;
 }
