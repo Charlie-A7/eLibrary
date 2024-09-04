@@ -20,17 +20,22 @@
                     <?php endif; ?> -->
             </div>
             <div class="col-4 footer_location">
-                <h5 style="color: white; font-weight: bold; padding-right: 1rem; text-align:center">Location</h5>
+                <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align:center">Location</h5>
                 <p style="padding-left: 1rem;">
-                    <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
-                        alt="Location Icon"
-                        style="vertical-align: middle; margin-right: 5px; filter: brightness(0) invert(1); width: 20px; height: 20px;">
+                    <button onclick="window.location.href='https://maps.app.goo.gl/RX31MfYc181fp3X5A'"
+                        style="border: none; background: none; padding: 0;">
+                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
+                            alt="Location Icon"
+                            style="vertical-align: middle; margin-right: 5px; filter: brightness(0) invert(1); width: 20px; height: 20px;">
+                    </button>
                     <span style="color: darkgray; font-size: 15px;">
                         Dekweneh, George Matta St.,<br>
-                        <span style="color: darkgray; font-size: 15px; padding-left:21px">Semitian Bldg, bloc A, 1st
-                            Floor.</span>
+                        <span style="color: darkgray; font-size: 15px; padding-left:21px">
+                            Semitian Bldg, bloc A, 1st Floor.
+                        </span>
                     </span>
                 </p>
+
             </div>
         </div>
     </div>
