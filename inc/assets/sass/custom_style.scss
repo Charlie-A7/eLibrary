@@ -2002,10 +2002,12 @@ footer {
   height: calc(100dvh - var(--header-height) - var(--header-footer));
   .homeDivInnerWhite {
     background-color: white;
-    width: 75dvw;
+    width: 90dvw;
+    height: 100%;
   }
   .homeDivInnerBlue {
     background-color: #9eb6c5;
-    width: 25dvw;
+    width: 10dvw;
+    height: 100%;
   }
 }
