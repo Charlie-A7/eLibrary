@@ -10,13 +10,16 @@
  */
 ?>
 <style>
+    .footer_location {
+        position: relative;
+    }
+
     .footer_location::after {
         content: '';
         position: absolute;
         top: 10%;
         right: 0;
         height: 80%;
-        /* Adjust height of the line */
         width: 1px;
         background-color: white;
     }
@@ -32,7 +35,7 @@
                     <?php endif; ?> -->
             </div>
 
-            <div class="col-4 footer_location">
+            <div class="col-4 footer_location" style="padding-left: 2rem">
                 <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align:center">Location</h5>
                 <p style="padding-left: 1rem;">
                     <button onclick="window.location.href='https://maps.app.goo.gl/RX31MfYc181fp3X5A'"
