@@ -1999,6 +1999,6 @@ footer {
 
 // Homepage
 .homeDiv {
-  height: calc(100dvh - var(--header-height));
+  height: calc(100dvh - var(--header-height) - var(--header-footer));
   background-color: lightblue;
 }
