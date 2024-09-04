@@ -53,8 +53,11 @@
                                     'container' => false,      // Remove the surrounding div
                                 ));
                                 ?>
-                                <li id="menu-item-67">
-                                <img src="https://example.com/path-to-your-icon.png" alt="Cart" style="width: 16px; height: 16px; margin-right: 5px;"> Cart</li>
+                                <li class="menu-item">
+                                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('cart'))); ?>"> <!-- Using WordPress permalink -->
+                                        <img src="https://example.com/path-to-your-icon.png" alt="Cart" style="width: 16px; height: 16px; margin-right: 5px;"> Cart
+                                    </a>
+                                </li>
                             </nav>
                         </div>
                     </div>
