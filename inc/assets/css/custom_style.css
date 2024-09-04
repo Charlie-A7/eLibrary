@@ -1802,5 +1802,12 @@ footer {
 
 .homeDiv {
   height: calc(100dvh - var(--header-height) - var(--header-footer));
-  background-color: lightblue;
+}
+.homeDiv .homeDivInnerWhite {
+  background-color: white;
+  width: 75%;
+}
+.homeDiv .homeDivInnerBlue {
+  background-color: #9eb6c5;
+  width: 25%;
 }/*# sourceMappingURL=custom_style.css.map */
