@@ -74,6 +74,13 @@
                     <span style="color: darkgray; font-size: 15px;">lebanon.ops@barid.org</span>
                 </p>
             </div>
+            <div class="col-4 ministries" style="padding-left: 2rem">
+                <h5 style="color: white; font-weight: bold; text-align: center;">LifeAgape Ministries</h5>
+                <p style="color: darkgray; font-size: 15px;">
+                    SLM &bull;&bull;&bull; GCM &bull;&bull;&bull; DS &bull;&bull;&bull; LS<br>
+                    AIA &bull;&bull;&bull; Relief &bull;&bull;&bull; Ladies Ministry
+                </p>
+            </div>
 
         </div>
     </div>
