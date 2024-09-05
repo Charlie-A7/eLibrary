@@ -36,8 +36,8 @@
             </div>
             <!-- section1 -->
             <div class="col-4 footer_lines location_section" style="text-align:center">
-                <h5 style="color: white; font-weight: bold; padding-right: 8rem;">Location</h5>
-                <p style="padding-left: 1rem;">
+                <h5 style="color: white; font-weight: bold;">Location</h5>
+                <p>
                     <button onclick="window.location.href='https://maps.app.goo.gl/RX31MfYc181fp3X5A'"
                         style="border: none; background: none; padding: 0;">
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
