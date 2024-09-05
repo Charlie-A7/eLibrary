@@ -10,11 +10,11 @@
  */
 ?>
 <style>
-    .footer_location {
+    .footer_lines {
         position: relative;
     }
 
-    .footer_location::after {
+    .footer_lines::after {
         content: '';
         position: absolute;
         top: 10%;
@@ -34,8 +34,8 @@
                         <?php dynamic_sidebar('footer-1'); ?>
                     <?php endif; ?> -->
             </div>
-
-            <div class="col-4 footer_location" style="padding-left: 2rem">
+            <!-- section1 -->
+            <div class="col-4 footer_lines" style="padding-left: 2rem">
                 <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align:center">Location</h5>
                 <p style="padding-left: 1rem;">
                     <button onclick="window.location.href='https://maps.app.goo.gl/RX31MfYc181fp3X5A'"
@@ -53,6 +53,28 @@
                 </p>
 
             </div>
+            <!-- section2 -->
+            <div class="col-4 contact_us" style="text-align: center;">
+                <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align: center;">Contact us</h5>
+                <p style="padding-left: 1rem;">
+                    <!-- Phone part-->
+                    <button onclick="window.location.href='tel:+9611688723'"
+                        style="border: none; background: none; padding: 0;">
+                        <img src="path/to/phone-icon.png" alt="Phone Icon"
+                            style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px;">
+                    </button>
+                    <span style="color: darkgray; font-size: 15px;">+961 1 688 723</span>
+                    <br>
+                    <!-- Email part -->
+                    <button onclick="window.location.href='mailto:lebanon.ops@barid.org'"
+                        style="border: none; background: none; padding: 0;">
+                        <img src="path/to/email-icon.png" alt="Email Icon"
+                            style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px;">
+                    </button>
+                    <span style="color: darkgray; font-size: 15px;">lebanon.ops@barid.org</span>
+                </p>
+            </div>
+
         </div>
     </div>
 
