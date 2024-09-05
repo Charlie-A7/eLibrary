@@ -34,15 +34,7 @@
                         <?php dynamic_sidebar('footer-1'); ?>
                     <?php endif; ?> -->
             </div>
-            <nav class="footer-nav">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'footer',
-                    'menu_id' => 'footer-menu',
-                    'menu_class' => 'footer-menu',
-                ));
-                ?>
-            </nav>
+
             <!-- section1 -->
             <div class="col-4 footer_lines location_section" style="text-align:center">
                 <h5 style="color: white; font-weight: bold;">Location</h5>
