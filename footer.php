@@ -76,9 +76,9 @@
                 </p>
             </div>
             <!-- section3 -->
-            <div class="col-4 ministries" style="padding-left: 2rem; text-align: center;">
+            <div class="col-4 ministries_section" style="text-align: center;">
                 <h5 style="color: white; font-weight: bold;">LifeAgape Ministries</h5>
-                <p style="color: darkgray; font-size: 17px;">
+                <p style="margin: 0; color: darkgray; font-size: 17px;">
                     SLM &bull;&bull;&bull; GCM &bull;&bull;&bull; DS &bull;&bull;&bull; LS<br>
                     AIA &bull;&bull;&bull; Relief &bull;&bull;&bull; Ladies Ministry
                 </p>
