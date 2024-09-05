@@ -20,7 +20,7 @@
         top: 10%;
         right: 0;
         height: 80%;
-        width: 1px;
+        width: 0.2rem;
         background-color: white;
     }
 </style>
