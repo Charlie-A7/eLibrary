@@ -55,14 +55,14 @@
             </div>
             <!-- section2 -->
             <div class="col-4 contact_us" style="text-align: center;">
-                <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align: center;">Contact us</h5>
+                <h5 style="color: white; font-weight: bold;">Contact us</h5>
                 <p style="padding-left: 1rem;">
                     <!-- Phone part-->
                     <button onclick="window.location.href='tel:+9611688723'"
                         style="border: none; background: none; padding: 0;">
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/phone-call.png"
                             alt="Phone Icon"
-                            style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px;">
+                            style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px; filter: brightness(0) invert(1);">
                     </button>
                     <span style="color: darkgray; font-size: 15px;">+961 1 688 723</span>
                     <br>
@@ -71,7 +71,7 @@
                         style="border: none; background: none; padding: 0;">
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/email.png"
                             alt="Email Icon"
-                            style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px;">
+                            style="vertical-align: middle; margin-right: 5px; width: 20px; height: 20px; filter: brightness(0) invert(1);">
                     </button>
                     <span style="color: darkgray; font-size: 15px;">lebanon.ops@barid.org</span>
                 </p>
