@@ -35,8 +35,8 @@
                     <?php endif; ?> -->
             </div>
             <!-- section1 -->
-            <div class="col-4 footer_lines location_section" style="padding-left: 2rem">
-                <h5 style="color: white; font-weight: bold; padding-right: 8rem; text-align:center">Location</h5>
+            <div class="col-4 footer_lines location_section" style="text-align:center">
+                <h5 style="color: white; font-weight: bold; padding-right: 8rem;">Location</h5>
                 <p style="padding-left: 1rem;">
                     <button onclick="window.location.href='https://maps.app.goo.gl/RX31MfYc181fp3X5A'"
                         style="border: none; background: none; padding: 0;">
