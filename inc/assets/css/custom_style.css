@@ -1792,6 +1792,10 @@ header nav li:hover {
 header nav #menu-item-94 {
   margin-left: auto;
 }
+header nav li.current-menu-item a {
+  background-color: #f0f0f0; /* Highlight color */
+  color: #333; /* Text color */
+}
 
 footer {
   color: white;
