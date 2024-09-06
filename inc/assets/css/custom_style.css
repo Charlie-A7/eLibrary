@@ -1788,6 +1788,9 @@ header nav li.current-menu-item a {
   background-color: #093f6c;
   color: white;
 }
+header nav li:hover a {
+  opacity: 0.9;
+}
 header nav #menu-item-94 {
   margin-left: auto;
 }
