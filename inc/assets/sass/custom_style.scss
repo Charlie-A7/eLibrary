@@ -1964,7 +1964,6 @@ header {
     li {
       margin-right: 20px;
       border: 1px #231f20 solid;
-      border-radius: 20px;
       width: 7rem;
       text-align: center;
 
@@ -1972,21 +1971,17 @@ header {
         display: block;
         width: 100%;
         height: 100%;
-        text-decoration: none;
+        border-radius: 20px;
       }
     }
-    li:hover a{
+    li:hover a,
+    li.current-menu-item a{
       background-color: #093f6c;
       color: white;
     }
 
     #menu-item-94 {
       margin-left: auto;
-    }
-
-    li.current-menu-item a {
-      background-color: #093f6c; /* Highlight color */
-      color: white; /* Text color */
     }
   }
 }
