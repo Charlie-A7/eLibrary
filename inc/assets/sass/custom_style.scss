@@ -1928,6 +1928,8 @@ p strong {
 :root {
   --header-height: 15dvh;
   --header-footer: 15dvh;
+  --Navy-Blue-Color: #093f6c;
+  --Light-Gray-Blue-Color: #9eb6c5;
 }
 
 body {
@@ -1980,11 +1982,11 @@ header {
     }
 
     li:hover a {
-      background-color: #9eb6c5;
+      background-color: var(--Light-Gray-Blue-Color);
     }
 
     li.current-menu-item a {
-      background-color: #093f6c;
+      background-color: var(--Navy-Blue-Color);
     }
 
     #menu-item-94 {
@@ -1998,7 +2000,7 @@ header {
 footer {
   color: white;
   height: var(--header-footer);
-  background-color: #093f6c;
+  background-color: var(--Navy-Blue-Color);
   bottom: 0;
   padding: 1rem;
   h5 {
@@ -2018,7 +2020,7 @@ footer {
     background-color: white;
   }
   .homeDivInnerBlue {
-    background-color: #9eb6c5;
+    background-color: var(--Light-Gray-Blue-Color);
   }
   .homeDivInnerImage {
     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
