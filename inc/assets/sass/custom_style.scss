@@ -1983,6 +1983,12 @@ header {
     #menu-item-94 {
       margin-left: auto;
     }
+
+    li.current-menu-item a {
+      background-color: #f0f0f0; /* Highlight color */
+      color: #333; /* Text color */
+    }
+
   }
 }
 
@@ -1995,6 +2001,7 @@ footer {
   bottom: 0;
   padding: 1rem;
   h5 {
+
   }
 }
 
