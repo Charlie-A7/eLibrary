@@ -1786,6 +1786,11 @@ header nav li a {
 header nav li:hover a,
 header nav li.current-menu-item a {
   color: white;
+}
+header nav li:hover a {
+  background-color: #9eb6c5;
+}
+header nav li.current-menu-item a {
   background-color: #093f6c;
 }
 header nav #menu-item-94 {
