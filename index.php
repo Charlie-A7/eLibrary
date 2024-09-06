@@ -13,7 +13,7 @@ while (have_posts()):
 endwhile;
 ?>
 
-<div class="container-fluid homeDiv p-0 py-5">
+<div class="container-fluid homeDiv py-5">
     <div class="row h-100">
         <div class="col-6 position-relative p-0">
             <div class="overlapping-content">
@@ -31,7 +31,7 @@ endwhile;
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-1 homeDivInnerBlue p-0"></div>
+        <div class="col-1 homeDivInnerBlue"></div>
     </div>
 </div>
 
