@@ -10,6 +10,10 @@
  */
 ?>
 <style>
+    .footer_h5 {
+        padding-bottom: 0.2rem;
+    }
+
     .footer_lines {
         position: relative;
     }
@@ -18,6 +22,7 @@
         content: '';
         position: absolute;
         top: 10%;
+        bottom: 10%;
         right: 0;
         height: 80%;
         width: 0.2rem;
@@ -37,7 +42,7 @@
 
             <!-- section1 -->
             <div class="col-4 footer_lines location_section" style="text-align:center">
-                <h5 style="color: white; font-weight: bold;">Location</h5>
+                <h5 class="footer_h5" style="color: white; font-weight: bold;">Location</h5>
                 <a href="https://maps.app.goo.gl/RX31MfYc181fp3X5A" style="text-decoration: none; color: inherit;">
                     <p style="margin:0; cursor: pointer;">
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
@@ -53,7 +58,7 @@
             </div>
             <!-- section2 -->
             <div class="col-4 footer_lines contactus_section" style="text-align: center;">
-                <h5 style="color: white; font-weight: bold;">Contact us</h5>
+                <h5 class="footer_h5" style="color: white; font-weight: bold;">Contact us</h5>
 
                 <!-- Phone Button (Wrap entire section in <a>) -->
                 <a href="tel:+9611688723" style="text-decoration: none; color: inherit;">
@@ -78,7 +83,7 @@
 
             <!-- section3 -->
             <div class="col-4 ministries_section" style="text-align: center;">
-                <h5 style="color: white; font-weight: bold;">LifeAgape Ministries</h5>
+                <h5 class="footer_h5" style="color: white; font-weight: bold;">LifeAgape Ministries</h5>
                 <p style="margin: 0; color: darkgray; font-size: 15px;">
                     SLM &bull;&bull;&bull; GCM &bull;&bull;&bull; DS &bull;&bull;&bull; LS<br>
                     AIA &bull;&bull;&bull; Relief &bull;&bull;&bull; Ladies Ministry
