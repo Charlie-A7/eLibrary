@@ -31,7 +31,7 @@ endwhile;
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-1 homeDivInnerBlue"></div>
+        <div class="col-1 homeDivInnerBlue p-0"></div>
     </div>
 </div>
 
