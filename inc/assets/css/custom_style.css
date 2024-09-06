@@ -1783,12 +1783,15 @@ header nav li a {
   height: 100%;
   border-radius: 20px;
 }
+header nav li:hover a,
 header nav li.current-menu-item a {
-  background-color: #093f6c;
   color: white;
 }
+header nav li.current-menu-item a {
+  background-color: #093f6c;
+}
 header nav li:hover a {
-  font-weight: bold;
+  background-color: rgba(9, 63, 108, 0.9);
 }
 header nav #menu-item-94 {
   margin-left: auto;
