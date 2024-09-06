@@ -1963,7 +1963,6 @@ header {
 
     li {
       margin-right: 20px;
-      border: 1px #231f20 solid;
       width: 7rem;
       text-align: center;
 
@@ -1978,6 +1977,10 @@ header {
     li.current-menu-item a{
       background-color: #093f6c;
       color: white;
+    }
+
+    li:hover a{
+      opacity: 0.9;
     }
 
     #menu-item-94 {
