@@ -1785,7 +1785,7 @@ header nav li a {
   height: 100%;
   text-decoration: none;
 }
-header nav li:hover {
+header nav li:hover a {
   background-color: #093f6c;
   color: white;
 }
