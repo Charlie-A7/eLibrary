@@ -1973,14 +1973,13 @@ header {
         border-radius: 20px;
       }
     }
-    li:hover a,
     li.current-menu-item a{
       background-color: #093f6c;
       color: white;
     }
 
     li:hover a{
-      opacity: 0.9;
+      font-weight: bold;
     }
 
     #menu-item-94 {
