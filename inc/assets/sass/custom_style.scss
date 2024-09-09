@@ -2057,27 +2057,36 @@ footer {
 }
 
 // Shop page
-.price{
-  display: none !important;
-}
-
 .product {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center;
 }
 
-.product .add_to_cart_button {
-  margin-top: 10px; /* Add space between the product title and the button if needed */
+.product-image-container {
+  position: relative;
+  display: inline-block; /* Ensure the container size fits the image */
 }
 
-.woocommerce-loop-product__title{
-  display: none;
+.product-image-container img {
+  display: block;
 }
 
-ul.products li.product .button{
+.product-image-container .add_to_cart_button {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--Navy-Blue-Color);
   color: white;
   border-radius: 20px;
+  width: 8rem;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 10; /* Ensure the button is above the image */
+}
 
+.price, .woocommerce-loop-product__title {
+  display: none;
 }
