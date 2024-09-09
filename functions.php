@@ -316,24 +316,25 @@ function custom_override_checkout_fields( $fields ) {
 
 
 
+// Remove default WooCommerce wrappers globally
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
-
-add_action( 'woocommerce_before_main_content', 'custom_archive_wrapper_start', 5 );
-function custom_archive_wrapper_start() {
+// Add custom WooCommerce wrappers for the archive product page (shop and product categories)
+add_action( 'woocommerce_before_main_content', 'custom_output_content_wrapper_start', 10 );
+function custom_output_content_wrapper_start() {
     if ( is_shop() || is_product_taxonomy() ) {
-        // Open a custom wrapper for shop and product taxonomy pages
         echo '<div id="content" class="site-content container-fluid">';
+    } else {
+        // For other WooCommerce pages, keep the default container
+        echo '<div id="content" class="site-content container">';
     }
 }
 
-add_action( 'woocommerce_after_main_content', 'custom_archive_wrapper_end', 5 );
-function custom_archive_wrapper_end() {
-    if ( is_shop() || is_product_taxonomy() ) {
-        // Close the custom wrapper
-        echo '</div>';
-    }
+add_action( 'woocommerce_after_main_content', 'custom_output_content_wrapper_end', 10 );
+function custom_output_content_wrapper_end() {
+    echo '</div>';
 }
+
 
 
