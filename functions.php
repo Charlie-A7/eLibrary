@@ -145,13 +145,10 @@ function wp_bootstrap_starter_scripts()
 
     // ============= Load Custom stylesheets =============
 
-    wp_enqueue_style('maze-swiper', get_template_directory_uri() . '/inc/assets/css/swiper.min.css');
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/inc/assets/css/swiper.min.css');
 
-    if (is_front_page()) {
-        // wp_enqueue_style( 'maze-animate_headlines', get_template_directory_uri() . '/inc/assets/css/animate_headlines.css' );
-    }
-    wp_enqueue_style('maze-custom_style', get_template_directory_uri() . '/inc/assets/css/custom_style.css', array(), '1.42');
-    wp_enqueue_style('maze-responsive_style', get_template_directory_uri() . '/inc/assets/css/responsive.css', array(), '1.42');
+    wp_enqueue_style('custom_style', get_template_directory_uri() . '/inc/assets/css/custom_style.css', array(), '1.42');
+    wp_enqueue_style('responsive_style', get_template_directory_uri() . '/inc/assets/css/responsive.css', array(), '1.42');
 
     wp_enqueue_script('jquery');
 
@@ -165,7 +162,7 @@ function wp_bootstrap_starter_scripts()
 
     // ========================================================================
     // Add all custom js libraries here
-    wp_enqueue_script('maze-swiper-js', get_template_directory_uri() . '/inc/assets/js/swiper.min.js', array(), '1', true);
+    wp_enqueue_script('swiper-js', get_template_directory_uri() . '/inc/assets/js/swiper.min.js', array(), '1', true);
 
     // query loader
     // jquery visibale
@@ -291,23 +288,3 @@ function your_theme_setup()
     ));
 }
 add_action('after_setup_theme', 'your_theme_setup');
-
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-
-add_action( 'woocommerce_before_main_content', 'custom_output_content_wrapper_start', 10 );
-add_action( 'woocommerce_after_main_content', 'custom_output_content_wrapper_end', 10 );
-
-function custom_output_content_wrapper_start() {
-    echo '<div id="primary" class="content-area">';
-    echo '<main id="main" class="site-main container-fluid">'; // Using container-fluid instead of container
-}
-
-function custom_output_content_wrapper_end() {
-    echo '</main>';
-    echo '</div>';
-}
-
-
-
-

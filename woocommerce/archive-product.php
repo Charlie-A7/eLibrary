@@ -18,25 +18,31 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
+?>
+<div class="container">
+	<div class="row">
+		<?php
+		/**
+		 * Hook: woocommerce_before_main_content.
+		 *
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 * @hooked WC_Structured_Data::generate_website_data() - 30
+		 */
+		do_action( 'woocommerce_before_main_content' );
 
-echo "Using custom archive-product.php";
-/**
- * Hook: woocommerce_before_main_content.
- *
- * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
- * @hooked woocommerce_breadcrumb - 20
- * @hooked WC_Structured_Data::generate_website_data() - 30
- */
-do_action( 'woocommerce_before_main_content' );
-
-/**
- * Hook: woocommerce_shop_loop_header.
- *
- * @since 8.6.0
- *
- * @hooked woocommerce_product_taxonomy_archive_header - 10
- */
-do_action( 'woocommerce_shop_loop_header' );
+		/**
+		 * Hook: woocommerce_shop_loop_header.
+		 *
+		 * @since 8.6.0
+		 *
+		 * @hooked woocommerce_product_taxonomy_archive_header - 10
+		 */
+		do_action( 'woocommerce_shop_loop_header' );
+		?>
+	</div>
+</div>
+<?php
 
 if ( woocommerce_product_loop() ) {
 
