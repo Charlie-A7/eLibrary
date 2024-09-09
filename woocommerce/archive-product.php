@@ -19,6 +19,14 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
+
+
+?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+    <?php
+
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -26,7 +34,7 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-//do_action( 'woocommerce_before_main_content' );
+do_action( 'woocommerce_before_main_content' );
 
 /**
  * Hook: woocommerce_shop_loop_header.
@@ -36,11 +44,13 @@ get_header( 'shop' );
  * @hooked woocommerce_product_taxonomy_archive_header - 10
  */
 do_action( 'woocommerce_shop_loop_header' );
+
 ?>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-4">
-    <?php
+        </div>
+    </div>
+</div>
+<?php
+
 if ( woocommerce_product_loop() ) {
 
 	/**
@@ -83,11 +93,7 @@ if ( woocommerce_product_loop() ) {
 	 */
 	do_action( 'woocommerce_no_products_found' );
 }
-?>
-        </div>
-    </div>
-</div>
-<?php
+
 /**
  * Hook: woocommerce_after_main_content.
  *
