@@ -19,6 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
+echo "Using custom archive-product.php";
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -95,8 +96,3 @@ do_action( 'woocommerce_after_main_content' );
 do_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );
-?>
-<script>
-	console.log("1");
-</script>
-<?php
