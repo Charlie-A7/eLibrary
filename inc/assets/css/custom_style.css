@@ -1748,7 +1748,6 @@ p strong {
 body {
   font-family: "quicksand";
   color: #231f20;
-  overflow: hidden;
 }
 
 header {
@@ -1850,4 +1849,9 @@ footer {
 
 .price {
   display: none !important;
+}
+
+.add_to_cart_button {
+  color: white;
+  border-radius: 20px;
 }/*# sourceMappingURL=custom_style.css.map */
