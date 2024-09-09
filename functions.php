@@ -316,17 +316,3 @@ function custom_override_checkout_fields( $fields ) {
 
 
 
-function custom_woocommerce_output_content_wrapper() {
-    // Your custom opening div with a different class
-    echo '<div class="container-fluid">';
-}
-
-// Remove the default wrapper
-remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-
-// Add your custom wrapper
-add_action('woocommerce_before_main_content', 'custom_woocommerce_output_content_wrapper', 10);
-
-
-
-
