@@ -62,6 +62,9 @@ if ( woocommerce_product_loop() ) {
 	woocommerce_product_loop_start();
 
 	if ( wc_get_loop_prop( 'total' ) ) {
+		?>
+		<div class="col-4">
+		<?php
 		while ( have_posts() ) {
 			the_post();
 
@@ -72,6 +75,9 @@ if ( woocommerce_product_loop() ) {
 
 			wc_get_template_part( 'content', 'product' );
 		}
+		?>
+		</div>
+		<?php
 	}
 
 	woocommerce_product_loop_end();
