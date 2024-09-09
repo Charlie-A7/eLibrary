@@ -292,21 +292,21 @@ function your_theme_setup()
 }
 add_action('after_setup_theme', 'your_theme_setup');
 
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+// remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+// remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
-add_action( 'woocommerce_before_main_content', 'custom_output_content_wrapper_start', 10 );
-add_action( 'woocommerce_after_main_content', 'custom_output_content_wrapper_end', 10 );
+// add_action( 'woocommerce_before_main_content', 'custom_output_content_wrapper_start', 10 );
+// add_action( 'woocommerce_after_main_content', 'custom_output_content_wrapper_end', 10 );
 
-function custom_output_content_wrapper_start() {
-    echo '<div id="primary" class="content-area">';
-    echo '<main id="main" class="site-main container-fluid">'; // Using container-fluid instead of container
-}
+// function custom_output_content_wrapper_start() {
+//     echo '<div id="primary" class="content-area">';
+//     echo '<main id="main" class="site-main container-fluid yarrrakhhhh">'; // Using container-fluid instead of container
+// }
 
-function custom_output_content_wrapper_end() {
-    echo '</main>';
-    echo '</div>';
-}
+// function custom_output_content_wrapper_end() {
+//     echo '</main>';
+//     echo '</div>';
+// }
 
 
 
