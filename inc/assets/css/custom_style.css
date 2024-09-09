@@ -1846,4 +1846,8 @@ footer {
 
 #wpadminbar {
   display: none;
+}
+
+.woocommerce-Price-amount {
+  display: none;
 }/*# sourceMappingURL=custom_style.css.map */
