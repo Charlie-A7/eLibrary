@@ -314,3 +314,21 @@ function custom_override_checkout_fields( $fields ) {
 
 // add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
+
+add_action( 'woocommerce_before_main_content', 'custom_archive_wrapper_start', 5 );
+function custom_archive_wrapper_start() {
+    if ( is_shop() || is_product_taxonomy() ) {
+        // Open a custom wrapper for shop and product taxonomy pages
+        echo '<div id="content" class="site-content container-fluid">';
+    }
+}
+
+add_action( 'woocommerce_after_main_content', 'custom_archive_wrapper_end', 5 );
+function custom_archive_wrapper_end() {
+    if ( is_shop() || is_product_taxonomy() ) {
+        // Close the custom wrapper
+        echo '</div>';
+    }
+}
+
+
