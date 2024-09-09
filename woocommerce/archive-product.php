@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 
 ?>
-<div class="container-fluid">
+<div class="container-fluid glires-gerrrrr">
 	<div class="row">
 		<?php
 		/**
