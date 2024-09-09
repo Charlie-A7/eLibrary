@@ -1849,5 +1849,5 @@ footer {
 }
 
 .price {
-  display: none;
+  display: none !important;
 }/*# sourceMappingURL=custom_style.css.map */
