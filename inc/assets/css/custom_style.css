@@ -1869,4 +1869,9 @@ ul.products li.product .button {
   background-color: var(--Navy-Blue-Color);
   color: white;
   border-radius: 20px;
+  margin: -1rem;
+}
+
+ul.products li.product a img {
+  margin: 0;
 }/*# sourceMappingURL=custom_style.css.map */
