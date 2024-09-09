@@ -307,7 +307,11 @@ function custom_output_content_wrapper_end() {
     echo '</main>';
     echo '</div>';
 }
-
+?>
+<script>
+    console.log("yeghav aga");
+</script>
+<?php
 
 
 
