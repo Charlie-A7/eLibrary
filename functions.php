@@ -315,6 +315,11 @@ function custom_override_checkout_fields( $fields ) {
 // add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
 
 
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+
+
 add_action( 'woocommerce_before_main_content', 'custom_archive_wrapper_start', 5 );
 function custom_archive_wrapper_start() {
     if ( is_shop() || is_product_taxonomy() ) {
