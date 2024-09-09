@@ -1869,8 +1869,7 @@ ul.products li.product .button {
   background-color: var(--Navy-Blue-Color);
   color: white;
   border-radius: 20px;
-  margin: 0 !important;
-  margin-top: -1rem;
+  margin-top: -1rem !important;
 }
 
 ul.products li.product a img {
