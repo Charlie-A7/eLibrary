@@ -20,11 +20,6 @@ defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );
 
 
-?>
-<div class="container-fluid">
-    <div class="row">
-    <?php
-
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -43,10 +38,6 @@ do_action( 'woocommerce_before_main_content' );
  */
 do_action( 'woocommerce_shop_loop_header' );
 
-?>
-    </div>
-</div>
-<?php
 
 if ( woocommerce_product_loop() ) {
 
@@ -62,11 +53,6 @@ if ( woocommerce_product_loop() ) {
 	woocommerce_product_loop_start();
 
 	if ( wc_get_loop_prop( 'total' ) ) {
-		?>
-		<div class="col-4">
-			<p>Hello There</p>
-		</div>
-		<?php
 		while ( have_posts() ) {
 			the_post();
 
