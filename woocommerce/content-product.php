@@ -24,7 +24,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-test
 <div id="product-<?php echo $product_id; ?>" class="cat-single-main-product" <?php wc_product_class( '', $product ); ?>>
         <?php
         /**
