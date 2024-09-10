@@ -7,11 +7,11 @@ get_header();
 ?>
 
 <?php
-while (have_posts()):
-    the_post();
-    the_content();
-endwhile;
-?>
+// while (have_posts()):
+//     the_post();
+//     the_content();
+// endwhile;
+?> 
 
 <div class="container-fluid homeDiv py-5">
     <div class="row h-100">
