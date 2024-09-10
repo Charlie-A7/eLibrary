@@ -9,29 +9,9 @@
  * @package WP_Bootstrap_Starter
  */
 ?>
-<style>
-    .footer_h5 {
-        padding-bottom: 0.2rem;
-    }
-
-    .footer_lines {
-        position: relative;
-    }
-
-    .footer_lines::after {
-        content: '';
-        position: absolute;
-        top: 10%;
-        bottom: 10%;
-        right: 0;
-        height: 80%;
-        width: 4px;
-        background-color: white;
-    }
-</style>
 
     <!-- </div> -->
-    <footer id="colophon" class="site-footer" role="contentinfo">
+    <footer id="colophon" class="site-footer d-flex align-items-center" role="contentinfo">
         <div class="container-fluid">
             <div class="row">
                 <!-- Footer Widget Area 1 -->
