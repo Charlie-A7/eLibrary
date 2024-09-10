@@ -9,7 +9,8 @@ get_header();
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-3">
-				<h1>Discover the bookshelf</h1>
+				<h1>Discover</h1>
+				<h1>the bookshelf</h1>
 			</div>
 			
 			<div class="col-9">
