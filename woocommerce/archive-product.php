@@ -16,7 +16,7 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-echo 'shitttttt'
+
 get_header( 'shop' );
 
 /**

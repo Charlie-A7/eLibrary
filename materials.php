@@ -14,7 +14,8 @@ get_header();
             </div>
             
 			<?php
-            echo do_shortcode('[products]');
+            //echo do_shortcode('[products]');
+            echo do_shortcode('[products category="materials" limit="20" columns="4"]');
 			?>
 		</div>
 	</div>
