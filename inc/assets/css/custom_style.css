@@ -1874,5 +1874,6 @@ ul.products li.product a img {
 
 .materials h1 {
   writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
+  transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
   text-transform: uppercase;
 }/*# sourceMappingURL=custom_style.css.map */
