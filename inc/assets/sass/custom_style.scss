@@ -1921,7 +1921,7 @@ p strong {
 
 :root {
   --header-height: 15dvh;
-  --header-footer: 15dvh;
+  --header-footer: 13dvh;
   --Navy-Blue-Color: #093f6c;
   --Light-Gray-Blue-Color: #9eb6c5;
 }
@@ -1988,7 +1988,7 @@ header {
   }
 }
 
-// foopter
+// footer
 
 footer {
   color: white;
@@ -1996,7 +1996,24 @@ footer {
   background-color: var(--Navy-Blue-Color);
   bottom: 0;
   padding: 1rem;
+
   h5 {
+    padding-bottom: 0.2rem;
+  }
+
+  .footer_lines {
+    position: relative;
+  }
+
+  .footer_lines::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+    height: 80%;
+    width: 4px;
+    background-color: white;
   }
 }
 
@@ -2051,7 +2068,7 @@ footer {
 }
 
 // Shop page
-.price{
+.price {
   display: none !important;
 }
 
@@ -2065,17 +2082,17 @@ footer {
   margin-top: 10px; /* Add space between the product title and the button if needed */
 }
 
-.woocommerce-loop-product__title{
+.woocommerce-loop-product__title {
   display: none;
 }
 
-ul.products li.product .button{
+ul.products li.product .button {
   background-color: var(--Navy-Blue-Color);
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;
 }
 
-ul.products li.product a img{
+ul.products li.product a img {
   margin: 0 !important;
 }

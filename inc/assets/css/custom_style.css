@@ -232,7 +232,6 @@ body.hide_scroll {
   margin-right: 0px;
 }
 
-
 .text_main_color {
   color: #ffdd00;
 }
@@ -1733,7 +1732,7 @@ p strong {
 
 :root {
   --header-height: 15dvh;
-  --header-footer: 15dvh;
+  --header-footer: 13dvh;
   --Navy-Blue-Color: #093f6c;
   --Light-Gray-Blue-Color: #9eb6c5;
 }
@@ -1798,6 +1797,23 @@ footer {
   bottom: 0;
   padding: 1rem;
 }
+footer h5 {
+  padding-bottom: 0.2rem;
+}
+footer .footer_lines {
+  position: relative;
+}
+footer .footer_lines::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 0;
+  height: 80%;
+  width: 4px;
+  background-color: white;
+}
+
 .wc-block-checkout__payment-method {
   display: none;
 }
