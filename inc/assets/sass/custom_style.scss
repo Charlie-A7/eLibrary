@@ -1929,6 +1929,11 @@ p strong {
 body {
   font-family: "quicksand";
   color: #231f20;
+  ::selection {
+    background-color: #3399ff;
+    color: #ffffff;
+  }
+  
 }
 
 // header
