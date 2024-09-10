@@ -11,6 +11,7 @@ get_header();
 		<div class="col-12">
             
 			<?php
+            woocommerce_content();
 			while (have_posts()):
 				the_post();
 				the_content();
