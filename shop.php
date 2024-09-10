@@ -12,7 +12,7 @@ get_header();
 
 			<?php
 			while (have_posts()):
-                echo do_shortcode('[products]');
+                woocommerce_content();
 				// the_post();
 				// the_content();
 				// get_template_part('template-parts/content', 'page');
