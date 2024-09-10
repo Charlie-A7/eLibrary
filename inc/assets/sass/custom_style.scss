@@ -172,13 +172,6 @@ option:focus {
 p {
   margin-bottom: 15px;
 }
-body {
-  color: $text_black;
-  font-family: $montserrat-regular;
-  background-color: $text_white;
-  overflow: auto;
-  overflow-x: hidden !important;
-}
 body.hide_scroll {
   padding-right: 17px;
   overflow: hidden !important;
@@ -1929,6 +1922,9 @@ p strong {
 body {
   font-family: "quicksand";
   color: #231f20;
+  background-color: $text_white;
+  overflow: auto;
+  overflow-x: hidden !important;
   ::selection {
     background-color: #3399ff;
     color: #ffffff;

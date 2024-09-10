@@ -169,14 +169,6 @@ p {
   margin-bottom: 15px;
 }
 
-body {
-  color: #000;
-  font-family: "montserrat-regular";
-  background-color: #fff;
-  overflow: auto;
-  overflow-x: hidden !important;
-}
-
 body.hide_scroll {
   padding-right: 17px;
   overflow: hidden !important;
@@ -1740,6 +1732,9 @@ p strong {
 body {
   font-family: "quicksand";
   color: #231f20;
+  background-color: #fff;
+  overflow: auto;
+  overflow-x: hidden !important;
 }
 body ::-moz-selection {
   background-color: #3399ff;
