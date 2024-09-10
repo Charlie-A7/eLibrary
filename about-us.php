@@ -14,9 +14,17 @@ get_header();
         }
     }
 
+    .aboutUsText {
+        font-family: $nudista-semibold-regular;
+        font: size 12px;
+    }
+
     .LanguageSwitchBtn {
         background-color: var(--Navy-Blue-Color);
         border-radius: 20px;
+        color: white;
+        font-family: $nudista-semibold-regular;
+        font-size: 1.2rem;
     }
 </style>
 
@@ -24,10 +32,10 @@ get_header();
     <div class="row h-100">
         <div class="col-1 homeDivInnerBlue p-2"></div>
 
-        <div class="col-7 h-100">
+        <div class="col-7 h-100 px-3">
             <img style="width: 100%; height: 40%"
                 src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
-            <p style="font: size 12px;">
+            <p class="AboutUsText py-3">
                 LifeAgape Lebanon is a Christian organization that works with all churches and
                 Christian denominations.
                 Our goal is to deliver the message of Jesus Christ for a better life for every person through the
