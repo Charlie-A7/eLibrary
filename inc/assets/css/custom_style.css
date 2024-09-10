@@ -1847,7 +1847,7 @@ footer .footer_lines::after {
 }
 .homeDiv .overlapping-content h1 {
   font-weight: bold;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
 }
 
@@ -1873,6 +1873,8 @@ ul.products li.product a img {
 }
 
 .materials h1 {
+  font-weight: bold;
+  font-size: 3rem;
   writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
   transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
   text-transform: uppercase;
