@@ -24,9 +24,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li>
-        <p>Discover the bookshelf</p>
-</li>
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
