@@ -12,9 +12,9 @@ get_header();
 			<p>Discover the bookshelf</p>
 		</div>
 		
-		<div class="col-9">
+		<div class="col-3">
 			<?php
-			echo do_shortcode('[products category="materials" limit="20" columns="4"]');
+			echo do_shortcode('[products category="materials" limit="19" columns="1"]');
 			?>
 		</div>
 	</div>
