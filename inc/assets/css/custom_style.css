@@ -1866,10 +1866,6 @@ footer .footer_lines::after {
   margin-top: 10px; /* Add space between the product title and the button if needed */
 }
 
-.woocommerce-loop-product__title {
-  display: none;
-}
-
 ul.products li.product .button {
   background-color: var(--Navy-Blue-Color);
   color: white;
