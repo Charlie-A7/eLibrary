@@ -1817,10 +1817,6 @@ footer .footer_lines::after {
   background-color: white;
 }
 
-.wc-block-checkout__payment-method {
-  display: none;
-}
-
 .homeDiv {
   height: calc(100dvh - var(--header-height) - var(--header-footer));
 }
@@ -1874,4 +1870,10 @@ ul.products li.product .button {
 
 ul.products li.product a img {
   margin: 0 !important;
+}
+
+.materials h1 {
+  font-size: xx-large;
+  writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
+  transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
 }/*# sourceMappingURL=custom_style.css.map */
