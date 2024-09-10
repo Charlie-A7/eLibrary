@@ -8,7 +8,7 @@ get_header();
 <div class="materials">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-3">
+			<div class="col-3 d-flex justify-content-center pb-2">
 				<h1>Discover the<br>bookshelf</h1>
 			</div>
 			
