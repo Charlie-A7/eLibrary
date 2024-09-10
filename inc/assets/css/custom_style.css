@@ -1856,10 +1856,6 @@ footer .footer_lines::after {
   display: none;
 }
 
-.price {
-  display: none !important;
-}
-
 .product {
   display: flex;
   flex-direction: column;
