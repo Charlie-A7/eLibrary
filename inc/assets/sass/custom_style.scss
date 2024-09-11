@@ -1965,6 +1965,10 @@ header {
         margin-left: 10px;
         vertical-align: middle;
       }
+
+      a:hover::after{
+        filter: invert(1) brightness(2);
+      }
     }
   }
 }
@@ -2004,7 +2008,8 @@ footer {
     margin-right: 5px;
   }
 
-  .footer-icon2, .footer-icon1{
+  .footer-icon2, 
+  .footer-icon1{
     vertical-align: middle; 
     width: 20px; 
     height: 20px; 
@@ -2101,6 +2106,7 @@ ul.products li.product a img {
 // Materials page
 
 .materials {
+  min-height: calc(100dvh - $header-height - $footer-height);
   h1 {
     font-size: 3rem;
     writing-mode: vertical-rl; /* Text flows vertically from bottom to top */

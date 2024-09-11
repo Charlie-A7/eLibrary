@@ -1762,6 +1762,9 @@ header nav #menu-item-94 a::after {
   margin-left: 10px;
   vertical-align: middle;
 }
+header nav #menu-item-94 a:hover::after {
+  filter: invert(1) brightness(2);
+}
 
 footer {
   color: white;
@@ -1791,7 +1794,8 @@ footer p {
 footer .footer-icon1 {
   margin-right: 5px;
 }
-footer .footer-icon2, footer .footer-icon1 {
+footer .footer-icon2,
+footer .footer-icon1 {
   vertical-align: middle;
   width: 20px;
   height: 20px;
@@ -1872,6 +1876,9 @@ ul.products li.product a img {
   margin: 0 !important;
 }
 
+.materials {
+  min-height: 72dvh;
+}
 .materials h1 {
   font-size: 3rem;
   writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
