@@ -36,7 +36,7 @@ get_header();
 					</div>
 
 					<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
-						<div class="col-3 text-center pb-3">
+						<div class="col-3 text-center pb-3 d-flex flex-column align-items-center">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('medium'); ?>
 								<br>
