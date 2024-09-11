@@ -1707,7 +1707,7 @@ h1 {
 
 header {
   background-color: white;
-  height: var(15dvh);
+  height: 15dvh;
   position: sticky;
   top: 0;
   font-family: "quicksand-bold";
@@ -1743,10 +1743,10 @@ header nav li.current-menu-item a {
   color: white;
 }
 header nav li:hover a {
-  background-color: var(#9eb6c5);
+  background-color: #9eb6c5;
 }
 header nav li.current-menu-item a {
-  background-color: var(#093f6c);
+  background-color: #093f6c;
 }
 header nav #menu-item-94 {
   margin-left: auto;
@@ -1768,8 +1768,8 @@ header nav #menu-item-94 :hover a::after {
 
 footer {
   color: white;
-  height: var(13dvh);
-  background-color: var(#093f6c);
+  height: 13dvh;
+  background-color: #093f6c;
   bottom: 0;
   padding: 1rem;
 }
@@ -1791,13 +1791,13 @@ footer .footer_lines::after {
 }
 
 .homeDiv {
-  height: calc(100dvh - var(15dvh) - var(13dvh));
+  height: 72dvh;
 }
 .homeDiv .homeDivInnerWhite {
   background-color: white;
 }
 .homeDiv .homeDivInnerBlue {
-  background-color: var(#9eb6c5);
+  background-color: #9eb6c5;
 }
 .homeDiv .homeDivInnerImage {
   background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
@@ -1834,7 +1834,7 @@ footer .footer_lines::after {
 }
 
 ul.products li.product .button {
-  background-color: var(#093f6c);
+  background-color: #093f6c;
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;

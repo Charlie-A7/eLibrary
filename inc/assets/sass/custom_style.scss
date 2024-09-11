@@ -1879,7 +1879,7 @@ p strong {
 
 
 $header-height: 15dvh;
-$header-footer: 13dvh;
+$footer-height: 13dvh;
 $Navy-Blue-Color: #093f6c;
 $Light-Gray-Blue-Color: #9eb6c5;
 
@@ -1902,7 +1902,7 @@ h1{
 // header
 header {
   background-color: white;
-  height: var($header-height);
+  height: $header-height;
   position: sticky;
   top: 0;
   font-family: $quicksand-bold;
@@ -1942,11 +1942,11 @@ header {
     }
 
     li:hover a {
-      background-color: var($Light-Gray-Blue-Color);
+      background-color: $Light-Gray-Blue-Color;
     }
 
     li.current-menu-item a {
-      background-color: var($Navy-Blue-Color);
+      background-color: $Navy-Blue-Color;
     }
 
     #menu-item-94 {
@@ -1977,8 +1977,8 @@ header {
 
 footer {
   color: white;
-  height: var($header-footer);
-  background-color: var($Navy-Blue-Color);
+  height: $footer-height;
+  background-color: $Navy-Blue-Color;
   bottom: 0;
   padding: 1rem;
 
@@ -2004,12 +2004,12 @@ footer {
 
 // Homepage
 .homeDiv {
-  height: calc(100dvh - var($header-height) - var($header-footer));
+  height: calc(100dvh - $header-height - $footer-height);
   .homeDivInnerWhite {
     background-color: white;
   }
   .homeDivInnerBlue {
-    background-color: var($Light-Gray-Blue-Color);
+    background-color: $Light-Gray-Blue-Color;
   }
   .homeDivInnerImage {
     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
@@ -2054,7 +2054,7 @@ footer {
 }
 
 ul.products li.product .button {
-  background-color: var($Navy-Blue-Color);
+  background-color: $Navy-Blue-Color;
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;
