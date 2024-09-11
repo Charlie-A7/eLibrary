@@ -1883,7 +1883,7 @@ footer .footer_lines::after {
   border-radius: 20px;
   margin-top: -1rem !important;
   padding: 0.25rem 1rem;
-  width: 8rem;
+  width: 40%;
   font-family: "quicksand-semibold";
   font-size: 17px;
 }
