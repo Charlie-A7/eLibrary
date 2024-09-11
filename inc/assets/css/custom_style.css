@@ -1902,7 +1902,10 @@ footer .footer_lines::after {
 .aboutUsDiv {
   height: 72dvh;
 }
-.aboutUsDiv .homeDivInnerBlue {
+.aboutUsDiv .aboutUsDivInnerBlue {
+  background-color: #9eb6c5;
+}
+.aboutUsDiv .aboutUsDivInnerBlue2 {
   background-color: #9eb6c5;
 }
 .aboutUsDiv .aboutUsText {
