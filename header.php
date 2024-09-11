@@ -60,4 +60,4 @@
             </div>
         </header>
 
-        <!-- <div id="content" class="site-content"></div> -->
+        <div id="content" class="site-content"></div>
