@@ -292,3 +292,14 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 //Remove the Sale Flash Badge from product listings (content-product.php)
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
+
+// Change "Add to Cart" button text to "Select" for products in the "library" category
+add_filter('woocommerce_product_add_to_cart_text', 'custom_woocommerce_add_to_cart_text', 10, 2);
+
+function custom_woocommerce_add_to_cart_text($text, $product) {
+    // Check if it's a product and if it belongs to the "library" category
+    if ($product->is_type('simple') && has_term('library', 'product_cat', $product->get_id())) {
+        return __('Select', 'woocommerce');
+    }
+    return $text; // Return original text for other product types or categories
+}
