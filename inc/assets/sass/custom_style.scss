@@ -1894,6 +1894,10 @@ body {
     color: #ffffff;
   }
 }
+// website content excluding header and footer
+#content{
+  min-height: calc(100dvh - $header-height - $footer-height);
+}
 
 h1{
   font-family: $quicksand-bold;
@@ -2106,7 +2110,6 @@ ul.products li.product a img {
 // Materials page
 
 .materials {
-  min-height: calc(100dvh - $header-height - $footer-height);
   h1 {
     font-size: 3rem;
     writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
