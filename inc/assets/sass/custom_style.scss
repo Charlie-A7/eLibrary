@@ -2113,7 +2113,10 @@ footer {
 .aboutUsDiv{
   height: calc(100dvh - $header-height - $footer-height);
 
-  .homeDivInnerBlue {
+  .aboutUsDivInnerBlue {
+    background-color: $Light-Gray-Blue-Color;
+  }
+  .aboutUsDivInnerBlue2 {
     background-color: $Light-Gray-Blue-Color;
   }
   .aboutUsText {
