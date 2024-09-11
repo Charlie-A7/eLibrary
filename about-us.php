@@ -6,7 +6,6 @@
 get_header();
 ?>
 <style>
-
     .aboutUsDiv.homeDivInnerBlue {
         background-color: var(--Light-Gray-Blue-Color);
     }
@@ -18,7 +17,7 @@ get_header();
     .LanguageSwitchBtn {
         background-color: $text_color;
         border-radius: 20px;
-        color: $text_white;
+        color: white;
     }
 
     .AboutUs-Overlap {

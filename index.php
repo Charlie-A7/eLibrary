@@ -17,8 +17,8 @@ get_header();
     <div class="row h-100">
         <div class="col-6 position-relative p-0">
             <div class="overlapping-content">
-                    <h1>Welcome to<br>our resource<br>library</h1>
-                    <h4>Browse our selection, and order what you need.</h4>
+                <h1>Welcome to<br>our resource<br>library</h1>
+                <h4>Browse our selection, and order what you need.</h4>
             </div>
             <div class="row h-100">
                 <div class="col-5 homeDivInnerBlue my-3"></div>
