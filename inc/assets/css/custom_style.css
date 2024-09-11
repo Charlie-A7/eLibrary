@@ -120,7 +120,6 @@ a:visited {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: inherit;
 }
 
 textarea,
@@ -1877,15 +1876,17 @@ footer .footer_lines::after {
   text-transform: uppercase;
 }
 
-.add_to_cart_button {
+.add_to_cart_button,
+.added_to_cart {
   background-color: #093f6c;
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;
   padding: 0.25rem 1.5rem;
 }
-.add_to_cart_button :hover {
-  color: white;
+.add_to_cart_button :hover,
+.added_to_cart :hover {
+  color: white !important;
 }
 
 .aboutUsDiv {
