@@ -33,8 +33,7 @@ get_header();
 							<div class="col-3">
 								<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail('medium'); ?>
-									<h2><?php the_title(); ?></h2>
-									<p><?php echo wc_get_product()->get_price_html(); ?></p>
+									<?php woocommerce_template_loop_add_to_cart(); ?>
 								</a>
 							</div>
 						<?php endwhile; ?>
