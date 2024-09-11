@@ -7,6 +7,18 @@ get_header();
 ?>
 <div class="materials py-5">
 	<div class="container-fluid">
+		<div class="row">
+    		<div class="col-3 d-flex justify-content-end">
+        		<!-- WooCommerce Product Search Bar -->
+        		<?php get_product_search_form(); ?>
+        
+        		<!-- Filter Button -->
+        		<button type="button" class="btn btn-secondary ml-2" data-toggle="modal" data-target="#filterModal">
+            		Filter
+        		</button>
+    		</div>
+		</div>
+
 		<?php
 			// Custom query for WooCommerce products in the "materials" category (limit 3)
 			$args1 = array(

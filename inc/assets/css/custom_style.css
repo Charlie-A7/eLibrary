@@ -1889,10 +1889,6 @@ footer .footer_lines::after {
   color: white !important;
 }
 
-.added_to_cart {
-  display: none;
-}
-
 .aboutUsDiv {
   height: 72dvh;
 }
