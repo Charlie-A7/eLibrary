@@ -138,16 +138,10 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
   border: none;
@@ -237,9 +231,7 @@ body.hide_scroll {
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -256,27 +248,6 @@ body.hide_scroll {
 
 :focus {
   outline: none !important;
-}
-
-@-webkit-keyframes fa-beat {
-  0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(1.25);
-  }
-  20% {
-    transform: scale(1.15);
-  }
-  30% {
-    transform: scale(1.8);
-  }
-  45% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @keyframes fa-beat {
   0% {
@@ -922,7 +893,9 @@ p strong {
   margin-left: auto !important;
   opacity: 1 !important;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   right: 0;
   padding-top: 2rem;
@@ -1416,7 +1389,9 @@ p strong {
 
 .project_listing .main_dropdown_button {
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   font-size: 1rem;
   color: #000;
@@ -1501,7 +1476,9 @@ p strong {
   left: 0;
   top: 0;
   transform: translate(65%, 75%);
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 .project_listing .inner_section_project {
@@ -1630,7 +1607,8 @@ p strong {
   display: block;
   width: 100%;
   height: 550px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .single_project .swiper-pagination-bullet-active {
   color: #fff !important;
@@ -1714,6 +1692,10 @@ body {
   overflow: auto;
   overflow-x: hidden !important;
 }
+body ::-moz-selection {
+  background-color: #3399ff;
+  color: #ffffff;
+}
 body ::selection {
   background-color: #3399ff;
   color: #ffffff;
@@ -1753,11 +1735,11 @@ header nav li a {
   height: 100%;
   border-radius: 20px;
 }
-header nav li:hover a,
+header nav li a:hover,
 header nav li.current-menu-item a {
   color: white;
 }
-header nav li:hover a {
+header nav li a:hover {
   background-color: #9eb6c5;
 }
 header nav li.current-menu-item a {
@@ -1777,8 +1759,8 @@ header nav #menu-item-94 a::after {
   margin-left: 10px;
   vertical-align: middle;
 }
-header nav #menu-item-94 :hover a::after {
-  background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
+header nav #menu-item-94 a:hover::after {
+  filter: invert(1) brightness(2); /* Invert the image and increase brightness */
 }
 
 footer {
