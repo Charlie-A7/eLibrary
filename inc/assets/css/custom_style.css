@@ -1880,7 +1880,7 @@ footer .footer_lines::after {
 .add_to_cart_button,
 .added_to_cart {
   background-color: #093f6c;
-  color: white;
+  color: white !important;
   border-radius: 20px;
   margin-top: -1rem !important;
   padding: 0.25rem 1.5rem;
