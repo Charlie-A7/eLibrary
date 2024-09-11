@@ -1900,6 +1900,13 @@ footer .footer_lines::after {
   color: white !important;
 }
 
+.dots-design {
+  font-size: 100px;
+  font-style: normal;
+  font-family: none;
+  color: #093f6c;
+}
+
 .aboutUsDiv {
   height: 72dvh;
 }
