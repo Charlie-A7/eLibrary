@@ -121,7 +121,6 @@ a:visited {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: inherit;
 }
 
 textarea,
@@ -2098,7 +2097,8 @@ footer {
 }
 
 // add to cart button
-.add_to_cart_button{
+.add_to_cart_button,
+.added_to_cart{
   background-color: $Navy-Blue-Color;
   color: white;
   border-radius: 20px;
@@ -2106,7 +2106,7 @@ footer {
   padding: 0.25rem 1.5rem;
 
   :hover{
-    color: white;
+    color: white !important;
   }
 }
 
