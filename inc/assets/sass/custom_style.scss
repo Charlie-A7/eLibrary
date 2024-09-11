@@ -1980,7 +1980,7 @@ footer {
   padding: 1rem;
 
   h5 {
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.3rem;
     color: white; 
     font-family: Quicksand-bold;
   }
@@ -2008,6 +2008,10 @@ footer {
     width: 20px; 
     height: 20px; 
     filter: brightness(0) invert(1);
+  }
+
+  .contactus_section,.location_section,.ministries_section{
+    text-align: center;
   }
 
   span{
