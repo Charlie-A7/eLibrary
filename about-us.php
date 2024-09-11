@@ -7,7 +7,7 @@ get_header();
 ?>
 <style>
     .aboutUsDiv {
-        height: calc(100dvh - $header-height - $footer-height);
+        min-height: calc(100dvh - $header-height - $footer-height);
 
         .homeDivInnerBlue {
             background-color: $Light-Gray-Blue-Color;
