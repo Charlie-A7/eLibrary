@@ -35,7 +35,7 @@
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
                             <div class="col-8 d-flex align-items-center text-center px-0">
-                                <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+                                <h1 class="site-title">حيات المحبة في لبنان <br> <a href="<?php echo esc_url(home_url('/')); ?>"
                                 rel="home"><?php bloginfo('name'); ?></a></h1>
                             </div>
                         </div>
