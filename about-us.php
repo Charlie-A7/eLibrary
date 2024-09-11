@@ -38,7 +38,7 @@ get_header();
                     </p>
                     <button class="LanguageSwitchBtn">العربية</button>
                 </div>
-                <div class="col-2">
+                <div class="col-4">
                     <img class="AbtUSimg2"
                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
                 </div>
