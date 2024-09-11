@@ -32,7 +32,7 @@ get_header();
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
 					<div class="col-3 d-flex justify-content-center pb-3">
-						<h1>Discover the<br>bookshelf<br><span class="d-flex justify-content-end">..........</span></h1>
+						<h1>Discover the<br>bookshelf<br><span class="position-absolute top-0 end-0">..........</span></h1>
 					</div>
 
 					<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
