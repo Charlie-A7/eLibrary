@@ -2139,7 +2139,7 @@ footer {
 
 // about us page
 .aboutUsDiv{
-  height: calc(100dvh - $header-height - $footer-height);
+  //height: calc(100dvh - $header-height - $footer-height);
 
   .aboutUsDivInnerBlue {
     background-color: $Light-Gray-Blue-Color;
