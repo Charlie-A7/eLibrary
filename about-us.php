@@ -6,12 +6,8 @@
 get_header();
 ?>
 <style>
-    .aboutUsDiv {
-        height: calc(100dvh - $header-height - $footer-height);
-
-        .homeDivInnerBlue {
-            background-color: $Light-Gray-Blue-Color;
-        }
+    .aboutUsDiv.homeDivInnerBlue {
+        background-color: var(--Light-Gray-Blue-Color);
     }
 
     .aboutUsText {

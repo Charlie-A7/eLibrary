@@ -1685,6 +1685,11 @@ p strong {
   margin: 5px 0;
 }
 
+root {
+  --Navy-Blue-Color: #093f6c;
+  --Light-Gray-Blue-Color: #9eb6c5;
+}
+
 body {
   font-family: "quicksand-regular";
   color: #231f20;
@@ -1874,4 +1879,8 @@ footer .footer_lines::after {
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;
+}
+
+.aboutUsDiv {
+  height: 72dvh;
 }/*# sourceMappingURL=custom_style.css.map */

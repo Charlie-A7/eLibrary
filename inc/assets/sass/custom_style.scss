@@ -1876,6 +1876,11 @@ p strong {
 }
 
 // my code
+root{
+  --Navy-Blue-Color: #093f6c;
+  --Light-Gray-Blue-Color: #9eb6c5;
+}
+
 body {
   font-family: $quicksand-regular;
   color: #231f20;
@@ -2102,4 +2107,9 @@ footer {
   //   flex-direction: column;
   //   align-items: center; /* Center items horizontally */
   // }
+}
+
+// about us page
+.aboutUsDiv{
+  height: calc(100dvh - $header-height - $footer-height);
 }
