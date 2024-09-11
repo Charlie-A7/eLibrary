@@ -1712,9 +1712,6 @@ header {
   top: 0;
   font-family: "quicksand-bold";
 }
-header .site-title {
-  font-family: "quicksand-bold";
-}
 header img {
   width: 5rem;
   height: 5rem;
