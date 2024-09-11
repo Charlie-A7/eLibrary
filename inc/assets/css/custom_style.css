@@ -1759,8 +1759,9 @@ header nav #menu-item-94 a::after {
   margin-left: 10px;
   vertical-align: middle;
 }
-header nav #menu-item-94 a:hover::after {
-  filter: invert(1) brightness(2); /* Invert the image and increase brightness */
+header nav #menu-item-94 a:hover::after,
+header nav #menu-item-94 .current-menu-item a::after {
+  filter: invert(1) brightness(2);
 }
 
 footer {

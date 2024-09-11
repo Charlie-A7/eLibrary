@@ -1942,8 +1942,10 @@ header {
       background-color: $Light-Gray-Blue-Color;
     }
 
-    li.current-menu-item a {
-      background-color: $Navy-Blue-Color;
+    li.current-menu-item {
+      a {
+        background-color: $Navy-Blue-Color;
+      }
     }
 
     #menu-item-94 {
@@ -1961,8 +1963,9 @@ header {
         vertical-align: middle;
       }
 
-      a:hover::after {
-        filter: invert(1) brightness(2); /* Invert the image and increase brightness */
+      a:hover::after,
+      .current-menu-item a::after {
+        filter: invert(1) brightness(2);
       }
     }
   }
