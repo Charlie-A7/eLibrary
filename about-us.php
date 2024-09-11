@@ -23,6 +23,29 @@ get_header();
         border-radius: 20px;
         color: white;
     }
+
+    .AboutUs-Overlap {
+        position: absolute;
+        top: 15%;
+        /* 10% empty space at the top */
+        right: 10%;
+        /* 10% empty space on the left */
+        width: 40%;
+        /* 90% width of parent container */
+        height: 40%;
+        /* 80% height of parent container */
+        z-index: 10;
+        transform: none;
+        /* Remove centering transformation */
+        box-sizing: border-box;
+        /* Include padding and border in width/height calculations */
+    }
+
+    .h1 {
+        font-weight: bold;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
 </style>
 
 <div class="container-fluid aboutUsDiv py-5">
@@ -54,8 +77,9 @@ get_header();
                     <button class="LanguageSwitchBtn">العربية</button>
                 </div>
             </div>
+            <div class="col-1 homeDivInnerBlue p-2"></div>
         </div>
-        <div class="col-1 homeDivInnerBlue p-2"></div>
+
     </div>
 </div>
 
