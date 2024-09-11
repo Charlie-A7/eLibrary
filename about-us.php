@@ -52,8 +52,8 @@ get_header();
     <div class="row h-100">
         <div class="col-1 homeDivInnerBlue p-2"></div>
 
-        <div class="col-11 h-100 px-3 position-relative">
-            <div class="row h-100">
+        <div class="col-11 px-3 position-relative">
+            <div class="row">
                 <div class="AboutUs-Overlap">
                     <h1>
                         LifeAgape <br>
