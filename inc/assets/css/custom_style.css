@@ -1877,8 +1877,7 @@ footer .footer_lines::after {
   text-transform: uppercase;
 }
 
-.add_to_cart_button,
-.added_to_cart {
+.add_to_cart_button {
   background-color: #093f6c;
   color: white !important;
   border-radius: 20px;
@@ -1886,9 +1885,12 @@ footer .footer_lines::after {
   padding: 0.25rem 1.5rem;
 }
 
-.add_to_cart_button:hover,
-.added_to_cart:hover {
+.add_to_cart_button:hover {
   color: white !important;
+}
+
+.added_to_cart {
+  display: none;
 }
 
 .aboutUsDiv {

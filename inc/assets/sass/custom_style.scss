@@ -2099,8 +2099,7 @@ footer {
 }
 
 // add to cart button
-.add_to_cart_button,
-.added_to_cart{
+.add_to_cart_button{
   background-color: $Navy-Blue-Color;
   color: white !important;
   border-radius: 20px;
@@ -2108,26 +2107,22 @@ footer {
   padding: 0.25rem 1.5rem;
 }
 
-.add_to_cart_button:hover,
-.added_to_cart:hover {
+.add_to_cart_button:hover {
   color: white !important;
 }
 
-// Materials page
-.materials {
-  // .add_to_cart_button{
-  //   background-color: $Navy-Blue-Color;
-  //   color: white;
-  //   border-radius: 20px;
-  //   margin-top: -1rem !important;
-	// 	padding: 0.25rem 1.5rem;
-  // }
+.added_to_cart{
+  display: none;
 }
+
+// Materials page
+// .materials {
+// }
 
 // Library page
-.library{
+// .library{
 
-}
+// }
 
 // about us page
 .aboutUsDiv{
