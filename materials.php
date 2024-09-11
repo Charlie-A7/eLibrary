@@ -43,7 +43,7 @@ get_header();
 							<div class="col-6">
 								<h1 class="down-to-up">Discover the<br>bookshelf</h1>
 							</div>
-							<div>
+							<div class="col-6">
 								<span class="down-to-up dots-design d-flex justify-content-end">..........</span>
 							</div>
 						</div>
