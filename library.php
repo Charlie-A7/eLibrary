@@ -7,6 +7,21 @@ get_header();
 ?>
 <div class="library py-5">
 	<div class="container-fluid">
+
+        <div class="row d-flex justify-content-end py-3">
+			<div class="col-3 d-flex justify-content-end align-items-center">
+				<form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+					<input type="hidden" name="post_type" value="product" /> <!-- Limit search to products -->
+					<input type="search" class="search-field" placeholder="Search products..." value="<?php echo get_search_query(); ?>" name="s" />
+					<button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+				</form>
+				<button type="submit" class="btn btn-primary">
+                	<i class="fas fa-filter"></i>
+            	</button>
+			</div>
+		</div>
+
+
 		<?php
 			// Custom query for WooCommerce products in the "materials" category (limit 3)
 			$args1 = array(
