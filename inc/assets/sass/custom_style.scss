@@ -1929,7 +1929,6 @@ body {
     background-color: #3399ff;
     color: #ffffff;
   }
-  
 }
 
 // header
@@ -1986,14 +1985,24 @@ header {
     #menu-item-94 {
       margin-left: auto;
 
+      //   a::after {
+      //     content: url('https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png');
+      //     display: inline-block;
+      //     margin-left: 5px; /* Adjust the spacing between the text and the icon */
+      //     vertical-align: middle; /* Align the icon vertically with the text */
+      // }
       a::after {
-        content: url('https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png');
+        content: "";
         display: inline-block;
+        background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png");
+        background-size: contain; /* Ensures the image scales without distortion */
+        background-repeat: no-repeat;
+        width: 16px; /* Set the width of the icon */
+        height: 16px; /* Set the height of the icon */
         margin-left: 5px; /* Adjust the spacing between the text and the icon */
-        vertical-align: middle; /* Align the icon vertically with the text */
+        vertical-align: middle; /* Align the icon with the text */
+      }
     }
-    }
-  
   }
 }
 
@@ -2091,12 +2100,12 @@ ul.products li.product a img {
 
 // Materials page
 
-.materials{
-  h1{
+.materials {
+  h1 {
     font-weight: bold;
     font-size: 3rem;
     writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
     transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
     text-transform: uppercase;
-    }
+  }
 }
