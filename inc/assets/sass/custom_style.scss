@@ -1981,6 +1981,38 @@ footer {
 
   h5 {
     padding-bottom: 0.2rem;
+    color: white; 
+    font-family: Quicksand-bold;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .last-p{
+    cursor: default;
+  }
+  
+  p{
+    margin:0; 
+    cursor: pointer;
+  }
+
+  .footer-icon1{
+    margin-right: 5px;
+  }
+
+  .footer-icon2, .footer-icon1{
+    vertical-align: middle; 
+    width: 20px; 
+    height: 20px; 
+    filter: brightness(0) invert(1);
+  }
+
+  span{
+    color: darkgray;
+     font-size: 15px;
   }
 
   .footer_lines {
