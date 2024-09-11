@@ -5,6 +5,12 @@
 
 get_header();
 ?>
+<style>
+	.materials .add_to_cart_button {
+		padding: 1.5rem,1.5rem,0.25rem,0.25rem;
+}
+
+</style>
 <div class="materials">
 	<div class="container-fluid">
 			<?php
@@ -30,7 +36,7 @@ get_header();
 						</div>
 
 						<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
-							<div class="col-3">
+							<div class="col-3 text-center">
 								<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail('medium'); ?>
 									<br>
