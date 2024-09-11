@@ -10,7 +10,7 @@ get_header();
         height: calc(100dvh - var(--header-height) - var(--header-footer));
 
         .homeDivInnerBlue {
-            background-color: var(--Light-Gray-Blue-Color);
+            background-color: $Light-Gray-Blue-Color;
         }
     }
 
@@ -19,9 +19,9 @@ get_header();
     }
 
     .LanguageSwitchBtn {
-        background-color: var(--Navy-Blue-Color);
+        background-color: $text_color;
         border-radius: 20px;
-        color: white;
+        color: $text_white;
     }
 
     .AboutUs-Overlap {
@@ -49,7 +49,7 @@ get_header();
 </style>
 
 <div class="container-fluid aboutUsDiv py-5">
-    <div class="row h-100">
+    <div class="row">
         <div class="col-1 homeDivInnerBlue p-2"></div>
 
         <div class="col-11 px-3 position-relative">
