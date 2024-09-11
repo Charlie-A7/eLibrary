@@ -10,7 +10,7 @@ get_header();
 
 </style>
 
-<div class="container-fluid aboutUsDiv py-3">
+<div class="container-fluid aboutUsDiv">
     <div class="row">
         <div class="col-1 aboutUsDivInnerBlue p-2"></div>
 
