@@ -1938,6 +1938,9 @@ header {
   position: sticky;
   top: 0;
   font-weight: bold;
+  .site-title {
+    font-weight: bold;
+  }
   img {
     width: 5rem;
     height: 5rem;
@@ -1993,11 +1996,11 @@ header {
         vertical-align: middle;
       }
 
-      // :hover{
-      //   a::after {
-      //     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
-      //   }
-      // }
+      :hover{
+        a::after {
+          background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
+        }
+      }
     }
   }
 }
