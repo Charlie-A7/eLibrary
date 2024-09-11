@@ -1722,6 +1722,10 @@ a:focus {
   font-family: "arb-fonts-mediumbold";
 }
 
+.navy-blue {
+  color: #093f6c;
+}
+
 header {
   background-color: white;
   height: 15dvh;
