@@ -138,16 +138,10 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
   border: none;
@@ -237,9 +231,7 @@ body.hide_scroll {
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -256,27 +248,6 @@ body.hide_scroll {
 
 :focus {
   outline: none !important;
-}
-
-@-webkit-keyframes fa-beat {
-  0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(1.25);
-  }
-  20% {
-    transform: scale(1.15);
-  }
-  30% {
-    transform: scale(1.8);
-  }
-  45% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @keyframes fa-beat {
   0% {
@@ -922,7 +893,9 @@ p strong {
   margin-left: auto !important;
   opacity: 1 !important;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   right: 0;
   padding-top: 2rem;
@@ -1416,7 +1389,9 @@ p strong {
 
 .project_listing .main_dropdown_button {
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   font-size: 1rem;
   color: #000;
@@ -1501,7 +1476,9 @@ p strong {
   left: 0;
   top: 0;
   transform: translate(65%, 75%);
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 .project_listing .inner_section_project {
@@ -1630,7 +1607,8 @@ p strong {
   display: block;
   width: 100%;
   height: 550px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .single_project .swiper-pagination-bullet-active {
   color: #fff !important;
@@ -1714,14 +1692,22 @@ root {
 
 body {
   font-family: "quicksand-regular";
-  color: #194e91;
+  color: #231f20;
   background-color: #fff;
   overflow: auto;
   overflow-x: hidden !important;
 }
+body ::-moz-selection {
+  background-color: #3399ff;
+  color: #ffffff;
+}
 body ::selection {
   background-color: #3399ff;
   color: #ffffff;
+}
+
+#wpadminbar {
+  display: none;
 }
 
 #content {
@@ -1803,7 +1789,7 @@ footer {
 footer h5 {
   padding-bottom: 0.3rem;
   color: white;
-  font-family: Quicksand-bold;
+  font-family: "quicksand-bold";
 }
 footer a {
   text-decoration: none;
@@ -1828,7 +1814,9 @@ footer .footer-icon1 {
   height: 20px;
   filter: brightness(0) invert(1);
 }
-footer .contactus_section, footer .location_section, footer .ministries_section {
+footer .contactus_section,
+footer .location_section,
+footer .ministries_section {
   text-align: center;
 }
 footer span {
@@ -1860,30 +1848,26 @@ footer .footer_lines::after {
 }
 .homeDiv .homeDivInnerImage {
   background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
-  background-size: contain; /* This ensures the image covers the entire element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .homeDiv .position-relative {
   position: relative;
 }
 .homeDiv .overlapping-content {
   position: absolute;
-  top: 15%; /* 10% empty space at the top */
-  left: 10%; /* 10% empty space on the left */
-  width: 90%; /* 90% width of parent container */
-  height: 80%; /* 80% height of parent container */
+  top: 15%;
+  left: 10%;
+  width: 90%;
+  height: 80%;
   z-index: 10;
-  transform: none; /* Remove centering transformation */
-  box-sizing: border-box; /* Include padding and border in width/height calculations */
+  transform: none;
+  box-sizing: border-box;
 }
 .homeDiv .overlapping-content h1 {
   font-size: 4.5rem;
   text-transform: uppercase;
-}
-
-#wpadminbar {
-  display: none;
 }
 
 .materials h1 {
@@ -1909,10 +1893,10 @@ footer .footer_lines::after {
   background-color: #9eb6c5;
 }
 .aboutUsDiv .aboutUsText {
-  font: size 12px;
+  font-size: 12px;
 }
 .aboutUsDiv .LanguageSwitchBtn {
-  background-color: #194e91;
+  background-color: #231f20;
   border-radius: 20px;
   color: #fff;
 }
@@ -1931,7 +1915,7 @@ footer .footer_lines::after {
   /* Include padding and border in width/height calculations */
 }
 .aboutUsDiv .h1 {
-  font-family: Quicksand-Bold;
+  font-family: "quicksand-bold";
   font-size: 5rem;
   text-transform: uppercase;
 }
