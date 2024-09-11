@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-8 d-flex align-items-center text-left px-1">
                                 <h5 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                rel="home">حيات المحبة في لبنان <br><?php bloginfo('name'); ?></a></h5>
+                                rel="home"> <span class="arabic-bold">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h5>
                             </div>
                         </div>
                     </div>
