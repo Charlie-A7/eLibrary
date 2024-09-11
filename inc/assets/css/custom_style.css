@@ -1799,6 +1799,8 @@ footer a {
 }
 footer .last-p {
   cursor: default;
+  color: darkgray;
+  font-size: 15px;
 }
 footer p {
   margin: 0;
