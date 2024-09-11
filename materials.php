@@ -7,8 +7,8 @@ get_header();
 ?>
 <style>
 	.materials .add_to_cart_button {
-		padding: 1.5rem,1.5rem,0.25rem,0.25rem;
-}
+		padding: 0.25rem 1.5rem;
+	}
 
 </style>
 <div class="materials">
