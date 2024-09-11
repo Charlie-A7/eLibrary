@@ -41,7 +41,7 @@
                         <img class="footer-icon2"
                             src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/phone-call.png"
                             alt="Phone Icon">
-                        <span">+961 1 688 723</span>
+                        <span>+961 1 688 723</span>
                     </p>
                 </a>
 
