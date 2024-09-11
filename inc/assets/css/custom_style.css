@@ -1718,6 +1718,10 @@ a:focus {
   text-decoration: none;
 }
 
+.arabic-bold {
+  font-family: "arb-fonts-bold";
+}
+
 header {
   background-color: white;
   height: 15dvh;

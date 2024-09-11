@@ -1889,7 +1889,6 @@ body {
   display: none;
 }
 
-// website content excluding header and footer
 #content{
   min-height: calc(100dvh - $header-height - $footer-height);
 }
@@ -1907,6 +1906,10 @@ a:hover,
 a:focus {
   color:inherit;
   text-decoration: none;
+}
+
+.arabic-bold{
+  font-family: $arabic-fonts-bold;
 }
 
 // header
