@@ -11,7 +11,7 @@ get_header();
 	}
 
 </style>
-<div class="materials">
+<div class="materials py-5">
 	<div class="container-fluid">
 		<?php
 			// Custom query for WooCommerce products in the "materials" category (limit 3)
@@ -31,12 +31,12 @@ get_header();
 
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
-					<div class="col-3 d-flex justify-content-center pb-2">
+					<div class="col-3 d-flex justify-content-center pb-3">
 						<h1>Discover the<br>bookshelf</h1>
 					</div>
 
 					<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
-						<div class="col-3 text-center">
+						<div class="col-3 text-center pb-3">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('medium'); ?>
 								<br>
