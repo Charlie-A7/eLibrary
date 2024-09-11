@@ -39,14 +39,7 @@ get_header();
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
 					<div class="col-3 d-flex justify-content-center pb-3">
-						<div class="row">
-							<div class="col-6">
-								<h1 class="down-to-up">Discover the<br>bookshelf</h1>
-							</div>
-							<div class="col-6">
-								<span class="down-to-up dots-design d-flex justify-content-end">..........</span>
-							</div>
-						</div>
+						<h1 class="down-to-up">Discover the<br>bookshelf<br><span class="dots-design d-flex justify-content-end">..........</span></h1>
 					</div>
 
 					<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
