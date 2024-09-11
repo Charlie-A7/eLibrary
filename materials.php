@@ -7,8 +7,8 @@ get_header();
 ?>
 <div class="materials py-5">
 	<div class="container-fluid">
-		<div class="row">
-    		<div class="col-3 d-flex justify-content-end">
+		<div class="row d-flex justify-content-end py-3">
+    		<div class="col-3">
         		<!-- WooCommerce Product Search Bar -->
         		<?php get_product_search_form(); ?>
         
