@@ -1752,6 +1752,9 @@ header {
   top: 0;
   font-weight: bold;
 }
+header .site-title {
+  font-weight: bold;
+}
 header img {
   width: 5rem;
   height: 5rem;
@@ -1798,6 +1801,9 @@ header nav #menu-item-94 a::after {
   height: 25px;
   margin-left: 10px;
   vertical-align: middle;
+}
+header nav #menu-item-94 :hover a::after {
+  background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
 }
 
 footer {
