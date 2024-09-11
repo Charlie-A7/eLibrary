@@ -1884,6 +1884,8 @@ footer .footer_lines::after {
   margin-top: -1rem !important;
   padding: 0.25rem 1rem;
   width: 8rem;
+  font-family: "quicksand-semibold";
+  font-size: large;
 }
 
 .add_to_cart_button:hover {
