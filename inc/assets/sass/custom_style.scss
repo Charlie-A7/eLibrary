@@ -1937,10 +1937,7 @@ header {
   height: var(--header-height);
   position: sticky;
   top: 0;
-  h1 {
-    font-weight: bold;
-    font-size: 18px;
-  }
+  font-weight: bold;
   img {
     width: 5rem;
     height: 5rem;
@@ -1951,7 +1948,6 @@ header {
       padding: 0;
       margin: 0;
       list-style: none;
-      font-weight: bold;
       font-size: 20px;
       align-items: center;
     }
@@ -1997,11 +1993,11 @@ header {
         vertical-align: middle;
       }
 
-      :hover{
-        a::after {
-          background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
-        }
-      }
+      // :hover{
+      //   a::after {
+      //     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
+      //   }
+      // }
     }
   }
 }

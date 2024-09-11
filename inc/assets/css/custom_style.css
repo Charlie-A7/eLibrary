@@ -1750,10 +1750,7 @@ header {
   height: var(--header-height);
   position: sticky;
   top: 0;
-}
-header h1 {
   font-weight: bold;
-  font-size: 18px;
 }
 header img {
   width: 5rem;
@@ -1764,7 +1761,6 @@ header nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-weight: bold;
   font-size: 20px;
   align-items: center;
 }
@@ -1802,9 +1798,6 @@ header nav #menu-item-94 a::after {
   height: 25px;
   margin-left: 10px;
   vertical-align: middle;
-}
-header nav #menu-item-94 :hover a::after {
-  background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
 }
 
 footer {
