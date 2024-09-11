@@ -6,8 +6,10 @@
 get_header();
 ?>
 <style>
+
     .aboutUsDiv.homeDivInnerBlue {
         background-color: var(--Light-Gray-Blue-Color);
+\
     }
 
     .aboutUsText {
