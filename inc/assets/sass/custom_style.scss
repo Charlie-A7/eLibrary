@@ -322,7 +322,6 @@ header {
   a {
     display: inline-block;
     padding: 1.4rem;
-    font-family: $nudista-semibold-regular;
     text-transform: uppercase;
     font-size: 1.1rem;
     transition: all 0.6s ease;
@@ -484,7 +483,6 @@ section {
 }
 
 .h1_style {
-  font-family: $nudista-bold;
   font-size: 2.7rem;
   line-height: 1.346;
   color: #fff;
@@ -492,14 +490,12 @@ section {
   text-transform: uppercase;
 }
 .p_style {
-  font-family: $montserrat-regular;
   font-size: 1.2rem;
   color: #fff;
 }
 .buttonstyle {
   text-align: center;
   border: none;
-  font-family: $montserrat-semibold;
   font-size: 1rem;
   line-height: 1.167;
   color: #000;
@@ -535,22 +531,18 @@ section {
 }
 
 .h2_style {
-  font-family: $nudista-bold;
   font-size: 2.5rem;
   color: #000;
 }
 p {
   font-size: 1.2rem;
-  font-family: $montserrat-regular;
   color: #000;
 }
 p strong {
-  font-family: $montserrat-semibold;
   font-weight: 400;
 }
 .buttonstyle_white {
   font-size: 1rem;
-  font-family: $montserrat-semibold;
   padding: 0.5rem 2rem;
   background-color: #fff;
   border: none;
@@ -687,12 +679,10 @@ p strong {
   background-color: black;
   .h2_style {
     color: #fff;
-    font-family: $nudista-bold;
     padding: 0 12px 1.7rem 12px;
   }
   .sub_p_style {
     color: #fff;
-    font-family: $montserrat-regular;
     line-height: 1.643;
     padding-bottom: 1.5rem;
   }
@@ -707,7 +697,6 @@ p strong {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: $montserrat-regular;
       font-size: 1.5rem;
       text-align: center;
       margin: auto;
@@ -722,7 +711,6 @@ p strong {
     text-align: right;
     padding-right: 0;
     .buttonstyle_underline_yellow {
-      font-family: $montserrat-regular;
       font-size: 1rem;
       text-decoration: underline;
       color: $main_color;
@@ -753,11 +741,9 @@ p strong {
 
 .fourth_section {
   .h2_style {
-    font-family: $nudista-bold;
     padding-bottom: 2rem;
   }
   .sub_title {
-    font-family: $montserrat-regular;
     line-height: 1.5;
     padding-bottom: 2rem;
     max-width: 630px;
@@ -771,13 +757,11 @@ p strong {
     }
     .title_section {
       p {
-        font-family: $montserrat-regular;
         font-size: 1rem;
         text-align: center;
         padding-top: 1rem;
       }
       .h2_style {
-        font-family: $montserrat-regular;
         font-size: 1.25rem;
         line-height: 1.5;
         padding: 0 0.75rem;
@@ -796,7 +780,6 @@ p strong {
           display: flex;
           .button_style {
             text-align: center;
-            font-family: $montserrat-regular;
             font-size: 0.8rem;
             background-color: transparent;
             display: inline-block;
@@ -835,7 +818,6 @@ p strong {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: saturation;
   .h2_style {
-    font-family: $nudista-bold;
     font-size: 2.5rem;
     line-height: 1.5;
     padding: 3.5rem 0;
@@ -855,7 +837,6 @@ p strong {
   ul {
     max-width: 600px;
     li {
-      font-family: $nudista-semibold-regular;
       font-size: 1.1rem;
       display: inline-block;
       padding: 1rem;
@@ -887,7 +868,6 @@ p strong {
 
 .copyright_text a {
   display: inline;
-  font-family: $montserrat-regular;
   font-size: 0.8rem;
 }
 
@@ -1066,7 +1046,6 @@ p strong {
   direction: ltr;
   .title_404 {
     color: #212121;
-    font-family: $montserrat-regular;
     font-size: 25px;
     line-height: 28px;
     text-transform: uppercase;
@@ -1094,7 +1073,6 @@ p strong {
   // }
   .btn_404 {
     font-size: 18px;
-    font-family: $montserrat-semibold;
     padding: 20px 0px;
     background-color: $main_color;
     border: none;
@@ -1149,7 +1127,6 @@ p strong {
     width: 100%;
   }
   .h1_style {
-    font-family: $nudista-bold;
     font-size: 2.7rem;
     color: $main_color;
     padding: 3.8rem 0.5rem;
@@ -1163,7 +1140,6 @@ p strong {
         margin: 4rem 5rem 0 5rem;
         a {
           color: #fff;
-          font-family: $nudista-semibold-regular;
           font-size: 1.2rem;
           padding-bottom: 1.8rem;
           text-transform: uppercase;
@@ -1528,7 +1504,6 @@ p strong {
     .form_item_style {
       border: 1px solid #d9d9d9;
       width: 100%;
-      font-family: $montserrat-regular;
       font-size: 1rem;
       color: #4a4a4a;
       padding: 1rem;
@@ -1592,7 +1567,6 @@ p strong {
     border: none;
     appearance: none;
     background-color: transparent;
-    font-family: $montserrat-semibold;
     font-size: 1rem;
     color: #000;
     display: inline-block;
@@ -1622,7 +1596,6 @@ p strong {
       .dropdown-item {
         padding: 1rem 1.8rem;
         font-size: 1rem;
-        font-family: $montserrat-regular;
         color: #000;
         text-align: center;
       }
@@ -1651,7 +1624,6 @@ p strong {
       .dropdown-item {
         padding: 1rem 1.8rem;
         font-size: 1rem;
-        font-family: $montserrat-regular;
         color: #000;
         text-align: center;
       }
@@ -1695,13 +1667,11 @@ p strong {
     }
     .title_section {
       p {
-        font-family: $montserrat-regular;
         font-size: 1rem;
         text-align: center;
         padding-top: 1rem;
       }
       .h2_style {
-        font-family: $montserrat-regular;
         font-size: 1.25rem;
         line-height: 1.5;
         padding: 0 0.8rem;
@@ -1720,7 +1690,6 @@ p strong {
           display: flex;
           .button_style {
             text-align: center;
-            font-family: $montserrat-regular;
             font-size: 0.75rem;
             background-color: transparent;
             display: inline-block;
@@ -1801,7 +1770,6 @@ p strong {
   padding: 5rem 0;
   .back_project_list {
     color: #404040;
-    font-family: $montserrat-regular;
     font-size: 1rem;
     display: flex;
     img {
@@ -1832,7 +1800,6 @@ p strong {
     fill: #fff !important;
   }
   .p_style {
-    font-family: $montserrat-regular;
     font-size: 1.5rem;
     line-height: 1.571;
     color: #000;
@@ -1841,7 +1808,6 @@ p strong {
   }
   .description {
     p {
-      font-family: $montserrat-regular;
       font-size: 1.5rem;
       line-height: 1.571;
       color: #000;
@@ -1866,13 +1832,11 @@ p strong {
     }
     .title_section {
       p {
-        font-family: $montserrat-regular;
         font-size: 1rem;
         text-align: center;
         padding-top: 1rem;
       }
       .h2_style {
-        font-family: $montserrat-regular;
         font-size: 1.5rem;
         line-height: 1.5;
         padding-bottom: 2rem;
@@ -1890,7 +1854,6 @@ p strong {
           display: flex;
           .button_style {
             text-align: center;
-            font-family: $montserrat-regular;
             font-size: 1rem;
             background-color: transparent;
             display: inline-block;
@@ -1912,15 +1875,8 @@ p strong {
   }
 }
 
-:root {
-  --header-height: 15dvh;
-  --header-footer: 13dvh;
-  --Navy-Blue-Color: #093f6c;
-  --Light-Gray-Blue-Color: #9eb6c5;
-}
-
 body {
-  font-family: "quicksand";
+  font-family: $quicksand-regular;
   color: #231f20;
   background-color: $text_white;
   overflow: auto;
@@ -1931,15 +1887,19 @@ body {
   }
 }
 
+h1{
+  font-family: $quicksand-bold;
+}
+
 // header
 header {
   background-color: white;
-  height: var(--header-height);
+  height: var($header-height);
   position: sticky;
   top: 0;
-  font-weight: bold;
+  font-family: $quicksand-bold;
   .site-title {
-    font-weight: bold;
+    font-family: $quicksand-bold;
   }
   img {
     width: 5rem;
@@ -1974,11 +1934,11 @@ header {
     }
 
     li:hover a {
-      background-color: var(--Light-Gray-Blue-Color);
+      background-color: var($Light-Gray-Blue-Color);
     }
 
     li.current-menu-item a {
-      background-color: var(--Navy-Blue-Color);
+      background-color: var($Navy-Blue-Color);
     }
 
     #menu-item-94 {
@@ -2009,8 +1969,8 @@ header {
 
 footer {
   color: white;
-  height: var(--header-footer);
-  background-color: var(--Navy-Blue-Color);
+  height: var($header-footer);
+  background-color: var($Navy-Blue-Color);
   bottom: 0;
   padding: 1rem;
 
@@ -2036,12 +1996,12 @@ footer {
 
 // Homepage
 .homeDiv {
-  height: calc(100dvh - var(--header-height) - var(--header-footer));
+  height: calc(100dvh - var($header-height) - var($header-footer));
   .homeDivInnerWhite {
     background-color: white;
   }
   .homeDivInnerBlue {
-    background-color: var(--Light-Gray-Blue-Color);
+    background-color: var($Light-Gray-Blue-Color);
   }
   .homeDivInnerImage {
     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
@@ -2065,7 +2025,6 @@ footer {
     box-sizing: border-box; /* Include padding and border in width/height calculations */
 
     h1 {
-      font-weight: bold;
       font-size: 4.5rem;
       text-transform: uppercase;
     }
@@ -2087,7 +2046,7 @@ footer {
 }
 
 ul.products li.product .button {
-  background-color: var(--Navy-Blue-Color);
+  background-color: var($Navy-Blue-Color);
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;
@@ -2101,7 +2060,6 @@ ul.products li.product a img {
 
 .materials {
   h1 {
-    font-weight: bold;
     font-size: 3rem;
     writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
     transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
