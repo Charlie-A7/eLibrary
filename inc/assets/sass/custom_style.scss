@@ -1985,22 +1985,22 @@ header {
     #menu-item-94 {
       margin-left: auto;
 
-      //   a::after {
-      //     content: url('https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png');
-      //     display: inline-block;
-      //     margin-left: 5px; /* Adjust the spacing between the text and the icon */
-      //     vertical-align: middle; /* Align the icon vertically with the text */
-      // }
       a::after {
         content: "";
         display: inline-block;
-        background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon.png");
-        background-size: contain; /* Ensures the image scales without distortion */
+        background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-black.png");
+        background-size: contain;
         background-repeat: no-repeat;
-        width: 16px; /* Set the width of the icon */
-        height: 16px; /* Set the height of the icon */
-        margin-left: 5px; /* Adjust the spacing between the text and the icon */
-        vertical-align: middle; /* Align the icon with the text */
+        width: 25px;
+        height: 25px; 
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+
+      :hover{
+        a::after {
+          background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
+        }
       }
     }
   }
