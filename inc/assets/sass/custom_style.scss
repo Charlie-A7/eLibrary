@@ -2130,6 +2130,13 @@ footer {
 
 // }
 
+.dots-design{
+  font-size: 100px;
+  font-style: normal;
+  font-family: none;
+  color: $Navy-Blue-Color;
+}
+
 // about us page
 .aboutUsDiv{
   height: calc(100dvh - $header-height - $footer-height);
