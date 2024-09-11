@@ -691,6 +691,7 @@
 }
 @media (max-width: 350px) {
   .contact_us_footer .h2_style {
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
 }

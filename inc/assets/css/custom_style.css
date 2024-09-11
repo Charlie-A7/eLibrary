@@ -311,7 +311,6 @@ header {
 .header-style a {
   display: inline-block;
   padding: 1.4rem;
-  font-family: "nudista-semibold-regular";
   text-transform: uppercase;
   font-size: 1.1rem;
   transition: all 0.6s ease;
@@ -478,7 +477,6 @@ section {
 }
 
 .h1_style {
-  font-family: "nudista-bold";
   font-size: 2.7rem;
   line-height: 1.346;
   color: #fff;
@@ -487,7 +485,6 @@ section {
 }
 
 .p_style {
-  font-family: "montserrat-regular";
   font-size: 1.2rem;
   color: #fff;
 }
@@ -495,7 +492,6 @@ section {
 .buttonstyle {
   text-align: center;
   border: none;
-  font-family: "montserrat-semibold";
   font-size: 1rem;
   line-height: 1.167;
   color: #000;
@@ -532,25 +528,21 @@ section {
 }
 
 .h2_style {
-  font-family: "nudista-bold";
   font-size: 2.5rem;
   color: #000;
 }
 
 p {
   font-size: 1.2rem;
-  font-family: "montserrat-regular";
   color: #000;
 }
 
 p strong {
-  font-family: "montserrat-semibold";
   font-weight: 400;
 }
 
 .buttonstyle_white {
   font-size: 1rem;
-  font-family: "montserrat-semibold";
   padding: 0.5rem 2rem;
   background-color: #fff;
   border: none;
@@ -669,12 +661,10 @@ p strong {
 }
 .third_section .h2_style {
   color: #fff;
-  font-family: "nudista-bold";
   padding: 0 12px 1.7rem 12px;
 }
 .third_section .sub_p_style {
   color: #fff;
-  font-family: "montserrat-regular";
   line-height: 1.643;
   padding-bottom: 1.5rem;
 }
@@ -690,7 +680,6 @@ p strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "montserrat-regular";
   font-size: 1.5rem;
   text-align: center;
   margin: auto;
@@ -705,7 +694,6 @@ p strong {
   padding-right: 0;
 }
 .third_section .view_all_section .buttonstyle_underline_yellow {
-  font-family: "montserrat-regular";
   font-size: 1rem;
   text-decoration: underline;
   color: #ffdd00;
@@ -733,11 +721,9 @@ p strong {
 }
 
 .fourth_section .h2_style {
-  font-family: "nudista-bold";
   padding-bottom: 2rem;
 }
 .fourth_section .sub_title {
-  font-family: "montserrat-regular";
   line-height: 1.5;
   padding-bottom: 2rem;
   max-width: 630px;
@@ -751,13 +737,11 @@ p strong {
   width: 100%;
 }
 .fourth_section .inner_section_project .title_section p {
-  font-family: "montserrat-regular";
   font-size: 1rem;
   text-align: center;
   padding-top: 1rem;
 }
 .fourth_section .inner_section_project .title_section .h2_style {
-  font-family: "montserrat-regular";
   font-size: 1.25rem;
   line-height: 1.5;
   padding: 0 0.75rem;
@@ -778,7 +762,6 @@ p strong {
 }
 .fourth_section .inner_section_project .title_section .button_section .inner_button_section .button_style {
   text-align: center;
-  font-family: "montserrat-regular";
   font-size: 0.8rem;
   background-color: transparent;
   display: inline-block;
@@ -809,7 +792,6 @@ p strong {
   background-blend-mode: saturation;
 }
 .contact_us_footer .h2_style {
-  font-family: "nudista-bold";
   font-size: 2.5rem;
   line-height: 1.5;
   padding: 3.5rem 0;
@@ -829,7 +811,6 @@ p strong {
   max-width: 600px;
 }
 .main_footer_section ul li {
-  font-family: "nudista-semibold-regular";
   font-size: 1.1rem;
   display: inline-block;
   padding: 1rem;
@@ -857,7 +838,6 @@ p strong {
 
 .copyright_text a {
   display: inline;
-  font-family: "montserrat-regular";
   font-size: 0.8rem;
 }
 
@@ -953,7 +933,6 @@ p strong {
 }
 .page_404 .title_404 {
   color: #212121;
-  font-family: "montserrat-regular";
   font-size: 25px;
   line-height: 28px;
   text-transform: uppercase;
@@ -967,7 +946,6 @@ p strong {
 }
 .page_404 .btn_404 {
   font-size: 18px;
-  font-family: "montserrat-semibold";
   padding: 20px 0px;
   background-color: #ffdd00;
   border: none;
@@ -1018,7 +996,6 @@ p strong {
   width: 100%;
 }
 .main_company_section .h1_style {
-  font-family: "nudista-bold";
   font-size: 2.7rem;
   color: #ffdd00;
   padding: 3.8rem 0.5rem;
@@ -1033,7 +1010,6 @@ p strong {
 }
 .main_company_section .nav_buttons .menu li a {
   color: #fff;
-  font-family: "nudista-semibold-regular";
   font-size: 1.2rem;
   padding-bottom: 1.8rem;
   text-transform: uppercase;
@@ -1354,7 +1330,6 @@ p strong {
 .contact_us_content .form_validation_parent .form_item_style {
   border: 1px solid #d9d9d9;
   width: 100%;
-  font-family: "montserrat-regular";
   font-size: 1rem;
   color: #4a4a4a;
   padding: 1rem;
@@ -1418,7 +1393,6 @@ p strong {
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  font-family: "montserrat-semibold";
   font-size: 1rem;
   color: #000;
   display: inline-block;
@@ -1448,7 +1422,6 @@ p strong {
 .project_listing .category_dropdown .inner_dropdown .dropdown-item {
   padding: 1rem 1.8rem;
   font-size: 1rem;
-  font-family: "montserrat-regular";
   color: #000;
   text-align: center;
 }
@@ -1477,7 +1450,6 @@ p strong {
 .project_listing .project_type_dropdown .inner_dropdown .dropdown-item {
   padding: 1rem 1.8rem;
   font-size: 1rem;
-  font-family: "montserrat-regular";
   color: #000;
   text-align: center;
 }
@@ -1517,13 +1489,11 @@ p strong {
   width: 100%;
 }
 .project_listing .inner_section_project .title_section p {
-  font-family: "montserrat-regular";
   font-size: 1rem;
   text-align: center;
   padding-top: 1rem;
 }
 .project_listing .inner_section_project .title_section .h2_style {
-  font-family: "montserrat-regular";
   font-size: 1.25rem;
   line-height: 1.5;
   padding: 0 0.8rem;
@@ -1544,7 +1514,6 @@ p strong {
 }
 .project_listing .inner_section_project .title_section .button_section .inner_button_section .button_style {
   text-align: center;
-  font-family: "montserrat-regular";
   font-size: 0.75rem;
   background-color: transparent;
   display: inline-block;
@@ -1617,7 +1586,6 @@ p strong {
 }
 .single_project .back_project_list {
   color: #404040;
-  font-family: "montserrat-regular";
   font-size: 1rem;
   display: flex;
 }
@@ -1648,7 +1616,6 @@ p strong {
   fill: #fff !important;
 }
 .single_project .p_style {
-  font-family: "montserrat-regular";
   font-size: 1.5rem;
   line-height: 1.571;
   color: #000;
@@ -1656,7 +1623,6 @@ p strong {
   padding-bottom: 1rem;
 }
 .single_project .description p {
-  font-family: "montserrat-regular";
   font-size: 1.5rem;
   line-height: 1.571;
   color: #000;
@@ -1680,13 +1646,11 @@ p strong {
   width: 100%;
 }
 .related_projects .inner_section_project .title_section p {
-  font-family: "montserrat-regular";
   font-size: 1rem;
   text-align: center;
   padding-top: 1rem;
 }
 .related_projects .inner_section_project .title_section .h2_style {
-  font-family: "montserrat-regular";
   font-size: 1.5rem;
   line-height: 1.5;
   padding-bottom: 2rem;
@@ -1706,7 +1670,6 @@ p strong {
 }
 .related_projects .inner_section_project .title_section .button_section .inner_button_section .button_style {
   text-align: center;
-  font-family: "montserrat-regular";
   font-size: 1rem;
   background-color: transparent;
   display: inline-block;
@@ -1722,15 +1685,8 @@ p strong {
   margin: 5px 0;
 }
 
-:root {
-  --header-height: 15dvh;
-  --header-footer: 13dvh;
-  --Navy-Blue-Color: #093f6c;
-  --Light-Gray-Blue-Color: #9eb6c5;
-}
-
 body {
-  font-family: "quicksand";
+  font-family: "quicksand-regular";
   color: #231f20;
   background-color: #fff;
   overflow: auto;
@@ -1745,15 +1701,19 @@ body ::selection {
   color: #ffffff;
 }
 
+h1 {
+  font-family: "quicksand-bold";
+}
+
 header {
   background-color: white;
-  height: var(--header-height);
+  height: var(15dvh);
   position: sticky;
   top: 0;
-  font-weight: bold;
+  font-family: "quicksand-bold";
 }
 header .site-title {
-  font-weight: bold;
+  font-family: "quicksand-bold";
 }
 header img {
   width: 5rem;
@@ -1783,10 +1743,10 @@ header nav li.current-menu-item a {
   color: white;
 }
 header nav li:hover a {
-  background-color: var(--Light-Gray-Blue-Color);
+  background-color: var(#9eb6c5);
 }
 header nav li.current-menu-item a {
-  background-color: var(--Navy-Blue-Color);
+  background-color: var(#093f6c);
 }
 header nav #menu-item-94 {
   margin-left: auto;
@@ -1808,8 +1768,8 @@ header nav #menu-item-94 :hover a::after {
 
 footer {
   color: white;
-  height: var(--header-footer);
-  background-color: var(--Navy-Blue-Color);
+  height: var(13dvh);
+  background-color: var(#093f6c);
   bottom: 0;
   padding: 1rem;
 }
@@ -1831,13 +1791,13 @@ footer .footer_lines::after {
 }
 
 .homeDiv {
-  height: calc(100dvh - var(--header-height) - var(--header-footer));
+  height: calc(100dvh - var(15dvh) - var(13dvh));
 }
 .homeDiv .homeDivInnerWhite {
   background-color: white;
 }
 .homeDiv .homeDivInnerBlue {
-  background-color: var(--Light-Gray-Blue-Color);
+  background-color: var(#9eb6c5);
 }
 .homeDiv .homeDivInnerImage {
   background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
@@ -1859,7 +1819,6 @@ footer .footer_lines::after {
   box-sizing: border-box; /* Include padding and border in width/height calculations */
 }
 .homeDiv .overlapping-content h1 {
-  font-weight: bold;
   font-size: 4.5rem;
   text-transform: uppercase;
 }
@@ -1875,7 +1834,7 @@ footer .footer_lines::after {
 }
 
 ul.products li.product .button {
-  background-color: var(--Navy-Blue-Color);
+  background-color: var(#093f6c);
   color: white;
   border-radius: 20px;
   margin-top: -1rem !important;
@@ -1886,7 +1845,6 @@ ul.products li.product a img {
 }
 
 .materials h1 {
-  font-weight: bold;
   font-size: 3rem;
   writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
   transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
