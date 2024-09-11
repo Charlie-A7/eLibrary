@@ -1933,12 +1933,12 @@ header {
       }
     }
 
-    li:hover a,
+    li a:hover,
     li.current-menu-item a {
       color: white;
     }
 
-    li:hover a {
+    li a:hover {
       background-color: $Light-Gray-Blue-Color;
     }
 
@@ -1961,10 +1961,8 @@ header {
         vertical-align: middle;
       }
 
-      :hover{
-        a::after {
-          background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
-        }
+      a:hover::after {
+        filter: invert(1) brightness(2); /* Invert the image and increase brightness */
       }
     }
   }
