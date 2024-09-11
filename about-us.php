@@ -10,7 +10,7 @@ get_header();
 
 </style>
 
-<div class="container-fluid aboutUsDiv py-5">
+<div class="container-fluid aboutUsDiv py-3">
     <div class="row">
         <div class="col-1 aboutUsDivInnerBlue p-2"></div>
 
@@ -22,7 +22,7 @@ get_header();
                         حياة المحبة
                     </h1>
                 </div>
-                <div class="col-9">
+                <div class="col-7">
                     <img class="AbtUSimg1"
                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
                     <p class="AboutUsText py-3">
