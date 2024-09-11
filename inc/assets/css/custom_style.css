@@ -1682,12 +1682,14 @@ body {
   overflow: auto;
   overflow-x: hidden !important;
 }
-body ::-moz-selection {
+
+::-moz-selection {
   background-color: #3399ff;
   color: #ffffff;
 }
-body ::selection,
-body ::-moz-selection {
+
+::selection,
+::-moz-selection {
   background-color: #3399ff;
   color: #ffffff;
 }

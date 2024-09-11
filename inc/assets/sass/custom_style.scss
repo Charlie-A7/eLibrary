@@ -1783,12 +1783,15 @@ body {
   background-color: white;
   overflow: auto;
   overflow-x: hidden !important;
-  ::selection,
-  ::-moz-selection {
-    background-color: #3399ff;
-    color: #ffffff;
-  }
 }
+
+// selcting text
+::selection,
+::-moz-selection {
+  background-color: #3399ff;
+  color: #ffffff;
+}
+
 // website content excluding header and footer
 #content{
   min-height: calc(100dvh - $header-height - $footer-height);
