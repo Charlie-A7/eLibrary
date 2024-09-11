@@ -1745,6 +1745,9 @@ header nav li a:hover {
 header nav li.current-menu-item a {
   background-color: #093f6c;
 }
+header nav li.current-menu-item a::after {
+  filter: invert(1) brightness(2);
+}
 header nav #menu-item-94 {
   margin-left: auto;
 }
@@ -1758,10 +1761,6 @@ header nav #menu-item-94 a::after {
   height: 25px;
   margin-left: 10px;
   vertical-align: middle;
-}
-header nav #menu-item-94 a:hover::after,
-header nav #menu-item-94 .current-menu-item a::after {
-  filter: invert(1) brightness(2);
 }
 
 footer {

@@ -1946,6 +1946,9 @@ header {
       a {
         background-color: $Navy-Blue-Color;
       }
+      a::after{
+        filter: invert(1) brightness(2);
+      }
     }
 
     #menu-item-94 {
@@ -1961,11 +1964,6 @@ header {
         height: 25px; 
         margin-left: 10px;
         vertical-align: middle;
-      }
-
-      a:hover::after,
-      .current-menu-item a::after {
-        filter: invert(1) brightness(2);
       }
     }
   }
