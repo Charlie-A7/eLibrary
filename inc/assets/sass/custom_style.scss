@@ -2081,25 +2081,6 @@ footer {
   display: none;
 }
 
-// Shop page
-
-.product {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-}
-
-ul.products li.product .button {
-  background-color: $Navy-Blue-Color;
-  color: white;
-  border-radius: 20px;
-  margin-top: -1rem !important;
-}
-
-ul.products li.product a img {
-  margin: 0 !important;
-}
-
 // Materials page
 
 .materials {
@@ -2109,4 +2090,16 @@ ul.products li.product a img {
     transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
     text-transform: uppercase;
   }
+
+  .add_to_cart_button{
+    background-color: $Navy-Blue-Color;
+    color: white;
+    border-radius: 20px;
+    margin-top: -1rem !important;
+  }
+  // .product {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center; /* Center items horizontally */
+  // }
 }
