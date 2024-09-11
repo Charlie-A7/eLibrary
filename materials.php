@@ -39,7 +39,6 @@ get_header();
 						<div class="col-3 text-center pb-3 d-flex flex-column align-items-center">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('medium'); ?>
-								<br>
 								<?php woocommerce_template_loop_add_to_cart(); ?>
 							</a>
 						</div>
