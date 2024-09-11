@@ -15,7 +15,7 @@ get_header();
 					<button type="submit" class="btn btn-primary">Search</button>
 				</form>
 				<button type="submit" class="btn btn-primary">
-                	<i class="fas fa-filter"></i> Search
+                	<i class="fas fa-filter"></i>
             	</button>
 			</div>
 		</div>
