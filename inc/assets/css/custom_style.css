@@ -1701,6 +1701,10 @@ body ::selection {
   color: #ffffff;
 }
 
+#content {
+  min-height: 72dvh;
+}
+
 h1 {
   font-family: "quicksand-bold";
 }
@@ -1876,9 +1880,6 @@ ul.products li.product a img {
   margin: 0 !important;
 }
 
-.materials {
-  min-height: 72dvh;
-}
 .materials h1 {
   font-size: 3rem;
   writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
