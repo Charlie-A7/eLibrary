@@ -2106,10 +2106,11 @@ footer {
   border-radius: 20px;
   margin-top: -1rem !important;
   padding: 0.25rem 1.5rem;
+}
 
-  :hover{
-    color: white !important;
-  }
+.add_to_cart_button:hover,
+.added_to_cart:hover {
+  color: white !important;
 }
 
 // Materials page
