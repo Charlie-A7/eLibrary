@@ -11,14 +11,12 @@ get_header();
 			<div class="col-3 d-flex justify-content-center pb-2">
 				<h1>Discover the<br>bookshelf</h1>
 			</div>
-			
-			<div class="col-9">
 
 			<?php
 				// Custom query for WooCommerce products in the "materials" category (limit 3)
 				$args1 = array(
 					'post_type' => 'product',
-					'posts_per_page' => 3,
+					'posts_per_page' => 19,
 					'tax_query' => array(
 						array(
 							'taxonomy' => 'product_cat',
@@ -33,7 +31,7 @@ get_header();
 				if ($products_query1->have_posts()) : ?>
 					<div class="row">
 						<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
-							<div class="col">
+							<div class="col-3">
 								<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail('medium'); ?>
 									<h2><?php the_title(); ?></h2>
@@ -50,7 +48,6 @@ get_header();
 				<?php
 				// echo do_shortcode('[products category="materials" limit="3" columns="3"]');
 				?>
-			</div>
 			
 			<!-- <div class="col-12">
 				<?php
