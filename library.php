@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Materials
+ * Template Name: Library
  */
 
 get_header();
@@ -16,7 +16,7 @@ get_header();
 					array(
 						'taxonomy' => 'product_cat',
 						'field' => 'slug',
-						'terms' => 'materials',
+						'terms' => 'library',
 					),
 				),
 			);
