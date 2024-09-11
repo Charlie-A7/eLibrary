@@ -52,7 +52,7 @@ get_header();
     <div class="row h-100">
         <div class="col-1 homeDivInnerBlue p-2"></div>
 
-        <div class="col-11 h-100 px-3">
+        <div class="col-11 h-100 px-3 position-relative">
             <div class="row h-100">
                 <div class="AboutUs-Overlap">
                     <h1>
@@ -76,8 +76,9 @@ get_header();
                     </p>
                     <button class="LanguageSwitchBtn">العربية</button>
                 </div>
+                <div class="col-1 homeDivInnerBlue p-2"></div>
             </div>
-            <div class="col-1 homeDivInnerBlue p-2"></div>
+
         </div>
 
     </div>
