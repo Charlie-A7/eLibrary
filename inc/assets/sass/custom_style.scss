@@ -2089,28 +2089,37 @@ footer {
   }
 }
 
+//down to up letters class
+.down-to-up {
+  font-size: 3rem;
+  writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
+  transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
+  text-transform: uppercase;
+}
+
+// add to cart button
+.add_to_cart_button{
+  background-color: $Navy-Blue-Color;
+  color: white;
+  border-radius: 20px;
+  margin-top: -1rem !important;
+  padding: 0.25rem 1.5rem;
+}
+
 // Materials page
-
 .materials {
-  h1 {
-    font-size: 3rem;
-    writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
-    transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
-    text-transform: uppercase;
-  }
-
-  .add_to_cart_button{
-    background-color: $Navy-Blue-Color;
-    color: white;
-    border-radius: 20px;
-    margin-top: -1rem !important;
-		padding: 0.25rem 1.5rem;
-  }
-  // .product {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center; /* Center items horizontally */
+  // .add_to_cart_button{
+  //   background-color: $Navy-Blue-Color;
+  //   color: white;
+  //   border-radius: 20px;
+  //   margin-top: -1rem !important;
+	// 	padding: 0.25rem 1.5rem;
   // }
+}
+
+// Library page
+.library{
+
 }
 
 // about us page

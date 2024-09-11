@@ -1870,13 +1870,14 @@ footer .footer_lines::after {
   text-transform: uppercase;
 }
 
-.materials h1 {
+.down-to-up {
   font-size: 3rem;
   writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
   transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
   text-transform: uppercase;
 }
-.materials .add_to_cart_button {
+
+.add_to_cart_button {
   background-color: #093f6c;
   color: white;
   border-radius: 20px;
