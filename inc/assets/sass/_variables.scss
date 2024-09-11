@@ -3,18 +3,6 @@ $main_color_faded: rgba(125, 36, 53, 0.2);
 
 $sec_color: #d09615;
 
-$grey_color: rgb(178, 178, 178);
-
-$header_opening_hours: #b2b2b2;
-
-$text_color: #194e91;
-
-$text_white: #fff;
-$text_black: #000;
-
-$bg_white: #fff;
-$bg_black: #000;
-
 $transition_time: 0.3s;
 
 @mixin transition_c($transition_time) {
@@ -64,3 +52,4 @@ $header-height: 15dvh;
 $footer-height: 13dvh;
 $Navy-Blue-Color: #093f6c;
 $Light-Gray-Blue-Color: #9eb6c5;
+$text_color: #231f20;

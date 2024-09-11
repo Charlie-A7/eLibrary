@@ -224,26 +224,11 @@ body.hide_scroll {
   margin-right: 0px;
 }
 
-.text_main_color {
-  color: #ffdd00;
-}
-
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-}
-
-::-moz-selection {
-  /* Code for Firefox */
-  color: #000;
-  background: #ffdd00;
-}
-
-::selection {
-  color: #000;
-  background: #ffdd00;
 }
 
 :focus {
@@ -1692,8 +1677,8 @@ root {
 
 body {
   font-family: "quicksand-regular";
-  color: #194e91;
-  background-color: #fff;
+  color: #231f20;
+  background-color: white;
   overflow: auto;
   overflow-x: hidden !important;
 }
@@ -1701,7 +1686,8 @@ body ::-moz-selection {
   background-color: #3399ff;
   color: #ffffff;
 }
-body ::selection {
+body ::selection,
+body ::-moz-selection {
   background-color: #3399ff;
   color: #ffffff;
 }
@@ -1891,9 +1877,9 @@ footer .footer_lines::after {
   font: size 12px;
 }
 .aboutUsDiv .LanguageSwitchBtn {
-  background-color: #194e91;
+  background-color: #231f20;
   border-radius: 20px;
-  color: #fff;
+  color: white;
 }
 .aboutUsDiv .AboutUs-Overlap {
   position: absolute;

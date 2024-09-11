@@ -217,9 +217,6 @@ body.hide_scroll {
   margin-left: 0px;
   margin-right: 0px;
 }
-.text_main_color {
-  color: $main_color;
-}
 
 // end
 .noselect {
@@ -229,15 +226,6 @@ body.hide_scroll {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-::-moz-selection {
-  /* Code for Firefox */
-  color: $text_black;
-  background: $main_color;
-}
-::selection {
-  color: $text_black;
-  background: $main_color;
 }
 
 :focus {
@@ -919,80 +907,6 @@ p strong {
   }
 }
 
-// hamburger menu classes
-// .hamburger {
-// 	position: absolute;
-// 	top: 50%;
-// 	transform: translateY(-50%);
-// 	right: 0;
-// 	display: inline-block;
-// 	cursor: pointer;
-// 	transition-property: opacity, filter;
-// 	transition-duration: 0.15s;
-// 	transition-timing-function: linear;
-// 	font: inherit;
-// 	color: inherit;
-// 	text-transform: none;
-// 	background-color: transparent;
-// 	border: 0;
-// 	margin: 0;
-// 	overflow: visible;
-// 	line-height: 0;
-// }
-// 	.hamburger:hover {
-// 		opacity: 1;
-// 	}
-// 	.hamburger.is-active:hover {
-// 		opacity: 1;
-// 	}
-// 	.hamburger.is-active .hamburger-inner,
-// 	.hamburger.is-active .hamburger-inner::before,
-// 	.hamburger.is-active .hamburger-inner::after {
-// 		background-color: #000;
-// 	}
-// .hamburger-box {
-// 	width: 40px;
-// 	height: 24px;
-// 	display: inline-block;
-// 	position: relative;
-// }
-
-// .hamburger-inner {
-// 	display: block;
-// 	top: 50%;
-// 	margin-top: -2px;
-// }
-// 	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-// 		width: 25px;
-// 		height: 2px;
-// 		background-color: #000;
-// 		border-radius: 4px;
-// 		position: absolute;
-// 		transition-property: transform;
-// 		transition-duration: 0.15s;
-// 		transition-timing-function: ease;
-// 	}
-// 	.hamburger-inner::before, .hamburger-inner::after {
-// 		content: "";
-// 		display: block;
-// 	}
-// 	.hamburger-inner::before {
-// 		top: -6px;
-// 	}
-// 	.hamburger-inner::after {
-// 		bottom: -6px;
-// 	}
-
-// /*
-//  * Arrow
-//  */
-// .hamburger--arrow.is-active .hamburger-inner::before {
-// 	transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
-// }
-// .hamburger--arrow.is-active .hamburger-inner::after {
-// 	transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
-// }
-
 .hamburger {
   margin-left: auto !important;
   opacity: 1 !important;
@@ -1025,10 +939,6 @@ p strong {
       transform: rotate(45deg) translate(20%);
       background-color: #fff;
     }
-    // .middle_line{
-    // 	transform: translateX(100px);
-    // 	height: 2px;
-    // }
     .line:last-child {
       transform: rotate(-45deg) translate(20%);
       background-color: #fff;
@@ -1057,20 +967,6 @@ p strong {
     line-height: 18px;
     padding-bottom: 50px;
   }
-  // .btn_404{
-  // 	position: relative;
-  // 	width: 321px;
-  // 	font-size: 18px;
-  // 	padding: 20px 0px;
-  // 	margin: 0 auto;
-  // }
-  // // btns classes
-  // .main_btn{
-  // 	background-color: $main_color;
-  // }
-  // .main_btn:hover{
-  // 	background-color: darken($main_color, 7%);
-  // }
   .btn_404 {
     font-size: 18px;
     padding: 20px 0px;
@@ -1884,10 +1780,11 @@ root{
 body {
   font-family: $quicksand-regular;
   color: $text_color;
-  background-color: $text_white;
+  background-color: white;
   overflow: auto;
   overflow-x: hidden !important;
-  ::selection {
+  ::selection,
+  ::-moz-selection {
     background-color: #3399ff;
     color: #ffffff;
   }
@@ -2124,7 +2021,7 @@ footer {
   .LanguageSwitchBtn {
       background-color: $text_color;
       border-radius: 20px;
-      color: $text_white;
+      color: white;
   }
 
   .AboutUs-Overlap {
