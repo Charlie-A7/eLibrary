@@ -1735,11 +1735,11 @@ header nav li a {
   height: 100%;
   border-radius: 20px;
 }
-header nav li:hover a,
+header nav li a:hover,
 header nav li.current-menu-item a {
   color: white;
 }
-header nav li:hover a {
+header nav li a:hover {
   background-color: #9eb6c5;
 }
 header nav li.current-menu-item a {
@@ -1759,8 +1759,8 @@ header nav #menu-item-94 a::after {
   margin-left: 10px;
   vertical-align: middle;
 }
-header nav #menu-item-94 :hover a::after {
-  background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/cart-icon-white.png");
+header nav #menu-item-94 a:hover::after {
+  filter: invert(1) brightness(2); /* Invert the image and increase brightness */
 }
 
 footer {
@@ -1772,6 +1772,32 @@ footer {
 }
 footer h5 {
   padding-bottom: 0.2rem;
+  color: white;
+  font-family: Quicksand-bold;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer .last-p {
+  cursor: default;
+}
+footer p {
+  margin: 0;
+  cursor: pointer;
+}
+footer .footer-icon1 {
+  margin-right: 5px;
+}
+footer .footer-icon2, footer .footer-icon1 {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+footer span {
+  color: darkgray;
+  font-size: 15px;
 }
 footer .footer_lines {
   position: relative;
