@@ -1933,10 +1933,10 @@ footer .footer_lines::after {
   color: black;
 }
 .materials .blue-sidebar {
-  top: 10dvh;
+  top: 10%;
   left: 0;
   width: 10dvw;
-  height: 54dvh;
+  height: 85%;
   background-color: #9eb6c5;
 }
 
