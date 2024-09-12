@@ -1077,3 +1077,23 @@
     max-width: 1360px;
   }
 }
+
+// my code
+
+// footer
+@media (max-width: 480px) {
+  /* Styles for phones with screens 480px or smaller */
+  .contactus_section,
+  .location_section,
+  .ministries_section{
+    text-align:left;
+  }
+
+  .footer_lines {
+    position: static; /* Reset the position */
+}
+
+.footer_lines::after {
+    content: none; /* Remove the pseudo-element */
+}
+}
