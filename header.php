@@ -29,7 +29,7 @@
         <header id="masthead" class="site-header" role="banner">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4 site-branding d-flex justify-content-start align-items-center px-4">
+                    <div class="col-12 col-md-4 site-branding d-flex justify-content-start align-items-center px-4">
                         <div class="row">
                             <div class="col-4 text-center">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
 
-                    <div class="col-8 d-flex align-items-center">
+                    <div class=" col-0 col-md-8 d-flex align-items-center">
                         <div class="d-flex flex-column w-100">
                             <nav id="site-navigation" class="main-navigation" role="navigation"
                                 aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">

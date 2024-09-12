@@ -8,7 +8,7 @@ get_header();
 <div class="materials py-5">
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end py-3">
-			<div class="col-3 d-flex justify-content-end align-items-center">
+			<div class="col-6 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center">
 				<div class="search-container">
 					<input type="search" class="search-field" placeholder="Search...">
 					<button type="submit" class="search-button">
