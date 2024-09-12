@@ -10,7 +10,7 @@ get_header();
 
 </style>
 
-<div class="aboutUsDiv py-5 position-relative">
+<div class="aboutUsDiv position-relative">
 
     <div class="ABOUTUS-blue-left-sidebar position-absolute"></div>
     <div class="ABOUTUS-blue-right-sidebar position-absolute"></div>
