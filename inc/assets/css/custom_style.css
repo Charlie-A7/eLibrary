@@ -1987,12 +1987,12 @@ footer .footer_lines::after {
 }
 .aboutUsDiv .ABOUTUS-blue-left-sidebar {
   left: 0;
-  width: 50px;
+  width: 7dvw;
   height: 100%;
 }
 .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   right: 0;
-  width: 50px;
+  width: 7dvw;
   height: 100%;
 }
 .aboutUsDiv .aboutUsText {
