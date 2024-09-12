@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div class="container-fluid">
+<div class="container-fluid yesem">
 	<div class="row">
 		<div class="col-12">
 			<?php
