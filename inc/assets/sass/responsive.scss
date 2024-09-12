@@ -72,7 +72,6 @@
 
     .play_elements {
       .menu_el {
-        font-family: $nudista-semibold-regular;
         font-size: 17px;
         letter-spacing: 1.32px;
       }
@@ -81,7 +80,6 @@
     // 	.drpright_el{
     // 		padding-right: 50px;
     // 		position: relative;
-    // 		font-family: $nudista-semibold-regular;
     // 		font-size: 17px;
     // 		letter-spacing: 1.32px;
     // 		span{
@@ -115,7 +113,6 @@
     // 		display: none;
     // 		.page_2_title{
     // 			font-size: 23px;
-    // 			font-family: $nudista-semibold-regular;
     // 			letter-spacing: 1.7;
     // 			padding: 20px;
     // 		}
@@ -128,7 +125,6 @@
     // 			.menu_el_title{
     // 				font-size: 18px;
     // 				color: rgba(0,0,0,0.4);
-    // 				font-family: $montserrat-bold;
     // 				padding: 10px 20px;
     // 			}
     // 		}
@@ -853,7 +849,6 @@
       li {
         a {
           color: #fff;
-          font-family: $nudista-semibold-regular;
           font-size: 1rem;
           padding-bottom: 1.2rem;
           text-transform: uppercase;
@@ -1081,24 +1076,24 @@
 // my code
 
 // footer
-footer{
+footer {
   @media (max-width: 480px) {
-  /* Styles for phones with screens 480px or smaller */
+    /* Styles for phones with screens 480px or smaller */
 
-  height: 40dvh;
+    height: 40dvh;
 
-  .contactus_section,
-  .location_section,
-  .ministries_section{
-    text-align:left;
-  }
+    .contactus_section,
+    .location_section,
+    .ministries_section {
+      text-align: left;
+    }
 
-  .footer_lines {
-    position: static; /* Reset the position */
-  }
+    .footer_lines {
+      position: static; /* Reset the position */
+    }
 
-  .footer_lines::after {
+    .footer_lines::after {
       content: none; /* Remove the pseudo-element */
-  }
+    }
   }
 }
