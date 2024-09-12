@@ -2015,4 +2015,8 @@ footer .footer_lines::after {
   bottom: 0;
   position: absolute;
   padding-bottom: 2rem;
+}
+
+.my-custom-cart-wrapper {
+  min-height: 72dvh;
 }/*# sourceMappingURL=custom_style.css.map */

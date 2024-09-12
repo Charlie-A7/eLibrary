@@ -2248,3 +2248,9 @@ footer {
     padding-bottom: 2rem;
   }
 }
+
+// cart page
+
+.my-custom-cart-wrapper{
+  min-height: calc(100dvh - $header-height - $footer-height);
+}
