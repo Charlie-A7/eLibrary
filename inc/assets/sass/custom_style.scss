@@ -2161,10 +2161,10 @@ footer {
   }
 
   .blue-sidebar {
-    top: 0;
+    top: 10dvh;
     left: 0;
-    width: 10%;
-    height: 100%;
+    width: 10dvw;
+    height: calc(100dvh - $header-height - $footer-height -20dvh);
     background-color: $Light-Gray-Blue-Color;
   }
 }
