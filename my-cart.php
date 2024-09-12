@@ -11,7 +11,7 @@ get_header();
             <div class="col-12">
                 <?php
                     // Display WooCommerce Cart
-                    echo do_shortcode('[woocommerce_cart]');
+                    // echo do_shortcode('[woocommerce_cart]');
                 ?>
             </div>
         </div>
