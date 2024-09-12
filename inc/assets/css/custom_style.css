@@ -1856,7 +1856,6 @@ footer .footer-icon1 {
 footer .contactus_section,
 footer .location_section,
 footer .ministries_section {
-  display: flex;
   text-align: center;
   justify-content: center;
 }
