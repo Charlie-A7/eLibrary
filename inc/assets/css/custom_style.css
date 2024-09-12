@@ -1893,6 +1893,32 @@ footer .footer_lines::after {
   color: white !important;
 }
 
+Materials page .materials .search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+}
+Materials page .materials .search-field {
+  border: none;
+  padding: 0.5rem 1rem;
+  flex: 1;
+  border-radius: 20px;
+}
+Materials page .materials .search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+}
+Materials page .materials .search-button i {
+  font-size: 1rem;
+  color: black;
+}
+
 .dots-design {
   font-size: 100px;
   font-style: normal;

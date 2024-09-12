@@ -2115,9 +2115,38 @@ footer {
   color: white !important;
 }
 
-// Materials page
-// .materials {
-// }
+Materials page
+.materials {
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .search-field {
+    border: none;
+    padding: 0.5rem 1rem;
+    flex: 1;
+    border-radius: 20px;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  
+  .search-button i {
+    font-size: 1rem;
+    color: black;
+  }
+  
+}
 
 // Library page
 // .library{
