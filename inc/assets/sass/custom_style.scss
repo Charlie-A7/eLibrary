@@ -2012,7 +2012,7 @@ footer {
   height: $footer-height;
   background-color: $Navy-Blue-Color;
   bottom: 0;
-  padding: 1rem;
+  padding: 0.4rem;
 
   h5 {
     padding-bottom: 0.3rem;
@@ -2207,12 +2207,14 @@ footer {
     background-color: $Light-Gray-Blue-Color;
   }
   .ABOUTUS-blue-left-sidebar {
+    left: 0;
     width: 50px;
     height: 100%;
   }
   .ABOUTUS-blue-right-sidebar {
-  width: 50px;
-  height: 100%;
+    right: 0;
+    width: 50px;
+    height: 100%;
   }
   .aboutUsText {
     font-size: 12px;

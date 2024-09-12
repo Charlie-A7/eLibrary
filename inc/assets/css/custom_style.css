@@ -1729,7 +1729,7 @@ body ::selection {
 }
 
 #content {
-  min-height: 74dvh;
+  min-height: 72dvh;
 }
 
 h1 {
@@ -1820,10 +1820,10 @@ header nav #menu-item-94 a:hover::after {
 
 footer {
   color: white;
-  height: 13dvh;
+  height: 15dvh;
   background-color: #093f6c;
   bottom: 0;
-  padding: 1rem;
+  padding: 0.4rem;
 }
 footer h5 {
   padding-bottom: 0.3rem;
@@ -1879,7 +1879,7 @@ footer .footer_lines::after {
 }
 
 .homeDiv {
-  height: 74dvh;
+  height: 72dvh;
 }
 .homeDiv .homeDivInnerImage {
   background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
@@ -1930,7 +1930,7 @@ footer .footer_lines::after {
 }
 
 .materials {
-  min-height: 74dvh;
+  min-height: 72dvh;
 }
 .materials .search-container {
   display: flex;
@@ -1986,10 +1986,12 @@ footer .footer_lines::after {
   background-color: #9eb6c5;
 }
 .aboutUsDiv .ABOUTUS-blue-left-sidebar {
+  left: 0;
   width: 50px;
   height: 100%;
 }
 .aboutUsDiv .ABOUTUS-blue-right-sidebar {
+  right: 0;
   width: 50px;
   height: 100%;
 }
