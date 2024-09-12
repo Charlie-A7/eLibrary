@@ -2251,7 +2251,11 @@ footer {
 
 // cart page
 
-.my-custom-cart-wrapper{
+.my-custom-cart-wrapper {
   min-height: calc(100dvh - $header-height - $footer-height);
-  
+}
+
+// checkout page
+.my-custom-checkout-wrapper {
+  min-height: calc(100dvh - $header-height - $footer-height);
 }
