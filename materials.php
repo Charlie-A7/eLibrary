@@ -40,8 +40,8 @@ get_header();
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
 					<div class="col-6 col-lg-4 col-xl-3 pb-3 z-1">
-						<h1>
-							<span class="down-to-up">Discover the<br>bookshelf<br></span> 
+						<h1 class="down-to-up">
+							Discover the<br>bookshelf<br>
 							<span class="dots-design">..........</span>
 						</h1>
 					</div>
