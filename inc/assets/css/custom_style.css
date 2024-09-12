@@ -1982,10 +1982,10 @@ footer .footer_lines::after {
   text-transform: uppercase;
 }
 
-.aboutUsDiv .aboutUsDivInnerBlue {
+.aboutUsDiv .ABOUTUS-blue-left-sidebar {
   background-color: #9eb6c5;
 }
-.aboutUsDiv .aboutUsDivInnerBlue2 {
+.aboutUsDiv .ABOUTUS-blue-right-sidebar {
   background-color: #9eb6c5;
 }
 .aboutUsDiv .aboutUsText {

@@ -23,7 +23,7 @@ get_header();
                     حياة المحبة
                 </h1>
             </div>
-            <div class="col-7">
+            <div class="col-7 padding-left">
                 <img class="AbtUSimg1"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
                 <p class="AboutUsText py-3">
@@ -41,7 +41,7 @@ get_header();
                 </p>
                 <button class="LanguageSwitchBtn">العربية</button>
             </div>
-            <div class="col-4">
+            <div class="col-5">
                 <img class="AbtUSimg2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
             </div>
