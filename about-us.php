@@ -15,17 +15,14 @@ get_header();
     <div class="ABOUTUS-blue-left-sidebar position-absolute z-0"></div>
     <div class="ABOUTUS-blue-right-sidebar position-absolute z-0"></div>
 
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="AboutUs-Overlap z-1 h-100 d-flex flex-column justify-content-center">
-                <h1>
-                    LifeAgape <br>
-                    حياة المحبة
-                </h1>
-            </div>
-            <div class="col-7 padding-left">
-                <img class="AbtUSimg1"
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <img class="AbtUSimg1 img-fluid"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
+            </div>
+            <div class="col-6">
+                <h1 class="main-heading">LIFEAGAPE<br>حياة المحبة</h1>
                 <p class="AboutUsText py-3">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
                     Christian denominations. <br>
