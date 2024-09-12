@@ -2212,7 +2212,8 @@ footer {
   .ABOUTUS-blue-right-sidebar {
     right: 0;
     bottom: 0;
-    height: 35dvh;
+    height: 45dvh;
+    margin-bottom: 1.5rem;
   }
 
   .AbtUSPart1{
@@ -2225,7 +2226,7 @@ footer {
   .LanguageSwitchBtn {
     background-color: $text_color;
     border-radius: 20px;
-    color: $text_white;
+    color: $Navy-Blue-Color;
   }
 
   .h1 {
