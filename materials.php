@@ -5,7 +5,7 @@
 
 get_header();
 ?>
-<div class="materials py-5">
+<div class="materials py-2">
 	<!-- sidebar blue bg -->
 	<div class="blue-sidebar"></div>
 	<div class="container-fluid">
