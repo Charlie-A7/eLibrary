@@ -1981,13 +1981,15 @@ footer .footer_lines::after {
 .aboutUsDiv .ABOUTUS-blue-left-sidebar, .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   background-color: #9eb6c5;
   width: 7dvw;
-  height: 70dvh;
 }
 .aboutUsDiv .ABOUTUS-blue-left-sidebar {
   left: 0;
+  height: 68dvh;
 }
 .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   right: 0;
+  bottom: 0;
+  height: 35dvh;
 }
 .aboutUsDiv .AbtUSPart1 {
   padding-left: 9dvw;
@@ -2017,5 +2019,5 @@ footer .footer_lines::after {
   height: 34dvh;
   bottom: 0;
   position: absolute;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=custom_style.css.map */
