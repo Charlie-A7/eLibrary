@@ -41,7 +41,7 @@
                         </div>
                     </div>
 
-                    <div class=" col-0 col-md-8 d-flex align-items-center">
+                    <div class="d-none col-md-8 d-md-flex align-items-center">
                         <div class="d-flex flex-column w-100">
                             <nav id="site-navigation" class="main-navigation" role="navigation"
                                 aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
