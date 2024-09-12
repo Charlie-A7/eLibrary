@@ -16,7 +16,7 @@
         <div class="row">
 
             <!-- section1 -->
-            <div class="col-12 col-md-4 footer_lines location_section">
+            <div class="col-12 col-sm-4 footer_lines location_section">
                 <h5 class="footer_h5">Location</h5>
                 <a href="https://maps.app.goo.gl/RX31MfYc181fp3X5A">
                     <p>
@@ -32,7 +32,7 @@
 
             </div>
             <!-- section2 -->
-            <div class="col-12 col-md-4 footer_lines contactus_section">
+            <div class="col-12 col-sm-4 footer_lines contactus_section">
                 <h5 class="footer_h5">Contact us</h5>
 
                 <!-- Phone Button (Wrap entire section in <a>) -->
@@ -57,7 +57,7 @@
             </div>
 
             <!-- section3 -->
-            <div class="col-12 col-md-4 ministries_section ">
+            <div class="col-12 col-sm-4 ministries_section ">
                 <h5 class="footer_h5">LifeAgape Ministries</h5>
                 <p class="last-p">
                     SLM &bull;&bull;&bull; GCM &bull;&bull;&bull; DS &bull;&bull;&bull; LS<br>

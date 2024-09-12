@@ -72,7 +72,6 @@
 
     .play_elements {
       .menu_el {
-        font-family: $nudista-semibold-regular;
         font-size: 17px;
         letter-spacing: 1.32px;
       }
@@ -853,7 +852,6 @@
       li {
         a {
           color: #fff;
-          font-family: $nudista-semibold-regular;
           font-size: 1rem;
           padding-bottom: 1.2rem;
           text-transform: uppercase;
@@ -1096,9 +1094,8 @@ footer{
   .footer_lines {
     position: static; /* Reset the position */
   }
-
   .footer_lines::after {
       content: none; /* Remove the pseudo-element */
   }
-  }
+ }
 }

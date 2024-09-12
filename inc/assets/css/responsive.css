@@ -52,7 +52,6 @@
     padding-bottom: 70px;
   }
   .mobile_menu .play_elements .menu_el {
-    font-family: "nudista-semibold-regular";
     font-size: 17px;
     letter-spacing: 1.32px;
   }
@@ -563,7 +562,6 @@
   }
   .main_company_section .nav_buttons_mobile li a {
     color: #fff;
-    font-family: "nudista-semibold-regular";
     font-size: 1rem;
     padding-bottom: 1.2rem;
     text-transform: uppercase;
@@ -691,7 +689,6 @@
 }
 @media (max-width: 350px) {
   .contact_us_footer .h2_style {
-    max-width: -moz-fit-content;
     max-width: fit-content;
   }
 }
@@ -699,5 +696,22 @@
   /* change this, by default 1140px */
   .container {
     max-width: 1360px;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    /* Styles for phones with screens 480px or smaller */
+    height: 40dvh;
+  }
+  footer .contactus_section,
+  footer .location_section,
+  footer .ministries_section {
+    text-align: left;
+  }
+  footer .footer_lines {
+    position: static; /* Reset the position */
+  }
+  footer .footer_lines::after {
+    content: none; /* Remove the pseudo-element */
   }
 }/*# sourceMappingURL=responsive.css.map */
