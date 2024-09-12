@@ -1712,12 +1712,24 @@ body ::selection {
   color: #ffffff;
 }
 
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-n1 {
+  z-index: -1;
+}
+
 #wpadminbar {
   display: none;
 }
 
 #content {
-  min-height: 72dvh;
+  min-height: 74dvh;
 }
 
 h1 {
@@ -1746,10 +1758,11 @@ a:focus {
 
 header {
   background-color: white;
-  height: 15dvh;
+  height: 13dvh;
   position: sticky;
   top: 0;
   font-family: "quicksand-bold";
+  padding: 1rem 0 0.25rem 0;
 }
 header img {
   width: 5rem;
@@ -1865,7 +1878,7 @@ footer .footer_lines::after {
 }
 
 .homeDiv {
-  height: 72dvh;
+  height: 74dvh;
 }
 .homeDiv .homeDivInnerWhite {
   background-color: white;
@@ -1939,11 +1952,10 @@ footer .footer_lines::after {
   color: black;
 }
 .materials .blue-sidebar {
-  position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
-  width: 10%;
-  height: 100%;
+  width: 10dvw;
+  height: 85%;
   background-color: #9eb6c5;
 }
 
