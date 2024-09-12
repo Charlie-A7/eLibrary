@@ -2199,11 +2199,10 @@ footer {
 // about us page
 .aboutUsDiv {
   //height: calc(100dvh - $header-height - $footer-height);
-
+  height: 70dvh;
   .ABOUTUS-blue-left-sidebar,.ABOUTUS-blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
     width: 7dvw;
-
   }
   .ABOUTUS-blue-left-sidebar {
     left: 0;
