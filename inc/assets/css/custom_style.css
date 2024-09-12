@@ -2002,9 +2002,11 @@ footer .footer_lines::after {
   font-size: 12px;
 }
 .aboutUsDiv .LanguageSwitchBtn {
-  background-color: #231f20;
+  position: absolute;
+  background-color: #093f6c;
   border-radius: 20px;
-  color: #093f6c;
+  color: white;
+  right: 0;
 }
 .aboutUsDiv .h1 {
   font-family: "quicksand-bold";
