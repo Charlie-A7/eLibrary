@@ -14,8 +14,8 @@ get_header();
 ?>
 
 <div class="homeDiv py-5 position-relative">
-    <div class="blue-left-sidebar position-absolute top-0 left-0"></div>
-    <div class="blue-right-sidebar position-absolute top-0 right-0"></div>
+    <div class="blue-left-sidebar position-absolute"></div>
+    <div class="blue-right-sidebar position-absolute"></div>
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">

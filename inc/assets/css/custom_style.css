@@ -1978,18 +1978,22 @@ footer .footer_lines::after {
   text-transform: uppercase;
 }
 
+.aboutUsDiv {
+  height: 70dvh;
+}
 .aboutUsDiv .ABOUTUS-blue-left-sidebar, .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   background-color: #9eb6c5;
   width: 7dvw;
 }
 .aboutUsDiv .ABOUTUS-blue-left-sidebar {
   left: 0;
-  height: 68dvh;
+  height: 95%;
 }
 .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   right: 0;
   bottom: 0;
-  height: 35dvh;
+  height: 45dvh;
+  margin-bottom: 1.5rem;
 }
 .aboutUsDiv .AbtUSPart1 {
   padding-left: 9dvw;
@@ -2000,7 +2004,7 @@ footer .footer_lines::after {
 .aboutUsDiv .LanguageSwitchBtn {
   background-color: #231f20;
   border-radius: 20px;
-  color: #fff;
+  color: #093f6c;
 }
 .aboutUsDiv .h1 {
   font-family: "quicksand-bold";

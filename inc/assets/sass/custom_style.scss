@@ -2199,22 +2199,21 @@ footer {
 // about us page
 .aboutUsDiv {
   //height: calc(100dvh - $header-height - $footer-height);
-
+  height: 70dvh;
   .ABOUTUS-blue-left-sidebar,.ABOUTUS-blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
     width: 7dvw;
-
   }
   .ABOUTUS-blue-left-sidebar {
     left: 0;
-    height: 68dvh;
+    height: 95%;
   }
   .ABOUTUS-blue-right-sidebar {
     right: 0;
     bottom: 0;
-    height: 35dvh;
+    height: 45dvh;
+    margin-bottom: 1.5rem;
   }
-
   .AbtUSPart1{
     padding-left: 9dvw;
   }
@@ -2225,7 +2224,7 @@ footer {
   .LanguageSwitchBtn {
     background-color: $text_color;
     border-radius: 20px;
-    color: $text_white;
+    color: $Navy-Blue-Color;
   }
 
   .h1 {
