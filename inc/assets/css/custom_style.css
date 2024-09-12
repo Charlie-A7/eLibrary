@@ -1699,7 +1699,7 @@ body ::selection {
 }
 
 #content {
-  min-height: 72dvh;
+  min-height: 74dvh;
 }
 
 h1 {
@@ -1728,10 +1728,11 @@ a:focus {
 
 header {
   background-color: white;
-  height: 15dvh;
+  height: 13dvh;
   position: sticky;
   top: 0;
   font-family: "quicksand-bold";
+  padding: 1rem 0 0.25rem 0;
 }
 header img {
   width: 5rem;
@@ -1846,7 +1847,7 @@ footer .footer_lines::after {
 }
 
 .homeDiv {
-  height: 72dvh;
+  height: 74dvh;
 }
 .homeDiv .homeDivInnerWhite {
   background-color: white;
