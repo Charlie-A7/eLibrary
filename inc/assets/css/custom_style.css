@@ -1894,6 +1894,9 @@ footer .footer_lines::after {
   color: white !important;
 }
 
+.materials {
+  position: relative;
+}
 .materials .search-container {
   display: flex;
   align-items: center;
