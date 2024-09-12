@@ -2079,12 +2079,6 @@ footer {
 // Homepage
 .homeDiv {
   height: calc(100dvh - $header-height - $footer-height);
-  .homeDivInnerWhite {
-    background-color: white;
-  }
-  .homeDivInnerBlue {
-    background-color: $Light-Gray-Blue-Color;
-  }
   .homeDivInnerImage {
     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
     background-size: contain;
@@ -2092,24 +2086,27 @@ footer {
     background-repeat: no-repeat;
   }
 
-  .position-relative {
-    position: relative;
+  h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
   }
 
-  .overlapping-content {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    width: 90%;
-    height: 80%;
-    z-index: 10;
-    transform: none;
-    box-sizing: border-box;
+  .blue-left-sidebar,
+  .blue-right-sidebar{
+    background-color: $Light-Gray-Blue-Color;
+  }
+  .blue-left-sidebar{
+    top: 10%;
+    left: 0;
+    width: 10dvw;
+    height: 85%;
+  }
 
-    h1 {
-      font-size: 4.5rem;
-      text-transform: uppercase;
-    }
+  .blue-right-sidebar{
+    top: 10%;
+    left: 0;
+    width: 10dvw;
+    height: 85%;
   }
 }
 
