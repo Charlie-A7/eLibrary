@@ -6,14 +6,12 @@
 get_header();
 ?>
 <div class="my-custom-cart-wrapper">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <?php
-                while (have_posts()):
-                    the_post();
-                    the_content();
-                endwhile;
+                    // Display WooCommerce Cart
+                    woocommerce_cart();
                 ?>
             </div>
         </div>
