@@ -1981,6 +1981,7 @@ footer .footer_lines::after {
 .aboutUsDiv .ABOUTUS-blue-left-sidebar, .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   background-color: #9eb6c5;
   width: 7dvw;
+  height: 100%;
 }
 .aboutUsDiv .ABOUTUS-blue-left-sidebar {
   left: 0;
