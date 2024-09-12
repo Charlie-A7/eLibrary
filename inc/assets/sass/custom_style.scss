@@ -1866,7 +1866,7 @@ p strong {
 }
 
 // my code
-root{
+root {
   --Navy-Blue-Color: #093f6c;
   --Light-Gray-Blue-Color: #9eb6c5;
 }
@@ -1889,11 +1889,11 @@ body {
   display: none;
 }
 
-#content{
+#content {
   min-height: calc(100dvh - $header-height - $footer-height);
 }
 
-h1{
+h1 {
   font-family: $quicksand-bold;
 }
 
@@ -1904,15 +1904,15 @@ a:visited {
 }
 a:hover,
 a:focus {
-  color:inherit;
+  color: inherit;
   text-decoration: none;
 }
 
-.arabic-bold{
+.arabic-bold {
   font-family: $arabic-fonts-mediumbold;
 }
 
-.navy-blue{
+.navy-blue {
   color: $Navy-Blue-Color;
 }
 
@@ -1963,7 +1963,7 @@ header {
       a {
         background-color: $Navy-Blue-Color;
       }
-      a::after{
+      a::after {
         filter: invert(1) brightness(2);
       }
     }
@@ -1978,12 +1978,12 @@ header {
         background-size: contain;
         background-repeat: no-repeat;
         width: 25px;
-        height: 25px; 
+        height: 25px;
         margin-left: 10px;
         vertical-align: middle;
       }
 
-      a:hover::after{
+      a:hover::after {
         filter: invert(1) brightness(2);
       }
     }
@@ -2001,47 +2001,47 @@ footer {
 
   h5 {
     padding-bottom: 0.3rem;
-    color: white; 
+    color: white;
     font-family: $quicksand-bold;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
 
-  .last-p{
+  .last-p {
     cursor: default;
     color: darkgray;
     font-size: 15px;
   }
-  
-  p{
-    margin:0; 
+
+  p {
+    margin: 0;
     cursor: pointer;
   }
 
-  .footer-icon1{
+  .footer-icon1 {
     margin-right: 5px;
   }
 
-  .footer-icon2, 
-  .footer-icon1{
-    vertical-align: middle; 
-    width: 20px; 
-    height: 20px; 
+  .footer-icon2,
+  .footer-icon1 {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
     filter: brightness(0) invert(1);
   }
 
   .contactus_section,
   .location_section,
-  .ministries_section{
+  .ministries_section {
     text-align: center;
   }
 
-  span{
+  span {
     color: darkgray;
-     font-size: 15px;
+    font-size: 15px;
   }
 
   .footer_lines {
@@ -2083,7 +2083,7 @@ footer {
   .overlapping-content {
     position: absolute;
     top: 15%;
-    left: 10%; 
+    left: 10%;
     width: 90%;
     height: 80%;
     z-index: 10;
@@ -2097,16 +2097,14 @@ footer {
   }
 }
 
-
-
 // add to cart button
-.add_to_cart_button{
+.add_to_cart_button {
   background-color: $Navy-Blue-Color;
   color: white !important;
   border-radius: 20px;
   margin-top: -1rem !important;
   padding: 0.25rem 1rem;
-  width: 40%;
+  min-width: 30%;
   font-family: $quicksand-semibold;
   font-size: 17px;
 }
@@ -2123,15 +2121,17 @@ footer {
     border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
+    width: 90%;
   }
-  
+
   .search-field {
     border: none;
     padding: 0.5rem 1rem;
     flex: 1;
     border-radius: 20px;
+    margin: 0;
   }
-  
+
   .search-button {
     background: none;
     border: none;
@@ -2139,12 +2139,11 @@ footer {
     border-radius: 20px;
     background-color: #fff;
   }
-  
+
   .search-button i {
     font-size: 1rem;
     color: black;
   }
-  
 }
 
 // Library page
@@ -2152,12 +2151,12 @@ footer {
 
 // }
 
-.dots-design{
+.dots-design {
   font-size: 100px;
   font-style: normal;
   font-family: none;
   color: $Navy-Blue-Color;
-  writing-mode:vertical-lr; /* Text flows vertically from bottom to top */
+  writing-mode: vertical-lr; /* Text flows vertically from bottom to top */
   transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
 }
 
@@ -2169,9 +2168,8 @@ footer {
   text-transform: uppercase;
 }
 
-
 // about us page
-.aboutUsDiv{
+.aboutUsDiv {
   //height: calc(100dvh - $header-height - $footer-height);
 
   .aboutUsDivInnerBlue {
@@ -2181,42 +2179,42 @@ footer {
     background-color: $Light-Gray-Blue-Color;
   }
   .aboutUsText {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .LanguageSwitchBtn {
-      background-color: $text_color;
-      border-radius: 20px;
-      color: $text_white;
+    background-color: $text_color;
+    border-radius: 20px;
+    color: $text_white;
   }
 
   .AboutUs-Overlap {
-      position: absolute;
-      top: 15%;
-      /* 10% empty space at the top */
-      width: 50%;
-      /* 90% width of parent container */
-      height: 40%;
-      /* 80% height of parent container */
-      z-index: 10;
-      transform: none;
-      /* Remove centering transformation */
-      box-sizing: border-box;
-      /* Include padding and border in width/height calculations */
+    position: absolute;
+    top: 15%;
+    /* 10% empty space at the top */
+    width: 50%;
+    /* 90% width of parent container */
+    height: 40%;
+    /* 80% height of parent container */
+    z-index: 10;
+    transform: none;
+    /* Remove centering transformation */
+    box-sizing: border-box;
+    /* Include padding and border in width/height calculations */
   }
 
   .h1 {
-      font-family: $quicksand-bold;
-      font-size: 5rem;
-      text-transform: uppercase;
+    font-family: $quicksand-bold;
+    font-size: 5rem;
+    text-transform: uppercase;
   }
 
-  .AbtUSimg1{
-    width: 100%; 
+  .AbtUSimg1 {
+    width: 100%;
     height: 40%;
   }
-  .AbtUSimg2{
-    width: 100%; 
+  .AbtUSimg2 {
+    width: 100%;
     height: 30%;
     bottom: 0;
     position: absolute;
