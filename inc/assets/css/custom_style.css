@@ -1908,7 +1908,7 @@ footer .footer_lines::after {
 }
 
 .materials {
-  height: 74dvh;
+  min-height: 74dvh;
 }
 .materials .search-container {
   display: flex;
