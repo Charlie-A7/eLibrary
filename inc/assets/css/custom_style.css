@@ -1872,6 +1872,9 @@ footer .footer_lines::after {
   font-size: 4.5rem;
   text-transform: uppercase;
 }
+.homeDiv h4 {
+  font-family: "quicksand-semibold";
+}
 .homeDiv .blue-left-sidebar,
 .homeDiv .blue-right-sidebar {
   background-color: #9eb6c5;
