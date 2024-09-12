@@ -2086,6 +2086,10 @@ footer {
     background-repeat: no-repeat;
   }
 
+  .padding-left{
+    padding-left: 1rem;
+  }
+
   h1 {
     font-size: 4.5rem;
     text-transform: uppercase;
@@ -2102,14 +2106,14 @@ footer {
   .blue-left-sidebar{
     top: 10%;
     left: 0;
-    width: 20dvw;
+    width: 15dvw;
     height: 80%;
   }
 
   .blue-right-sidebar{
     top: 5%;
     right: 0;
-    width: 10dvw;
+    width: 5dvw;
     height: 90%;
   }
 }
