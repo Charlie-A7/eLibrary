@@ -32,7 +32,7 @@
                     <div class="col-12 col-md-4 site-branding d-flex justify-content-center justify-content-md-start align-items-center px-4">
                         <div class="row">
                             <div class="col-4 text-center">
-                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Life_Agape_Logo.jpg" alt="LifeAgape">
+                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
                             <div class="col-8 d-flex align-items-center text-left px-1">
                                 <h5 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
