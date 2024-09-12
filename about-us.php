@@ -17,11 +17,11 @@ get_header();
 
     <div class="container-fluid">
         <div class="row ">
-            <div class="col-6 d-flex justify-content-center align-items-center">
+            <div class="col-8 d-flex justify-content-center align-items-center">
                 <img class="AbtUSimg1 img-fluid"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <h1 class="main-heading">LIFEAGAPE<br>حياة المحبة</h1>
                 <p class="AboutUsText py-3">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
