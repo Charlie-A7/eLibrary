@@ -9,14 +9,13 @@ get_header();
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end py-3">
 			<div class="col-3 d-flex justify-content-end align-items-center">
-				<form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-					<input type="hidden" name="post_type" value="product" /> <!-- Limit search to products -->
-					<input type="search" class="search-field" placeholder="Search products..." value="<?php echo get_search_query(); ?>" name="s" />
-					<button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-				</form>
-				<button type="submit" class="btn btn-primary">
-                	<i class="fas fa-filter"></i>
-            	</button>
+				<div class="search-container">
+					<input type="search" class="search-field" placeholder="Search...">
+					<button type="submit" class="search-button">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+
 			</div>
 		</div>
 
