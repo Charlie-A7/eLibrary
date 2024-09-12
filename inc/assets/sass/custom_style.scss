@@ -2203,13 +2203,16 @@ footer {
   .ABOUTUS-blue-left-sidebar,.ABOUTUS-blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
     width: 7dvw;
-    height: 70dvh;
+
   }
   .ABOUTUS-blue-left-sidebar {
     left: 0;
+    height: 68dvh;
   }
   .ABOUTUS-blue-right-sidebar {
     right: 0;
+    bottom: 0;
+    height: 35dvh;
   }
 
   .AbtUSPart1{
@@ -2242,6 +2245,6 @@ footer {
     height: 34dvh;
     bottom: 0;
     position: absolute;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 }
