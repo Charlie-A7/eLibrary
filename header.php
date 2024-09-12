@@ -26,7 +26,7 @@
 
     <div id="page" class="site main_page_wrapper">
 
-        <header id="masthead" class="site-header" role="banner">
+        <header id="masthead" class="site-header d-flex align-items-center" role="banner">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-4 site-branding d-flex justify-content-center justify-content-md-start align-items-center px-4">
