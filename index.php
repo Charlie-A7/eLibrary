@@ -11,11 +11,11 @@ get_header();
 //     the_post();
 //     the_content();
 // endwhile;
-?> 
+?>
 
 <div class="homeDiv py-5 position-relative">
-    <div class="blue-left-sidebar position-absolute z-0"></div>
-    <div class="blue-right-sidebar position-absolute z-0"></div>
+    <div class="blue-left-sidebar position-absolute top-0 left-0"></div>
+    <div class="blue-right-sidebar position-absolute top-0 right-0"></div>
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
