@@ -1877,16 +1877,16 @@ footer .footer_lines::after {
   background-color: #9eb6c5;
 }
 .homeDiv .blue-left-sidebar {
-  top: 10%;
+  top: 5%;
   left: 0;
-  width: 10dvw;
-  height: 85%;
+  width: 20dvw;
+  height: 90%;
 }
 .homeDiv .blue-right-sidebar {
-  top: 10%;
+  top: 0;
   left: 0;
   width: 10dvw;
-  height: 85%;
+  height: 100%;
 }
 
 .add_to_cart_button {

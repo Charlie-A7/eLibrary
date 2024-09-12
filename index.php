@@ -17,8 +17,8 @@ get_header();
     <div class="blue-left-sidebar position-absolute z-0"></div>
     <div class="blue-right-sidebar position-absolute z-0"></div>
     <div class="container-fluid">
-        <div class="row h-100">
-            <div class="col-6 position-relative p-0 z-1">
+        <div class="row">
+            <div class="col-6 z-1">
                 <h1>Welcome to<br>our resource<br>library</h1>
                 <h4>Browse our selection, and order what you need.</h4>
             </div>
