@@ -12,12 +12,12 @@ get_header();
 
 <div class="aboutUsDiv py-5 position-relative">
 
-    <div class="ABOUTUS-blue-left-sidebar position-absolute z-0"></div>
-    <div class="ABOUTUS-blue-right-sidebar position-absolute z-0"></div>
+    <div class="ABOUTUS-blue-left-sidebar position-absolute"></div>
+    <div class="ABOUTUS-blue-right-sidebar position-absolute"></div>
 
     <div class="container-fluid">
-        <div class="row ">
-            <div class="col-8 justify-content-center align-items-center">
+        <div class="row">
+            <div class="AbtUSPart1 col-8 justify-content-center align-items-center">
 
                 <img class="AbtUSimg1 img-fluid"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">

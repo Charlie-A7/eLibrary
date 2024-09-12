@@ -2211,6 +2211,10 @@ footer {
   .ABOUTUS-blue-right-sidebar {
     right: 0;
   }
+
+  .AbtUSPart1{
+    padding-left: 9dvw;
+  }
   .aboutUsText {
     font-size: 12px;
   }
@@ -2219,21 +2223,6 @@ footer {
     background-color: $text_color;
     border-radius: 20px;
     color: $text_white;
-  }
-
-  .AboutUs-Overlap {
-    position: absolute;
-    top: 15%;
-    /* 10% empty space at the top */
-    width: 50%;
-    /* 90% width of parent container */
-    height: 40%;
-    /* 80% height of parent container */
-    z-index: 10;
-    transform: none;
-    /* Remove centering transformation */
-    box-sizing: border-box;
-    /* Include padding and border in width/height calculations */
   }
 
   .h1 {
