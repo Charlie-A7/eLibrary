@@ -1906,6 +1906,9 @@ footer .footer_lines::after {
   color: white !important;
 }
 
+.materials {
+  height: 74dvh;
+}
 .materials .search-container {
   display: flex;
   align-items: center;
