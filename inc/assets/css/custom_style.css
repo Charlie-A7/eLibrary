@@ -2002,7 +2002,6 @@ footer .footer_lines::after {
   font-size: 12px;
 }
 .aboutUsDiv .LanguageSwitchBtn {
-  position: absolute;
   background-color: #093f6c;
   border-radius: 20px;
   color: white;
