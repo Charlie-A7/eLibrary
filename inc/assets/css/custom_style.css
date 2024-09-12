@@ -1910,7 +1910,6 @@ footer .footer_lines::after {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
   border-radius: 20px;
   background-color: #fff;
 }
