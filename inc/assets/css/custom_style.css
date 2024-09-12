@@ -2019,4 +2019,8 @@ footer .footer_lines::after {
 
 .my-custom-cart-wrapper {
   min-height: 72dvh;
+}
+
+.my-custom-checkout-wrapper {
+  min-height: 72dvh;
 }/*# sourceMappingURL=custom_style.css.map */
