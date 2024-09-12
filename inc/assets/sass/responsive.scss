@@ -1081,8 +1081,12 @@
 // my code
 
 // footer
-@media (max-width: 480px) {
+footer{
+  @media (max-width: 480px) {
   /* Styles for phones with screens 480px or smaller */
+
+  height: 40dvh;
+
   .contactus_section,
   .location_section,
   .ministries_section{
@@ -1091,9 +1095,10 @@
 
   .footer_lines {
     position: static; /* Reset the position */
-}
+  }
 
-.footer_lines::after {
-    content: none; /* Remove the pseudo-element */
-}
+  .footer_lines::after {
+      content: none; /* Remove the pseudo-element */
+  }
+  }
 }
