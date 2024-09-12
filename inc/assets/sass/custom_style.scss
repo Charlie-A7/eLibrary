@@ -2203,7 +2203,7 @@ footer {
   .ABOUTUS-blue-left-sidebar,.ABOUTUS-blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
     width: 7dvw;
-    height: 100%;
+    height: 70dvh;
   }
   .ABOUTUS-blue-left-sidebar {
     left: 0;
@@ -2241,15 +2241,18 @@ footer {
     font-size: 7rem;
     text-transform: uppercase;
   }
-
+  .abtUsBold{
+    font-family: $quicksand-bold;
+  }
   .AbtUSimg1 {
     width: 100%;
-    height: 40%;
+    height: 30dvh;
   }
   .AbtUSimg2 {
-    width: 100%;
-    height: 30%;
+    width: 24vw;
+    height: 34dvh;
     bottom: 0;
     position: absolute;
+    padding-bottom: 3rem;
   }
 }

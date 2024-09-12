@@ -29,7 +29,8 @@ get_header();
                     through the various programs and activities that we carry out in different segments of society. Our
                     mission:Spreading the Gospel everywhere.
                 </p>
-                <p><strong>Our motto:</strong> Win, build and send multiplying disciples to fulfill the Great
+                <p><span class="abtUsBold">Our motto:</span> Win, build and send multiplying disciples to fulfill the
+                    Great
                     Commission.
                 </p>
                 <button class="LanguageSwitchBtn">العربية</button>
