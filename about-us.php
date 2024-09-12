@@ -17,7 +17,7 @@ get_header();
 
     <div class="container-fluid">
         <div class="row ">
-            <div class="col-8 d-flex justify-content-center align-items-center">
+            <div class="col-8 justify-content-center align-items-center">
 
                 <img class="AbtUSimg1 img-fluid"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
@@ -26,12 +26,9 @@ get_header();
                     LifeAgape Lebanon is a Christian organization that works with all churches and
                     Christian denominations. <br>
                     Our goal is to deliver the message of Jesus Christ for a better life for every person
-                    through
-                    the
-                    various programs and activities that we carry out in different segments of society. Our
-                    mission:
-                    Spreading the
-                    Gospel everywhere.</p>
+                    through the various programs and activities that we carry out in different segments of society. Our
+                    mission:Spreading the Gospel everywhere.
+                </p>
                 <p><strong>Our motto:</strong> Win, build and send multiplying disciples to fulfill the Great
                     Commission.
                 </p>
