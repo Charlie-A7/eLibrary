@@ -2131,6 +2131,7 @@ footer {
 
 //Materials page
 .materials {
+  height: calc(100dvh - $header-height - $footer-height);
   .search-container {
     display: flex;
     align-items: center;
