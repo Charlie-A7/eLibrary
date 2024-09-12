@@ -1883,6 +1883,20 @@ body {
   }
 }
 
+// z-index classes
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-n1 {
+  z-index: -1;
+}
+
+
 // WP admin bar
 
 #wpadminbar {
@@ -2116,7 +2130,6 @@ footer {
 
 //Materials page
 .materials {
-  position: relative;
   .search-container {
     display: flex;
     align-items: center;
@@ -2148,7 +2161,6 @@ footer {
   }
 
   .blue-sidebar {
-    position: absolute;
     top: 0;
     left: 0;
     width: 10%;
