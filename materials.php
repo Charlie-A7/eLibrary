@@ -37,7 +37,7 @@ get_header();
 
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
-					<div class="col-6 col-md-4 col-lg-3 pb-3">
+					<div class="col-6 col-md-4 col-xl-3 pb-3">
 						<h1>
 							<span class="down-to-up">Discover the<br>bookshelf<br></span> 
 							<span class="dots-design">..........</span>
@@ -45,7 +45,7 @@ get_header();
 					</div>
 
 					<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
-						<div class="col-6 col-md-4 col-lg-3 text-center pb-3 d-flex flex-column align-items-center">
+						<div class="col-6 col-md-4 col-xl-3 text-center pb-3 d-flex flex-column align-items-center">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('medium'); ?>
 								<?php woocommerce_template_loop_add_to_cart(); ?>
