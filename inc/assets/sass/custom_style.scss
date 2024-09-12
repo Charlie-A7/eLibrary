@@ -2203,11 +2203,20 @@ footer {
 .aboutUsDiv {
   //height: calc(100dvh - $header-height - $footer-height);
 
-  .ABOUTUS-blue-left-sidebar {
+  .ABOUTUS-blue-left-sidebar,.ABOUTUS-blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
   }
+  .ABOUTUS-blue-left-sidebar {
+    top: 10%;
+    left: 0;
+    width: 15dvw;
+    height: 80%;
+  }
   .ABOUTUS-blue-right-sidebar {
-    background-color: $Light-Gray-Blue-Color;
+  right: 0;
+  width: 15dvw;
+  top: 30%;
+  height: 80%;
   }
   .aboutUsText {
     font-size: 12px;
