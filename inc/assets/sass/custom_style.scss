@@ -2131,8 +2131,9 @@ footer {
   color: white !important;
 }
 
-//Materials page
-.materials {
+//Materials and Library page
+.materials,
+.library {
   min-height: calc(100dvh - $header-height - $footer-height);
   .search-container {
     display: flex;
@@ -2172,11 +2173,6 @@ footer {
     background-color: $Light-Gray-Blue-Color;
   }
 }
-
-// Library page
-// .library{
-
-// }
 
 .dots-design {
   font-size: 100px;
