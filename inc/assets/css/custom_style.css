@@ -1982,11 +1982,20 @@ footer .footer_lines::after {
   text-transform: uppercase;
 }
 
-.aboutUsDiv .ABOUTUS-blue-left-sidebar {
+.aboutUsDiv .ABOUTUS-blue-left-sidebar, .aboutUsDiv .ABOUTUS-blue-right-sidebar {
   background-color: #9eb6c5;
 }
+.aboutUsDiv .ABOUTUS-blue-left-sidebar {
+  top: 10%;
+  left: 0;
+  width: 15dvw;
+  height: 80%;
+}
 .aboutUsDiv .ABOUTUS-blue-right-sidebar {
-  background-color: #9eb6c5;
+  right: 0;
+  width: 15dvw;
+  top: 30%;
+  height: 80%;
 }
 .aboutUsDiv .aboutUsText {
   font-size: 12px;
