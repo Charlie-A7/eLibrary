@@ -39,7 +39,7 @@ get_header();
 
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
-					<div class="col-6 col-lg-4 col-xl-3 pb-3 z-1">
+					<div class="col-6 col-lg-4 col-xl-3 pb-3 z-1 d-flex justify-content-center">
 						<h1 class="down-to-up">
 							Discover the<br>bookshelf<br>
 							<span class="dots-design">..........</span>
