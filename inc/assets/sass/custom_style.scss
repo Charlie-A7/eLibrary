@@ -1893,7 +1893,6 @@ body {
   z-index: -1;
 }
 
-
 // WP admin bar
 
 #wpadminbar {
@@ -2084,7 +2083,7 @@ footer {
     background-repeat: no-repeat;
   }
 
-  .padding-left{
+  .padding-left {
     padding-left: 1rem;
   }
 
@@ -2093,22 +2092,22 @@ footer {
     text-transform: uppercase;
   }
 
-  h4{
+  h4 {
     font-family: $quicksand-semibold;
   }
 
   .blue-left-sidebar,
-  .blue-right-sidebar{
+  .blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
   }
-  .blue-left-sidebar{
+  .blue-left-sidebar {
     top: 10%;
     left: 0;
     width: 15dvw;
     height: 80%;
   }
 
-  .blue-right-sidebar{
+  .blue-right-sidebar {
     top: 5%;
     right: 0;
     width: 5dvw;
@@ -2200,7 +2199,8 @@ footer {
 .aboutUsDiv {
   //height: calc(100dvh - $header-height - $footer-height);
   height: 70dvh;
-  .ABOUTUS-blue-left-sidebar,.ABOUTUS-blue-right-sidebar {
+  .ABOUTUS-blue-left-sidebar,
+  .ABOUTUS-blue-right-sidebar {
     background-color: $Light-Gray-Blue-Color;
     width: 7dvw;
   }
@@ -2214,11 +2214,10 @@ footer {
     height: 45dvh;
     margin-bottom: 1.5rem;
   }
-  .AbtUSPart1{
+  .AbtUSPart1 {
     padding-left: 9dvw;
   }
-  .AbtUSPart2{
-
+  .AbtUSPart2 {
   }
 
   .aboutUsText {
@@ -2238,7 +2237,7 @@ footer {
     font-size: 7rem;
     text-transform: uppercase;
   }
-  .abtUsBold{
+  .abtUsBold {
     font-family: $quicksand-bold;
   }
   .AbtUSimg1 {
