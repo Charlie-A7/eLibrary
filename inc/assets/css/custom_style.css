@@ -1868,6 +1868,9 @@ footer .footer_lines::after {
   background-position: center;
   background-repeat: no-repeat;
 }
+.homeDiv .padding-left {
+  padding-left: 1rem;
+}
 .homeDiv h1 {
   font-size: 4.5rem;
   text-transform: uppercase;
@@ -1882,13 +1885,13 @@ footer .footer_lines::after {
 .homeDiv .blue-left-sidebar {
   top: 10%;
   left: 0;
-  width: 20dvw;
+  width: 15dvw;
   height: 80%;
 }
 .homeDiv .blue-right-sidebar {
   top: 5%;
   right: 0;
-  width: 10dvw;
+  width: 5dvw;
   height: 90%;
 }
 
