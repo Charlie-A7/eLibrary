@@ -11,7 +11,7 @@
 ?>
 
 </div>
-<footer id="colophon" class="site-footer d-flex align-items-center" role="contentinfo">
+<footer id="colophon" class="site-footer d-flex" role="contentinfo">
     <div class="container-fluid">
         <div class="row">
 

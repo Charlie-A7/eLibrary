@@ -126,10 +126,16 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
   border: none;
@@ -219,7 +225,9 @@ body.hide_scroll {
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -236,6 +244,27 @@ body.hide_scroll {
 
 :focus {
   outline: none !important;
+}
+
+@-webkit-keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.25);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(1.8);
+  }
+  45% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes fa-beat {
   0% {
@@ -881,9 +910,7 @@ p strong {
   margin-left: auto !important;
   opacity: 1 !important;
   border: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   right: 0;
   padding-top: 2rem;
@@ -1377,9 +1404,7 @@ p strong {
 
 .project_listing .main_dropdown_button {
   border: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   font-size: 1rem;
   color: #000;
@@ -1464,9 +1489,7 @@ p strong {
   left: 0;
   top: 0;
   transform: translate(65%, 75%);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 .project_listing .inner_section_project {
@@ -1595,8 +1618,7 @@ p strong {
   display: block;
   width: 100%;
   height: 550px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .single_project .swiper-pagination-bullet-active {
   color: #fff !important;
@@ -1684,10 +1706,6 @@ body {
   background-color: #fff;
   overflow: auto;
   overflow-x: hidden !important;
-}
-body ::-moz-selection {
-  background-color: #3399ff;
-  color: #ffffff;
 }
 body ::selection {
   background-color: #3399ff;
@@ -1838,6 +1856,7 @@ footer .footer-icon1 {
 footer .contactus_section,
 footer .location_section,
 footer .ministries_section {
+  display: flex;
   text-align: center;
   justify-content: center;
 }
