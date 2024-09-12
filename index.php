@@ -13,27 +13,19 @@ get_header();
 // endwhile;
 ?> 
 
-<div class="container-fluid homeDiv py-5">
-    <div class="row h-100">
-        <div class="col-6 position-relative p-0">
-            <div class="overlapping-content">
+<div class="homeDiv py-5">
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-6 position-relative p-0">
                 <h1>Welcome to<br>our resource<br>library</h1>
                 <h4>Browse our selection, and order what you need.</h4>
             </div>
-            <div class="row h-100">
-                <div class="col-5 homeDivInnerBlue my-3"></div>
-                <div class="col-7 homeDivInnerWhite"></div>
+            <div class="col-6">
             </div>
         </div>
-        <div class="col-5">
-            <div class="row h-100">
-                <div class="col-11 homeDivInnerImage"></div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-        <div class="col-1 homeDivInnerBlue"></div>
     </div>
 </div>
+
 
 
 <?php
