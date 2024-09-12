@@ -13,7 +13,7 @@ get_header();
 // endwhile;
 ?> 
 
-<div class="homeDiv py-5  position-relative">
+<div class="homeDiv py-5 position-relative">
     <div class="blue-left-sidebar position-absolute z-0"></div>
     <div class="blue-right-sidebar position-absolute z-0"></div>
     <div class="container-fluid">
