@@ -2217,14 +2217,20 @@ footer {
   .AbtUSPart1{
     padding-left: 9dvw;
   }
+  .AbtUSPart2{
+
+  }
+
   .aboutUsText {
     font-size: 12px;
   }
 
   .LanguageSwitchBtn {
-    background-color: $text_color;
+    position: absolute;
+    background-color: $Navy-Blue-Color;
     border-radius: 20px;
-    color: $Navy-Blue-Color;
+    color: white;
+    right: 0;
   }
 
   .h1 {
