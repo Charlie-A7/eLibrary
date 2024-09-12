@@ -8,6 +8,7 @@ get_header();
 <div class="materials py-2 position-relative">
 	<!-- sidebar blue bg -->
 	<div class="blue-sidebar position-absolute z-0"></div>
+	
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end py-2">
 			<div class="col-6 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center">
