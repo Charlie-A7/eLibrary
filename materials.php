@@ -39,8 +39,8 @@ get_header();
 			if ($products_query1->have_posts()) : ?>
 				<div class="row">	
 					<div class="col-3 d-flex justify-content-center pb-3">
-						<h1 class="down-to-up">
-							Discover the<br>bookshelf<br>
+						<h1>
+							<span class="down-to-up">Discover the<br>bookshelf<br></span> 
 							<span class="dots-design d-flex justify-content-end">..........</span></h1>
 					</div>
 
