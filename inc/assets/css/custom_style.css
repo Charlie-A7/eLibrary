@@ -1919,6 +1919,14 @@ footer .footer_lines::after {
   font-size: 1rem;
   color: black;
 }
+.materials .blue-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color: #9eb6c5;
+}
 
 .dots-design {
   font-size: 100px;
