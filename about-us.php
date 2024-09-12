@@ -15,8 +15,8 @@ get_header();
     <div class="ABOUTUS-blue-left-sidebar position-absolute"></div>
     <div class="ABOUTUS-blue-right-sidebar position-absolute"></div>
 
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
             <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100">
 
                 <img class="AbtUSimg1 img-fluid"
