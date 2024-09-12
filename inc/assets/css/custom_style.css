@@ -1893,20 +1893,20 @@ footer .footer_lines::after {
   color: white !important;
 }
 
-.down-to-up {
-  font-size: 3rem;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  text-transform: uppercase;
+.dots-design {
+  font-size: 100px;
+  font-style: normal;
+  font-family: none;
+  color: #093f6c;
+  writing-mode: vertical-lr; /* Text flows vertically from bottom to top */
+  transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
 }
 
-.dots-design {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  font-size: 100px;
-  color: #093f6c;
-  height: 100%;
+.down-to-up {
+  font-size: 3rem;
+  writing-mode: vertical-rl; /* Text flows vertically from bottom to top */
+  transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
+  text-transform: uppercase;
 }
 
 .aboutUsDiv .aboutUsDivInnerBlue {
