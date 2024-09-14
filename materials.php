@@ -24,6 +24,7 @@ get_header();
 			$args1 = array(
 				'post_type' => 'product',
 				'posts_per_page' => 19,
+				's' => $search_term, // Include the search term if provided
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'product_cat',
