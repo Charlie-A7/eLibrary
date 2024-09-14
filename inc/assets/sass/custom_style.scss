@@ -1070,6 +1070,7 @@ p strong {
     width: 321px;
     margin: 0 auto;
     transition-duration: 1s;
+    color: white;
   }
   .btn_404::after {
     content: "";
@@ -1087,6 +1088,7 @@ p strong {
   .btn_404:hover {
     border-bottom: 1px solid #fff;
     transition: ease 0.5s;
+    color: $Navy-Blue-Color;
   }
   .btn_404:hover::after,
   .btn_404:active:after {
