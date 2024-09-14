@@ -29,9 +29,6 @@ get_header(); ?>
 		// Define the search term
 		$search_term = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
 
-		// Get the category from the search form
-		//$product_cat = isset($_GET['product_cat']) ? sanitize_text_field($_GET['product_cat']) : '';
-
 
 		// Custom query for WooCommerce products in the "materials" category (limit 19)
 		$args1 = array(
