@@ -12,7 +12,16 @@ get_header();
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end py-2">
 			<div class="col-6 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center">
-				<?php get_template_part('searchform'); ?>
+				<?php //get_template_part('searchform'); ?>
+				<div class="search-container d-flex justify-content-center align-items-center">
+					<form role="search" method="get" action="<?php  echo esc_url( home_url( '/' ) ); ?>" aria-label="Search for">
+						<input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
+						<input type="hidden" name="cat" value="<?php echo isset($_GET['cat']) ? esc_attr($_GET['cat']) : (is_page('materials') ? 'materials' : (is_page('library') ? 'library' : '')); ?>">
+						<button type="submit" class="search-button">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 
@@ -24,7 +33,7 @@ get_header();
 			$args1 = array(
 				'post_type' => 'product',
 				'posts_per_page' => 19,
-				's' => 'god', // Include the search term if provided
+				's' => $search_term, // Should use the search term from the URL
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'product_cat',
