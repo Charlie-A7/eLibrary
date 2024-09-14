@@ -1869,7 +1869,6 @@ body {
   overflow-x: hidden !important;
 }
 
-
 ::-moz-selection, /* Code for Firefox */
 ::selection {
   color: white;
@@ -2132,8 +2131,6 @@ footer {
 .library {
   min-height: calc(100dvh - $header-height - $footer-height);
   .search-container {
-    display: flex;
-    align-items: center;
     border: 1px solid black;
     border-radius: 20px;
     overflow: hidden;
