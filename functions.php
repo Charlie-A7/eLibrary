@@ -303,3 +303,18 @@ function custom_woocommerce_add_to_cart_text($text, $product) {
     }
     return $text; // Return original text for other product types or categories
 }
+
+
+// Disable WooCommerce search redirect
+add_action('template_redirect', 'disable_woocommerce_search_redirect');
+
+function disable_woocommerce_search_redirect() {
+    if (is_search() && !is_admin()) {
+        // Check if a WooCommerce product search is being performed
+        if (isset($_GET['post_type']) && $_GET['post_type'] == 'product') {
+            // Remove the 'post_type' query parameter to prevent WooCommerce from hijacking the search
+            wp_redirect( home_url( '?s=' . urlencode(get_search_query()) ) );
+            exit();
+        }
+    }
+}
