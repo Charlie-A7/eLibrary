@@ -67,7 +67,7 @@ get_header(); ?>
 		<?php else : ?>
 			<div class="row">
 				<div class="col-12">
-					<p class="position-relative text-center z-1">No products found in the "materials" category with the search term "<?php echo esc_html($search_term); ?>".</p>
+					<p class="position-relative text-center z-1 py-3">No books found with the search term "<?php echo esc_html($search_term); ?>".</p>
 				</div>
 			</div>
 		<?php endif; ?>
