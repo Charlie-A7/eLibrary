@@ -18,14 +18,10 @@
     </form>
 </div>
 <div>
-    <?php 
-        echo do_shortcode('[category_filter]');
-    ?>
-
-    <form method="get" action="<?php //echo esc_url( home_url( '/' ) ); ?>">
+    <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
         <?php
             wp_dropdown_categories( array(
-                'show_option_all' => 'Select Category',
+                'show_option_all' => 'Select',
                 'name' => 'category',
                 'orderby' => 'name',
                 'hierarchical' => true,
