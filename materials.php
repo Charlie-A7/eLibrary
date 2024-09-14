@@ -56,7 +56,11 @@ get_header();
 				</div>
 				<?php wp_reset_postdata(); ?>
 			<?php else : ?>
-				<p>No products found in the "materials" category.</p>
+			<div class="row">
+				<div class="col-12">
+					<h3 class="position-relative text-center z-1 py-3">No books found in the materials with the search term "<?php echo esc_html($search_term); ?>".</h3>
+				</div>
+			</div>
 			<?php endif; ?>
 	</div>
 </div>
