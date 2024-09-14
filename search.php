@@ -19,11 +19,11 @@ get_header(); ?>
 				<?php get_template_part('searchform'); ?>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-12 position-relative z-1">
-				<h2 class="text-center"><?php printf(esc_html__('Search Results for: %s', 'wp-bootstrap-starter'), '<span>' . get_search_query() . '</span>'); ?></h2>
+				<h2 class="text-center py-4"><?php //printf(esc_html__('Search Results for: %s', 'wp-bootstrap-starter'), '<span>' . get_search_query() . '</span>'); ?></h2>
 			</div>
-		</div>
+		</div> -->
 	
 		<?php
 		// Define the search term
@@ -65,7 +65,7 @@ get_header(); ?>
 			</div>
 			<?php wp_reset_postdata(); ?>
 		<?php else : ?>
-			<p>No products found in the "materials" category with the search term "<?php echo esc_html($search_term); ?>".</p>
+			<p class="position-relative text-center z-1">No products found in the "materials" category with the search term "<?php echo esc_html($search_term); ?>".</p>
 		<?php endif; ?>
 	</div>
 </div>
