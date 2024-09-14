@@ -22,16 +22,17 @@
         echo do_shortcode('[category_filter]');
     ?>
 
-    <!-- <form method="get" action="<?php //echo esc_url( home_url( '/' ) ); ?>">
+    <form method="get" action="<?php //echo esc_url( home_url( '/' ) ); ?>">
         <?php
-        // wp_dropdown_categories( array(
-        //     'show_option_all' => 'Select Category',
-        //     'name' => 'category',
-        //     'orderby' => 'name',
-        //     'hierarchical' => true,
-        //     'selected' => get_query_var( 'cat' ),
-        // ) );
+            wp_dropdown_categories( array(
+                'show_option_all' => 'Select Category',
+                'name' => 'category',
+                'orderby' => 'name',
+                'hierarchical' => true,
+                'selected' => get_query_var( 'cat' ),
+            'taxonomy' => 'product_cat' // Use 'product_cat' for WooCommerce product categories
+            ) );
         ?>
         <input type="submit" value="Filter">
-    </form> -->
+    </form>
 </div>
