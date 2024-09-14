@@ -12,27 +12,16 @@ get_header();
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end py-2">
 			<div class="col-6 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center">
-				<?php //get_template_part('searchform'); ?>
-				<div class="search-container d-flex justify-content-center align-items-center">
-					<form role="search" method="get" action="<?php echo esc_url(get_permalink(get_page_by_path('materials'))); ?>" aria-label="Search for">
-						<input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
-						<button type="submit" class="search-button">
-							<i class="fa fa-search"></i>
-						</button>
-					</form>
-				</div>
+				<?php get_template_part('searchform'); ?>
 			</div>
 		</div>
 
 		<?php
-			// add search term if provided
-			$search_term = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
 
 			// Custom query for WooCommerce products in the "materials" category (limit 3)
 			$args1 = array(
 				'post_type' => 'product',
 				'posts_per_page' => 19,
-				's' => $search_term, // Should use the search term from the URL
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'product_cat',
@@ -66,7 +55,7 @@ get_header();
 			<?php else : ?>
 			<div class="row">
 				<div class="col-12">
-					<h3 class="position-relative text-center z-1 py-3">No books found in the materials with the search term "<?php echo esc_html($search_term); ?>".</h3>
+					<h3 class="position-relative text-center z-1 py-3">No books found in the Materials.</h3>
 				</div>
 			</div>
 			<?php endif; ?>
