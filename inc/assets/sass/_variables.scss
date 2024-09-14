@@ -34,11 +34,6 @@ $transition_time: 0.3s;
   margin-left: -($width/2);
 }
 
-$main_color: #093f6c;
-$main_color_faded: #9eb6c5;
-
-$sec_color: #9eb6c5;
-
 // fonts
 
 // english
@@ -62,11 +57,15 @@ $arabic-fonts-bolder: "arb-fonts-bolder";
 $header-height: 13dvh;
 $footer-height: 15dvh;
 
-//
+//colors
+
+
+
+$main_color: #093f6c;
+$sec_color: #9eb6c5;
+
 $Navy-Blue-Color: #093f6c;
 $Light-Gray-Blue-Color: #9eb6c5;
 
 //text colors
 $text_color: #231f20;
-$text_white: #fff;
-$text_black: #000;

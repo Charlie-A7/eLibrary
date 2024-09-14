@@ -205,7 +205,7 @@ body.hide_scroll {
   margin-right: 0px;
 }
 .text_main_color {
-  color: $main_color;
+  color: $text_color;
 }
 
 // end
@@ -216,15 +216,6 @@ body.hide_scroll {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-::-moz-selection {
-  /* Code for Firefox */
-  color: $text_black;
-  background: $main_color;
-}
-::selection {
-  color: $text_black;
-  background: $main_color;
 }
 
 :focus {
@@ -1873,13 +1864,16 @@ root {
 body {
   font-family: $quicksand-regular;
   color: $text_color;
-  background-color: $text_white;
+  background-color: white;
   overflow: auto;
   overflow-x: hidden !important;
-  ::selection {
-    background-color: #3399ff;
-    color: #ffffff;
-  }
+}
+
+
+::-moz-selection, /* Code for Firefox */
+::selection {
+  color: white;
+  background-color: #3399ff;
 }
 
 // z-index classes
