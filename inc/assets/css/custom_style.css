@@ -958,7 +958,7 @@ p strong {
 .page_404 .btn_404:hover {
   border-bottom: 1px solid #fff;
   transition: ease 0.5s;
-  color: #093f6c;
+  color: #231f20;
 }
 .page_404 .btn_404:hover::after,
 .page_404 .btn_404:active:after {
