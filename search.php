@@ -42,7 +42,7 @@ get_header(); ?>
 				array(
 					'taxonomy' => 'product_cat',
 					'field' => 'slug',
-					'terms' => '$category_filter',
+					'terms' => $category_filter,
 				),
 			),
 		);
