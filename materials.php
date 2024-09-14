@@ -17,6 +17,9 @@ get_header();
 		</div>
 
 		<?php
+			// add search term if provided
+			$search_term = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
+
 			// Custom query for WooCommerce products in the "materials" category (limit 3)
 			$args1 = array(
 				'post_type' => 'product',
