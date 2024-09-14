@@ -303,3 +303,35 @@ function custom_woocommerce_add_to_cart_text($text, $product) {
     }
     return $text; // Return original text for other product types or categories
 }
+
+
+
+
+function custom_add_current_menu_class($classes, $item) {
+    // Check if the current page is a search results page
+    if (is_search()) {
+        // Check if the URL of the menu item matches the "materials" page URL
+        if (strpos($item->url, get_permalink(get_page_by_path('materials')->ID)) !== false) {
+            $classes[] = 'current-menu-item';
+        }
+    } elseif (is_page('materials')) {
+        // If on the "materials" page, add current class to the "materials" menu item
+        if ($item->ID == get_nav_menu_item_id_by_url(get_permalink(get_page_by_path('materials')->ID))) {
+            $classes[] = 'current-menu-item';
+        }
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_css_class', 'custom_add_current_menu_class', 10, 2);
+
+// Function to get menu item ID by URL
+function get_nav_menu_item_id_by_url($url) {
+    $menu_items = wp_get_nav_menu_items('primary'); // Change 'primary' to your menu location
+    foreach ($menu_items as $menu_item) {
+        if ($menu_item->url === $url) {
+            return $menu_item->ID;
+        }
+    }
+    return false;
+}
