@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section id="primary" class="content-area col-sm-12 col-lg-8">
+<section id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <?php
         // Define the search term
@@ -28,12 +28,6 @@ get_header(); ?>
                 ),
             ),
         );
-
-        // Debugging: Output the search term and query args
-        echo '<pre>';
-        echo 'Search Term: ' . esc_html($search_term) . "\n";
-        print_r($args1);
-        echo '</pre>';
 
         $products_query1 = new WP_Query($args1);
 
