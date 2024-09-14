@@ -310,13 +310,15 @@ function custom_woocommerce_add_to_cart_text($text, $product) {
 function custom_add_current_menu_class($classes, $item) {
     // Check if the current page is a search results page
     if (is_search()) {
-        // Check if the URL of the menu item matches the "materials" page URL
-        if (strpos($item->url, get_permalink(get_page_by_path('materials')->ID)) !== false) {
+        // Check if the URL of the menu item matches the "materials" or "library" page URL
+        if (strpos($item->url, get_permalink(get_page_by_path('materials')->ID)) !== false ||
+            strpos($item->url, get_permalink(get_page_by_path('library')->ID)) !== false) {
             $classes[] = 'current-menu-item';
         }
-    } elseif (is_page('materials')) {
-        // If on the "materials" page, add current class to the "materials" menu item
-        if ($item->ID == get_nav_menu_item_id_by_url(get_permalink(get_page_by_path('materials')->ID))) {
+    } elseif (is_page('materials') || is_page('library')) {
+        // If on the "materials" or "library" page, add current class to the respective menu item
+        if ($item->ID == get_nav_menu_item_id_by_url(get_permalink(get_page_by_path('materials')->ID)) ||
+            $item->ID == get_nav_menu_item_id_by_url(get_permalink(get_page_by_path('library')->ID))) {
             $classes[] = 'current-menu-item';
         }
     }
