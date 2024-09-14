@@ -30,7 +30,7 @@ get_header(); ?>
 		$search_term = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
 
 		// get category filter
-		$category_filter = isset($_GET['cat_filter']) ? sanitize_text_field($_GET['cat_filter']) : '';
+		$category_filter = isset($_GET['cat']) ? sanitize_text_field($_GET['cat']) : '';
 
 
 		// Custom query for WooCommerce products in the "materials" category (limit 19)
