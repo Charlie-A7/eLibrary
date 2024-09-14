@@ -29,6 +29,9 @@ get_header(); ?>
 		// Define the search term
 		$search_term = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
 
+		// get category filter
+		$category_filter = isset($_GET['cat_filter']) ? sanitize_text_field($_GET['cat_filter']) : '';
+
 
 		// Custom query for WooCommerce products in the "materials" category (limit 19)
 		$args1 = array(
@@ -39,7 +42,7 @@ get_header(); ?>
 				array(
 					'taxonomy' => 'product_cat',
 					'field' => 'slug',
-					'terms' => 'materials',
+					'terms' => $category_filter,
 				),
 			),
 		);
