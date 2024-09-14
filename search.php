@@ -9,11 +9,22 @@
 
 get_header(); ?>
 
-<section id="primary" class="content-area">
-
-	<header class="page-header">
-		<h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'wp-bootstrap-starter'), '<span>' . get_search_query() . '</span>'); ?></h1>
-	</header><!-- .page-header -->
+<div class="custom-shop py-2 position-relative">
+	<!-- sidebar blue bg -->
+	<div class="blue-sidebar position-absolute z-0"></div>
+	
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-end py-2">
+			<div class="col-6 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center">
+				<?php get_template_part('searchform'); ?>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h2 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'wp-bootstrap-starter'), '<span>' . get_search_query() . '</span>'); ?></h2>
+			</div>
+		</div>
+	
 
     <main id="main" class="site-main" role="main">
         <?php
