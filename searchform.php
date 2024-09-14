@@ -19,16 +19,22 @@
 </div> -->
 
 
+<?php 
+$materials_page = get_page_by_path('materials');
+$library_page = get_page_by_path('library');
+$action_url = '';
+
+if (is_page('materials') && $materials_page) {
+    $action_url = esc_url(get_permalink($materials_page->ID));
+} elseif (is_page('library') && $library_page) {
+    $action_url = esc_url(get_permalink($library_page->ID));
+} else {
+    $action_url = esc_url(home_url('/'));
+}
+?>
+
 <div class="search-container d-flex justify-content-center align-items-center">
-    <form role="search" method="get" action="<?php 
-        if (is_page('materials')) {
-            echo esc_url(get_permalink(get_page_by_path('materials')->ID));
-        } elseif (is_page('library')) {
-            echo esc_url(get_permalink(get_page_by_path('library')->ID));
-        } else {
-            echo esc_url(home_url('/'));
-        }
-    ?>" aria-label="Search for">
+    <form role="search" method="get" action="<?php echo $action_url; ?>" aria-label="Search for">
         <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
         <button type="submit" class="search-button">
             <i class="fa fa-search"></i>
