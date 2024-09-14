@@ -14,7 +14,7 @@ get_header();
 			<div class="col-6 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center">
 				<?php //get_template_part('searchform'); ?>
 				<div class="search-container d-flex justify-content-center align-items-center">
-					<form role="search" method="get" action="<?php  echo esc_url( home_url( '/' ) ); ?>" aria-label="Search for">
+					<form role="search" method="get" action="<?php echo esc_url(get_permalink(get_page_by_path('materials'))); ?>" aria-label="Search for">
 						<input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
 						<button type="submit" class="search-button">
 							<i class="fa fa-search"></i>
