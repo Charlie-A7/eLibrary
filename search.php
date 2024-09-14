@@ -10,59 +10,47 @@
 get_header(); ?>
 
 <?php
-// Include custom post types and adjust search query
-$args = array(
-    'post_type' => array('post', 'product'), // Include custom post types here
-    's' => get_search_query(),
-    'posts_per_page' => 10,
+// Define the search term (e.g., from a search form or hardcoded value)
+$search_term = isset($_GET['search_term']) ? sanitize_text_field($_GET['search_term']) : '';
+
+// Custom query for WooCommerce products in the "materials" category (limit 19)
+$args1 = array(
+    'post_type' => 'product',
+    'posts_per_page' => 19,
+    's' => $search_term, // Add the search term parameter
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'product_cat',
+            'field' => 'slug',
+            'terms' => 'materials',
+        ),
+    ),
 );
-$search_query = new WP_Query($args);
 
-if ($search_query->have_posts()) :
-    while ($search_query->have_posts()) : $search_query->the_post();
-        get_template_part('template-parts/content', 'search');
-    endwhile;
-    the_posts_navigation();
-else :
-    get_template_part('template-parts/content', 'none');
-endif;
+$products_query1 = new WP_Query($args1);
 
-wp_reset_postdata();
-?>
+if ($products_query1->have_posts()) : ?>
+    <div class="row">
+        <div class="col-6 col-lg-4 col-xl-3 pb-3 z-1 d-flex justify-content-center">
+            <h1 class="down-to-up">
+                Discover the<br>bookshelf<br>
+                <span class="dots-design">..........</span>
+            </h1>
+        </div>
 
-<section id="primary" class="content-area col-sm-12 col-lg-8">
-    <main id="main" class="site-main" role="main">
-
-    <?php
-    if ($search_query->have_posts()) : ?>
-
-        <header class="page-header">
-            <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'wp-bootstrap-starter' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-        </header><!-- .page-header -->
-
-        <?php
-        /* Start the Loop */
-        while ($search_query->have_posts()) : $search_query->the_post();
-
-            /**
-             * Run the loop for the search to output the results.
-             * If you want to overload this in a child theme then include a file
-             * called content-search.php and that will be used instead.
-             */
-            get_template_part( 'template-parts/content', 'search' );
-
-        endwhile;
-
-        the_posts_navigation();
-
-    else :
-
-        get_template_part( 'template-parts/content', 'none' );
-
-    endif; ?>
-
-    </main><!-- #main -->
-</section><!-- #primary -->
+        <?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
+            <div class="col-6 col-lg-4 col-xl-3 text-center pb-3 d-flex flex-column align-items-center z-1">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('medium'); ?>
+                    <?php woocommerce_template_loop_add_to_cart(); ?>
+                </a>
+            </div>
+        <?php endwhile; ?>
+    </div>
+    <?php wp_reset_postdata(); ?>
+<?php else : ?>
+    <p>No products found in the "materials" category.</p>
+<?php endif; ?>
 
 <?php
 get_footer();
