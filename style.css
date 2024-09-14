@@ -211,104 +211,118 @@ th {
 
 @font-face {
   font-family: "quicksand";
-  src: url("../fonts/Quicksand-VariableFont_wght.woff2") format("woff2"),
-    url("../fonts/Quicksand-VariableFont_wght.woff") format("woff");
+  src: url("inc/assets/fonts/Quicksand-VariableFont_wght.woff2") format("woff2"),
+    url("inc/assets/fonts/Quicksand-VariableFont_wght.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "quicksand-light";
-  src: url("../fonts/Quicksand-Light.woff2") format("woff2"),
-    url("../fonts/Quicksand-Light.woff") format("woff");
+  src: url("inc/assets/fonts/Quicksand-Light.woff2") format("woff2"),
+    url("inc/assets/fonts/Quicksand-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "quicksand-medium";
-  src: url("../fonts/Quicksand-Medium.woff2") format("woff2"),
-    url("../fonts/Quicksand-Medium.woff") format("woff");
+  src: url("inc/assets/fonts/Quicksand-Medium.woff2") format("woff2"),
+    url("inc/assets/fonts/Quicksand-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "quicksand-regular";
-  src: url("../fonts/Quicksand-Regular.woff2") format("woff2"),
-    url("../fonts/Quicksand-Regular.woff") format("woff");
+  src: url("inc/assets/fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("inc/assets/fonts/Quicksand-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "quicksand-semibold";
-  src: url("../fonts/Quicksand-SemiBold.woff2") format("woff2"),
-    url("../fonts/Quicksand-SemiBold.woff") format("woff");
+  src: url("inc/assets/fonts/Quicksand-SemiBold.woff2") format("woff2"),
+    url("inc/assets/fonts/Quicksand-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "quicksand-bold";
-  src: url("../fonts/Quicksand-Bold.woff2") format("woff2"),
-    url("../fonts/Quicksand-Bold.woff") format("woff");
+  src: url("inc/assets/fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("inc/assets/fonts/Quicksand-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-ultralight";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-UltraLight.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-UltraLight.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-UltraLight.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-UltraLight.woff")
+      format("woff");
   font-weight: 100; /* Ultralight weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-light";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNEXTLTARABIC-LIGHT.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNEXTLTARABIC-LIGHT.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/Arabic-Fonts/ArbFONTS-DINNEXTLTARABIC-LIGHT.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNEXTLTARABIC-LIGHT.woff")
+      format("woff");
   font-weight: 300; /* Light weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-regular";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Regular.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Regular.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Regular.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Regular.woff")
+      format("woff");
   font-weight: 400; /* Regular weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-medium";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Medium.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Medium.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Medium.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Medium.woff")
+      format("woff");
   font-weight: 500; /* Medium weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-mediumbold";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-MediumBold.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-MediumBold.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-MediumBold.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-MediumBold.woff")
+      format("woff");
   font-weight: 600; /* Medium Bold weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-bold";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bold.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bold.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bold.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bold.woff")
+      format("woff");
   font-weight: 700; /* Bold weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: "arb-fonts-bolder";
-  src: url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bolder.woff2") format("woff2"),
-       url("../fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bolder.woff") format("woff");
+  src: url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bolder.woff2")
+      format("woff2"),
+    url("inc/assets/fonts/Arabic-Fonts/ArbFONTS-DINNextLTArabic-Bolder.woff")
+      format("woff");
   font-weight: 800; /* Bolder weight */
   font-style: normal;
 }
