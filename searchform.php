@@ -16,6 +16,8 @@
             <i class="fa fa-search"></i>
         </button>
     </form>
+</div>
+<div>
     <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
         <?php
         wp_dropdown_categories( array(
