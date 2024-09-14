@@ -308,7 +308,7 @@ function custom_woocommerce_add_to_cart_text($text, $product) {
 function custom_category_filter_form() {
     ob_start();
     ?>
-    <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <form method="get" action="<?php echo esc_url( get_permalink( wc_get_page_id( 'materials' ) ) ); ?>">
         <?php
         wp_dropdown_categories( array(
             'show_option_all' => 'Select Category',
