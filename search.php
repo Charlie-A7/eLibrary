@@ -42,7 +42,7 @@ get_header(); ?>
 				array(
 					'taxonomy' => 'product_cat',
 					'field' => 'slug',
-					'terms' => 'materials',
+					'terms' => '$category_filter',
 				),
 			),
 		);
@@ -53,7 +53,18 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-6 col-lg-4 col-xl-3 pb-3 z-1 d-flex justify-content-center">
 					<h1 class="down-to-up">
-						Discover the<br>bookshelf<br>
+						<?php
+							if($category_filter == 'materials'){
+								?>
+									Discover the<br>bookshelf<br>
+								<?php
+							}
+							elseif($category_filter == 'library'){
+								?>
+									Explore<br>the library<br>
+								<?php
+							}
+						?>
 						<span class="dots-design">..........</span>
 					</h1>
 				</div>
