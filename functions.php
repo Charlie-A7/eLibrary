@@ -308,17 +308,26 @@ function custom_woocommerce_add_to_cart_text($text, $product) {
 
 
 function custom_add_current_menu_class($classes, $item) {
+    // Get the IDs for the "materials" and "library" pages
+    $materials_id = get_page_by_path('materials')->ID;
+    $library_id = get_page_by_path('library')->ID;
+
     // Check if the current page is a search results page
     if (is_search()) {
-        // Check if the URL of the menu item matches the "materials" or "library" page URL
-        if (strpos($item->url, get_permalink(get_page_by_path('materials')->ID)) !== false ||
-            strpos($item->url, get_permalink(get_page_by_path('library')->ID)) !== false) {
+        // Apply class based on the current search context
+        if (strpos($item->url, get_permalink($materials_id)) !== false) {
+            $classes[] = 'current-menu-item';
+        } elseif (strpos($item->url, get_permalink($library_id)) !== false) {
             $classes[] = 'current-menu-item';
         }
-    } elseif (is_page('materials') || is_page('library')) {
-        // If on the "materials" or "library" page, add current class to the respective menu item
-        if ($item->ID == get_nav_menu_item_id_by_url(get_permalink(get_page_by_path('materials')->ID)) ||
-            $item->ID == get_nav_menu_item_id_by_url(get_permalink(get_page_by_path('library')->ID))) {
+    } elseif (is_page($materials_id)) {
+        // If on the "materials" page, apply the class to "materials"
+        if ($item->ID == get_nav_menu_item_id_by_url(get_permalink($materials_id))) {
+            $classes[] = 'current-menu-item';
+        }
+    } elseif (is_page($library_id)) {
+        // If on the "library" page, apply the class to "library"
+        if ($item->ID == get_nav_menu_item_id_by_url(get_permalink($library_id))) {
             $classes[] = 'current-menu-item';
         }
     }
