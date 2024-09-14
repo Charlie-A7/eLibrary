@@ -1907,8 +1907,6 @@ footer .footer_lines::after {
 }
 .materials .search-container,
 .library .search-container {
-  display: flex;
-  align-items: center;
   border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
