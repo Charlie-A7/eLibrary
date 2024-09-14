@@ -1901,45 +1901,40 @@ footer .footer_lines::after {
   color: white !important;
 }
 
-.materials,
-.library {
+.custom-shop {
   min-height: 72dvh;
 }
-.materials .search-container,
-.library .search-container {
+.custom-shop .blue-sidebar {
+  top: 10%;
+  left: 0;
+  width: 10dvw;
+  height: 85%;
+  background-color: #9eb6c5;
+}
+
+.search-container {
   border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
   width: 90%;
 }
-.materials .search-field,
-.library .search-field {
+.search-container .search-field {
   border: none;
   padding: 0.5rem 1rem;
   flex: 1;
   border-radius: 20px;
   margin: 0;
 }
-.materials .search-button,
-.library .search-button {
+.search-container .search-button {
   background: none;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   background-color: #fff;
 }
-.materials .search-button i,
-.library .search-button i {
+.search-container .search-button i {
   font-size: 1rem;
   color: black;
-}
-.materials .blue-sidebar,
-.library .blue-sidebar {
-  top: 10%;
-  left: 0;
-  width: 10dvw;
-  height: 85%;
-  background-color: #9eb6c5;
 }
 
 .dots-design {

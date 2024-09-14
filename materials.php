@@ -5,7 +5,7 @@
 
 get_header();
 ?>
-<div class="materials py-2 position-relative">
+<div class="custom-shop py-2 position-relative">
 	<!-- sidebar blue bg -->
 	<div class="blue-sidebar position-absolute z-0"></div>
 	

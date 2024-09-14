@@ -2126,16 +2126,25 @@ footer {
   color: white !important;
 }
 
-//Materials and Library page
-.materials,
-.library {
+//Materials and Library page named custom-shop
+.custom-shop {
   min-height: calc(100dvh - $header-height - $footer-height);
-  .search-container {
-    border: 1px solid black;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 90%;
+
+  .blue-sidebar {
+    top: 10%;
+    left: 0;
+    width: 10dvw;
+    height: 85%;
+    background-color: $Light-Gray-Blue-Color;
   }
+}
+
+// search bar
+.search-container {
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 90%;
 
   .search-field {
     border: none;
@@ -2156,14 +2165,6 @@ footer {
   .search-button i {
     font-size: 1rem;
     color: black;
-  }
-
-  .blue-sidebar {
-    top: 10%;
-    left: 0;
-    width: 10dvw;
-    height: 85%;
-    background-color: $Light-Gray-Blue-Color;
   }
 }
 
