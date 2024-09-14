@@ -20,8 +20,8 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
-				<h2 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'wp-bootstrap-starter'), '<span>' . get_search_query() . '</span>'); ?></h2>
+			<div class="col-12 position-relative z-1">
+				<h2 class="text-center"><?php printf(esc_html__('Search Results for: %s', 'wp-bootstrap-starter'), '<span>' . get_search_query() . '</span>'); ?></h2>
 			</div>
 		</div>
 	
