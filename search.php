@@ -9,6 +9,14 @@
 
 get_header(); ?>
 
+<?php
+// Add this in your search.php to see the query being used
+echo '<pre>';
+print_r($wp_query->query_vars);
+echo '</pre>';
+?>
+
+
 	<section id="primary" class="content-area col-sm-12 col-lg-8">
 		<main id="main" class="site-main" role="main">
 
