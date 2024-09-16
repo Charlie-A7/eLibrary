@@ -27,9 +27,8 @@ get_header();
                     Christian denominations. <br>
                     Our goal is to deliver the message of Jesus Christ for a better life for every person
                     through the various programs and activities that we carry out in different segments of society. Our
-                    mission:Spreading the Gospel everywhere.
-                </p>
-                <p><span class="abtUsBold">Our motto:</span> Win, build and send multiplying disciples to fulfill the
+                    mission:Spreading the Gospel everywhere. <br>
+                    <span class="abtUsBold">Our motto:</span> Win, build and send multiplying disciples to fulfill the
                     Great
                     Commission.
                 </p>
@@ -49,6 +48,8 @@ get_header();
     function Switch(language) {
         var switchAR = document.getElementById("SwitchAR");
         var switchEN = document.getElementById("SwitchEN");
+        // var ARparagraph = document.getElementById("SwitchEN");
+        // var ENparagraph = document.getElementById("SwitchAR");
 
         if (language === 'AR') {
             switchAR.style.display = "none";  // Hide Arabic button
