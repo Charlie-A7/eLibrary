@@ -1,11 +1,8 @@
 <?php
 /**
  * The template for displaying the footer
- *
  * Contains the closing of the #content div and all content after.
- *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package WP_Bootstrap_Starter
  */
 ?>
@@ -29,7 +26,6 @@
                         </span>
                     </p>
                 </a>
-
             </div>
             <!-- section2 -->
             <div class="col-12 col-sm-4 footer_lines contactus_section">
@@ -58,7 +54,7 @@
 
             <!-- section3 -->
             <div class="col-12 col-sm-4 ministries_section ">
-                <h5 class="footer_h5">LifeAgape Ministries</h5>
+                <h5 class="footer_h5">LifeAgape Strategies</h5>
                 <p class="last-p">
                     SLM &bull;&bull;&bull; GCM &bull;&bull;&bull; DS &bull;&bull;&bull; LS<br>
                     AIA &bull;&bull;&bull; Relief &bull;&bull;&bull; Ladies Ministry
