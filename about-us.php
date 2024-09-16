@@ -33,7 +33,8 @@ get_header();
                     Great
                     Commission.
                 </p>
-                <button class="LanguageSwitchBtn">العربية</button>
+                <button class="LanguageSwitchBtnAR">العربية</button>
+                <button class="LanguageSwitchBtnENG">English</button>
             </div>
             <div class="AbtUSPart2 col-4">
                 <h1 class="main-heading">LIFEAGAPE<br>حياة المحبة</h1>
