@@ -33,18 +33,31 @@ get_header();
                     Great
                     Commission.
                 </p>
-                <button class="LanguageSwitchBtnAR">العربية</button>
-                <button class="LanguageSwitchBtnENG">English</button>
+                <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch()"></button>>العربية</button>
+                <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch()>English</button>
             </div>
-            <div class="AbtUSPart2 col-4">
-                <h1 class="main-heading">LIFEAGAPE<br>حياة المحبة</h1>
-                <img class="AbtUSimg2"
-                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
+            <div class=" AbtUSPart2 col-4">
+                    <h1 class="main-heading">LIFEAGAPE<br>حياة المحبة</h1>
+                    <img class="AbtUSimg2"
+                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
 
             </div>
         </div>
     </div>
 </div>
+<script>
+    function Switch(language) {
+        var switchAR = document.getElementById("SwitchAR");
+        var switchEN = document.getElementById("SwitchEN");
 
+        if (language === 'AR') {
+            switchAR.style.display = "none";  // Hide Arabic button
+            switchEN.style.display = "block"; // Show English button
+        } else if (language === 'EN') {
+            switchEN.style.display = "none";  // Hide English button
+            switchAR.style.display = "block"; // Show Arabic button
+        }
+    }
+</script>
 <?php
 get_footer();
