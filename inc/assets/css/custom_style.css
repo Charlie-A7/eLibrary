@@ -1995,9 +1995,10 @@ footer .footer_lines::after {
   font-size: 12px;
 }
 .aboutUsDiv #ARparagraph {
+  font-size: 14px;
   display: none;
   direction: rtl;
-  font-family: "arb-fonts-medium";
+  font-family: "arb-fonts-regular";
 }
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
