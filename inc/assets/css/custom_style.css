@@ -1997,6 +1997,7 @@ footer .footer_lines::after {
 .aboutUsDiv #ARparagraph {
   display: none;
   direction: rtl;
+  font-family: "arb-fonts-medium";
 }
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
