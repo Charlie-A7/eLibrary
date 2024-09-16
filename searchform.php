@@ -7,6 +7,11 @@
         </button>
     </form>
 </div>
+
+<?php
+$slug = get_post_field( 'post_name', get_post() );
+echo $slug;
+?>
 <div class="filter-container">
     <form method="get" action="<?php echo esc_url( home_url( 'materials' ) ); ?>">
         <select name="product_cat" id="product_cat" class="dropdown_product_cat">
