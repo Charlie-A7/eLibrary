@@ -36,12 +36,11 @@
     </form> -->
 
     <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <div class="filter-label">
+            <i class="fas fa-filter"></i> <!-- FontAwesome filter icon -->
+        </div>
         <select name="category" id="category">
-            <option value="">
-                <label for="category" class="filter-label">
-                    <i class="fas fa-filter"></i> <!-- FontAwesome filter icon -->
-                </label>
-            </option>
+            <option value="">Select a category</option> <!-- Placeholder text for the dropdown -->
             <?php
                 $terms = get_terms( array(
                     'taxonomy' => 'product_cat',
