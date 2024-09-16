@@ -2204,14 +2204,19 @@ footer {
     height: 45dvh;
     margin-bottom: 1.5rem;
   }
-  .AbtUSPart1 {
+  .AbtUSPart1, 
+  .AbtUSPart2 {
     padding-left: 9dvw;
   }
   .AbtUSPart2 {
+  
   }
 
   .aboutUsText {
     font-size: 12px;
+  }
+  .MOTTO-padding{
+    padding-top: 10px;
   }
 
   .LanguageSwitchBtnENG,

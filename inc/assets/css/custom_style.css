@@ -1988,11 +1988,15 @@ footer .footer_lines::after {
   height: 45dvh;
   margin-bottom: 1.5rem;
 }
-.aboutUsDiv .AbtUSPart1 {
+.aboutUsDiv .AbtUSPart1,
+.aboutUsDiv .AbtUSPart2 {
   padding-left: 9dvw;
 }
 .aboutUsDiv .aboutUsText {
   font-size: 12px;
+}
+.aboutUsDiv .MOTTO-padding {
+  padding-top: 10px;
 }
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
