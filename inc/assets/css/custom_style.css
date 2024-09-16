@@ -2000,6 +2000,8 @@ footer .footer_lines::after {
   font-size: 20px;
   border-radius: 20px;
   color: white;
+  box-shadow: none;
+  border: none;
 }
 .aboutUsDiv .h1 {
   font-family: "quicksand-bold";
