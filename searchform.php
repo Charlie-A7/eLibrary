@@ -10,22 +10,30 @@
 <div class="filter-container">
     <form method="get" action="<?php echo esc_url( home_url( 'materials' ) ); ?>">
         <select name="product_cat" id="product_cat" class="dropdown_product_cat">
-            <option value="" selected="selected">Select a category</option>
+            <option value="" selected="selected">Select a subcategory</option>
             <?php
-                // Fetch product categories
-                $terms = get_terms( array(
-                    'taxonomy' => 'product_cat',
-                    'orderby' => 'name',
-                    'hide_empty' => false,
-                ) );
+                // Fetch the parent category (materials)
+                $cat_slug = isset($_GET['cat']) ? esc_attr($_GET['cat']) : 'materials';
 
-                // Loop through each category and output an option tag
-                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
-                    foreach ( $terms as $term ) {
-                        $level = ( $term->parent !== 0 ) ? '&nbsp;&nbsp;&nbsp;' : '';
-                        echo '<option class="level-' . esc_attr( $term->parent ) . '" value="' . esc_attr( $term->slug ) . '">';
-                        echo $level . esc_html( $term->name ) . '&nbsp;&nbsp;(' . esc_html( $term->count ) . ')';
-                        echo '</option>';
+                // Fetch the parent category dynamically based on the hidden cat value
+                $parent_cat = get_term_by('slug', $cat_slug, 'product_cat');
+                
+                if ($parent_cat && ! is_wp_error($parent_cat)) {
+                    // Fetch only subcategories of 'materials'
+                    $subcategories = get_terms(array(
+                        'taxonomy' => 'product_cat',
+                        'orderby' => 'name',
+                        'hide_empty' => false,
+                        'parent' => $parent_cat->term_id, // Only subcategories of 'materials'
+                    ));
+
+                    // Loop through each subcategory and output an option tag
+                    if (!empty($subcategories) && !is_wp_error($subcategories)) {
+                        foreach ($subcategories as $subcategory) {
+                            echo '<option class="level-' . esc_attr($subcategory->parent) . '" value="' . esc_attr($subcategory->slug) . '">';
+                            echo esc_html($subcategory->name) . '&nbsp;&nbsp;(' . esc_html($subcategory->count) . ')';
+                            echo '</option>';
+                        }
                     }
                 }
             ?>
