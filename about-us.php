@@ -32,11 +32,10 @@ get_header();
                     multiplying disciples to fulfill the Great Commission.
                 </p>
                 <p id="ARparagraph" class="AboutUsText">
-                    حياة المح بّة في لبنان خدمة مسيح يّة تعمل مع جميع الكنائس والطوائف المسيحية.
-                    هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج
-                    والنشاطات المتنوعة التي نقوم بها في مختلف شرائح المجتمع. رسالتنا: نشر الانجيل في
-                    كل مكان
-                    شعارنا</span>:<span class="abtUsBold"> ربح، بناء وارسال تلاميذ متضاعفين لتحقيق المأمورية العظمى.
+                    حياة المحبة في لبنان خدمة مسيحية تعمل مع جميع الكنائس والمذاهب المسيحية.. <br>
+                    هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج و النشاطات المتنوعة التي نقوم
+                    بها في مختلف شرائح المجتمع. رسالتنا: نشر الأنجيل في كل مكان. <br> <br>
+                    <span class="abtUsBold">شعارنا: </span> ربح
                 </p>
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
