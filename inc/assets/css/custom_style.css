@@ -2006,6 +2006,7 @@ footer .footer_lines::after {
 .aboutUsDiv .LanguageSwitchBtnENG {
   float: left;
   font-family: "quicksand-semibold";
+  display: none;
 }
 .aboutUsDiv .LanguageSwitchBtnAR {
   float: right;
