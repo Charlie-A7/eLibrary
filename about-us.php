@@ -41,7 +41,6 @@ get_header();
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
             </div>
             <div class="AbtUSPart2 col-4">
-                <h1 class="main-heading">LIFEAGAPE<br>حياة المحبة</h1>
                 <img class="AbtUSimg2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
 
