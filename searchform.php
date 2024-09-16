@@ -24,14 +24,20 @@
         </label>
         <?php
             wp_dropdown_categories( array(
-                // 'show_option_all' => 'Select',
+                'show_option_none' => '',
                 'name' => 'category',
                 'orderby' => 'name',
                 'hierarchical' => true,
                 'selected' => get_query_var( 'cat' ),
-            'taxonomy' => 'product_cat' // Use 'product_cat' for WooCommerce product categories
+                'taxonomy' => 'product_cat' // Use 'product_cat' for WooCommerce product categories
             ) );
         ?>
         <input type="submit" value="Filter">
     </form>
 </div>
+
+<script>
+    document.querySelector('.filter-label').addEventListener('click', function() {
+        document.querySelector('select[name="category"]').focus(); // Open the dropdown when the icon is clicked
+    });
+</script>
