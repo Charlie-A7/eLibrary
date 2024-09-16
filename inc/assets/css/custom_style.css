@@ -1974,8 +1974,8 @@ footer .footer_lines::after {
 .aboutUsDiv .AbtUSPart1 {
   padding-left: 9dvw;
 }
-.aboutUsDiv .aboutUsText {
-  font-size: 12px;
+.aboutUsDiv .AboutUsText {
+  font-size: 23px;
   margin-top: 0.5rem;
   font-family: "quicksand-semibold";
 }
