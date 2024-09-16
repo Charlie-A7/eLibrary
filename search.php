@@ -57,23 +57,14 @@ get_header(); ?>
 							if($category_filter == 'materials'){
 								?>
 									Discover the<br>bookshelf<br>
-									<script>
-										let menuItem = document.getElementById('menu-item-107');
-									</script>
 								<?php
 							}
 							elseif($category_filter == 'library'){
 								?>
 									Explore<br>the library<br>
-									<script>
-										let menuItem = document.getElementById('menu-item-118');
-									</script>
 								<?php
 							}
 						?>
-						<script>
-							menuItem.classList.add('current-menu-item');
-						</script>
 
 						<span class="dots-design">..........</span>
 					</h1>
@@ -101,3 +92,22 @@ get_header(); ?>
 
 <?php
 get_footer();
+
+if($category_filter == 'materials'){
+	?>
+		<script>
+			let menuItem = document.getElementById('menu-item-107');
+		</script>
+	<?php
+}
+elseif($category_filter == 'library'){
+	?>
+		<script>
+			let menuItem = document.getElementById('menu-item-118');
+		</script>
+	<?php
+}
+?>
+<script>
+	menuItem.classList.add('current-menu-item');
+</script>
