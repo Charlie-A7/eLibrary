@@ -18,54 +18,45 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-?>
+
+get_header( 'shop' ); ?>
+
+	<?php
+		/**
+		 * woocommerce_before_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 */
+		do_action( 'woocommerce_before_main_content' );
+	?>
+
+		<?php while ( have_posts() ) : ?>
+			<?php the_post(); ?>
+
+			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+
+		<?php endwhile; // end of the loop. ?>
+
+	<?php
+		/**
+		 * woocommerce_after_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+		 */
+		do_action( 'woocommerce_after_main_content' );
+	?>
+
+	<?php
+		/**
+		 * woocommerce_sidebar hook.
+		 *
+		 * @hooked woocommerce_get_sidebar - 10
+		 */
+		do_action( 'woocommerce_sidebar' );
+	?>
 
 <?php
-get_header();
-?>
+get_footer( 'shop' );
 
-<div class="homeDiv py-5 position-relative">
-    <div class="blue-left-sidebar position-absolute"></div>
-    <div class="blue-right-sidebar position-absolute"></div>
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
-                <div class="padding-left">
-                    <h1>Welcome to<br>our resource<br>library</h1>
-                    <h4>Browse our selection, and order what you need.</h4>
-                </div>
-            </div>
-            <div class="col-6 z-1 h-100">
-                <!-- WooCommerce Product Display -->
-                <?php
-                /**
-                 * woocommerce_before_main_content hook.
-                 *
-                 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-                 * @hooked woocommerce_breadcrumb - 20
-                 */
-                do_action( 'woocommerce_before_main_content' );
-                ?>
-
-                <?php while ( have_posts() ) : ?>
-                    <?php the_post(); ?>
-
-                    <?php wc_get_template_part( 'content', 'single-product' ); // Main product template ?>
-
-                <?php endwhile; // end of the loop. ?>
-
-                <?php
-                /**
-                 * woocommerce_after_main_content hook.
-                 *
-                 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-                 */
-                do_action( 'woocommerce_after_main_content' );
-                ?>
-            </div>
-        </div>
-    </div>
-</div>
-
-<?php
-get_footer();
+/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
