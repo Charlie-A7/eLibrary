@@ -1996,6 +1996,7 @@ footer .footer_lines::after {
 }
 .aboutUsDiv #ARparagraph {
   display: none;
+  direction: rtl;
 }
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
