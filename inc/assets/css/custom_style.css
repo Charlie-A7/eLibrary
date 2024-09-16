@@ -1888,7 +1888,7 @@ footer .footer_lines::after {
 
 .add_to_cart_button {
   background-color: #093f6c;
-  color: white;
+  color: white ip !important;
   border-radius: 20px;
   margin-top: -1rem;
   padding: 0.25rem 1rem;
