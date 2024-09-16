@@ -1,5 +1,5 @@
 <div class="search-container d-flex justify-content-center align-items-center">
-    <form role="search" method="get" action="<?php echo esc_url( home_url('/') ); ?>" aria-label="Search for">
+    <form role="search" method="POST" action="<?php echo esc_url( home_url('/') ); ?>" aria-label="Search for">
         <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
         <input type="hidden" name="cat" value="<?php echo isset($_GET['cat']) ? esc_attr($_GET['cat']) : (is_page('materials') ? 'materials' : (is_page('library') ? 'library' : '')); ?>">
         <button type="submit" class="search-button">
