@@ -60,8 +60,8 @@
     </form>
 </div>
 
-<script>
+<!-- <script>
     document.querySelector('.filter-label').addEventListener('click', function() {
         document.querySelector('select[name="category"]').focus(); // Open the dropdown when the icon is clicked
     });
-</script>
+</script> -->
