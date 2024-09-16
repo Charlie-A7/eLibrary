@@ -462,7 +462,6 @@ section {
 
 .h1_style {
   font-size: 2.7rem;
-  line-height: 1.346;
   color: #fff;
   max-width: 700px;
   text-transform: uppercase;
@@ -475,7 +474,6 @@ section {
   text-align: center;
   border: none;
   font-size: 1rem;
-  line-height: 1.167;
   color: #000;
   background-color: $main_color;
   padding: 0.5rem 1.9rem;
@@ -643,7 +641,6 @@ p strong {
     display: none;
   }
   p {
-    line-height: 1.667;
     padding-bottom: 1rem;
     max-width: 530px;
   }
@@ -661,7 +658,6 @@ p strong {
   }
   .sub_p_style {
     color: #fff;
-    line-height: 1.643;
     padding-bottom: 1.5rem;
   }
   .background_img {
@@ -722,7 +718,6 @@ p strong {
     padding-bottom: 2rem;
   }
   .sub_title {
-    line-height: 1.5;
     padding-bottom: 2rem;
     max-width: 630px;
     color: #000;
@@ -741,7 +736,6 @@ p strong {
       }
       .h2_style {
         font-size: 1.25rem;
-        line-height: 1.5;
         padding: 0 0.75rem;
         padding-bottom: 2rem;
         text-align: center;
@@ -797,7 +791,6 @@ p strong {
   background-blend-mode: saturation;
   .h2_style {
     font-size: 2.5rem;
-    line-height: 1.5;
     padding: 3.5rem 0;
     width: auto;
     margin: auto;
@@ -915,7 +908,6 @@ p strong {
 // 	border: 0;
 // 	margin: 0;
 // 	overflow: visible;
-// 	line-height: 0;
 // }
 // 	.hamburger:hover {
 // 		opacity: 1;
@@ -1025,14 +1017,12 @@ p strong {
   .title_404 {
     color: #212121;
     font-size: 25px;
-    line-height: 28px;
     text-transform: uppercase;
     padding-bottom: 15px;
   }
   .text_404 {
     color: #868587;
     font-size: 18px;
-    line-height: 18px;
     padding-bottom: 50px;
   }
   // .btn_404{
@@ -1423,7 +1413,6 @@ p strong {
   .h2_style {
     color: #fff;
     padding-bottom: 5rem;
-    line-height: 0;
   }
   .padding_for_button {
     padding-top: 4rem;
@@ -1653,7 +1642,6 @@ p strong {
       }
       .h2_style {
         font-size: 1.25rem;
-        line-height: 1.5;
         padding: 0 0.8rem;
         padding-bottom: 2rem;
         text-align: center;
@@ -1781,7 +1769,6 @@ p strong {
   }
   .p_style {
     font-size: 1.5rem;
-    line-height: 1.571;
     color: #000;
     display: flex;
     padding-bottom: 1rem;
@@ -1789,7 +1776,6 @@ p strong {
   .description {
     p {
       font-size: 1.5rem;
-      line-height: 1.571;
       color: #000;
       display: flex;
     }
@@ -1818,7 +1804,6 @@ p strong {
       }
       .h2_style {
         font-size: 1.5rem;
-        line-height: 1.5;
         padding-bottom: 2rem;
         text-align: center;
       }
@@ -2120,7 +2105,6 @@ footer {
   min-width: 30% !important;
   font-family: $quicksand-semibold !important;
   font-size: 17px !important;
-  line-height: 1.5 !important;
 }
 
 .add_to_cart_button:hover {
@@ -2261,7 +2245,6 @@ footer {
   .main-heading-Ar {
     font-size: 5.5rem;
     margin-left: -5rem;
-    line-height: 1;
   }
   .main-heading-Eng {
     text-transform: uppercase;

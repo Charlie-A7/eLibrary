@@ -451,7 +451,6 @@ section {
 
 .h1_style {
   font-size: 2.7rem;
-  line-height: 1.346;
   color: #fff;
   max-width: 700px;
   text-transform: uppercase;
@@ -466,7 +465,6 @@ section {
   text-align: center;
   border: none;
   font-size: 1rem;
-  line-height: 1.167;
   color: #000;
   background-color: #093f6c;
   padding: 0.5rem 1.9rem;
@@ -620,7 +618,6 @@ p strong {
   display: none;
 }
 .second_section p {
-  line-height: 1.667;
   padding-bottom: 1rem;
   max-width: 530px;
 }
@@ -638,7 +635,6 @@ p strong {
 }
 .third_section .sub_p_style {
   color: #fff;
-  line-height: 1.643;
   padding-bottom: 1.5rem;
 }
 .third_section .background_img {
@@ -697,7 +693,6 @@ p strong {
   padding-bottom: 2rem;
 }
 .fourth_section .sub_title {
-  line-height: 1.5;
   padding-bottom: 2rem;
   max-width: 630px;
   color: #000;
@@ -716,7 +711,6 @@ p strong {
 }
 .fourth_section .inner_section_project .title_section .h2_style {
   font-size: 1.25rem;
-  line-height: 1.5;
   padding: 0 0.75rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -766,7 +760,6 @@ p strong {
 }
 .contact_us_footer .h2_style {
   font-size: 2.5rem;
-  line-height: 1.5;
   padding: 3.5rem 0;
   width: auto;
   margin: auto;
@@ -907,14 +900,12 @@ p strong {
 .page_404 .title_404 {
   color: #212121;
   font-size: 25px;
-  line-height: 28px;
   text-transform: uppercase;
   padding-bottom: 15px;
 }
 .page_404 .text_404 {
   color: #868587;
   font-size: 18px;
-  line-height: 18px;
   padding-bottom: 50px;
 }
 .page_404 .btn_404 {
@@ -1246,7 +1237,6 @@ p strong {
 .third_section_services .h2_style {
   color: #fff;
   padding-bottom: 5rem;
-  line-height: 0;
 }
 .third_section_services .padding_for_button {
   padding-top: 4rem;
@@ -1470,7 +1460,6 @@ p strong {
 }
 .project_listing .inner_section_project .title_section .h2_style {
   font-size: 1.25rem;
-  line-height: 1.5;
   padding: 0 0.8rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -1592,14 +1581,12 @@ p strong {
 }
 .single_project .p_style {
   font-size: 1.5rem;
-  line-height: 1.571;
   color: #000;
   display: flex;
   padding-bottom: 1rem;
 }
 .single_project .description p {
   font-size: 1.5rem;
-  line-height: 1.571;
   color: #000;
   display: flex;
 }
@@ -1627,7 +1614,6 @@ p strong {
 }
 .related_projects .inner_section_project .title_section .h2_style {
   font-size: 1.5rem;
-  line-height: 1.5;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -1895,7 +1881,6 @@ footer .footer_lines::after {
   min-width: 30% !important;
   font-family: "quicksand-semibold" !important;
   font-size: 17px !important;
-  line-height: 1.5 !important;
 }
 
 .add_to_cart_button:hover {
@@ -2025,7 +2010,6 @@ footer .footer_lines::after {
 .aboutUsDiv .main-heading-Ar {
   font-size: 5.5rem;
   margin-left: -5rem;
-  line-height: 1;
 }
 .aboutUsDiv .main-heading-Eng {
   text-transform: uppercase;
