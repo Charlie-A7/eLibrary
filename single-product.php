@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Single Product
+ * Template Name: single-product
  */
 
 get_header(); ?>
