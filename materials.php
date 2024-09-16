@@ -6,7 +6,7 @@
 get_header();
 ?>
 <div class="custom-shop py-2 position-relative">
-	<!-- sidebar blue bg -->
+	
 	<div class="blue-sidebar position-absolute z-0"></div>
 	
 	<div class="container-fluid">
@@ -18,7 +18,6 @@ get_header();
 
 		<?php
 
-			// Custom query for WooCommerce products in the "materials" category (limit 3)
 			$args1 = array(
 				'post_type' => 'product',
 				'posts_per_page' => 19,

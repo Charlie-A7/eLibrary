@@ -6,13 +6,6 @@
 get_header();
 ?>
 
-<?php
-// while (have_posts()):
-//     the_post();
-//     the_content();
-// endwhile;
-?>
-
 <div class="homeDiv py-5 position-relative">
     <div class="blue-left-sidebar position-absolute"></div>
     <div class="blue-right-sidebar position-absolute"></div>
