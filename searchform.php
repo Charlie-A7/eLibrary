@@ -1,34 +1,29 @@
+<?php
+$slug = get_post_field( 'post_name', get_post() );
+?>
 <div class="search-container d-flex justify-content-center align-items-center">
     <form role="search" method="get" action="<?php echo esc_url( home_url('/') ); ?>" aria-label="Search for">
         <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
-        <input type="hidden" name="cat" value="<?php echo isset($_GET['cat']) ? esc_attr($_GET['cat']) : (is_page('materials') ? 'materials' : (is_page('library') ? 'library' : '')); ?>">
+        <input type="hidden" name="cat" value="<?php echo isset($_GET['cat']) ? esc_attr($_GET['cat']) : $slug; ?>">
         <button type="submit" class="search-button">
             <i class="fa fa-search"></i>
         </button>
     </form>
 </div>
-
-<?php
-$slug = get_post_field( 'post_name', get_post() );
-echo $slug;
-?>
 <div class="filter-container">
     <form method="get" action="<?php echo esc_url( home_url( 'materials' ) ); ?>">
         <select name="product_cat" id="product_cat" class="dropdown_product_cat">
             <option value="" selected="selected"></option>
             <?php
-                // Fetch the parent category (materials)
-                $cat_slug = isset($_GET['cat']) ? esc_attr($_GET['cat']) : 'materials';
-
                 // Fetch the parent category dynamically based on the hidden cat value
-                $parent_cat = get_term_by('slug', $cat_slug, 'product_cat');
+                $parent_cat = get_term_by('slug', $slug, 'product_cat');
                 
                 if ($parent_cat && ! is_wp_error($parent_cat)) {
                     // Fetch only subcategories of 'materials'
                     $subcategories = get_terms(array(
                         'taxonomy' => 'product_cat',
                         'orderby' => 'name',
-                        'hide_empty' => false,
+                        'hide_empty' => true,
                         'parent' => $parent_cat->term_id, // Only subcategories of 'materials'
                     ));
 
