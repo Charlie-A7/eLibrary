@@ -27,11 +27,9 @@ get_header();
                     Christian denominations. <br>
                     Our goal is to deliver the message of Jesus Christ for a better life for every person
                     through the various programs and activities that we carry out in different segments of society. Our
-                    mission:Spreading the Gospel everywhere. <br>
-                    <span class="MOTTO-padding"><span class="abtUsBold">Our motto:</span> Win, build and send
-                        multiplying disciples to fulfill the
-                        Great Commission.
-                    </span>
+                    mission:Spreading the Gospel everywhere. <br><br>
+                    <span class="abtUsBold">Our motto:</span> Win, build and send
+                    multiplying disciples to fulfill the Great Commission.
                 </p>
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>

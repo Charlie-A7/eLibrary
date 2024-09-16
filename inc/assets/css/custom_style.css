@@ -1995,9 +1995,6 @@ footer .footer_lines::after {
 .aboutUsDiv .aboutUsText {
   font-size: 12px;
 }
-.aboutUsDiv .MOTTO-padding {
-  padding-top: 10px;
-}
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
   background-color: #093f6c;
