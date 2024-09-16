@@ -2027,6 +2027,7 @@ footer .footer_lines::after {
 .aboutUsDiv .main-heading-Ar {
   font-size: 5.5rem;
   margin-left: -5rem;
+  line-height: 1;
 }
 .aboutUsDiv .main-heading-Eng {
   text-transform: uppercase;
