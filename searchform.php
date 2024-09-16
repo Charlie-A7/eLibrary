@@ -33,7 +33,7 @@
         <input type="submit" value="Filter">
     </form> -->
 
-    <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <form method="get" action="<?php echo esc_url( home_url( 'materials' ) ); ?>">
         <select name="product_cat" id="product_cat" class="dropdown_product_cat">
             <option value="" selected="selected">Select a category</option>
             <?php
