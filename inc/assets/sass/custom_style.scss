@@ -2210,6 +2210,7 @@ footer {
   .aboutUsText {
     font-size: 12px;
     margin-top: 0.5rem;
+    font-family: $quicksand-semibold;
   }
   #ARparagraph{
     font-size: 23px;
@@ -2258,6 +2259,8 @@ footer {
   .main-heading-Eng,
   .main-heading-Ar {
     font-size: 5.5rem;
+    margin-left: -5rem;
+    line-height: 1;
   }
   .main-heading-Eng{
     text-transform: uppercase;

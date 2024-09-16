@@ -1993,6 +1993,7 @@ footer .footer_lines::after {
 .aboutUsDiv .aboutUsText {
   font-size: 12px;
   margin-top: 0.5rem;
+  font-family: "quicksand-semibold";
 }
 .aboutUsDiv #ARparagraph {
   font-size: 23px;
@@ -2039,6 +2040,8 @@ footer .footer_lines::after {
 .aboutUsDiv .main-heading-Eng,
 .aboutUsDiv .main-heading-Ar {
   font-size: 5.5rem;
+  margin-left: -5rem;
+  line-height: 1;
 }
 .aboutUsDiv .main-heading-Eng {
   text-transform: uppercase;
