@@ -2005,7 +2005,7 @@ footer .footer_lines::after {
 }
 .aboutUsDiv .LanguageSwitchBtnENG {
   float: left;
-  font-family: "quicksand-bold";
+  font-family: "quicksand-semibold";
 }
 .aboutUsDiv .LanguageSwitchBtnAR {
   float: right;
