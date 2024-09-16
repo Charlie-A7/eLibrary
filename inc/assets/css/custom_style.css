@@ -2018,11 +2018,6 @@ footer .footer_lines::after {
 .aboutUsDiv .LanguageSwitchBtnAR {
   float: right;
 }
-.aboutUsDiv .h1 {
-  font-family: "quicksand-bold";
-  font-size: 7rem;
-  text-transform: uppercase;
-}
 .aboutUsDiv .abtUsBold {
   font-family: "quicksand-bold";
 }
@@ -2040,6 +2035,20 @@ footer .footer_lines::after {
   bottom: 0;
   position: absolute;
   padding-bottom: 2rem;
+}
+.aboutUsDiv .main-heading-Eng,
+.aboutUsDiv .main-heading-Ar {
+  font-size: 9rem;
+}
+.aboutUsDiv .main-heading-Eng {
+  text-transform: uppercase;
+  font-family: "quicksand-bold";
+  right: 3%;
+  top: 10%;
+}
+.aboutUsDiv .main-heading-Ar {
+  font-family: "arb-fonts-bold";
+  right: 15%;
 }
 
 .my-custom-cart-wrapper {

@@ -12,9 +12,12 @@ get_header();
 
 <div class="aboutUsDiv position-relative">
 
-    <div class="ABOUTUS-blue-left-sidebar position-absolute"></div>
-    <div class="ABOUTUS-blue-right-sidebar position-absolute"></div>
+    <div class="ABOUTUS-blue-left-sidebar position-absolute z-1"></div>
+    <div class="ABOUTUS-blue-right-sidebar position-absolute z-1"></div>
 
+    <h1 class="main-heading-Eng">LIFEAGAPE <br>
+        <span class="main-heading-Ar">حياة المحبة</span>
+    </h1>
     <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100">

@@ -2235,12 +2235,6 @@ footer {
   .LanguageSwitchBtnAR{
   float: right;
   }
-
-  .h1 {
-    font-family: $quicksand-bold;
-    font-size: 7rem;
-    text-transform: uppercase;
-  }
   .abtUsBold {
     font-family: $quicksand-bold;
   }
@@ -2260,6 +2254,21 @@ footer {
     position: absolute;
     padding-bottom: 2rem;
   }
+  .main-heading-Eng,
+  .main-heading-Ar {
+    font-size: 9rem;
+  }
+  .main-heading-Eng{
+    text-transform: uppercase;
+    font-family: $quicksand-bold;
+    right: 3%;
+    top: 10%;
+  }
+  .main-heading-Ar{
+    font-family: $arabic-fonts-bold;
+    right: 15%;
+  }
+
 }
 
 // cart page
