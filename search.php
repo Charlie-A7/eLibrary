@@ -15,7 +15,7 @@ get_header(); ?>
 	
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end py-2">
-			<div class="col-12 d-flex justify-content-end align-items-center">
+			<div class="col-4 d-flex justify-content-end align-items-center">
 				<?php get_template_part('searchform'); ?>
 			</div>
 		</div>
