@@ -4,8 +4,6 @@
     </label>
     <input type="submit" class="search-submit btn btn-default" value="<?php //echo esc_attr_x( 'Search', 'submit button', 'wp-bootstrap-starter' ); ?>">
 </form>
-
-
  -->
 
 <div class="search-container d-flex justify-content-center align-items-center">
@@ -18,7 +16,7 @@
     </form>
 </div>
 <div class="filter-container">
-    <!-- <form method="get" action="<?php // echo esc_url( home_url( '/' ) ); ?> ">
+    <!-- <form method="get" action="<?php  //echo esc_url( home_url( '/' ) ); ?> ">
         <label for="category" class="filter-label">
             <i class="fas fa-filter"></i>
         </label>
@@ -36,21 +34,24 @@
     </form> -->
 
     <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <div class="filter-label">
-            <i class="fas fa-filter"></i> <!-- FontAwesome filter icon -->
-        </div>
-        <select name="category" id="category">
-            <option value="">Select a category</option> <!-- Placeholder text for the dropdown -->
+        <select name="product_cat" id="product_cat" class="dropdown_product_cat">
+            <option value="" selected="selected">Select a category</option>
             <?php
+                // Fetch product categories
                 $terms = get_terms( array(
-                    'taxonomy' => 'product_cat',
+                    'taxonomy' => 'product_cat', // WooCommerce product categories
                     'orderby' => 'name',
                     'hide_empty' => false, // Show empty categories as well
                 ) );
 
+                // Loop through each category and output an option tag
                 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
                     foreach ( $terms as $term ) {
-                        echo '<option value="' . esc_attr( $term->slug ) . '">' . esc_html( $term->name ) . '</option>';
+                        // Indent child categories for better visualization
+                        $level = ( $term->parent !== 0 ) ? '&nbsp;&nbsp;&nbsp;' : '';
+                        echo '<option class="level-' . esc_attr( $term->parent ) . '" value="' . esc_attr( $term->slug ) . '">';
+                        echo $level . esc_html( $term->name ) . '&nbsp;&nbsp;(' . esc_html( $term->count ) . ')';
+                        echo '</option>';
                     }
                 }
             ?>
@@ -59,8 +60,9 @@
     </form>
 </div>
 
-<!-- <script>
-    document.querySelector('.filter-label').addEventListener('click', function() {
-        document.querySelector('select[name="category"]').focus(); // Open the dropdown when the icon is clicked
-    });
-</script> -->
+
+
+
+
+
+
