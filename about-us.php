@@ -10,17 +10,17 @@ get_header();
 
 </style>
 
-<div class="aboutUsDiv position-relative">
+<div class="aboutUsDiv position-relative z-1">
 
-    <div class="ABOUTUS-blue-left-sidebar position-absolute"></div>
-    <div class="ABOUTUS-blue-right-sidebar position-absolute"></div>
+    <div class="ABOUTUS-blue-left-sidebar position-absolute z-2"></div>
+    <div class="ABOUTUS-blue-right-sidebar position-absolute z-2"></div>
 
     <div class="container-fluid h-100">
         <div class="row h-100">
 
-            <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100 position-relative">
+            <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100">
 
-                <img class="AbtUSimg1 img-fluid"
+                <img class="AbtUSimg1 img-fluid z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
                 <p id="ENparagraph" class="AboutUsText">
@@ -41,8 +41,8 @@ get_header();
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
             </div>
-            <div class="AbtUSPart2 col-4">
-                <h1 class="main-heading-Eng">LIFEAGAPE <br>
+            <div class="AbtUSPart2 col-4 z-3">
+                <h1 class="main-heading-Eng z-3">LIFEAGAPE <br>
                     <span class="main-heading-Ar">حياة المحبة</span>
                 </h1>
                 <img class="AbtUSimg2"
