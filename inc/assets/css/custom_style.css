@@ -1994,6 +1994,9 @@ footer .footer_lines::after {
 .aboutUsDiv .aboutUsText {
   font-size: 12px;
 }
+.aboutUsDiv #ARparagraph {
+  display: none;
+}
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
   background-color: #093f6c;

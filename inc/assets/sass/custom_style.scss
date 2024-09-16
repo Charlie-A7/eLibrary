@@ -2211,7 +2211,9 @@ footer {
   .aboutUsText {
     font-size: 12px;
   }
-
+  #ARparagraph{
+    display: none;
+  }
   .LanguageSwitchBtnENG,
   .LanguageSwitchBtnAR {
     background-color: $Navy-Blue-Color;

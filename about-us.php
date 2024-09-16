@@ -22,7 +22,7 @@ get_header();
                 <img class="AbtUSimg1 img-fluid"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
-                <p class="AboutUsText">
+                <p id="ENparagraph" class="AboutUsText">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
                     Christian denominations. <br>
                     Our goal is to deliver the message of Jesus Christ for a better life for every person
@@ -30,6 +30,13 @@ get_header();
                     mission:Spreading the Gospel everywhere. <br><br>
                     <span class="abtUsBold">Our motto:</span> Win, build and send
                     multiplying disciples to fulfill the Great Commission.
+                </p>
+                <p id="ARparagraph" class="AboutUsText">
+                    حياة المح بّة في لبنان خدمة مسيح يّة تعمل مع جميع الكنائس والطوائف المسيحية.
+                    هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج
+                    والنشاطات المتنوعة التي نقوم بها في مختلف شرائح المجتمع. رسالتنا: نشر الانجيل في
+                    كل مكان
+                    شعارنا</span>:<span class="abtUsBold"> ربح، بناء وارسال تلاميذ متضاعفين لتحقيق المأمورية العظمى.
                 </p>
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
@@ -47,15 +54,19 @@ get_header();
     function Switch(language) {
         var switchAR = document.getElementById("SwitchAR");
         var switchEN = document.getElementById("SwitchEN");
-        // var ARparagraph = document.getElementById("SwitchEN");
-        // var ENparagraph = document.getElementById("SwitchAR");
+        var ARparagraph = document.getElementById("ARparagraph");
+        var ENparagraph = document.getElementById("ENparagraph");
 
         if (language === 'AR') {
-            switchAR.style.display = "none";  // Hide Arabic button
-            switchEN.style.display = "block"; // Show English button
+            switchAR.style.display = "none";  // Hide Arabic Button
+            ENparagraph.style.display = "none"; // Hide English Paragraph
+            switchEN.style.display = "block"; // Show English Button
+            ARparagraph.style.display = "block"; // Show Arabic Paragraph
         } else if (language === 'EN') {
-            switchEN.style.display = "none";  // Hide English button
-            switchAR.style.display = "block"; // Show Arabic button
+            switchEN.style.display = "none";  // Hide English Button
+            ARparagraph.style.display = "none"; //Hide Arabic Paragraph
+            switchAR.style.display = "block"; // Show Arabic Button
+            ENparagraph.style.display = "block"; // Show English Paragraph
         }
     }
 </script>
