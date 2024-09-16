@@ -1994,14 +1994,20 @@ footer .footer_lines::after {
 .aboutUsDiv .aboutUsText {
   font-size: 12px;
 }
-.aboutUsDiv .LanguageSwitchBtn {
-  float: right;
+.aboutUsDiv .LanguageSwitchBtnENG,
+.aboutUsDiv .LanguageSwitchBtnAR {
   background-color: #093f6c;
   font-size: 20px;
   border-radius: 20px;
   color: white;
   box-shadow: none;
   border: none;
+}
+.aboutUsDiv .LanguageSwitchBtnENG {
+  float: left;
+}
+.aboutUsDiv .LanguageSwitchBtnAR {
+  float: right;
 }
 .aboutUsDiv .h1 {
   font-family: "quicksand-bold";

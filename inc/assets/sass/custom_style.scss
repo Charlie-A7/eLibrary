@@ -2214,14 +2214,20 @@ footer {
     font-size: 12px;
   }
 
-  .LanguageSwitchBtn {
-    float: right;
+  .LanguageSwitchBtnENG,
+  .LanguageSwitchBtnAR {
     background-color: $Navy-Blue-Color;
     font-size: 20px;
     border-radius: 20px;
     color: white;
     box-shadow: none;
     border: none;
+  }
+  .LanguageSwitchBtnENG{
+  float: left;
+  }
+  .LanguageSwitchBtnAR{
+  float: right;
   }
 
   .h1 {
