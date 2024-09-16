@@ -19,9 +19,12 @@
 </div>
 <div>
     <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <label for="category">
+            <i class="fas fa-filter"></i> <!-- FontAwesome filter icon -->
+        </label>
         <?php
             wp_dropdown_categories( array(
-                'show_option_all' => 'Select',
+                // 'show_option_all' => 'Select',
                 'name' => 'category',
                 'orderby' => 'name',
                 'hierarchical' => true,
