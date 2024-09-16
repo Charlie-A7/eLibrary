@@ -16,11 +16,7 @@ get_header();
     <div class="ABOUTUS-blue-right-sidebar position-absolute"></div>
 
     <div class="container-fluid h-100">
-        <h1 class="main-heading-Eng z-1">LIFEAGAPE <br>
-            <span class="main-heading-Ar">حياة المحبة</span>
-        </h1>
         <div class="row h-100">
-
 
             <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100 z-0">
 
@@ -46,6 +42,9 @@ get_header();
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
             </div>
             <div class="AbtUSPart2 col-4">
+                <h1 class="main-heading-Eng z-1">LIFEAGAPE <br>
+                    <span class="main-heading-Ar">حياة المحبة</span>
+                </h1>
                 <img class="AbtUSimg2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
 
