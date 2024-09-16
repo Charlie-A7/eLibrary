@@ -20,7 +20,7 @@ get_header();
 
             <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100 z-0">
 
-                <img class="AbtUSimg1 img-fluid"
+                <img class="AbtUSimg1 img-fluid z-0"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
                 <p id="ENparagraph" class="AboutUsText">
