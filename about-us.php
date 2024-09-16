@@ -17,6 +17,10 @@ get_header();
 
     <div class="container-fluid h-100">
         <div class="row h-100">
+            <h1 class="main-heading-Eng z-1">LIFEAGAPE <br>
+                <span class="main-heading-Ar">حياة المحبة</span>
+            </h1>
+
             <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100">
 
                 <img class="AbtUSimg1 img-fluid"
