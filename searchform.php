@@ -19,7 +19,7 @@
 </div>
 <div>
     <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <label for="category">
+        <label for="category" class="filter-label">
             <i class="fas fa-filter"></i> <!-- FontAwesome filter icon -->
         </label>
         <?php
