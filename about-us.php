@@ -35,7 +35,7 @@ get_header();
                     حياة المحبة في لبنان خدمة مسيحية تعمل مع جميع الكنائس والمذاهب المسيحية.. <br>
                     هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج و النشاطات المتنوعة التي نقوم
                     بها في مختلف شرائح المجتمع. رسالتنا: نشر الأنجيل في كل مكان. <br> <br>
-                    <span class="abtUsBold">شعارنا: </span> ربح
+                    <span class="abtUsBold">شعارنا: </span> ربح, بناء و ارسال تلامين متضاعفين لتحقيق المأمورية العظمى.
                 </p>
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
