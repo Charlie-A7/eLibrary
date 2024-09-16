@@ -4,6 +4,13 @@
  */
 
 get_header();
+	// Define the search term
+	$search_term = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
+
+	// get category filter
+	$category_filter = isset($_GET['cat']) ? sanitize_text_field($_GET['cat']) : '';
+	echo $search_term;
+	echo $category_filter;
 ?>
 <div class="custom-shop py-2 position-relative">
 	
