@@ -2112,9 +2112,9 @@ footer {
 
 // add to cart button
 .add_to_cart_button {
-  background-color: $Navy-Blue-Color;
+  background-color: $Navy-Blue-Color !important;
   color: white !important;
-  border-radius: 20px;
+  border-radius: 20px !important;
   margin-top: -1rem;
   padding: 0.25rem 1rem;
   min-width: 30%;
