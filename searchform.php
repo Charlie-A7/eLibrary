@@ -8,7 +8,7 @@
 
  -->
 
- <div class="search-container d-flex justify-content-center align-items-center">
+<div class="search-container d-flex justify-content-center align-items-center">
     <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Search for">
         <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
         <input type="hidden" name="cat" value="<?php echo isset($_GET['cat']) ? esc_attr($_GET['cat']) : (is_page('materials') ? 'materials' : (is_page('library') ? 'library' : '')); ?>">
@@ -17,7 +17,7 @@
         </button>
     </form>
 </div>
-<div>
+<div class="filter-container">
     <!-- <form method="get" action="<?php// echo esc_url( home_url( '/' ) ); ?>">
         <label for="category" class="filter-label">
             <i class="fas fa-filter"></i>
