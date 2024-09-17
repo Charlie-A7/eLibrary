@@ -19,7 +19,7 @@ get_header();
     <div class="container-fluid h-100 position-relative">
 
         <!-- desktop  row -->
-         <div class="desktop d-none d-md-flex">
+         <div class="desktop d-none d-md-flex flex-column">
             <div class="row h-100">
                 <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
                     <div id="englishText-index" class="padding-left position-absolute visible">
@@ -37,7 +37,7 @@ get_header();
          </div>
 
         <!-- mobile  rows -->
-         <div class="mobile d-flex d-md-none">
+         <div class="mobile d-flex d-md-none flex-column h-100">
             <div class="row row1">
                 <div class="col-12">
                     <h1>Welcome to<br>our resource<br>library</h1>
