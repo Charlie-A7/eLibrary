@@ -88,17 +88,6 @@
   animation: slideInRight 1s forwards;
 }
 
-.container {
-  position: relative;
-  overflow: hidden;
-  height: 100px; /* Adjust according to your text height */
-}
-
-h1, h4 {
-  position: absolute;
-  width: 100%;
-}
-
 html,
 body,
 div,
