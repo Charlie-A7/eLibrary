@@ -2030,6 +2030,13 @@ footer {
     h1{
       font-size: 2.1rem;
     }
+
+    .dots-design {
+      font-size: 100px;
+      font-style: normal;
+      font-family: none;
+      color: $Navy-Blue-Color;
+    }
   }
 }
 
@@ -2062,6 +2069,28 @@ footer {
   animation: slideInRight 1.5s forwards;
 }
 
+//Materials and Library page named custom-shop
+.custom-shop {
+  min-height: calc(100dvh - $header-height - $footer-height);
+
+  .blue-sidebar {
+    top: 10%;
+    left: 0;
+    width: 10dvw;
+    height: 85%;
+    background-color: $Light-Gray-Blue-Color;
+  }
+
+  .dots-design {
+    font-size: 100px;
+    font-style: normal;
+    font-family: none;
+    color: $Navy-Blue-Color;
+    writing-mode: vertical-lr; /* Text flows vertically from bottom to top */
+    transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
+  }
+}
+
 // add to cart button
 .add_to_cart_button {
   background-color: $Navy-Blue-Color !important;
@@ -2076,19 +2105,6 @@ footer {
 
 .add_to_cart_button:hover {
   color: white;
-}
-
-//Materials and Library page named custom-shop
-.custom-shop {
-  min-height: calc(100dvh - $header-height - $footer-height);
-
-  .blue-sidebar {
-    top: 10%;
-    left: 0;
-    width: 10dvw;
-    height: 85%;
-    background-color: $Light-Gray-Blue-Color;
-  }
 }
 
 // search bar
@@ -2118,15 +2134,6 @@ footer {
     font-size: 1rem;
     color: black;
   }
-}
-
-.dots-design {
-  font-size: 100px;
-  font-style: normal;
-  font-family: none;
-  color: $Navy-Blue-Color;
-  writing-mode: vertical-lr; /* Text flows vertically from bottom to top */
-  transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
 }
 
 //down to up letters class
@@ -2228,7 +2235,6 @@ footer {
 }
 
 // cart page
-
 .my-custom-cart-wrapper {
   min-height: calc(100dvh - $header-height - $footer-height);
 }
