@@ -50,44 +50,6 @@
   font-family: "arb-fonts-bolder" !important;
 }
 
-@keyframes slideOutLeft {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-}
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.slide-out {
-  animation: slideOutLeft 1s forwards;
-}
-
-.slide-in {
-  animation: slideInRight 1s forwards;
-}
-
 @media (max-width: 1359px) {
   .first_section.background_img .inner_section {
     padding: 13.5rem 0;
