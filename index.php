@@ -41,6 +41,7 @@ get_footer();
         if (isEnglishVisible) {
             // Slide out English text
             englishText.classList.remove('visible');
+            englishText.classList.remove('slide-in');
             englishText.classList.add('slide-out');
 
             // Slide in Arabic text after the English text slides out
@@ -73,7 +74,6 @@ get_footer();
         isEnglishVisible = !isEnglishVisible;
     }
 
-    // Loop the animation every 5 seconds (adjust timing as needed)
-    setInterval(switchText, 5000);
+    setInterval(switchText, 10000);
 
 </script>
