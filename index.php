@@ -19,38 +19,42 @@ get_header();
     <div class="container-fluid h-100 position-relative">
 
         <!-- desktop  row -->
-        <div class="row h-100 d-none d-md-flex">
-            <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
-                <div id="englishText-index" class="padding-left position-absolute visible">
+         <div class="desktop d-none d-md-flex">
+            <div class="row h-100">
+                <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
+                    <div id="englishText-index" class="padding-left position-absolute visible">
+                        <h1>Welcome to<br>our resource<br>library</h1>
+                        <h4>Browse our selection, and order what you need.</h4>
+                    </div>
+                    <div id="arabicText-index" class="padding-left position-absolute hidden">
+                        <h1 class=" rtl arabic-medium-font">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
+                        <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
+                    </div>
+                </div>
+                <div class="col-6 z-1 h-100">
+                </div>
+            </div>
+         </div>
+
+        <!-- mobile  rows -->
+         <div class="mobile d-flex d-md-none">
+            <div class="row row1">
+                <div class="col-12">
                     <h1>Welcome to<br>our resource<br>library</h1>
                     <h4>Browse our selection, and order what you need.</h4>
                 </div>
-                <div id="arabicText-index" class="padding-left position-absolute hidden">
+            </div>
+            <div class="row row2">
+                <div class="col-12">
+                </div>
+            </div>
+            <div class="row row3">
+                <div class="col-12">
                     <h1 class=" rtl arabic-medium-font">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
                     <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                 </div>
             </div>
-            <div class="col-6 z-1 h-100">
-            </div>
-        </div>
-
-        <!-- mobile  rows -->
-        <div class="row d-flex d-md-none">
-            <div class="col-12">
-                <h1>Welcome to<br>our resource<br>library</h1>
-                <h4>Browse our selection, and order what you need.</h4>
-            </div>
-        </div>
-        <div class="row d-flex d-md-none">
-            <div class="col-12">
-            </div>
-        </div>
-        <div class="row d-flex d-md-none">
-            <div class="col-12">
-                <h1 class=" rtl arabic-medium-font">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
-                <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
-            </div>
-        </div>
+         </div>
     </div>
 </div>
 
