@@ -7,10 +7,19 @@ get_header();
 ?>
 
 <div class="homeDiv py-5 position-relative">
-    <div class="blue-left-sidebar position-absolute d-none d-md-block"></div>
-    <div class="blue-right-sidebar position-absolute d-none d-md-block"></div>
+
+    <!-- desktop design -->
+    <div class="blue-left-sidebar-desktop position-absolute d-none d-md-block"></div>
+    <div class="blue-right-sidebar-desktop position-absolute d-none d-md-block"></div>
+
+    <!-- mobile desgin -->
+    <div class="blue-left-sidebar-mobile position-absolute d-none d-md-block"></div>
+    <div class="blue-right-sidebar-mobile position-absolute d-none d-md-block"></div>
+
     <div class="container-fluid h-100 position-relative">
-        <div class="row h-100">
+
+        <!-- desktop  row -->
+        <div class="row h-100 d-none d-md-flex">
             <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
                 <div id="englishText-index" class="padding-left position-absolute visible">
                     <h1>Welcome to<br>our resource<br>library</h1>
@@ -22,6 +31,24 @@ get_header();
                 </div>
             </div>
             <div class="col-6 z-1 h-100">
+            </div>
+        </div>
+
+        <!-- mobile  rows -->
+        <div class="row d-flex d-md-none">
+            <div class="col-12">
+                <h1>Welcome to<br>our resource<br>library</h1>
+                <h4>Browse our selection, and order what you need.</h4>
+            </div>
+        </div>
+        <div class="row d-flex d-md-none">
+            <div class="col-12">
+            </div>
+        </div>
+        <div class="row d-flex d-md-none">
+            <div class="col-12">
+                <h1 class=" rtl arabic-medium-font">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
+                <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
             </div>
         </div>
     </div>

@@ -1903,23 +1903,24 @@ footer .footer_lines::after {
 .homeDiv h4 {
   font-family: "quicksand-semibold";
 }
-.homeDiv .blue-left-sidebar,
-.homeDiv .blue-right-sidebar {
+.homeDiv .blue-left-sidebar-desktop,
+.homeDiv .blue-right-sidebar-desktop,
+.homeDiv .blue-left-sidebar-mobile,
+.homeDiv .blue-right-sidebar-mobile {
   background-color: #9eb6c5;
 }
-.homeDiv .blue-left-sidebar {
+.homeDiv .blue-left-sidebar-desktop {
   top: 10%;
   left: 0;
   width: 15dvw;
   height: 80%;
 }
-.homeDiv .blue-right-sidebar {
+.homeDiv .blue-right-sidebar-desktop {
   top: 5%;
   right: 0;
   width: 5dvw;
   height: 90%;
 }
-
 @keyframes slideOutLeft {
   0% {
     opacity: 1;

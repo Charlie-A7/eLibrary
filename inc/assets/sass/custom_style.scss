@@ -2073,22 +2073,28 @@ footer {
     font-family: $quicksand-semibold;
   }
 
-  .blue-left-sidebar,
-  .blue-right-sidebar {
+  .blue-left-sidebar-desktop,
+  .blue-right-sidebar-desktop,
+  .blue-left-sidebar-mobile,
+  .blue-right-sidebar-mobile {
     background-color: $Light-Gray-Blue-Color;
   }
-  .blue-left-sidebar {
+  .blue-left-sidebar-desktop {
     top: 10%;
     left: 0;
     width: 15dvw;
     height: 80%;
   }
-
-  .blue-right-sidebar {
+  .blue-right-sidebar-desktop {
     top: 5%;
     right: 0;
     width: 5dvw;
     height: 90%;
+  }
+
+  .blue-left-sidebar-mobile,
+  .blue-right-sidebar-mobile{
+
   }
 }
 
