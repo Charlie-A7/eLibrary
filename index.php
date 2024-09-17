@@ -12,7 +12,7 @@ get_header();
     <div class="container-fluid h-100 position-relative">
         <div class="row h-100">
             <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
-                <div id="englishText-index" class="padding-left position-absolute visible">
+                <div id="englishText-index" class="padding-left position-absolute">
                     <h1>Welcome to<br>our resource<br>library</h1>
                     <h4>Browse our selection, and order what you need.</h4>
                 </div>
@@ -40,7 +40,6 @@ get_footer();
     function switchText() {
         if (isEnglishVisible) {
             // Slide out English text
-            englishText.classList.remove('visible');
             englishText.classList.remove('slide-in');
             englishText.classList.add('slide-out');
 
@@ -53,7 +52,7 @@ get_footer();
                 arabicText.classList.remove('slide-out');
 
                 arabicText.classList.add('slide-in');
-            }, 1000); // Match the duration of the slide-out animation
+            }, 2000); // Match the duration of the slide-out animation
         } else {
             // Slide out Arabic text
             arabicText.classList.remove('slide-in');
@@ -68,7 +67,7 @@ get_footer();
                 englishText.classList.remove('slide-out');
 
                 englishText.classList.add('slide-in');
-            }, 1000); // Match the duration of the slide-out animation
+            }, 2000); // Match the duration of the slide-out animation
         }
 
         isEnglishVisible = !isEnglishVisible;
