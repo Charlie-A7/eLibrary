@@ -45,22 +45,22 @@ $quicksand-semibold: "quicksand-semibold";
 $quicksand-bold: "quicksand-bold";
 
 .quicksand-font{
-  font-family: $quicksand;
+  font-family: $quicksand !important;
 }
 .quicksand-light-font{
-  font-family: $quicksand-light;
+  font-family: $quicksand-light !important;
 }
 .quicksand-medium-font{
-  font-family: $quicksand-medium;
+  font-family: $quicksand-medium !important;
 }
 .quicksand-regular-font{
-  font-family: $quicksand-regular;
+  font-family: $quicksand-regular !important;
 }
 .quicksand-semibold-font{
-  font-family: $quicksand-semibold;
+  font-family: $quicksand-semibold !important;
 }
 .quicksand-bold-font{
-  font-family: $quicksand-bold;
+  font-family: $quicksand-bold !important;
 }
 
 // arabic
@@ -73,25 +73,25 @@ $arabic-fonts-bold: "arb-fonts-bold";
 $arabic-fonts-bolder: "arb-fonts-bolder";
 
 .arabic-ultralight-font{
-  font-family: $arabic-fonts-ultralight;
+  font-family: $arabic-fonts-ultralight !important;
 }
 .arabic-light-font{
-  font-family: $arabic-fonts-light;
+  font-family: $arabic-fonts-light !important;
 }
 .arabic-regular-font{
-  font-family: $arabic-fonts-regular;
+  font-family: $arabic-fonts-regular !important;
 }
 .arabic-font-medium{
-  font-family: $arabic-fonts-medium;
+  font-family: $arabic-fonts-medium !important;
 }
 .arabic-font-mediumbold{
-  font-family: $arabic-fonts-mediumbold;
+  font-family: $arabic-fonts-mediumbold !important;
 }
 .arabic-font-bold{
-  font-family: $arabic-fonts-bold;
+  font-family: $arabic-fonts-bold !important;
 }
 .arabic-font-bolder{
-  font-family: $arabic-fonts-bolder;
+  font-family: $arabic-fonts-bolder !important;
 }
 
 
