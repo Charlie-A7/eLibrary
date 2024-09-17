@@ -7,8 +7,8 @@ get_header();
 ?>
 
 <div class="homeDiv py-5 position-relative">
-    <div class="blue-left-sidebar position-absolute"></div>
-    <div class="blue-right-sidebar position-absolute"></div>
+    <div class="blue-left-sidebar position-absolute d-none d-md-block"></div>
+    <div class="blue-right-sidebar position-absolute d-none d-md-block"></div>
     <div class="container-fluid h-100 position-relative">
         <div class="row h-100">
             <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
