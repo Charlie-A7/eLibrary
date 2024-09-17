@@ -41,7 +41,7 @@ get_header();
             <div class="row row1">
                 <div class="col-12">
                     <h1>Welcome to our<br>resource library</h1>
-                    <h4>Browse our selection, and order what you need.</h4>
+                    <h6>Browse our selection, and order what you need.</h6>
                 </div>
             </div>
             <div class="row row2">
