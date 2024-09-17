@@ -22,7 +22,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> class="quicksand-regular-font">
 
     <div id="page" class="site main_page_wrapper">
 
@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-8 d-flex align-items-center text-left px-1">
                                 <h5 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                rel="home"> <span class="arabic-font-bold">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h5>
+                                rel="home"> <span class="arabic-bold-font">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h5>
                             </div>
                         </div>
                     </div>
