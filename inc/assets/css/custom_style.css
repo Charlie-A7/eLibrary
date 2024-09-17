@@ -1894,7 +1894,7 @@ footer .footer_lines::after {
   background-repeat: no-repeat;
 }
 .homeDiv .padding-left {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
 }
 .homeDiv h1 {
   font-size: 4.5rem;
@@ -1902,6 +1902,9 @@ footer .footer_lines::after {
 }
 .homeDiv h4 {
   font-family: "quicksand-semibold";
+}
+.homeDiv .desktop h1 {
+  font-size: 4.5rem;
 }
 .homeDiv .blue-left-sidebar-desktop,
 .homeDiv .blue-right-sidebar-desktop,
@@ -1943,7 +1946,6 @@ footer .footer_lines::after {
 .homeDiv .mobile .row3 {
   height: 25%;
 }
-
 @keyframes slideOutLeft {
   0% {
     opacity: 1;
