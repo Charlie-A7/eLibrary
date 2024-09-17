@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<div class="homeDiv py-5 position-relative">
+<div class="homeDiv py-4 py-md-5 position-relative">
 
     <!-- desktop design -->
     <div class="blue-left-sidebar-desktop position-absolute d-none d-md-block"></div>
@@ -51,7 +51,7 @@ get_header();
             <div class="row row3">
                 <div class="col-12">
                     <h1 class=" rtl arabic-medium-font">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
-                    <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
+                    <h6 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h6>
                 </div>
             </div>
          </div>
