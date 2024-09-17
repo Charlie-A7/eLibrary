@@ -2094,7 +2094,16 @@ footer {
 
   .blue-left-sidebar-mobile,
   .blue-right-sidebar-mobile{
-
+    width: 10dvw;
+    height: 60%;
+  }
+  .blue-left-sidebar-mobile{
+    top: 5%;
+    left: 0;
+  }
+  .blue-right-sidebar-mobile{
+    top: 25%;
+    right: 0;
   }
 }
 

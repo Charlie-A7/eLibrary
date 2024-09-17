@@ -1921,6 +1921,20 @@ footer .footer_lines::after {
   width: 5dvw;
   height: 90%;
 }
+.homeDiv .blue-left-sidebar-mobile,
+.homeDiv .blue-right-sidebar-mobile {
+  width: 10dvw;
+  height: 60%;
+}
+.homeDiv .blue-left-sidebar-mobile {
+  top: 5%;
+  left: 0;
+}
+.homeDiv .blue-right-sidebar-mobile {
+  top: 25%;
+  right: 0;
+}
+
 @keyframes slideOutLeft {
   0% {
     opacity: 1;
