@@ -109,33 +109,3 @@ $Light-Gray-Blue-Color: #9eb6c5;
 
 //text colors
 $text_color: #231f20;
-
-
-
-@keyframes slideOutLeft {
-  0% { opacity: 1; transform: translateX(0); }
-  100% { opacity: 0; transform: translateX(-100%); }
-}
-
-@keyframes slideInRight {
-  0% { opacity: 0; transform: translateX(100%); }
-  100% { opacity: 1; transform: translateX(0); }
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.slide-out {
-  animation: slideOutLeft 1s forwards;
-}
-
-.slide-in {
-  animation: slideInRight 1s forwards;
-}

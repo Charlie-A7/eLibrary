@@ -53,7 +53,7 @@ get_footer();
                 arabicText.classList.remove('slide-out');
 
                 arabicText.classList.add('slide-in');
-            }, 1000); // Match the duration of the slide-out animation
+            }, 500); // Match the duration of the slide-out animation
         } else {
             // Slide out Arabic text
             arabicText.classList.remove('slide-in');
@@ -68,7 +68,7 @@ get_footer();
                 englishText.classList.remove('slide-out');
 
                 englishText.classList.add('slide-in');
-            }, 1000); // Match the duration of the slide-out animation
+            }, 500); // Match the duration of the slide-out animation
         }
 
         isEnglishVisible = !isEnglishVisible;

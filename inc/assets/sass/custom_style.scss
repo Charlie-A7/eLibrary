@@ -2092,6 +2092,35 @@ footer {
   }
 }
 
+// homapge slide animation
+@keyframes slideOutLeft {
+  0% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-100%); }
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide-out {
+  animation: slideOutLeft 1.5s forwards;
+}
+
+.slide-in {
+  animation: slideInRight 1.5s forwards;
+}
+
 // add to cart button
 .add_to_cart_button {
   background-color: $Navy-Blue-Color !important;
