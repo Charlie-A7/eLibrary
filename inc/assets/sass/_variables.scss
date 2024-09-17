@@ -44,6 +44,25 @@ $quicksand-regular: "quicksand-regular";
 $quicksand-semibold: "quicksand-semibold";
 $quicksand-bold: "quicksand-bold";
 
+.quicksand-font{
+  font-family: $quicksand;
+}
+.quicksand-light-font{
+  font-family: $quicksand-light;
+}
+.quicksand-medium-font{
+  font-family: $quicksand-medium;
+}
+.quicksand-regular-font{
+  font-family: $quicksand-regular;
+}
+.quicksand-semibold-font{
+  font-family: $quicksand-semibold;
+}
+.quicksand-bold-font{
+  font-family: $quicksand-bold;
+}
+
 // arabic
 $arabic-fonts-ultralight: "arb-fonts-ultralight";
 $arabic-fonts-light: "arb-fonts-light";
@@ -53,13 +72,34 @@ $arabic-fonts-mediumbold: "arb-fonts-mediumbold";
 $arabic-fonts-bold: "arb-fonts-bold";
 $arabic-fonts-bolder: "arb-fonts-bolder";
 
+.arabic-ultralight-font{
+  font-family: $arabic-fonts-ultralight;
+}
+.arabic-light-font{
+  font-family: $arabic-fonts-light;
+}
+.arabic-regular-font{
+  font-family: $arabic-fonts-regular;
+}
+.arabic-font-medium{
+  font-family: $arabic-fonts-medium;
+}
+.arabic-font-mediumbold{
+  font-family: $arabic-fonts-mediumbold;
+}
+.arabic-font-bold{
+  font-family: $arabic-fonts-bold;
+}
+.arabic-font-bolder{
+  font-family: $arabic-fonts-bolder;
+}
+
+
 //heights
 $header-height: 13dvh;
 $footer-height: 15dvh;
 
 //colors
-
-
 
 $main_color: #093f6c;
 $sec_color: #9eb6c5;

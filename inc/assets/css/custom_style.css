@@ -1,3 +1,55 @@
+.quicksand-font {
+  font-family: "quicksand";
+}
+
+.quicksand-light-font {
+  font-family: "quicksand-light";
+}
+
+.quicksand-medium-font {
+  font-family: "quicksand-medium";
+}
+
+.quicksand-regular-font {
+  font-family: "quicksand-regular";
+}
+
+.quicksand-semibold-font {
+  font-family: "quicksand-semibold";
+}
+
+.quicksand-bold-font {
+  font-family: "quicksand-bold";
+}
+
+.arabic-ultralight-font {
+  font-family: "arb-fonts-ultralight";
+}
+
+.arabic-light-font {
+  font-family: "arb-fonts-light";
+}
+
+.arabic-regular-font {
+  font-family: "arb-fonts-regular";
+}
+
+.arabic-font-medium {
+  font-family: "arb-fonts-medium";
+}
+
+.arabic-font-mediumbold {
+  font-family: "arb-fonts-mediumbold";
+}
+
+.arabic-font-bold {
+  font-family: "arb-fonts-bold";
+}
+
+.arabic-font-bolder {
+  font-family: "arb-fonts-bolder";
+}
+
 html,
 body,
 div,
@@ -1709,14 +1761,6 @@ a:hover,
 a:focus {
   color: inherit;
   text-decoration: none;
-}
-
-.arabic-bold {
-  font-family: "arb-fonts-mediumbold";
-}
-
-.navy-blue {
-  color: #093f6c;
 }
 
 header {
