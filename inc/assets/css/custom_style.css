@@ -1929,7 +1929,7 @@ footer .footer_lines::after {
   height: 70%;
 }
 .homeDiv .blue-left-sidebar-mobile {
-  top: 5%;
+  top: 0;
   left: 0;
 }
 .homeDiv .blue-right-sidebar-mobile {
