@@ -17,6 +17,12 @@ get_header();
                     <h4>Browse our selection, and order what you need.</h4>
                 </div>
             </div>
+            <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
+                <div class="padding-left">
+                    <h1>مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
+                    <h4>تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
+                </div>
+            </div>
             <div class="col-6 z-1 h-100">
             </div>
         </div>
