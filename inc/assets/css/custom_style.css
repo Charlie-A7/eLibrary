@@ -1923,15 +1923,15 @@ footer .footer_lines::after {
 }
 .homeDiv .blue-left-sidebar-mobile,
 .homeDiv .blue-right-sidebar-mobile {
-  width: 10dvw;
-  height: 60%;
+  width: 20dvw;
+  height: 70%;
 }
 .homeDiv .blue-left-sidebar-mobile {
   top: 5%;
   left: 0;
 }
 .homeDiv .blue-right-sidebar-mobile {
-  top: 25%;
+  top: 20%;
   right: 0;
 }
 
