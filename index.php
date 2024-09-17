@@ -15,8 +15,6 @@ get_header();
                 <div class="padding-left">
                     <h1 id="englishText" class="visible position-absolute">Welcome to<br>our resource<br>library</h1>
                     <h4 id="englishSub" class="visible position-absolute">Browse our selection, and order what you need.</h4>
-                </div>
-                <div class="padding-left">
                     <h1 id="arabicText" class="hidden rtl arabic-medium-font position-absolute">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
                     <h4 id="arabicSub" class="hidden rtl arabic-regular-font position-absolute">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                 </div>
