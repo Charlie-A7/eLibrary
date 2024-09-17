@@ -1860,6 +1860,11 @@ body {
   background-color: #3399ff;
 }
 
+.rtl{
+  direction: rtl;
+  text-align: right;
+}
+
 // z-index classes
 .z-1 {
   z-index: 1;
