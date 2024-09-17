@@ -18,7 +18,7 @@ get_header();
                 </div>
             </div>
             <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
-                <div class="padding-left">
+                <div class="padding-left arabic-font-bold">
                     <h1 class="rtl">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
                     <h4 class="rtl">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                 </div>
