@@ -1934,6 +1934,15 @@ footer .footer_lines::after {
   top: 20%;
   right: 0;
 }
+.homeDiv .mobile .row1 {
+  height: 25%;
+}
+.homeDiv .mobile .row2 {
+  height: 50%;
+}
+.homeDiv .mobile .row3 {
+  height: 25%;
+}
 
 @keyframes slideOutLeft {
   0% {
