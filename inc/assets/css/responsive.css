@@ -81,11 +81,11 @@
 }
 
 .slide-out {
-  animation: slideOutLeft 2s forwards;
+  animation: slideOutLeft 1s forwards;
 }
 
 .slide-in {
-  animation: slideInRight 2s forwards;
+  animation: slideInRight 1s forwards;
 }
 
 @media (max-width: 1359px) {
