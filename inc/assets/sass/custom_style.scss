@@ -2061,7 +2061,7 @@ footer {
   }
 
   .padding-left {
-    padding-left: 3rem;
+    padding-left: 1.5rem;
   }
 
   h1 {
@@ -2071,6 +2071,12 @@ footer {
 
   h4 {
     font-family: $quicksand-semibold;
+  }
+
+  .desktop{
+    h1 {
+      font-size: 4.5rem;
+    }
   }
 
   .blue-left-sidebar-desktop,
@@ -2115,6 +2121,9 @@ footer {
     }
     .row3{
       height: 25%;
+    }
+    .h1{
+      //font-size: 1.5rem;
     }
   }
 }
