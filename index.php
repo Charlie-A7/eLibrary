@@ -13,8 +13,8 @@ get_header();
     <div class="blue-right-sidebar-desktop position-absolute d-none d-md-block"></div>
 
     <!-- mobile desgin -->
-    <div class="blue-left-sidebar-mobile position-absolute d-none d-md-block"></div>
-    <div class="blue-right-sidebar-mobile position-absolute d-none d-md-block"></div>
+    <div class="blue-left-sidebar-mobile position-absolute d-block d-md-none"></div>
+    <div class="blue-right-sidebar-mobile position-absolute d-block d-md-none"></div>
 
     <div class="container-fluid h-100 position-relative">
 
