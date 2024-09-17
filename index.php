@@ -40,7 +40,7 @@ get_header();
          <div class="mobile d-flex d-md-none flex-column h-100">
             <div class="row row1">
                 <div class="col-12">
-                    <h1>Welcome to<br>our resource<br>library</h1>
+                    <h1>Welcome to our<br>resource library</h1>
                     <h4>Browse our selection, and order what you need.</h4>
                 </div>
             </div>
@@ -50,7 +50,7 @@ get_header();
             </div>
             <div class="row row3">
                 <div class="col-12">
-                    <h1 class=" rtl arabic-medium-font">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
+                    <h1 class=" rtl arabic-medium-font">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
                     <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                 </div>
             </div>

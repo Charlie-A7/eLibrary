@@ -1897,7 +1897,6 @@ footer .footer_lines::after {
   padding-left: 1.5rem;
 }
 .homeDiv h1 {
-  font-size: 4.5rem;
   text-transform: uppercase;
 }
 .homeDiv h4 {
@@ -1946,6 +1945,10 @@ footer .footer_lines::after {
 .homeDiv .mobile .row3 {
   height: 25%;
 }
+.homeDiv .mobile .h1 {
+  font-size: 2.5rem;
+}
+
 @keyframes slideOutLeft {
   0% {
     opacity: 1;
