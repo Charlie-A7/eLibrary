@@ -14,10 +14,10 @@ get_header();
     <div class="container z-3">
         <div class="row z-3">
             <div class="col-12">
-                <?php
+                <!-- <?php
                 // Display WooCommerce Cart
-                echo do_shortcode('[woocommerce_cart]');
-                ?>
+                // echo do_shortcode('[woocommerce_cart]');
+                ?> -->
             </div>
         </div>
     </div>
