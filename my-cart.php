@@ -7,7 +7,7 @@ get_header();
 ?>
 <div class="my-custom-cart-wrapper position-relative z-1">
 
-    <div class="container z-1">
+    <div class="container z-1 h-100">
         <div class="row z-1">
             <div class="col-6 z-2">
                 <div class="cart-lightblue-left-sidebar position-absolute z-2"></div>
