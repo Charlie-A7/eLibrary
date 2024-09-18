@@ -5,7 +5,7 @@
 
 get_header();
 ?>
-<div class="my-custom-cart-wrapper z-1">
+<div class="my-custom-cart-wrapper position-relative z-1">
 
     <div class="cart-lightblue-left-sidebar position-absolute z-2"></div>
     <div class="cart-darkblue-right-sidebar position-absolute z-2"></div>
