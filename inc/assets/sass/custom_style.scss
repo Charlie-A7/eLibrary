@@ -871,6 +871,15 @@ footer {
   min-height: calc(100dvh - $header-height - $footer-height);
 }
 
+.cart-lightblue-left-sidebar{
+  background-color: $Light-Gray-Blue-Color;
+}
+.cart-darkblue-left-sidebar{
+  background-color: $Navy-Blue-Color;
+}
+
+
+
 // checkout page
 .my-custom-checkout-wrapper {
   min-height: calc(100dvh - $header-height - $footer-height);
