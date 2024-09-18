@@ -872,7 +872,7 @@ footer .footer_lines::after {
   min-height: 72dvh;
 }
 .my-custom-cart-wrapper .cart-lightblue-left-sidebar,
-.my-custom-cart-wrapper .cart-darkblue-left-sidebar {
+.my-custom-cart-wrapper .cart-darkblue-right-sidebar {
   height: 95%;
   bottom: 5%;
   width: 50%;
