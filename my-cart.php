@@ -12,7 +12,7 @@ get_header();
 
 
     <div class="container z-3">
-        <div class="row">
+        <div class="row z-3">
             <div class="col-12">
                 <?php
                 // Display WooCommerce Cart
