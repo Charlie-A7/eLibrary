@@ -36,9 +36,8 @@ get_header();
                 </div>
             </div>
             <div class="col-1"></div>
-            </>
         </div>
     </div>
-
-    <?php
-    get_footer();
+</div>
+<?php
+get_footer();
