@@ -19,7 +19,7 @@ get_header();
                 ?>
             </div> -->
         </div>
-        <div class="row z-3 justify-content-center align-items-center h-100">
+        <div class="row z-2 justify-content-center align-items-center h-100">
             <div class="col-1"></div>
 
             <div class="col-10 z-2">
