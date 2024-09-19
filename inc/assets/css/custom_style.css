@@ -871,6 +871,10 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper {
   height: 70dvh !important;
 }
+.my-custom-cart-wrapper .Cart-container {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
 .my-custom-cart-wrapper .cart-lightblue-left-sidebar,
 .my-custom-cart-wrapper .cart-darkblue-right-sidebar {
   height: 95%;

@@ -871,6 +871,11 @@ footer {
   // min-height: calc(100dvh - $header-height - $footer-height);
   height: 70dvh !important;
   
+.Cart-container{
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
 .cart-lightblue-left-sidebar,
 .cart-darkblue-right-sidebar{
   height: 95%;
