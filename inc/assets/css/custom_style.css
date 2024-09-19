@@ -869,7 +869,7 @@ footer .footer_lines::after {
 }
 
 .my-custom-cart-wrapper {
-  min-height: 72dvh;
+  height: 70dvh;
 }
 .my-custom-cart-wrapper .cart-lightblue-left-sidebar,
 .my-custom-cart-wrapper .cart-darkblue-right-sidebar {
