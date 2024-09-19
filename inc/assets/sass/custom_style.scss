@@ -868,7 +868,7 @@ footer {
 
 // cart page
 .my-custom-cart-wrapper {
-  height: calc(100dvh - $header-height - $footer-height);
+  min-height: calc(100dvh - $header-height - $footer-height);
 
 .cart-lightblue-left-sidebar,
 .cart-darkblue-right-sidebar{
