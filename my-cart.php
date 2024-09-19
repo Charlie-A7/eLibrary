@@ -23,7 +23,7 @@ get_header();
             <div class="col-1"></div>
 
             <div class="col-10">
-                <div class="row">
+                <div class="row z-3">
                     <div class="col-8">
                         <h1>YOUR CART</h1>
                         <div class="BooksInCart">
@@ -36,9 +36,9 @@ get_header();
                 </div>
             </div>
             <div class="col-1"></div>
+            </>
         </div>
     </div>
-</div>
 
-<?php
-get_footer();
+    <?php
+    get_footer();
