@@ -10,7 +10,7 @@ get_header();
     <div class="cart-lightblue-left-sidebar position-absolute z-2"></div>
     <div class="cart-darkblue-right-sidebar position-absolute z-2"></div>
 
-    <div class="container h-100">
+    <div class="container Cart-container h-100">
         <div class="row">
             <!-- <div class="col-12">
                 <?php
@@ -20,9 +20,9 @@ get_header();
             </div> -->
         </div>
         <div class="row z-3 justify-content-center align-items-center h-100">
-            <div class="col-2"></div>
+            <div class="col-1"></div>
 
-            <div class="col-8">
+            <div class="col-10">
                 <div class="row z-3">
                     <div class="col-8">
                         <h1>YOUR CART</h1>
@@ -35,7 +35,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-1"></div>
         </div>
     </div>
 </div>
