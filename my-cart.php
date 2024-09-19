@@ -30,7 +30,7 @@ get_header();
 
                         </div>
                     </div>
-                    <div class="row-4">
+                    <div class="col-4">
 
                     </div>
                 </div>
