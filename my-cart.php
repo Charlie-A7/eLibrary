@@ -28,7 +28,7 @@ get_header();
                         <table>
                             <tr>
                                 <td>
-                                    <img
+                                    <img class="cartIconReversed"
                                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png">
                                 </td>
                                 <td>
