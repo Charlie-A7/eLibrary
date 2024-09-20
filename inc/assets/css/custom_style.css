@@ -588,6 +588,7 @@ header .mobile-menu-div nav ul li.current-menu-item a {
 }
 header .mobile-menu-div .triangle-design-left,
 header .mobile-menu-div .triangle-design-right {
+  background-color: #9eb6c5;
   -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
