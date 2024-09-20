@@ -951,7 +951,13 @@ footer .footer_lines::after {
   background-color: #093f6c;
   right: 0;
 }
+.my-custom-cart-wrapper .image-cell {
+  position: relative;
+  vertical-align: bottom;
+}
 .my-custom-cart-wrapper .cartIconReversed {
+  position: absolute;
+  bottom: 0;
   height: 48px;
   width: 60;
 }
