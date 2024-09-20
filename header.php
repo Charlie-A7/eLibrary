@@ -70,11 +70,13 @@
                             // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
                             wp_nav_menu(array(
                                 'theme_location' => 'mobile',
-                                'menu_id' => 'movile-menu',
+                                'menu_id' => 'mobile-menu',
                                 'container' => false,
                             ));
                             ?>
                         </nav>
+                        <div class="triangle-design-left"></div>
+                        <div class="triangle-design-right"></div>
                     </div>
                 </div>
             </div>

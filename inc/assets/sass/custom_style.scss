@@ -582,6 +582,11 @@ header {
         }
       }
     }
+
+    .triangle-design-left,
+    .triangle-design-right{
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    }
   }
 }
 
