@@ -588,15 +588,6 @@ header .mobile-menu-div .mobile-nav-wrapper nav ul li.current-menu-item a {
   background-color: #093f6c;
   color: white;
 }
-header .mobile-menu-div .mobile-nav-wrapper .triangle-design-wrapper {
-  background-color: #9eb6c5;
-  height: 5dvh;
-}
-header .mobile-menu-div .mobile-nav-wrapper .triangle-design-wrapper .triangle-design {
-  background-color: transparent;
-  -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-}
 
 footer {
   color: white;
