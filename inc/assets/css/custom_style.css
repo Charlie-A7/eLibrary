@@ -178,16 +178,10 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
   border: none;
@@ -219,35 +213,12 @@ body.hide_scroll {
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 :focus {
   outline: none !important;
-}
-
-@-webkit-keyframes fa-beat {
-  0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(1.25);
-  }
-  20% {
-    transform: scale(1.15);
-  }
-  30% {
-    transform: scale(1.8);
-  }
-  45% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 @keyframes fa-beat {
   0% {
