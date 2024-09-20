@@ -25,7 +25,18 @@ get_header();
             <div class="col-10 z-2">
                 <div class="row z-2">
                     <div class="col-8 z-2">
-                        <h1 class="z-2">YOUR CART</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png">
+                                </td>
+                                <td>
+                                    <h1 class="z-2">YOUR CART</h1>
+                                </td>
+                            </tr>
+                        </table>
+
                         <div class="BooksInCart z-2">
 
                         </div>
