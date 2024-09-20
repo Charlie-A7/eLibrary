@@ -526,10 +526,14 @@ header nav #menu-item-115 a::after {
 header nav #menu-item-115 a:hover::after {
   filter: invert(1) brightness(2);
 }
-header .mobile-cart-button img {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
+header .mobile-menu-div .hamburger i::before {
+  font-size: 30px;
+  vertical-align: middle;
+}
+header .mobile-menu-div .mobile-cart-button img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
   vertical-align: middle;
 }
 
