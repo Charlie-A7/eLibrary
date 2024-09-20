@@ -565,10 +565,10 @@ header .mobile-menu-div .mobile-cart-button:active img {
 header .mobile-menu-div .mobile-nav-wrapper {
   width: 40dvw;
   height: 45dvh;
-}
-header .mobile-menu-div .mobile-nav-wrapper nav {
   top: 13dvh;
   right: 1dvw;
+}
+header .mobile-menu-div .mobile-nav-wrapper nav {
   background-color: #9eb6c5;
   width: 40dvw;
   height: 40dvh;
