@@ -29,16 +29,7 @@
         <header id="masthead" class="site-header d-flex align-items-center" role="banner">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-7 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
-                        <!-- <div class="row w-100">
-                            <div class="col-4 d-flex justify-content-start align-items-center px-1">
-                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
-                            </div>
-                            <div class="col-8 d-flex align-items-center text-left px-1">
-                                <h4 class="site-title"><a href="<?php //echo esc_url(home_url('/')); ?>"
-                                rel="home"> <span class="arabic-mediumbold-font">حياة المحبة في لبنان</span> <br><?php //bloginfo('name'); ?></a></h4>
-                            </div>
-                        </div> -->
+                    <div class="col-7 col-lg-4 site-branding d-flex justify-content-start align-items-center px-3 px-md-4">
                         <div class="row w-100">
                             <div class="col-12 d-flex justify-content-start align-items-center px-1">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
@@ -65,10 +56,10 @@
                     </div>
 
                     <div class="col-5 d-lg-none d-flex align-items-center justify-content-end mobile-menu-div">
-                        <button class="hamburger p-3" aria-label="Menu" id="hamburger-button">
+                        <button class="hamburger p-2" aria-label="Menu" id="hamburger-button">
                             <i class="fas fa-bars"></i>
                         </button>
-                        <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button p-3">
+                        <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button p-2">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
                         </a>
                         <div class="mobile-nav-wrapper d-none position-absolute">
