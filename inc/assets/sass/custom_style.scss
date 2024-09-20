@@ -583,12 +583,13 @@ header {
           }
         }
       }
-      .triangle-design-left,
-      .triangle-design-right{
+      .triangle-design-wrapper{
         background-color: $Light-Gray-Blue-Color;
-        width: 50%;
         height: 5dvh;
-        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        .triangle-design{
+          background-color: transparent;
+          clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
       }
     }
   }
