@@ -566,6 +566,7 @@ header .mobile-menu-div nav {
   top: 13dvh;
   right: 1dvw;
   width: 30dvw;
+  background-color: #9eb6c5;
 }
 header .mobile-menu-div nav ul {
   display: flex;
@@ -579,6 +580,7 @@ header .mobile-menu-div nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
+  padding: 13px 10px;
 }
 header .mobile-menu-div nav ul li.current-menu-item a {
   background-color: #093f6c;
