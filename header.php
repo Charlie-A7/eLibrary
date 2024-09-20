@@ -29,8 +29,8 @@
         <header id="masthead" class="site-header d-flex align-items-center" role="banner">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
-                        <div class="row w-lg-100">
+                    <div class="col-6 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
+                        <div class="row">
                             <div class="col-4 text-center px-1">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
@@ -48,13 +48,33 @@
                                 <?php
                                 // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
                                 wp_nav_menu(array(
-                                    'theme_location' => 'primary',  // Use the registered location
+                                    'theme_location' => 'primary',
                                     'menu_id' => 'primary-menu',
-                                    'container' => false,      // Remove the surrounding div
+                                    'container' => false,
                                 ));
                                 ?>
                             </nav>
                         </div>
+                    </div>
+
+                    <div class="col-6 d-lg-none d-flex align-items-center justify-content-end">
+                        <div class="hamburger-menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button">
+                            <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
+                        </a>
+                        <nav id="site-mobile-navigation" class="mobile-navigation" role="navigation"
+                            aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
+                            <?php
+                            // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
+                            wp_nav_menu(array(
+                                'theme_location' => 'mobile',
+                                'menu_id' => 'movile-menu',
+                                'container' => false,
+                            ));
+                            ?>
+                        </nav>
                     </div>
                 </div>
             </div>
