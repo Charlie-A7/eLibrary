@@ -37,18 +37,30 @@ get_header();
                             </tr>
                         </table>
 
-                        <div class="BooksInCart z-2">
-
+                        <div class="cart-item z-2 d-flex justify-content-between align-items-center p-3 mb-3">
+                            <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
+                                class="cart-item-img">
+                            <div class="cart-item-details">
+                                <h2>كتاب ... وقرار - تأليف: جوش ماكدویل</h2>
+                                <div class="cart-item-quantity d-flex align-items-center">
+                                    <button class="quantity-btn">-</button>
+                                    <input type="text" value="20" class="quantity-input" readonly>
+                                    <button class="quantity-btn">+</button>
+                                </div>
+                                <p class="cart-item-price">LBP: 1,000,000</p>
+                            </div>
+                            <button class="cart-item-remove btn"><i class="fa fa-trash"></i></button>
                         </div>
                     </div>
-                    <div class="col-4 z-2">
+                </div>
+                <div class="col-4 z-2">
 
-                    </div>
                 </div>
             </div>
-            <div class="col-1"></div>
         </div>
+        <div class="col-1"></div>
     </div>
+</div>
 </div>
 <?php
 get_footer();
