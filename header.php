@@ -30,11 +30,18 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-7 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
-                        <div class="row w-100">
+                        <!-- <div class="row w-100">
                             <div class="col-4 d-flex justify-content-start align-items-center px-1">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
                             <div class="col-8 d-flex align-items-center text-left px-1">
+                                <h4 class="site-title"><a href="<?php //echo esc_url(home_url('/')); ?>"
+                                rel="home"> <span class="arabic-mediumbold-font">حياة المحبة في لبنان</span> <br><?php //bloginfo('name'); ?></a></h4>
+                            </div>
+                        </div> -->
+                        <div class="row w-100">
+                            <div class="col-12 d-flex justify-content-start align-items-center px-1">
+                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
                                 <h4 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                                 rel="home"> <span class="arabic-mediumbold-font">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h4>
                             </div>
