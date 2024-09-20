@@ -456,7 +456,7 @@ header {
     width: 5.5rem;
     height: auto;
   }
-  nav {
+  #site-navigation {
     ul {
       display: flex;
       padding: 0;
@@ -550,6 +550,28 @@ header {
       border-radius: 100%;
       img{
         filter: invert(1) brightness(2);
+      }
+    }
+    .mobile-cart-button:active{
+      background-color: $Navy-Blue-Color;
+      border-radius: 100%;
+      img{
+        filter: invert(1) brightness(2);
+      }
+    }
+    nav{
+      top: $header-height;
+      right: 1dvw;
+      ul{
+        display: flex;
+        flex-direction: column;
+        li{
+          background-color: $Light-Gray-Blue-Color;
+        }
+        li.current-menu-item a {
+          background-color: $Navy-Blue-Color;
+          color: white;
+        }
       }
     }
   }
