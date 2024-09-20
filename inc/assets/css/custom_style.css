@@ -542,7 +542,7 @@ header .mobile-menu-div .hamburger:hover i {
   filter: invert(1) brightness(2);
 }
 header .mobile-menu-div .mobile-cart-button {
-  padding: 10px;
+  border-radius: 100%;
 }
 header .mobile-menu-div .mobile-cart-button img {
   width: 40px;
@@ -558,7 +558,6 @@ header .mobile-menu-div .mobile-cart-button:hover img {
 }
 header .mobile-menu-div .mobile-cart-button:active {
   background-color: #093f6c;
-  border-radius: 100%;
 }
 header .mobile-menu-div .mobile-cart-button:active img {
   filter: invert(1) brightness(2);
