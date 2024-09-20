@@ -534,6 +534,13 @@ header .mobile-menu-div .hamburger i::before {
   font-size: 35px;
   vertical-align: middle;
 }
+header .mobile-menu-div .hamburger:hover {
+  background-color: #9eb6c5;
+  border-radius: 100%;
+}
+header .mobile-menu-div .hamburger:hover i {
+  filter: invert(1) brightness(2);
+}
 header .mobile-menu-div .mobile-cart-button {
   padding: 10px;
 }
@@ -543,7 +550,7 @@ header .mobile-menu-div .mobile-cart-button img {
   vertical-align: middle;
 }
 header .mobile-menu-div .mobile-cart-button:hover {
-  background-color: #093f6c;
+  background-color: #9eb6c5;
   border-radius: 100%;
 }
 header .mobile-menu-div .mobile-cart-button:hover img {
