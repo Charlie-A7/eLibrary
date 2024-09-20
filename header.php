@@ -58,10 +58,10 @@
                     </div>
 
                     <div class="col-6 d-lg-none d-flex align-items-center justify-content-end mobile-menu-div">
-                        <button class="hamburger" aria-label="Menu">
+                        <button class="hamburger p-3" aria-label="Menu">
                             <i class="fas fa-bars"></i>
                         </button>
-                        <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button">
+                        <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button p-3">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
                         </a>
                         <nav id="site-mobile-navigation" class=" d-none mobile-navigation" role="navigation"
