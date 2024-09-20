@@ -284,7 +284,7 @@ function your_theme_setup()
 {
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'your-theme-text-domain'),
-        'footer' => esc_html__('Footer Menu', 'your-theme-text-domain'), // Register footer menu
+        'mobile' => esc_html__('Mobile Menu', 'your-theme-text-domain'), // Register mobile menu
     ));
 }
 add_action('after_setup_theme', 'your_theme_setup');
