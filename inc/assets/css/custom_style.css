@@ -996,7 +996,6 @@ footer .footer_lines::after {
   font-weight: bold;
 }
 .my-custom-cart-wrapper .cart-item-remove {
-  color: red;
   border: none;
   background: none;
   cursor: pointer;
