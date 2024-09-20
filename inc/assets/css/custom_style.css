@@ -471,14 +471,11 @@ header {
   position: sticky;
   top: 0;
   font-family: "quicksand-bold";
-  padding: 1rem 0 0.25rem 0;
+  padding: 1rem 0 0.25rem 0 !important;
 }
 header img {
   width: 5.5rem;
   height: auto;
-}
-header a {
-  text-wrap: nowrap;
 }
 header nav ul {
   display: flex;

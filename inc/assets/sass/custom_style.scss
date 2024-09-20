@@ -451,13 +451,10 @@ header {
   position: sticky;
   top: 0;
   font-family: $quicksand-bold;
-  padding: 1rem 0 0.25rem 0;
+  padding: 1rem 0 0.25rem 0 !important;
   img {
     width: 5.5rem;
     height: auto;
-  }
-  a{
-    text-wrap: nowrap;
   }
   nav {
     ul {
