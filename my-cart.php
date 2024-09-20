@@ -50,8 +50,7 @@ get_header();
                                 <p class="cart-item-price">LBP: 1,000,000</p>
                             </div>
                             <button class="cart-item-remove btn">
-                                <img
-                                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png">
+                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
                             </button>
                         </div>
                     </div>
