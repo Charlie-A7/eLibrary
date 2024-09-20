@@ -558,35 +558,39 @@ header {
         filter: invert(1) brightness(2);
       }
     }
-    nav{
-      top: $header-height;
-      right: 1dvw;
-      width: 30dvw;
-      background-color: $Light-Gray-Blue-Color;   
-      ul{
-        display: flex;
-        flex-direction: column;
-        li{
-          background-color: $Light-Gray-Blue-Color;   
-          text-align: center;
-          a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 13px 10px;
+    .mobile-nav-wrapper{
+      width: 40dvw;
+      height: 45dvh;
+      nav{
+        top: $header-height;
+        right: 1dvw;
+        background-color: $Light-Gray-Blue-Color; 
+        height: 40dvh;  
+        ul{
+          display: flex;
+          flex-direction: column;
+          li{
+            background-color: $Light-Gray-Blue-Color;   
+            text-align: center;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              padding: 13px 10px;
+            }
+          }
+          li.current-menu-item a {
+            background-color: $Navy-Blue-Color;
+            color: white;
           }
         }
-        li.current-menu-item a {
-          background-color: $Navy-Blue-Color;
-          color: white;
-        }
       }
-    }
-
-    .triangle-design-left,
-    .triangle-design-right{
-      background-color: $Light-Gray-Blue-Color;
-      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      .triangle-design-left,
+      .triangle-design-right{
+        background-color: $Light-Gray-Blue-Color;
+        width: 50%;
+        //clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      }
     }
   }
 }
