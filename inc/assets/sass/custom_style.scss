@@ -560,13 +560,10 @@ header {
     }
     .mobile-nav-wrapper{
       width: 40dvw;
-      height: 45dvh;
       top: $header-height;
       right: 1dvw;
       nav{
-        background-color: $Light-Gray-Blue-Color; 
-        width: 40dvw;
-        height: 40dvh;  
+        background-color: $Light-Gray-Blue-Color;
         ul{
           display: flex;
           flex-direction: column;
@@ -590,7 +587,8 @@ header {
       .triangle-design-right{
         background-color: $Light-Gray-Blue-Color;
         width: 50%;
-        //clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        height: 5dvh;
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
       }
     }
   }
