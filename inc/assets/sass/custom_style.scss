@@ -531,17 +531,16 @@ header {
       }
     }
     .mobile-cart-button{
-      margin-left: 15px;
+      padding: 10px;
       img{
         width: 40px;
         height: 40px;
         vertical-align: middle;
       }
-
-      img:hover{
-        background-color: $Navy-Blue-Color;
-        border-radius: 100%;
-      }
+    }
+    .mobile-cart-button:hover{
+      background-color: $Navy-Blue-Color;
+      border-radius: 100%;
     }
   }
 }
