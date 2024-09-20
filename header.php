@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="col-7 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
                         <div class="row w-100">
-                            <div class="col-4 text-center px-1">
+                            <div class="col-4 d-flex justify-content-start align-items-center px-1">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
                             <div class="col-8 d-flex align-items-center text-left px-1">
