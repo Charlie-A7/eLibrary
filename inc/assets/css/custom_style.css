@@ -542,7 +542,7 @@ header .mobile-menu-div .mobile-cart-button img {
   height: 40px;
   vertical-align: middle;
 }
-header .mobile-menu-div .mobile-cart-button .img:hover {
+header .mobile-menu-div .mobile-cart-button img:hover {
   background-color: #093f6c;
   border-radius: 100%;
 }
