@@ -64,8 +64,8 @@
                         <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button p-3">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
                         </a>
-                        <div class="mobile-nav-wrapper">
-                            <nav id="site-mobile-navigation" class=" d-none mobile-navigation position-absolute" role="navigation"
+                        <div class="mobile-nav-wrapper d-none">
+                            <nav id="site-mobile-navigation" class="mobile-navigation position-absolute" role="navigation"
                                 aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
                                 <?php
                                 // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
