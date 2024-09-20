@@ -58,13 +58,13 @@
                     </div>
 
                     <div class="col-6 d-lg-none d-flex align-items-center justify-content-end mobile-menu-div">
-                        <button class="hamburger p-3" aria-label="Menu">
+                        <button class="hamburger p-3" aria-label="Menu" id="hamburger-button">
                             <i class="fas fa-bars"></i>
                         </button>
                         <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button p-3">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
                         </a>
-                        <nav id="site-mobile-navigation" class=" d-none mobile-navigation position absolute" role="navigation"
+                        <nav id="site-mobile-navigation" class=" d-none mobile-navigation position-absolute" role="navigation"
                             aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
                             <?php
                             // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
@@ -81,3 +81,17 @@
         </header>
 
         <div id="content" class="site-content">
+
+<script>
+    document.getElementById('hamburger-button').addEventListener('click', function() {
+        const mobileNav = document.getElementById('site-mobile-navigation');
+        
+        if (mobileNav.classList.contains('d-none')) {
+            mobileNav.classList.remove('d-none');
+            mobileNav.classList.add('d-block');
+        } else {
+            mobileNav.classList.add('d-none');
+            mobileNav.classList.remove('d-block');
+        }
+    });
+</script>

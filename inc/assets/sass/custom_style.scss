@@ -538,7 +538,7 @@ header {
       }
     }
     .mobile-cart-button{
-      padding: 10px;
+      border-radius: 100%;
       img{
         width: 40px;
         height: 40px;
@@ -554,7 +554,6 @@ header {
     }
     .mobile-cart-button:active{
       background-color: $Navy-Blue-Color;
-      border-radius: 100%;
       img{
         filter: invert(1) brightness(2);
       }
