@@ -583,14 +583,6 @@ header {
           }
         }
       }
-      .triangle-design-wrapper{
-        background-color: $Light-Gray-Blue-Color;
-        height: 5dvh;
-        .triangle-design{
-          background-color: transparent;
-          clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-        }
-      }
     }
   }
 }

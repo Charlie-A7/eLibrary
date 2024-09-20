@@ -76,9 +76,6 @@
                                 ));
                                 ?>
                             </nav>
-                            <div class="triangle-design-wrapper">
-                                <div class="triangle-design"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
