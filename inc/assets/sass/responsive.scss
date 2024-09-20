@@ -50,7 +50,7 @@ header{
     }
     .mobile-menu-div{
       button{
-        i{
+        i::before{
           font-size: 20px;
         }
       }
@@ -73,7 +73,7 @@ header{
     }
     .mobile-menu-div{
       button{
-        i{
+        i::before{
           font-size: 25px;
         }
       }
@@ -96,7 +96,7 @@ header{
     }
     .mobile-menu-div{
       button{
-        i{
+        i::before{
           font-size: 30px;
         }
       }
@@ -104,6 +104,28 @@ header{
         img{
           width: 35px;
           height: 35px;
+        }
+      }
+    }
+  }
+
+  
+  @media (min-width: 992px) { 
+    .site-branding{
+      img{
+        width: 5.5rem;
+      }
+    }
+    .mobile-menu-div{
+      button{
+        i::before{
+          font-size: 35px;
+        }
+      }
+      a{
+        img{
+          width: 40px;
+          height: 40px;
         }
       }
     }

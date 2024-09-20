@@ -29,7 +29,7 @@
         <header id="masthead" class="site-header d-flex align-items-center" role="banner">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
+                    <div class="col-7 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
                         <div class="row w-100">
                             <div class="col-4 text-center px-1">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 d-lg-none d-flex align-items-center justify-content-end mobile-menu-div">
+                    <div class="col-5 d-lg-none d-flex align-items-center justify-content-end mobile-menu-div">
                         <button class="hamburger p-3" aria-label="Menu" id="hamburger-button">
                             <i class="fas fa-bars"></i>
                         </button>
