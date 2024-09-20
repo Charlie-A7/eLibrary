@@ -541,6 +541,9 @@ header {
     .mobile-cart-button:hover{
       background-color: $Navy-Blue-Color;
       border-radius: 100%;
+      img{
+        filter: invert(1) brightness(2);
+      }
     }
   }
 }
