@@ -31,12 +31,12 @@
                 <div class="row">
                     <div class="col-12 col-lg-4 site-branding d-flex justify-content-start align-items-center px-4">
                         <div class="row">
-                            <div class="col-4 text-center">
+                            <div class="col-4 text-center px-1">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
                             </div>
                             <div class="col-8 d-flex align-items-center text-left px-1">
-                                <h5 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                rel="home"> <span class="arabic-mediumbold-font">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h5>
+                                <h4 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+                                rel="home"> <span class="arabic-mediumbold-font">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h4>
                             </div>
                         </div>
                     </div>

@@ -453,8 +453,11 @@ header {
   font-family: $quicksand-bold;
   padding: 1rem 0 0.25rem 0;
   img {
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: auto;
+  }
+  a{
+    text-wrap: nowrap;
   }
   nav {
     ul {
