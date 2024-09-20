@@ -562,11 +562,18 @@ header {
     nav{
       top: $header-height;
       right: 1dvw;
+      width: 30dvw;
       ul{
         display: flex;
         flex-direction: column;
         li{
-          background-color: $Light-Gray-Blue-Color;
+          background-color: $Light-Gray-Blue-Color;   
+          text-align: center;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
         }
         li.current-menu-item a {
           background-color: $Navy-Blue-Color;

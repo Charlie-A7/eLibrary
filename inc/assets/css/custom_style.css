@@ -566,6 +566,7 @@ header .mobile-menu-div .mobile-cart-button:active img {
 header .mobile-menu-div nav {
   top: 13dvh;
   right: 1dvw;
+  width: 30dvw;
 }
 header .mobile-menu-div nav ul {
   display: flex;
@@ -573,6 +574,12 @@ header .mobile-menu-div nav ul {
 }
 header .mobile-menu-div nav ul li {
   background-color: #9eb6c5;
+  text-align: center;
+}
+header .mobile-menu-div nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 header .mobile-menu-div nav ul li.current-menu-item a {
   background-color: #093f6c;
