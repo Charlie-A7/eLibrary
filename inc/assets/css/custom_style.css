@@ -562,35 +562,38 @@ header .mobile-menu-div .mobile-cart-button:active {
 header .mobile-menu-div .mobile-cart-button:active img {
   filter: invert(1) brightness(2);
 }
-header .mobile-menu-div nav {
+header .mobile-menu-div .mobile-nav-wrapper {
+  width: 40dvw;
+  height: 45dvh;
+}
+header .mobile-menu-div .mobile-nav-wrapper nav {
   top: 13dvh;
   right: 1dvw;
-  width: 30dvw;
   background-color: #9eb6c5;
+  height: 40dvh;
 }
-header .mobile-menu-div nav ul {
+header .mobile-menu-div .mobile-nav-wrapper nav ul {
   display: flex;
   flex-direction: column;
 }
-header .mobile-menu-div nav ul li {
+header .mobile-menu-div .mobile-nav-wrapper nav ul li {
   background-color: #9eb6c5;
   text-align: center;
 }
-header .mobile-menu-div nav ul li a {
+header .mobile-menu-div .mobile-nav-wrapper nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
   padding: 13px 10px;
 }
-header .mobile-menu-div nav ul li.current-menu-item a {
+header .mobile-menu-div .mobile-nav-wrapper nav ul li.current-menu-item a {
   background-color: #093f6c;
   color: white;
 }
-header .mobile-menu-div .triangle-design-left,
-header .mobile-menu-div .triangle-design-right {
+header .mobile-menu-div .mobile-nav-wrapper .triangle-design-left,
+header .mobile-menu-div .mobile-nav-wrapper .triangle-design-right {
   background-color: #9eb6c5;
-  -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  width: 50%;
 }
 
 footer {

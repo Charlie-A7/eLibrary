@@ -64,19 +64,21 @@
                         <a href="<?php echo esc_url(get_permalink('cart')); ?>" class="mobile-cart-button p-3">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
                         </a>
-                        <nav id="site-mobile-navigation" class=" d-none mobile-navigation position-absolute" role="navigation"
-                            aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
-                            <?php
-                            // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
-                            wp_nav_menu(array(
-                                'theme_location' => 'mobile',
-                                'menu_id' => 'mobile-menu',
-                                'container' => false,
-                            ));
-                            ?>
+                        <div class="mobile-nav-wrapper">
+                            <nav id="site-mobile-navigation" class=" d-none mobile-navigation position-absolute" role="navigation"
+                                aria-label="<?php esc_attr_e('Primary Menu', 'your-theme-text-domain'); ?>">
+                                <?php
+                                // Displays the primary menu, you can assign the menu in Appearance > Menus in the WordPress admin
+                                wp_nav_menu(array(
+                                    'theme_location' => 'mobile',
+                                    'menu_id' => 'mobile-menu',
+                                    'container' => false,
+                                ));
+                                ?>
+                            </nav>
                             <div class="triangle-design-left"></div>
                             <div class="triangle-design-right"></div>
-                        </nav>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,7 +88,7 @@
 
 <script>
     document.getElementById('hamburger-button').addEventListener('click', function() {
-        const mobileNav = document.getElementById('site-mobile-navigation');
+        const mobileNav = document.querySelector(".mobile-nav-wrapper");
         
         if (mobileNav.classList.contains('d-none')) {
             mobileNav.classList.remove('d-none');
