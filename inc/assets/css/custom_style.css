@@ -473,8 +473,7 @@ header {
   font-family: "quicksand-bold";
   padding: 1rem 0 0.25rem 0 !important;
 }
-header img {
-  width: 5.5rem;
+header .site-branding img {
   height: auto;
 }
 header #site-navigation ul {
@@ -531,7 +530,6 @@ header .mobile-menu-div button {
   background: none;
 }
 header .mobile-menu-div .hamburger i::before {
-  font-size: 35px;
   vertical-align: middle;
 }
 header .mobile-menu-div .hamburger:hover {
@@ -545,8 +543,6 @@ header .mobile-menu-div .mobile-cart-button {
   border-radius: 100%;
 }
 header .mobile-menu-div .mobile-cart-button img {
-  width: 40px;
-  height: 40px;
   vertical-align: middle;
 }
 header .mobile-menu-div .mobile-cart-button:hover {

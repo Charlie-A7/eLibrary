@@ -452,9 +452,10 @@ header {
   top: 0;
   font-family: $quicksand-bold;
   padding: 1rem 0 0.25rem 0 !important;
-  img {
-    width: 5.5rem;
-    height: auto;
+  .site-branding{
+    img {
+      height: auto;
+    }
   }
   #site-navigation {
     ul {
@@ -526,7 +527,6 @@ header {
     }
     .hamburger{
       i::before{
-        font-size: 35px;
         vertical-align: middle;
       }
     }
@@ -540,8 +540,6 @@ header {
     .mobile-cart-button{
       border-radius: 100%;
       img{
-        width: 40px;
-        height: 40px;
         vertical-align: middle;
       }
     }
