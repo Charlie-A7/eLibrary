@@ -102,16 +102,6 @@ header{
         }
       }
     }
-  @media (min-width: 992px) and (max-width: 1199.98px) { 
-    h4{
-      font-size: 1.2rem;
-    }
-    .site-branding{
-      img{
-        width: 4rem;
-      }
-    }
-  }
   }
 
   
@@ -132,6 +122,18 @@ header{
           width: 40px;
           height: 40px;
         }
+      }
+    }
+  }
+
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    h4{
+      font-size: 1.2rem;
+    }
+    .site-branding{
+      img{
+        width: 4rem;
       }
     }
   }
