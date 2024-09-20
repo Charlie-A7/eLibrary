@@ -81,7 +81,7 @@
 }
 @media (max-width: 575.98px) {
   header h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   header .site-branding img {
     width: 2.5rem;
@@ -116,6 +116,14 @@
   header .mobile-menu-div a img {
     width: 35px;
     height: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) and (min-width: 992px) and (max-width: 1199.98px) {
+  header h4 {
+    font-size: 1.2rem;
+  }
+  header .site-branding img {
+    width: 4rem;
   }
 }
 @media (min-width: 992px) {
