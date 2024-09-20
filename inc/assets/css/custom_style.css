@@ -526,15 +526,25 @@ header nav #menu-item-115 a::after {
 header nav #menu-item-115 a:hover::after {
   filter: invert(1) brightness(2);
 }
+header .mobile-menu-div button {
+  border: none;
+  background: none;
+}
 header .mobile-menu-div .hamburger i::before {
-  font-size: 30px;
+  font-size: 35px;
   vertical-align: middle;
+}
+header .mobile-menu-div .mobile-cart-button {
+  margin-left: 15px;
 }
 header .mobile-menu-div .mobile-cart-button img {
   width: 40px;
   height: 40px;
-  margin-left: 20px;
   vertical-align: middle;
+}
+header .mobile-menu-div .mobile-cart-button .img:hover {
+  background-color: #093f6c;
+  border-radius: 100%;
 }
 
 footer {

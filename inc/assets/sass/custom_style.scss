@@ -520,18 +520,27 @@ header {
 
   // mobile menu
   .mobile-menu-div{
+    button{
+      border: none;
+      background: none;
+    }
     .hamburger{
       i::before{
-        font-size: 30px;
+        font-size: 35px;
         vertical-align: middle;
       }
     }
     .mobile-cart-button{
+      margin-left: 15px;
       img{
         width: 40px;
         height: 40px;
-        margin-left: 20px;
         vertical-align: middle;
+      }
+
+      .img:hover{
+        background-color: $Navy-Blue-Color;
+        border-radius: 100%;
       }
     }
   }
