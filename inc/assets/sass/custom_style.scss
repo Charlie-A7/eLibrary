@@ -529,6 +529,10 @@ header {
       i::before{
         vertical-align: middle;
       }
+      .hamburger-active{
+        background-color: $Navy-Blue-Color;
+        border-radius: 100%;
+      }
     }
     .hamburger:hover{
       background-color: $Light-Gray-Blue-Color;

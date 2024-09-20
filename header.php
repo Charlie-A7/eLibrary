@@ -83,15 +83,18 @@
         <div id="content" class="site-content">
 
 <script>
-    document.getElementById('hamburger-button').addEventListener('click', function() {
+    const hamburger =document.getElementById('hamburger-button');
+    hamburger.addEventListener('click', function() {
         const mobileNav = document.querySelector(".mobile-nav-wrapper");
         
         if (mobileNav.classList.contains('d-none')) {
             mobileNav.classList.remove('d-none');
             mobileNav.classList.add('d-block');
+            hamburger.classList.add('hamburger-active');
         } else {
             mobileNav.classList.add('d-none');
             mobileNav.classList.remove('d-block');
+            hamburger.classList.remove('hamburger-active');
         }
     });
 </script>

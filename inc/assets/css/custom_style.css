@@ -532,6 +532,10 @@ header .mobile-menu-div button {
 header .mobile-menu-div .hamburger i::before {
   vertical-align: middle;
 }
+header .mobile-menu-div .hamburger .hamburger-active {
+  background-color: #093f6c;
+  border-radius: 100%;
+}
 header .mobile-menu-div .hamburger:hover {
   background-color: #9eb6c5;
   border-radius: 100%;
