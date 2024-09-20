@@ -56,6 +56,11 @@
     max-width: 1360px;
   }
 }
+@media (min-width: 992px) {
+  .w-lg-100 {
+    width: 100%;
+  }
+}
 @media (max-width: 480px) {
   footer {
     /* Styles for phones with screens 480px or smaller */

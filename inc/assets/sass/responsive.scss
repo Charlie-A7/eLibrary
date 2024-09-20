@@ -10,6 +10,13 @@
 
 // my code
 
+@media (min-width: 992px) {
+  .w-lg-100 {
+      width: 100%;
+  }
+}
+
+
 // footer
 footer {
   @media (max-width: 480px) {
