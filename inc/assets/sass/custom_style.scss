@@ -962,7 +962,13 @@ footer {
   right: 0;
 }
 
+.image-cell {
+  position: relative;
+  vertical-align: bottom;
+}
 .cartIconReversed{
+  position: absolute;
+  bottom: 0;
   height: 48px;
   width: 60;
 }
