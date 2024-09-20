@@ -561,9 +561,9 @@ header {
     .mobile-nav-wrapper{
       width: 40dvw;
       height: 45dvh;
+      top: $header-height;
+      right: 1dvw;
       nav{
-        top: $header-height;
-        right: 1dvw;
         background-color: $Light-Gray-Blue-Color; 
         width: 40dvw;
         height: 40dvh;  
