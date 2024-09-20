@@ -74,9 +74,9 @@
                                 'container' => false,
                             ));
                             ?>
+                            <div class="triangle-design-left"></div>
+                            <div class="triangle-design-right"></div>
                         </nav>
-                        <div class="triangle-design-left"></div>
-                        <div class="triangle-design-right"></div>
                     </div>
                 </div>
             </div>

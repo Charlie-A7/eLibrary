@@ -585,6 +585,7 @@ header {
 
     .triangle-design-left,
     .triangle-design-right{
+      background-color: $Light-Gray-Blue-Color;
       clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
     }
   }
