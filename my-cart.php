@@ -25,14 +25,14 @@ get_header();
             <div class="col-10 z-2 px-0">
                 <div class="row Cart-small-container z-2">
                     <div class="col-8 z-2">
-                        <table>
-                            <tr class="cart-title">
+                        <table class="cart-title">
+                            <tr>
                                 <td class="image-cell">
                                     <img class="cartIconReversed"
                                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png">
                                 </td>
                                 <td>
-                                    <h1 class="z-2">YOUR CART</h1>
+                                    <h1 class="z-2 cart-title-text">YOUR CART</h1>
                                 </td>
                             </tr>
                         </table>
