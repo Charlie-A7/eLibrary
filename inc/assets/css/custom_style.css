@@ -974,7 +974,7 @@ footer .footer_lines::after {
   margin-right: 15px;
 }
 .my-custom-cart-wrapper .cart-item-details h2 {
-  font-family: "arb-fonts-bold";
+  font-family: "arb-fonts-regular";
   font-size: 22px;
 }
 .my-custom-cart-wrapper .quantity-selector {
@@ -1024,8 +1024,8 @@ footer .footer_lines::after {
   background: none;
   cursor: pointer;
   font-size: 20px;
-  height: 20px;
-  width: 20px;
+  height: 3rem;
+  width: 3rem;
 }
 
 .my-custom-checkout-wrapper {

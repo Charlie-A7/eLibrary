@@ -42,7 +42,7 @@ get_header();
                                 class="cart-item-img">
                             <div class="cart-item-details">
                                 <h2>كتاب ... وقرار - تأليف: جوش ماكدویل</h2>
-                                <div class="quantity-selector d-flex align-items-center">
+                                <div class="quantity-selector d-flex align-items-center my-2">
                                     <button class="quantity-btn minus">-</button>
                                     <input type="text" value="20" class="quantity-input">
                                     <button class="quantity-btn plus">+</button>
