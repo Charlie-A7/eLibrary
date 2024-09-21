@@ -959,6 +959,9 @@ footer .footer_lines::after {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-custom-cart-wrapper .cart-title-text {
+  font-size: 26px;
+}
 .my-custom-cart-wrapper .image-cell {
   position: relative;
   vertical-align: bottom;
