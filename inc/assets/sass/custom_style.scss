@@ -962,6 +962,10 @@ footer {
   right: 0;
 }
 
+.Cart-small-container{
+  background-color: #f1f1f1;
+}
+
 .image-cell {
   position: relative;
   vertical-align: bottom;
@@ -976,7 +980,6 @@ footer {
 }
 
 .cart-item {
-  background-color: #f1f1f1;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -988,8 +991,9 @@ footer {
 }
 
 .cart-item-details {
+  flex: 1;
   h2{
-    font-family: $arabic-fonts-regular;
+    font-family: $arabic-fonts-medium;
     font-size: 22px;
   }
 }

@@ -23,7 +23,7 @@ get_header();
             <div class="col-1"></div>
 
             <div class="col-10 z-2">
-                <div class="row z-2">
+                <div class="row Cart-small-container z-2">
                     <div class="col-8 z-2">
                         <table>
                             <tr>
