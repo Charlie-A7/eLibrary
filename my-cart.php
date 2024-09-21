@@ -26,7 +26,7 @@ get_header();
                 <div class="row Cart-small-container z-2">
                     <div class="col-8 z-2">
                         <table>
-                            <tr class="pl-2">
+                            <tr class="cart-title">
                                 <td class="image-cell">
                                     <img class="cartIconReversed"
                                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png">
