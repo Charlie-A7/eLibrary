@@ -954,6 +954,11 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .Cart-small-container {
   background-color: #f1f1f1;
 }
+.my-custom-cart-wrapper .cart-title {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .my-custom-cart-wrapper .image-cell {
   position: relative;
   vertical-align: bottom;
@@ -967,7 +972,7 @@ footer .footer_lines::after {
   transform: scaleX(-1);
 }
 .my-custom-cart-wrapper .cart-item {
-  background-color: #9eb6c5;
+  background-color: #dce0e2;
   display: flex;
   align-items: center;
 }
