@@ -972,6 +972,7 @@ footer {
   bottom: 0;
   height: 48px;
   width: 60;
+  transform: scaleX(-1);
 }
 
 .cart-item {
@@ -1019,6 +1020,8 @@ footer {
   background: none;
   cursor: pointer;
   font-size: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 

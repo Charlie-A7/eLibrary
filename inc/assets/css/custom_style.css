@@ -961,6 +961,7 @@ footer .footer_lines::after {
   bottom: 0;
   height: 48px;
   width: 60;
+  transform: scaleX(-1);
 }
 .my-custom-cart-wrapper .cart-item {
   background-color: #f1f1f1;
@@ -1000,6 +1001,8 @@ footer .footer_lines::after {
   background: none;
   cursor: pointer;
   font-size: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .my-custom-checkout-wrapper {
