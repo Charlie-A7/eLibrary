@@ -988,7 +988,9 @@ footer {
 }
 
 .cart-item-details {
-  flex: 1;
+  h2{
+    font-family: $arabic-fonts-regular;
+  }
 }
 
 .quantity-selector {
@@ -997,8 +999,9 @@ footer {
   border: 1px solid #000; /* Border around the whole control */
   border-radius: 30px; /* Rounded corners */
   padding-left: 10px;
+  padding-right: 10px;
   background-color: #f5f5f5; /* Light background for the control */
-  width: 29%;
+  width: fit-content;
 }
 
 .quantity-btn {
