@@ -980,6 +980,7 @@ footer {
 }
 
 .cart-item {
+  background-color: #9eb6c5;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -1041,7 +1042,7 @@ footer {
 
 .cart-item-price {
   margin-top: 10px;
-  font-family: $quicksand-bold;
+  font-family: $quicksand-regular;
 }
 
 .cart-item-remove {

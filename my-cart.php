@@ -22,11 +22,11 @@ get_header();
         <div class="row z-2 justify-content-center align-items-center h-100">
             <div class="col-1"></div>
 
-            <div class="col-10 z-2">
+            <div class="col-10 z-2 px-0">
                 <div class="row Cart-small-container z-2">
                     <div class="col-8 z-2">
                         <table>
-                            <tr>
+                            <tr class="pl-2">
                                 <td class="image-cell">
                                     <img class="cartIconReversed"
                                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png">
@@ -37,7 +37,7 @@ get_header();
                             </tr>
                         </table>
 
-                        <div class="cart-item z-2 d-flex justify-content-between align-items-center p-3 mb-3">
+                        <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
                                 class="cart-item-img">
                             <div class="cart-item-details">

@@ -967,6 +967,7 @@ footer .footer_lines::after {
   transform: scaleX(-1);
 }
 .my-custom-cart-wrapper .cart-item {
+  background-color: #9eb6c5;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -1022,7 +1023,7 @@ footer .footer_lines::after {
 }
 .my-custom-cart-wrapper .cart-item-price {
   margin-top: 10px;
-  font-family: "quicksand-bold";
+  font-family: "quicksand-regular";
 }
 .my-custom-cart-wrapper .cart-item-remove {
   border: none;
