@@ -93,7 +93,12 @@ get_header();
                     </div>
                 </div>
                 <div class="col-4 z-2">
-
+                    <div class="order-summary p-3">
+                        <h3>Order Summary</h3>
+                        <p><strong>Amount of Books:</strong> 30</p>
+                        <p><strong>Subtotal:</strong> LBP: 2,000,000</p>
+                        <button class="btn cart-checkout-button">CHECKOUT NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
