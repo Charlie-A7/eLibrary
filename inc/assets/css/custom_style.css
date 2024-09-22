@@ -978,8 +978,6 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .cart-items-container {
   max-height: 400px; /* Set a max height for the container */
   overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  border: 1px solid #ccc; /* Optional: Add a border to better see the scrollable area */
-  padding: 10px;
 }
 .my-custom-cart-wrapper .cart-item {
   background-color: #dce0e2;
