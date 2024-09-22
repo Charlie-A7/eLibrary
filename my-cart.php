@@ -11,14 +11,6 @@ get_header();
     <div class="cart-darkblue-right-sidebar position-absolute z-1"></div>
 
     <div class="container Cart-container h-100 z-2">
-        <div class="row">
-            <!-- <div class="col-12">
-                <?php
-                // Display WooCommerce Cart
-                // echo do_shortcode('[woocommerce_cart]');
-                ?>
-            </div> -->
-        </div>
         <div class="row z-2 justify-content-center align-items-center h-100">
             <div class="col-1"></div>
 
@@ -91,15 +83,16 @@ get_header();
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4 z-2">
-                    <div class="order-summary p-3">
-                        <h3>Order Summary</h3>
-                        <p><strong>Amount of Books:</strong> 30</p>
-                        <p><strong>Subtotal:</strong> LBP: 2,000,000</p>
-                        <button class="btn cart-checkout-button">CHECKOUT NOW</button>
+                    <div class="col-4 z-2">
+                        <div class="order-summary p-3">
+                            <h3>Order Summary</h3>
+                            <p><strong>Amount of Books:</strong> 30</p>
+                            <p><strong>Subtotal:</strong> LBP: 2,000,000</p>
+                            <button class="btn cart-checkout-button">CHECKOUT NOW</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="col-1"></div>
