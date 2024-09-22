@@ -37,7 +37,24 @@ get_header();
                             </tr>
                         </table>
 
-                        <div class="cart-items-conatiner">
+                        <div class="cart-items-container">
+                            <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
+                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
+                                    class="cart-item-img">
+                                <div class="cart-item-details">
+                                    <h2>كتاب ... وقرار - تأليف: جوش ماكدویل</h2>
+                                    <div class="quantity-selector d-flex align-items-center my-3">
+                                        <button class="quantity-btn minus">-</button>
+                                        <input type="text" value="20" class="quantity-input">
+                                        <button class="quantity-btn plus">+</button>
+                                    </div>
+                                    <p class="cart-item-price">LBP: 1,000,000</p>
+                                </div>
+                                <button class="cart-item-remove btn">
+                                    <img
+                                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
+                                </button>
+                            </div>
                             <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
                                 <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
                                     class="cart-item-img">
