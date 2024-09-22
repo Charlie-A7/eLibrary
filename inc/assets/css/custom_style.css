@@ -1083,14 +1083,19 @@ footer .footer_lines::after {
 }
 .my-custom-cart-wrapper .order-sum-import {
   text-align: right;
+  font-family: "quicksand-regular";
+  font-size: 16px;
 }
 .my-custom-cart-wrapper .cart-checkout-button {
-  font-family: "quicksand-regular";
+  font-family: "quicksand-bold";
+  font-size: 23px;
   background-color: #093f6c;
   border: none;
+  border-radius: 0;
   color: white;
   padding: 10px;
   cursor: pointer;
+  height: 4rem;
 }
 
 .my-custom-checkout-wrapper {
