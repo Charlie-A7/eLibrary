@@ -995,6 +995,7 @@ padding-bottom: 5px;
   overflow-y: auto;  /* Enable vertical scrolling when content overflows */
   border: 1px solid #ccc; /* Optional: Add a border to better see the scrollable area */
   padding: 5px;
+  margin-bottom: 0.5rem;
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #888 #f1f1f1; /* For Firefox: Color of thumb and track */
 }
