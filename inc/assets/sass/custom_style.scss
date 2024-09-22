@@ -1095,10 +1095,20 @@ padding-bottom: 5px;
   background-color: $Light-Gray-Blue-Color;
   text-align: left;
   font-family: $quicksand-regular;
+  height: 60%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   h3 {
     margin-bottom: 20px;
     font-family: $quicksand-bold;
   }
+}
+.order-sum-text{
+  font-family: $quicksand-bold;
+  font-size: 20px;
+}
+.order-sum-import{
+  text-align: right;
 }
 .cart-checkout-button {
   font-family: $quicksand-regular;

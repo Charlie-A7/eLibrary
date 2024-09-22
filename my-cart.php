@@ -86,8 +86,10 @@ get_header();
                     <div class="col-4 z-2">
                         <div class="order-summary p-3">
                             <h3>Order Summary</h3>
-                            <p><strong>Amount of Books:</strong> 30</p>
-                            <p><strong>Subtotal:</strong> LBP: 2,000,000</p>
+                            <p class="order-sum-text">Amount of Books: <span class="order-sum-import">
+                                    30</span></p>
+                            <p class="order-sum-text">Subtotal: <span class="order-sum-import"> LBP:
+                                    2,000,000</span></p>
                         </div>
                         <button class="btn cart-checkout-button w-100">CHECKOUT NOW</button>
                     </div>
