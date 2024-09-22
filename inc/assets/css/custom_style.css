@@ -957,7 +957,7 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .cart-title {
   margin-left: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .my-custom-cart-wrapper .cart-title-text {
   font-size: 32px;
@@ -990,6 +990,7 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .cart-item-details h2 {
   font-family: "arb-fonts-medium";
   font-size: 22px;
+  padding-left: 0.5rem;
 }
 .my-custom-cart-wrapper .quantity-selector {
   display: inline-flex; /* Align buttons and input horizontally */
@@ -999,6 +1000,7 @@ footer .footer_lines::after {
   padding-left: 10px;
   padding-right: 10px;
   width: fit-content;
+  margin-left: 1rem;
 }
 .my-custom-cart-wrapper .quantity-btn {
   background-color: transparent;
@@ -1029,8 +1031,8 @@ footer .footer_lines::after {
   padding: 3px;
 }
 .my-custom-cart-wrapper .cart-item-price {
-  margin-top: 10px;
   font-family: "quicksand-regular";
+  padding-left: 1.5rem;
 }
 .my-custom-cart-wrapper .cart-item-remove {
   border: none;
