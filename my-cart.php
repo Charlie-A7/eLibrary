@@ -88,8 +88,8 @@ get_header();
                             <h3>Order Summary</h3>
                             <p><strong>Amount of Books:</strong> 30</p>
                             <p><strong>Subtotal:</strong> LBP: 2,000,000</p>
-                            <button class="btn cart-checkout-button">CHECKOUT NOW</button>
                         </div>
+                        <button class="btn cart-checkout-button w-100">CHECKOUT NOW</button>
                     </div>
                 </div>
 
