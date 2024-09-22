@@ -969,7 +969,7 @@ footer {
 .cart-title{
   margin-left: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .cart-title-text{
@@ -1006,6 +1006,7 @@ padding-bottom: 5px;
   h2{
     font-family: $arabic-fonts-medium;
     font-size: 22px;
+    padding-left: 0.5rem;
   }
 }
 
@@ -1017,6 +1018,7 @@ padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   width: fit-content;
+  margin-left: 1rem;
 }
 
 .quantity-btn {
@@ -1050,8 +1052,8 @@ padding-bottom: 5px;
 }
 
 .cart-item-price {
-  margin-top: 10px;
   font-family: $quicksand-regular;
+  padding-left: 1.5rem;
 }
 
 .cart-item-remove {
