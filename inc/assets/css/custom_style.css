@@ -1081,6 +1081,7 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .order-sum-text {
   font-family: "quicksand-bold";
   font-size: 20px;
+  margin-top: 1rem;
 }
 .my-custom-cart-wrapper .order-sum-import {
   text-align: right;
@@ -1098,7 +1099,6 @@ footer .footer_lines::after {
   cursor: pointer;
   height: 4rem;
 }
-
 .my-custom-checkout-wrapper {
   min-height: 72dvh;
 }/*# sourceMappingURL=custom_style.css.map */
