@@ -29,57 +29,45 @@ get_header();
                         </table>
 
                         <div class="cart-items-container">
-                            <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
-                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
-                                    class="cart-item-img">
-                                <div class="cart-item-details">
-                                    <h2>كتاب ... وقرار - تأليف: جوش ماكدویل</h2>
-                                    <div class="quantity-selector d-flex align-items-center my-2">
-                                        <button class="quantity-btn minus">-</button>
-                                        <input type="text" value="20" class="quantity-input">
-                                        <button class="quantity-btn plus">+</button>
-                                    </div>
-                                    <p class="cart-item-price">LBP: 1,000,000</p>
-                                </div>
-                                <button class="cart-item-remove btn">
-                                    <img
-                                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
-                                </button>
-                            </div>
-                            <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
-                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
-                                    class="cart-item-img">
-                                <div class="cart-item-details">
-                                    <h2>كتاب ... وقرار - تأليف: جوش ماكدویل</h2>
-                                    <div class="quantity-selector d-flex align-items-center my-2">
-                                        <button class="quantity-btn minus">-</button>
-                                        <input type="text" value="20" class="quantity-input">
-                                        <button class="quantity-btn plus">+</button>
-                                    </div>
-                                    <p class="cart-item-price">LBP: 1,000,000</p>
-                                </div>
-                                <button class="cart-item-remove btn">
-                                    <img
-                                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
-                                </button>
-                            </div>
-                            <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
-                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/Library_img.jpg"
-                                    class="cart-item-img">
-                                <div class="cart-item-details">
-                                    <h2>كتاب ... وقرار - تأليف: جوش ماكدویل</h2>
-                                    <div class="quantity-selector d-flex align-items-center my-2">
-                                        <button class="quantity-btn minus">-</button>
-                                        <input type="text" value="20" class="quantity-input">
-                                        <button class="quantity-btn plus">+</button>
-                                    </div>
-                                    <p class="cart-item-price">LBP: 1,000,000</p>
-                                </div>
-                                <button class="cart-item-remove btn">
-                                    <img
-                                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
-                                </button>
-                            </div>
+                            <?php
+                            // Check if the cart is empty
+                            if (WC()->cart->is_empty()) {
+                                echo '<p>Your cart is currently empty.</p>';
+                            } else {
+                                global $woocommerce;
+                                $items = $woocommerce->cart->get_cart();
+
+                                // Loop through the cart items
+                                foreach ($items as $item => $values) {
+                                    // Get product data
+                                    $_product = wc_get_product($values['data']->get_id());
+
+                                    // Get product details
+                                    $title = $_product->get_title();
+                                    $price = wc_price($_product->get_price()); // Display formatted price
+                                    $image_url = wp_get_attachment_url($_product->get_image_id());
+                                    $quantity = $values['quantity'];
+
+                                    // Output the structured HTML for the cart item
+                                    echo '
+                                    <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
+                                        <img src="' . esc_url($image_url) . '" class="cart-item-img" alt="' . esc_attr($title) . '">
+                                        <div class="cart-item-details">
+                                            <h2>' . esc_html($title) . '</h2>
+                                            <div class="quantity-selector d-flex align-items-center my-2">
+                                                <button class="quantity-btn minus">-</button>
+                                                <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input">
+                                                <button class="quantity-btn plus">+</button>
+                                            </div>
+                                            <p class="cart-item-price">Price: ' . esc_html($price) . '</p>
+                                        </div>
+                                        <button class="cart-item-remove btn">
+                                            <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
+                                        </button>
+                                    </div>';
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                     <div class="col-4 z-2 cart-right-section">
