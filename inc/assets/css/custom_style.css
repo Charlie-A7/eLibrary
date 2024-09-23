@@ -954,6 +954,7 @@ footer .footer_lines::after {
 }
 .my-custom-cart-wrapper .Cart-small-container {
   background-color: #f1f1f1;
+  min-height: 25rem;
 }
 .my-custom-cart-wrapper .cart-title {
   margin-left: 2rem;

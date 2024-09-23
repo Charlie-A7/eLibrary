@@ -59,7 +59,7 @@ get_header();
                                                 <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input">
                                                 <button class="quantity-btn plus">+</button>
                                             </div>
-                                            <p class="cart-item-price">Price: ' . esc_html($price) . '</p>
+                                          <p class="cart-item-price">Price: <?php echo esc_html(strip_tags($price)); ?></p>
                                         </div>
                                         <button class="cart-item-remove btn">
                                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
