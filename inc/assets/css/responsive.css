@@ -155,4 +155,15 @@
   footer .footer_lines::after {
     content: none; /* Remove the pseudo-element */
   }
+}
+
+@media (max-width: 767.98px) {
+  .homeDiv {
+    min-height: 72dvh;
+  }
+}
+@media (min-width: 768px) {
+  .homeDiv {
+    height: 72dvh;
+  }
 }/*# sourceMappingURL=responsive.css.map */
