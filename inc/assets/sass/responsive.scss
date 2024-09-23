@@ -162,3 +162,14 @@ footer {
     }
   }
 }
+
+// homepage
+
+.homeDiv{
+  @media (max-width: 767.98px) { 
+    min-height: calc(100dvh - $header-height - $footer-height);
+  }
+  @media (min-width: 768px){ 
+    height: calc(100dvh - $header-height - $footer-height);
+  }
+}

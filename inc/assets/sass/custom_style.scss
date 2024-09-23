@@ -659,7 +659,6 @@ footer {
 
 // Homepage
 .homeDiv {
-  height: calc(100dvh - $header-height - $footer-height);
   .homeDivInnerImage {
     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
     background-size: contain;
