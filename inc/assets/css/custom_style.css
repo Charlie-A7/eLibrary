@@ -178,10 +178,16 @@ input[type=text],
 input[type=time],
 input[type=url],
 input[type=week] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
   border: none;
@@ -213,12 +219,35 @@ body.hide_scroll {
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
 :focus {
   outline: none !important;
+}
+
+@-webkit-keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.25);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(1.8);
+  }
+  45% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes fa-beat {
   0% {
@@ -423,11 +452,6 @@ body {
 
 .z-n1 {
   z-index: -1;
-}
-
-::-moz-selection {
-  color: white;
-  background-color: #3399ff;
 }
 
 ::-moz-selection,
@@ -955,8 +979,6 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .cart-items-container {
   max-height: 300px; /* Set a max height for the container */
   overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  border: 1px solid #ccc; /* Optional: Add a border to better see the scrollable area */
-  padding: 5px;
   margin-bottom: 0.5rem;
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #888 #f1f1f1; /* For Firefox: Color of thumb and track */
@@ -999,7 +1021,6 @@ footer .footer_lines::after {
   border-radius: 30px; /* Rounded corners */
   padding-left: 10px;
   padding-right: 10px;
-  width: -moz-fit-content;
   width: fit-content;
   margin-left: 1rem;
 }
@@ -1039,8 +1060,6 @@ footer .footer_lines::after {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 20px;
-  height: 3rem;
   width: 3rem;
 }
 .my-custom-cart-wrapper .order-summary {
