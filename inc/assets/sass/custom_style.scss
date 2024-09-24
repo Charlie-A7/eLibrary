@@ -526,6 +526,8 @@ header {
       background: none;
     }
     .hamburger{
+      width: 50px;
+      height: 50px;
       i::before{
         vertical-align: middle;
       }
@@ -546,6 +548,8 @@ header {
     }
     .mobile-cart-button{
       border-radius: 100%;
+      width: 50px;
+      height: 50px;
       img{
         vertical-align: middle;
       }

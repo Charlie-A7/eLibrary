@@ -529,6 +529,10 @@ header .mobile-menu-div button {
   border: none;
   background: none;
 }
+header .mobile-menu-div .hamburger {
+  width: 50px;
+  height: 50px;
+}
 header .mobile-menu-div .hamburger i::before {
   vertical-align: middle;
 }
@@ -548,6 +552,8 @@ header .mobile-menu-div .hamburger-active i {
 }
 header .mobile-menu-div .mobile-cart-button {
   border-radius: 100%;
+  width: 50px;
+  height: 50px;
 }
 header .mobile-menu-div .mobile-cart-button img {
   vertical-align: middle;
