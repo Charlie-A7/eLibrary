@@ -537,6 +537,13 @@ header {
         filter: invert(1) brightness(2);
       }
     }
+    .hamburger-active{
+      background-color: $Navy-Blue-Color;
+      border-radius: 100%;
+      i{
+        filter: invert(1) brightness(2);
+      }
+    }
     .mobile-cart-button{
       border-radius: 100%;
       img{
