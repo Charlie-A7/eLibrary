@@ -557,12 +557,6 @@ header {
         filter: invert(1) brightness(2);
       }
     }
-    .mobile-cart-button:active{
-      background-color: $Navy-Blue-Color;
-      img{
-        filter: invert(1) brightness(2);
-      }
-    }
     .mobile-nav-wrapper{
       width: 40dvw;
       top: $header-height;
