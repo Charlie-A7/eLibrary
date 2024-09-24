@@ -532,11 +532,11 @@ header .mobile-menu-div button {
 header .mobile-menu-div .hamburger i::before {
   vertical-align: middle;
 }
-header .mobile-menu-div .hamburger:hover {
+header .mobile-menu-div .hamburger:hover:not(.hamburger-active) {
   background-color: #9eb6c5;
   border-radius: 100%;
 }
-header .mobile-menu-div .hamburger:hover i {
+header .mobile-menu-div .hamburger:hover:not(.hamburger-active) i {
   filter: invert(1) brightness(2);
 }
 header .mobile-menu-div .hamburger-active {
