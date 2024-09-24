@@ -559,12 +559,6 @@ header .mobile-menu-div .mobile-cart-button:hover {
 header .mobile-menu-div .mobile-cart-button:hover img {
   filter: invert(1) brightness(2);
 }
-header .mobile-menu-div .mobile-cart-button:active {
-  background-color: #093f6c;
-}
-header .mobile-menu-div .mobile-cart-button:active img {
-  filter: invert(1) brightness(2);
-}
 header .mobile-menu-div .mobile-nav-wrapper {
   width: 40dvw;
   top: 13dvh;
