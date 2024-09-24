@@ -173,3 +173,18 @@ footer {
     height: calc(100dvh - $header-height - $footer-height);
   }
 }
+
+// materials and library page
+
+
+@media (max-width: 575.98px) { 
+  .down-to-up {
+    font-size: 2rem;
+  }
+    
+  .custom-shop {  
+    .dots-design {
+      font-size: 60px;
+    }
+  }
+}
