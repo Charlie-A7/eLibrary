@@ -59,7 +59,7 @@
                         <button class="hamburger d-flex justify-content-center p-2" aria-label="Menu" id="hamburger-button">
                             <i class="fas fa-bars"></i>
                         </button>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('my-cart'))); ?>" class="mobile-cart-button p-2 <?php if (strpos($_SERVER['REQUEST_URI'], 'my-cart') !== false) { echo 'my-cart-class'; } ?>">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('my-cart'))); ?>" class="mobile-cart-button p-2 <?php if (strpos($_SERVER['REQUEST_URI'], 'my-cart') !== false) { echo 'mobile-cart-button-active'; } ?>">
                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/cart-icon-black.png" alt="cart">
                         </a>
                         <div class="mobile-nav-wrapper d-none position-absolute">
