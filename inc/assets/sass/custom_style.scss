@@ -550,8 +550,15 @@ header {
         vertical-align: middle;
       }
     }
-    .mobile-cart-button:hover{
+    .mobile-cart-button:hover:not(.mobile-cart-button-active){
       background-color: $Light-Gray-Blue-Color;
+      border-radius: 100%;
+      img{
+        filter: invert(1) brightness(2);
+      }
+    }
+    .mobile-cart-button-active{
+      background-color: $Navy-Blue-Color;
       border-radius: 100%;
       img{
         filter: invert(1) brightness(2);
