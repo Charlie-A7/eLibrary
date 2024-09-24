@@ -44,8 +44,8 @@ get_header();
 
                                     // Get product details
                                     $title = $_product->get_title();
-                                    $raw_price = $_product->get_price(); // Get the raw price without formatting
-                                    $currency_symbol = get_woocommerce_currency_symbol(); // Get the currency symbol
+                                    $raw_price = $_product->get_price();
+                                    $currency_symbol = get_woocommerce_currency_symbol();
                                     $image_url = wp_get_attachment_url($_product->get_image_id());
                                     $quantity = $values['quantity'];
 
@@ -60,13 +60,7 @@ get_header();
                                                 <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input">
                                                 <button class="quantity-btn plus">+</button>
                                             </div>
-                                        //   <p class="cart-item-price">Price: <?php echo esc_html($raw_price) . " " . esc_html($currency_symbol); ?></p>
-                                        <p class="cart-item-price">
-                                            Raw Price: <?php echo esc_html($raw_price); ?>
-                                        </p>
-                                        <p class="cart-item-price">
-                                            Currency Symbol: <?php echo esc_html($currency_symbol); ?>
-                                        </p>
+                                            <p class="cart-item-price">Price: <?php echo esc_html($raw_price) . " " . esc_html($currency_symbol); ?></p>
                                         </div>
                                         <button class="cart-item-remove btn">
                                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
