@@ -60,7 +60,7 @@ get_header();
                                                 <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input">
                                                 <button class="quantity-btn plus">+</button>
                                             </div>
-                                            <p class="cart-item-price">Price: <?php echo esc_html($raw_price) . " " . esc_html($currency_symbol); ?></p>
+                                            <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
                                         </div>
                                         <button class="cart-item-remove btn">
                                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
@@ -89,5 +89,8 @@ get_header();
     </div>
 </div>
 </div>
+<script>
+
+</script>
 <?php
 get_footer();
