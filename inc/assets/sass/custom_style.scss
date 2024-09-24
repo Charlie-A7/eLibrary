@@ -530,7 +530,7 @@ header {
         vertical-align: middle;
       }
     }
-    .hamburger:hover{
+    .hamburger:hover:not(.hamburger-active){
       background-color: $Light-Gray-Blue-Color;
       border-radius: 100%;
       i{
