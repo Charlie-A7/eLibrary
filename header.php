@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="col-4 d-lg-none d-flex align-items-center justify-content-end mobile-menu-div">
-                        <button class="hamburger d-flex justify-content-center align-items-center p-2" aria-label="Menu" id="hamburger-button">
+                        <button class="hamburger d-flex justify-content-center align-items-center p-2 mx-2" aria-label="Menu" id="hamburger-button">
                             <i class="fas fa-bars"></i>
                         </button>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('my-cart'))); ?>" class="mobile-cart-button d-flex align-items-center justify-content-center p-2 <?php if (strpos($_SERVER['REQUEST_URI'], 'my-cart') !== false) { echo 'mobile-cart-button-active'; } ?>">
