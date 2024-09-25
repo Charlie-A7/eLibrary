@@ -802,6 +802,11 @@ footer {
     writing-mode: vertical-lr; /* Text flows vertically from bottom to top */
     transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
   }
+
+  .products{
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 // add to cart button

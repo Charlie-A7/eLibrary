@@ -71,7 +71,7 @@ get_header(); ?>
 				</div>
 
 				<?php while ($products_query1->have_posts()) : $products_query1->the_post(); ?>
-					<div class="col-6 col-lg-4 col-xl-3 text-center pb-3 d-flex flex-column align-items-center z-1">
+					<div class="col-6 col-lg-4 col-xl-3 text-center pb-3 d-flex flex-column align-items-center z-1 products">
 						<a href="<?php the_permalink(); ?>">
 							<?php the_post_thumbnail('medium'); ?>
 							<?php woocommerce_template_loop_add_to_cart(); ?>
