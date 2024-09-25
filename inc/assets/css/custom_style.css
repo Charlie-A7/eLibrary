@@ -781,6 +781,10 @@ footer .footer_lines::after {
   writing-mode: vertical-lr; /* Text flows vertically from bottom to top */
   transform: rotate(180deg); /* Rotates the text so it goes bottom to top */
 }
+.custom-shop .products {
+  height: auto;
+  max-width: 100%;
+}
 
 .add_to_cart_button {
   background-color: #093f6c !important;
