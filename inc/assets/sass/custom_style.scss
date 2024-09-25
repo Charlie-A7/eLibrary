@@ -804,8 +804,12 @@ footer {
   }
 
   .products{
-    height: auto;
-    max-width: 100%;
+    a{
+      img{
+        height: auto;
+        max-width: 100%;
+      }
+    }
   }
 }
 
