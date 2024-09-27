@@ -806,9 +806,9 @@ footer .footer_lines::after {
   border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
-  width: 90%;
 }
 .search-container .search-field {
+  background: none;
   border: none;
   padding: 0.5rem 1rem;
   flex: 1;
@@ -820,7 +820,6 @@ footer .footer_lines::after {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  background-color: #fff;
 }
 .search-container .search-button i {
   font-size: 1rem;
