@@ -89,8 +89,40 @@ get_header();
     </div>
 </div>
 </div>
-<script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const quantityInput = document.querySelector('.quantity-input');
+        const plusButton = document.querySelector('.plus');
+        const minusButton = document.querySelector('.minus');
+        const bookPriceElement = document.querySelector('.bookPrice');
+
+        // Base price of the product (change this to your actual product's unit price)
+        const unitPrice = 50.000;
+
+        // Function to update the price based on the current quantity
+        function updatePrice() {
+            const quantity = parseInt(quantityInput.value);
+            const totalPrice = (unitPrice * quantity).toFixed(3); // Multiply base price by quantity
+            bookPriceElement.textContent = totalPrice; // Update price span
+        }
+
+        // Increment quantity on "+" button click
+        plusButton.addEventListener('click', function () {
+            let quantity = parseInt(quantityInput.value);
+            quantityInput.value = quantity + 1;
+            updatePrice(); // Update the price
+        });
+
+        // Decrement quantity on "-" button click
+        minusButton.addEventListener('click', function () {
+            let quantity = parseInt(quantityInput.value);
+            if (quantity > 1) { // Prevent going below 1
+                quantityInput.value = quantity - 1;
+                updatePrice(); // Update the price
+            }
+        });
+    });
 </script>
 <?php
 get_footer();
