@@ -103,7 +103,7 @@ get_header();
         // Function to update the price based on the current quantity
         function updatePrice() {
             const quantity = parseInt(quantityInput.value);
-            const totalPrice = (unitPrice * quantity).toFixed(3); // Multiply base price by quantity
+            const totalPrice = (unitPrice * quantity).toFixed(6); // Multiply base price by quantity
             bookPriceElement.textContent = totalPrice; // Update price span
         }
 
