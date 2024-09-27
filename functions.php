@@ -291,12 +291,13 @@ add_action('after_setup_theme', 'your_theme_setup');
 
 
 //Remove the Sale Flash Badge from product listings (content-product.php)
-remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10);
 
 // Change "Add to Cart" button text to "Select" for products in the "library" category
 add_filter('woocommerce_product_add_to_cart_text', 'custom_woocommerce_add_to_cart_text', 10, 2);
 
-function custom_woocommerce_add_to_cart_text($text, $product) {
+function custom_woocommerce_add_to_cart_text($text, $product)
+{
     // Check if it's a product and if it belongs to the "library" category
     if ($product->is_type('simple') && has_term('library', 'product_cat', $product->get_id())) {
         return __('Select', 'woocommerce');
@@ -304,3 +305,27 @@ function custom_woocommerce_add_to_cart_text($text, $product) {
     return $text; // Return original text for other product types or categories
 }
 
+
+
+//cart remove button ajax request
+
+// Add the AJAX action hook
+add_action('wp_ajax_remove_cart_item', 'remove_cart_item');
+add_action('wp_ajax_nopriv_remove_cart_item', 'remove_cart_item');
+
+function remove_cart_item()
+{
+    // Get the cart item key from the AJAX request
+    $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
+
+    // Remove the item from the cart by the cart item key
+    WC()->cart->remove_cart_item($cart_item_key);
+
+    // Optionally return updated cart info
+    wp_send_json_success([
+        'new_total_price' => WC()->cart->get_cart_total(),
+        'cart_count' => WC()->cart->get_cart_contents_count()
+    ]);
+
+    wp_die(); // Required to terminate the AJAX request
+}
