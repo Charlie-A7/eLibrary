@@ -100,11 +100,18 @@ get_header();
         // Base price of the product (change this to your actual product's unit price)
         const unitPrice = 50.000;
 
+        // Create a number formatter for formatting with dots as thousand separators
+        const formatter = new Intl.NumberFormat('de-DE', {
+            minimumFractionDigits: 3, // To keep 3 decimal places
+            maximumFractionDigits: 3
+        });
+
         // Function to update the price based on the current quantity
         function updatePrice() {
             const quantity = parseInt(quantityInput.value);
-            const totalPrice = (unitPrice * quantity).toFixed(6); // Multiply base price by quantity
-            bookPriceElement.textContent = totalPrice; // Update price span
+            const totalPrice = unitPrice * quantity; // Multiply base price by quantity
+            const formattedPrice = formatter.format(totalPrice); // Format the price
+            bookPriceElement.textContent = formattedPrice; // Update price span
         }
 
         // Increment quantity on "+" button click
