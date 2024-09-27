@@ -98,7 +98,7 @@ get_header();
         const bookPriceElement = document.querySelector('.bookPrice');
 
         // Base price of the product (change this to your actual product's unit price)
-        const unitPrice = 50.000;
+        const unitPrice = 50000;
 
         // Create a number formatter for formatting with dots as thousand separators
         const formatter = new Intl.NumberFormat('de-DE', {
