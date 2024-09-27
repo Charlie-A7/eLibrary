@@ -62,7 +62,7 @@ get_header();
                                             </div>
                                             <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
                                         </div>
-                                        <button class="cart-item-remove btn">
+                                        <button class="cart-item-remove btn" data-cart-item-key="<?php echo esc_attr($item); ?>">
                                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
                                         </button>
                                     </div>';
@@ -91,6 +91,10 @@ get_header();
 </div>
 
 <script>
+    var ajaxUrl = '<?php echo esc_url(admin_url("admin-ajax.php")); ?>';
+</script>
+
+<script>
     document.addEventListener('DOMContentLoaded', function () {
         const quantityInput = document.querySelector('.quantity-input');
         const plusButton = document.querySelector('.plus');
@@ -102,7 +106,7 @@ get_header();
 
         // Create a number formatter for formatting with dots as thousand separators
         const formatter = new Intl.NumberFormat('de-DE', {
-            minimumFractionDigits: 0, // To keep 3 decimal places
+            minimumFractionDigits: 0, // No decimal places
             maximumFractionDigits: 3
         });
 
@@ -129,7 +133,41 @@ get_header();
                 updatePrice(); // Update the price
             }
         });
+
+        // --- Remove button functionality ---
+        const removeButtons = document.querySelectorAll('.cart-item-remove');
+
+        removeButtons.forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                // Get the cart item key
+                const cartItemKey = this.getAttribute('data-cart-item-key');
+
+                // AJAX call to remove the item from the cart
+                fetch(ajaxUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams([
+                        ['action', 'remove_cart_item'], // Action hook for PHP
+                        ['cart_item_key', cartItemKey] // Cart Item Key to remove
+                    ])
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Remove the cart item from the DOM
+                            button.closest('.cart-item').remove();
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+        });
     });
+
 </script>
+
 <?php
 get_footer();
