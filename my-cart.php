@@ -102,7 +102,7 @@ get_header();
 
         // Create a number formatter for formatting with dots as thousand separators
         const formatter = new Intl.NumberFormat('de-DE', {
-            minimumFractionDigits: 3, // To keep 3 decimal places
+            minimumFractionDigits: 0, // To keep 3 decimal places
             maximumFractionDigits: 3
         });
 
