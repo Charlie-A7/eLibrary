@@ -141,12 +141,9 @@ get_header();
             button.addEventListener('click', function (event) {
                 event.preventDefault();
 
-                // Debugging: Check if the event listener is triggered
-                console.log('Remove button clicked!');
-
                 // Get the cart item key
                 const cartItemKey = this.getAttribute('data-cart-item-key');
-                console.log('Cart Item Key:', cartItemKey); // Check if the cart item key is correct
+                console.log('Cart Item Key:', cartItemKey); // This should now log the correct key
 
                 // AJAX call to remove the item from the cart
                 fetch(ajaxUrl, {
