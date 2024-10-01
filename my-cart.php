@@ -62,7 +62,7 @@ get_header();
                                             </div>
                                             <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
                                         </div>
-                                        <button class="cart-item-remove btn" data-cart-item-key="<?php echo esc_attr($item); ?>">
+                                        <button class="cart-item-remove btn" data-cart-item-key="' . esc_attr($item) . '">
                                             <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/bin.png">
                                         </button>
                                     </div>';
