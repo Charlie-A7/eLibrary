@@ -141,8 +141,18 @@ get_header();
             button.addEventListener('click', function (event) {
                 event.preventDefault();
 
+                // Add a console log to see if the event is triggered
+                console.log('Remove button clicked');
+
                 // Get the cart item key
                 const cartItemKey = this.getAttribute('data-cart-item-key');
+                console.log('Cart Item Key:', cartItemKey); // Debugging cart item key
+
+                // Ensure cartItemKey is not null or undefined
+                if (!cartItemKey) {
+                    console.error('Cart Item Key not found');
+                    return;
+                }
 
                 // AJAX call to remove the item from the cart
                 fetch(ajaxUrl, {
@@ -157,14 +167,10 @@ get_header();
                 })
                     .then(response => response.json())
                     .then(data => {
+                        console.log('AJAX Response:', data); // Debugging AJAX response
                         if (data.success) {
                             // Remove the cart item from the DOM
                             button.closest('.cart-item').remove();
-
-                            // Optionally, update total price/quantity
-                            console.log(data.message); // For debugging purposes
-                            console.log('New Total Price:', data.new_total_price);
-                            console.log('Cart Count:', data.cart_count);
                         } else {
                             console.error(data.message);
                         }
