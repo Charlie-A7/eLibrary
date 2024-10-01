@@ -318,14 +318,21 @@ function remove_cart_item()
     // Get the cart item key from the AJAX request
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
 
-    // Remove the item from the cart by the cart item key
-    WC()->cart->remove_cart_item($cart_item_key);
+    // Check if the item exists in the cart
+    if ($cart_item_key && WC()->cart->get_cart_item($cart_item_key)) {
+        // Remove the item from the cart
+        WC()->cart->remove_cart_item($cart_item_key);
 
-    // Optionally return updated cart info
-    wp_send_json_success([
-        'new_total_price' => WC()->cart->get_cart_total(),
-        'cart_count' => WC()->cart->get_cart_contents_count()
-    ]);
+        // Optionally, you can return the updated cart totals
+        wp_send_json_success([
+            'message' => 'Item removed successfully!',
+            'new_total_price' => WC()->cart->get_cart_total(), // Updated total price
+            'cart_count' => WC()->cart->get_cart_contents_count(), // Updated cart count
+        ]);
+    } else {
+        wp_send_json_error(['message' => 'Item not found in cart!']);
+    }
 
-    wp_die(); // Required to terminate the AJAX request
+    wp_die(); // This is required to properly terminate the AJAX request
 }
+
