@@ -141,8 +141,12 @@ get_header();
             button.addEventListener('click', function (event) {
                 event.preventDefault();
 
+                // Debugging: Check if the event listener is triggered
+                console.log('Remove button clicked!');
+
                 // Get the cart item key
                 const cartItemKey = this.getAttribute('data-cart-item-key');
+                console.log('Cart Item Key:', cartItemKey); // Check if the cart item key is correct
 
                 // AJAX call to remove the item from the cart
                 fetch(ajaxUrl, {
@@ -152,24 +156,22 @@ get_header();
                     },
                     body: new URLSearchParams([
                         ['action', 'remove_cart_item'], // Action hook for PHP
-                        ['cart_item_key', cartItemKey] // Cart Item Key to remove
+                        ['cart_item_key', cartItemKey] // Send cart item key to remove the item
                     ])
                 })
                     .then(response => response.json())
                     .then(data => {
+                        console.log(data); // Log the entire response for debugging
+
                         if (data.success) {
                             // Remove the cart item from the DOM
                             button.closest('.cart-item').remove();
-
-                            // Optionally, update total price/quantity
-                            console.log(data.message); // For debugging purposes
-                            console.log('New Total Price:', data.new_total_price);
-                            console.log('Cart Count:', data.cart_count);
+                            console.log('Item removed successfully!');
                         } else {
-                            console.error(data.message);
+                            console.error('Error:', data.message);
                         }
                     })
-                    .catch(error => console.error('Error:', error));
+                    .catch(error => console.error('AJAX Error:', error));
             });
         });
     });
