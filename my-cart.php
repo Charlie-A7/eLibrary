@@ -160,6 +160,13 @@ get_header();
                         if (data.success) {
                             // Remove the cart item from the DOM
                             button.closest('.cart-item').remove();
+
+                            // Optionally, update total price/quantity
+                            console.log(data.message); // For debugging purposes
+                            console.log('New Total Price:', data.new_total_price);
+                            console.log('Cart Count:', data.cart_count);
+                        } else {
+                            console.error(data.message);
                         }
                     })
                     .catch(error => console.error('Error:', error));
