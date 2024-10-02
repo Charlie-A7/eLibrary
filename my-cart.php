@@ -48,6 +48,7 @@ get_header();
                                     $currency_symbol = get_woocommerce_currency_symbol();
                                     $image_url = wp_get_attachment_url($_product->get_image_id());
                                     $quantity = $values['quantity'];
+                                    $stock_quantity = $_product->get_stock_quantity();
 
                                     // Output the structured HTML for the cart item
                                     echo '
@@ -57,7 +58,7 @@ get_header();
                                             <h2>' . esc_html($title) . '</h2>
                                             <div class="quantity-selector d-flex align-items-center my-2">
                                                 <button class="quantity-btn minus">-</button>
-                                                <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input">
+                                                <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input" data-stock="' . esc_attr($stock_quantity) . '">
                                                 <button class="quantity-btn plus">+</button>
                                             </div>
                                             <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
@@ -108,6 +109,9 @@ get_header();
             const minusButton = cartItem.querySelector('.minus');
             const bookPriceElement = cartItem.querySelector('.bookPrice');
 
+            // Get the stock quantity from the data attribute
+            const stockQuantity = parseInt(quantityInput.getAttribute('data-stock'));
+
             // Base price of the product (change this to your actual product's unit price)
             const unitPrice = 50000;
 
@@ -128,8 +132,14 @@ get_header();
             // Increment quantity on "+" button click
             plusButton.addEventListener('click', function () {
                 let quantity = parseInt(quantityInput.value);
-                quantityInput.value = quantity + 1;
-                updatePrice(); // Update the price
+
+                // Check if the quantity exceeds the available stock
+                if (quantity < stockQuantity) {
+                    quantityInput.value = quantity + 1;
+                    updatePrice(); // Update the price
+                } else {
+                    alert('Cannot add more than available stock (' + stockQuantity + ').');
+                }
             });
 
             // Decrement quantity on "-" button click
