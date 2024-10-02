@@ -96,43 +96,52 @@ get_header();
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const quantityInput = document.querySelector('.quantity-input');
-        const plusButton = document.querySelector('.plus');
-        const minusButton = document.querySelector('.minus');
-        const bookPriceElement = document.querySelector('.bookPrice');
 
-        // Base price of the product (change this to your actual product's unit price)
-        const unitPrice = 50000;
+        // Select all cart items
+        const cartItems = document.querySelectorAll('.cart-item');
 
-        // Create a number formatter for formatting with dots as thousand separators
-        const formatter = new Intl.NumberFormat('de-DE', {
-            minimumFractionDigits: 0, // No decimal places
-            maximumFractionDigits: 3
-        });
+        // Loop through each cart item
+        cartItems.forEach(function (cartItem) {
+            // Get the relevant elements for each cart item
+            const quantityInput = cartItem.querySelector('.quantity-input');
+            const plusButton = cartItem.querySelector('.plus');
+            const minusButton = cartItem.querySelector('.minus');
+            const bookPriceElement = cartItem.querySelector('.bookPrice');
 
-        // Function to update the price based on the current quantity
-        function updatePrice() {
-            const quantity = parseInt(quantityInput.value);
-            const totalPrice = unitPrice * quantity; // Multiply base price by quantity
-            const formattedPrice = formatter.format(totalPrice); // Format the price
-            bookPriceElement.textContent = formattedPrice; // Update price span
-        }
+            // Base price of the product (change this to your actual product's unit price)
+            const unitPrice = 50000;
 
-        // Increment quantity on "+" button click
-        plusButton.addEventListener('click', function () {
-            let quantity = parseInt(quantityInput.value);
-            quantityInput.value = quantity + 1;
-            updatePrice(); // Update the price
-        });
+            // Create a number formatter for formatting with dots as thousand separators
+            const formatter = new Intl.NumberFormat('de-DE', {
+                minimumFractionDigits: 0, // No decimal places
+                maximumFractionDigits: 3
+            });
 
-        // Decrement quantity on "-" button click
-        minusButton.addEventListener('click', function () {
-            let quantity = parseInt(quantityInput.value);
-            if (quantity > 1) { // Prevent going below 1
-                quantityInput.value = quantity - 1;
-                updatePrice(); // Update the price
+            // Function to update the price based on the current quantity
+            function updatePrice() {
+                const quantity = parseInt(quantityInput.value);
+                const totalPrice = unitPrice * quantity; // Multiply base price by quantity
+                const formattedPrice = formatter.format(totalPrice); // Format the price
+                bookPriceElement.textContent = formattedPrice; // Update price span
             }
+
+            // Increment quantity on "+" button click
+            plusButton.addEventListener('click', function () {
+                let quantity = parseInt(quantityInput.value);
+                quantityInput.value = quantity + 1;
+                updatePrice(); // Update the price
+            });
+
+            // Decrement quantity on "-" button click
+            minusButton.addEventListener('click', function () {
+                let quantity = parseInt(quantityInput.value);
+                if (quantity > 1) { // Prevent going below 1
+                    quantityInput.value = quantity - 1;
+                    updatePrice(); // Update the price
+                }
+            });
         });
+
 
         // --- Remove button functionality ---
         const removeButtons = document.querySelectorAll('.cart-item-remove');
