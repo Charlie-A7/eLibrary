@@ -151,23 +151,33 @@ get_header();
                 }
             });
 
-            // Update price when the input field changes manually
+            // Input event with debounce for manual input changes
             quantityInput.addEventListener('input', function () {
-                let quantity = parseInt(quantityInput.value);
-
-                // Ensure quantity is a valid number and within stock limits
-                if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
-                    updatePrice(); // Update the price if the input is valid
-                } else if (quantity > stockQuantity) {
-                    alert('Cannot add more than available stock (' + stockQuantity + ').');
-                    quantityInput.value = stockQuantity; // Reset to the max allowed
-                    updatePrice(); // Update the price
-                } else {
-                    quantityInput.value = 1; // Reset to 1 if input is invalid
-                    updatePrice(); // Update the price
-                }
+                debounceValidation(function () {
+                    let quantity = parseInt(quantityInput.value);
+                    if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
+                        updatePrice();
+                    } else if (quantity > stockQuantity) {
+                        alert('Cannot add more than available stock (' + stockQuantity + ').');
+                        quantityInput.value = stockQuantity;
+                        updatePrice();
+                    } else {
+                        quantityInput.value = 1; // Reset to 1 if input is invalid
+                        updatePrice();
+                    }
+                }, 500); // 500ms delay to wait for the user to finish typing
             });
 
+            // Validate on blur (when the user leaves the input field)
+            quantityInput.addEventListener('blur', function () {
+                let quantity = parseInt(quantityInput.value);
+                if (isNaN(quantity) || quantity < 1) {
+                    quantityInput.value = 1; // Reset to 1 if invalid
+                } else if (quantity > stockQuantity) {
+                    quantityInput.value = stockQuantity; // Reset to max stock if too high
+                }
+                updatePrice(); // Always update price on blur
+            });
         });
 
 
