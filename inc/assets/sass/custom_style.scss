@@ -1080,6 +1080,9 @@ padding-bottom: 5px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+    span{
+      height: 2px;
+    }
 }
 .quantity-btn:hover {
   background-color: #ddd; /* Slight hover effect */
