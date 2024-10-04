@@ -57,9 +57,9 @@ get_header();
                                         <div class="cart-item-details">
                                             <h2>' . esc_html($title) . '</h2>
                                             <div class="quantity-selector d-flex align-items-center my-2">
-                                                <button class="quantity-btn minus">-</button>
+                                                <button class="quantity-btn minus"><span>-</span></button>
                                                 <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input" data-stock="' . esc_attr($stock_quantity) . '">
-                                                <button class="quantity-btn plus">+</button>
+                                                <button class="quantity-btn plus"><span>+</span></button>
                                             </div>
                                             <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
                                         </div>
