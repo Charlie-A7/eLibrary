@@ -150,6 +150,24 @@ get_header();
                     updatePrice(); // Update the price
                 }
             });
+
+            // Update price when the input field changes manually
+            quantityInput.addEventListener('input', function () {
+                let quantity = parseInt(quantityInput.value);
+
+                // Ensure quantity is a valid number and within stock limits
+                if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
+                    updatePrice(); // Update the price if the input is valid
+                } else if (quantity > stockQuantity) {
+                    alert('Cannot add more than available stock (' + stockQuantity + ').');
+                    quantityInput.value = stockQuantity; // Reset to the max allowed
+                    updatePrice(); // Update the price
+                } else {
+                    quantityInput.value = 1; // Reset to 1 if input is invalid
+                    updatePrice(); // Update the price
+                }
+            });
+
         });
 
 
