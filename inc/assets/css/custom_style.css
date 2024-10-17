@@ -1011,7 +1011,8 @@ footer .footer_lines::after {
   background-color: #555; /* Darker scrollbar on hover */
 }
 .my-custom-cart-wrapper .Materials_title {
-  font-family: "quicksand-regular";
+  font-family: "quicksand-bold";
+  font-size: 28px;
   margin: 0.5rem;
 }
 .my-custom-cart-wrapper .cart-item {

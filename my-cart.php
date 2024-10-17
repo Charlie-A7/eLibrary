@@ -74,6 +74,9 @@ get_header();
                                 }
                             }
                             ?>
+                            <div class="Materials_title">
+                                <h2> Library</h2>
+                            </div>
                         </div>
                     </div>
                     <div class="col-4 z-2 cart-right-section">
