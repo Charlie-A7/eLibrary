@@ -29,6 +29,9 @@ get_header();
                         </table>
 
                         <div class="cart-items-container">
+                            <div class="Materials_title">
+                                <h2>Materials</h2>
+                            </div>
                             <?php
                             // Check if the cart is empty
                             if (WC()->cart->is_empty()) {
@@ -52,6 +55,7 @@ get_header();
 
                                     // Output the structured HTML for the cart item
                                     echo '
+
                                     <div class="cart-item z-2 d-flex justify-content-between align-items-center py-3 px-5 mb-3">
                                         <img src="' . esc_url($image_url) . '" class="cart-item-img" alt="' . esc_attr($title) . '">
                                         <div class="cart-item-details">
