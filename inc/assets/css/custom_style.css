@@ -1010,6 +1010,10 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .cart-items-container::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Darker scrollbar on hover */
 }
+.my-custom-cart-wrapper .Materials_title {
+  font-family: "quicksand-regular";
+  margin: 0.5rem;
+}
 .my-custom-cart-wrapper .cart-item {
   background-color: #dce0e2;
   display: flex;
