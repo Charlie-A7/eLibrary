@@ -1036,6 +1036,10 @@ padding-bottom: 5px;
 .cart-items-container::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Darker scrollbar on hover */
 }
+.Materials_title{
+  font-family: $quicksand-regular;
+  margin: 0.5rem;
+}
 .cart-item {
   background-color: #dce0e2;
   display: flex;
