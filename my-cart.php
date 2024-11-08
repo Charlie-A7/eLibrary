@@ -76,13 +76,23 @@ get_header();
                             ?>
                         </div>
                     </div>
+
                     <div class="col-4 z-2 cart-right-section">
                         <div class="order-summary p-3">
                             <h3>Order Summary</h3>
+
+                            <?php
+                            // Get total quantity of items in the cart
+                            $total_quantity = WC()->cart->get_cart_contents_count();
+
+                            // Get cart subtotal
+                            $subtotal = WC()->cart->get_cart_subtotal();
+                            ?>
+
                             <p class="order-sum-text">Amount of Books: <span class="order-sum-import">
-                                    30</span></p>
-                            <p class="order-sum-text">Subtotal: <span class="order-sum-import"> LBP:
-                                    2,000,000</span></p>
+                                    <?php echo esc_html($total_quantity); ?></span></p>
+                            <p class="order-sum-text">Subtotal: <span class="order-sum-import">
+                                    <?php echo $subtotal; ?></span></p>
                         </div>
                         <button class="btn cart-checkout-button w-100">CHECKOUT NOW</button>
                     </div>
@@ -92,7 +102,6 @@ get_header();
         </div>
 
     </div>
-</div>
 </div>
 
 <script>
