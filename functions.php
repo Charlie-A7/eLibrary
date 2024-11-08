@@ -345,12 +345,19 @@ function update_cart_totals()
 
     $quantity = sanitize_text_field($_POST['quantity']);
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
+    $current_quantity = WC()->cart->get_cart()[$cart_item_key]['quantity'];
 
+    if ($quantity === 1) {
+        $new_quantity = $current_quantity + 1;
+    } elseif ($quantity === -1 && $current_quantity > 1) {
+        $new_quantity = $current_quantity - 1;
+    }
     // Recalculate totals
-    WC()->cart->set_quantity($cart_item_key, $quantity);
+    WC()->cart->set_quantity($cart_item_key, $new_quantity);
+
     // Get updated total quantity and subtotal
-    $total_quantity = WC()->cart->get_cart_contents_count();
-    $fee_total = WC()->cart->get_fee_total();
+    $total_quantity = WC()->cart->calculate_totals();
+    $fee_total = WC()->cart->get_cart_contents_total();
 
     // Send the totals as a JSON response
     wp_send_json_success([
