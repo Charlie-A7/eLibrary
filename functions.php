@@ -352,11 +352,12 @@ function update_cart_totals()
     } else if ($quantity == -1 && $current_quantity > 1) {
         $new_quantity = $current_quantity - 1;
     }
-    // Recalculate totals
+    // Update the cart item quantity
     WC()->cart->set_quantity($cart_item_key, $new_quantity);
-
-    // Get updated total quantity and subtotal
-    $total_quantity = WC()->cart->calculate_totals();
+    // Recalculate the totals after adjustment
+    WC()->cart->calculate_totals();
+    // Get updated total quantity and feeTotal
+    $total_quantity = WC()->cart->get_cart_contents_count();
     $fee_total = WC()->cart->get_cart_contents_total();
 
     // Send the totals as a JSON response
