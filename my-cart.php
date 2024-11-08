@@ -147,6 +147,7 @@ get_header();
                             console.log(data.data.total_quantity);
                             document.querySelector('.order-sum-text span').textContent = data.data.subtotal;
                             console.log(data.data.subtotal);
+                            console.log(data)
                         } else {
                             console.error('Failed to update totals');
                         }
