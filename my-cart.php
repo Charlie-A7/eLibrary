@@ -197,16 +197,16 @@ get_header();
             });
 
             // Validate on blur (when the user leaves the input field)
-            quantityInput.addEventListener('blur', function () {
-                let quantity = parseInt(quantityInput.value);
-                if (isNaN(quantity) || quantity < 1) {
-                    quantityInput.value = 1; // Reset to 1 if invalid
-                } else if (quantity > stockQuantity) {
-                    quantityInput.value = stockQuantity; // Reset to max stock if too high
-                }
-                updatePrice(); // Always update price on blur
-                updateCartTotals();
-            });
+            // quantityInput.addEventListener('blur', function () {
+            //     let quantity = parseInt(quantityInput.value);
+            //     if (isNaN(quantity) || quantity < 1) {
+            //         quantityInput.value = 1; // Reset to 1 if invalid
+            //     } else if (quantity > stockQuantity) {
+            //         quantityInput.value = stockQuantity; // Reset to max stock if too high
+            //     }
+            //     updatePrice(); // Always update price on blur
+            //     updateCartTotals();
+            // });
         });
 
 
