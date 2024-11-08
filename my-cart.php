@@ -35,7 +35,7 @@ get_header();
                             <?php
                             // Check if the cart is empty
                             if (WC()->cart->is_empty()) {
-                                echo '<p>Your cart is currently empty.</p>';
+                                echo '<p class="left-padding1">Your cart is currently empty.</p>';
                             } else {
                                 global $woocommerce;
                                 $items = $woocommerce->cart->get_cart();
