@@ -336,3 +336,22 @@ function remove_cart_item()
     wp_die(); // This is required to properly terminate the AJAX request
 }
 
+// AJAX endpoint to update cart totals on quantity change
+add_action('wp_ajax_update_cart_totals', 'update_cart_totals');
+add_action('wp_ajax_nopriv_update_cart_totals', 'update_cart_totals');
+
+function update_cart_totals()
+{
+    // Recalculate totals
+    WC()->cart->calculate_totals();
+
+    // Get updated total quantity and subtotal
+    $total_quantity = WC()->cart->get_cart_contents_count();
+    $subtotal = WC()->cart->get_cart_subtotal();
+
+    // Send the totals as a JSON response
+    wp_send_json_success([
+        'total_quantity' => $total_quantity,
+        'subtotal' => $subtotal,
+    ]);
+}

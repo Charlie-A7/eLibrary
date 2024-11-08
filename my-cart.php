@@ -81,18 +81,10 @@ get_header();
                         <div class="order-summary p-3">
                             <h3>Order Summary</h3>
 
-                            <?php
-                            // Get total quantity of items in the cart
-                            $total_quantity = WC()->cart->get_cart_contents_count();
-
-                            // Get cart subtotal
-                            $subtotal = WC()->cart->get_cart_subtotal();
-                            ?>
-
-                            <p class="order-sum-text">Amount of Books: <span class="order-sum-import">
-                                    <?php echo esc_html($total_quantity); ?></span></p>
-                            <p class="order-sum-text">Subtotal: <span class="order-sum-import">
-                                    <?php echo $subtotal; ?></span></p>
+                            <p class="order-sum-text">Amount of Books: <span
+                                    class="order-sum-import"><?php echo esc_html($total_quantity); ?></span></p>
+                            <p class="order-sum-text">Subtotal: <span
+                                    class="order-sum-subtotal"><?php echo $subtotal; ?></span></p>
                         </div>
                         <button class="btn cart-checkout-button w-100">CHECKOUT NOW</button>
                     </div>
@@ -142,6 +134,25 @@ get_header();
                 bookPriceElement.textContent = formattedPrice; // Update price span
             }
 
+            function updateCartTotals() {
+                fetch(ajaxUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams([['action', 'update_cart_totals']])
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            document.querySelector('.order-sum-import').textContent = data.data.total_quantity;
+                            document.querySelector('.order-sum-text span').textContent = data.data.subtotal;
+                        } else {
+                            console.error('Failed to update totals');
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+
+
             // Increment quantity on "+" button click
             plusButton.addEventListener('click', function () {
                 let quantity = parseInt(quantityInput.value);
@@ -150,6 +161,7 @@ get_header();
                 if (quantity < stockQuantity) {
                     quantityInput.value = quantity + 1;
                     updatePrice(); // Update the price
+                    updateCartTotals();
                 } else {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
                 }
@@ -161,24 +173,26 @@ get_header();
                 if (quantity > 1) { // Prevent going below 1
                     quantityInput.value = quantity - 1;
                     updatePrice(); // Update the price
+                    updateCartTotals();
                 }
             });
 
-            // Input event with debounce for manual input changes
+            //input event listener
             quantityInput.addEventListener('input', function () {
-                debounceValidation(function () {
-                    let quantity = parseInt(quantityInput.value);
-                    if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
-                        updatePrice();
-                    } else if (quantity > stockQuantity) {
-                        alert('Cannot add more than available stock (' + stockQuantity + ').');
-                        quantityInput.value = stockQuantity;
-                        updatePrice();
-                    } else {
-                        quantityInput.value = 1; // Reset to 1 if input is invalid
-                        updatePrice();
-                    }
-                }, 500); // 500ms delay to wait for the user to finish typing
+                let quantity = parseInt(quantityInput.value);
+                if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
+                    updatePrice();
+                    updateCartTotals();
+                } else if (quantity > stockQuantity) {
+                    alert('Cannot add more than available stock (' + stockQuantity + ').');
+                    quantityInput.value = stockQuantity;
+                    updatePrice();
+                    updateCartTotals();
+                } else {
+                    quantityInput.value = 1;
+                    updatePrice();
+                    updateCartTotals();
+                }
             });
 
             // Validate on blur (when the user leaves the input field)
@@ -190,6 +204,7 @@ get_header();
                     quantityInput.value = stockQuantity; // Reset to max stock if too high
                 }
                 updatePrice(); // Always update price on blur
+                updateCartTotals();
             });
         });
 
