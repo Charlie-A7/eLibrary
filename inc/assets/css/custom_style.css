@@ -1015,6 +1015,9 @@ footer .footer_lines::after {
   font-size: 28px;
   margin: 0.5rem;
 }
+.my-custom-cart-wrapper .left-padding1 {
+  padding-left: 1rem;
+}
 .my-custom-cart-wrapper .cart-item {
   background-color: #dce0e2;
   display: flex;
