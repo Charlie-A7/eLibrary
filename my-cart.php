@@ -61,9 +61,9 @@ get_header();
                                         <div class="cart-item-details">
                                             <h2>' . esc_html($title) . '</h2>
                                             <div class="quantity-selector d-flex align-items-center my-2">
-                                                <button class="quantity-btn minus"><span>-</span></button>
+                                                <button class="quantity-btn minus" data-cart-item-key="' . esc_attr($item) . '"><span>-</span></button>
                                                 <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input" data-stock="' . esc_attr($stock_quantity) . '">
-                                                <button class="quantity-btn plus"><span>+</span></button>
+                                                <button class="quantity-btn plus" data-cart-item-key="' . esc_attr($item) . '"><span>+</span></button>
                                             </div>
                                             <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
                                         </div>
@@ -132,17 +132,17 @@ get_header();
                 bookPriceElement.textContent = formattedPrice; // Update price span
             }
 
-            function updateCartTotals() {
+            function updateCartTotals(num, cartItemKey) {
                 fetch(ajaxUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams([['action', 'update_cart_totals']])
+                    body: new URLSearchParams([['action', 'update_cart_totals'], ['quantity', num], ['cart_item_key', cartItemKey]])
                 })
                     .then(response => response.json())
                     .then(data => {
                         if (data.success) {
                             document.querySelector('.order-sum-import').textContent = data.data.total_quantity;
-                            document.querySelector('.order-sum-text-subtotal').textContent = data.data.subtotal;
+                            document.querySelector('.order-sum-subtotal').textContent = data.data.fee_total;
                             console.log(data)
                         } else {
                             console.error('Failed to update totals');
@@ -155,12 +155,12 @@ get_header();
             // Increment quantity on "+" button click
             plusButton.addEventListener('click', function () {
                 let quantity = parseInt(quantityInput.value);
-
+                const cartItemKey = this.getAttribute('data-cart-item-key');
                 // Check if the quantity exceeds the available stock
                 if (quantity < stockQuantity) {
                     quantityInput.value = quantity + 1;
                     updatePrice(); // Update the price
-                    updateCartTotals();
+                    updateCartTotals(1, cartItemKey);
                 } else {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
                 }
@@ -169,10 +169,11 @@ get_header();
             // Decrement quantity on "-" button click
             minusButton.addEventListener('click', function () {
                 let quantity = parseInt(quantityInput.value);
+                const cartItemKey = this.getAttribute('data-cart-item-key');
                 if (quantity > 1) { // Prevent going below 1
                     quantityInput.value = quantity - 1;
                     updatePrice(); // Update the price
-                    updateCartTotals();
+                    updateCartTotals(-1, cartItemKey);
                 }
             });
 
