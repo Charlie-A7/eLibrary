@@ -144,7 +144,9 @@ get_header();
                     .then(data => {
                         if (data.success) {
                             document.querySelector('.order-sum-import').textContent = data.data.total_quantity;
+                            console.log(data.data.total_quantity);
                             document.querySelector('.order-sum-text span').textContent = data.data.subtotal;
+                            console.log(data.data.subtotal);
                         } else {
                             console.error('Failed to update totals');
                         }
