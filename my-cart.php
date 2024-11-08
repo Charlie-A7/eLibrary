@@ -183,16 +183,16 @@ get_header();
                 const cartItemKey = this.getAttribute('data-cart-item-key');
                 if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
                     updatePrice();
-                    updateCartTotals(quantity, catItemKey);
+                    updateCartTotals(quantity, cartItemKey);
                 } else if (quantity > stockQuantity) {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
                     quantityInput.value = stockQuantity;
                     updatePrice();
-                    updateCartTotals(quantity, catItemKey);
+                    updateCartTotals(quantity, cartItemKey);
                 } else {
                     quantityInput.value = 1;
                     updatePrice();
-                    updateCartTotals(quantity, catItemKey);
+                    updateCartTotals(quantity, cartItemKey);
                 }
             });
 
