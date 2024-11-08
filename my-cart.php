@@ -81,10 +81,8 @@ get_header();
                         <div class="order-summary p-3">
                             <h3>Order Summary</h3>
 
-                            <p class="order-sum-text">Amount of Books: <span
-                                    class="order-sum-import"><?php echo esc_html($total_quantity); ?></span></p>
-                            <p class="order-sum-text">Subtotal: <span
-                                    class="order-sum-subtotal"><?php echo $subtotal; ?></span></p>
+                            <p class="order-sum-text">Amount of Books: <span class="order-sum-import"></span></p>
+                            <p class="order-sum-text-subtotal">Subtotal: <span class="order-sum-subtotal"></span></p>
                         </div>
                         <button class="btn cart-checkout-button w-100">CHECKOUT NOW</button>
                     </div>
@@ -144,9 +142,7 @@ get_header();
                     .then(data => {
                         if (data.success) {
                             document.querySelector('.order-sum-import').textContent = data.data.total_quantity;
-                            console.log(data.data.total_quantity);
-                            document.querySelector('.order-sum-text span').textContent = data.data.subtotal;
-                            console.log(data.data.subtotal);
+                            document.querySelector('.order-sum-text-subtotal').textContent = data.data.subtotal;
                             console.log(data)
                         } else {
                             console.error('Failed to update totals');
