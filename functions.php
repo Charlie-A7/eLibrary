@@ -351,6 +351,8 @@ function update_cart_totals()
         $new_quantity = $current_quantity + 1;
     } else if ($quantity == -1 && $current_quantity > 1) {
         $new_quantity = $current_quantity - 1;
+    } else if ($quantity > 1 && $current_quantity > 1) {
+        $new_quantity = $current_quantity + $quantity;
     }
     // Update the cart item quantity
     WC()->cart->set_quantity($cart_item_key, $new_quantity);

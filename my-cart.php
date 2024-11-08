@@ -62,7 +62,7 @@ get_header();
                                             <h2>' . esc_html($title) . '</h2>
                                             <div class="quantity-selector d-flex align-items-center my-2">
                                                 <button class="quantity-btn minus" data-cart-item-key="' . esc_attr($item) . '"><span>-</span></button>
-                                                <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input" data-stock="' . esc_attr($stock_quantity) . '">
+                                                <input type="text" value="' . esc_attr($quantity) . '" class="quantity-input" data-cart-item-key="' . esc_attr($item) . '" data-stock="' . esc_attr($stock_quantity) . '">
                                                 <button class="quantity-btn plus" data-cart-item-key="' . esc_attr($item) . '"><span>+</span></button>
                                             </div>
                                             <p class="cart-item-price">Price: <span class="bookPrice">50.000</span> ل.ل</p>
@@ -180,18 +180,19 @@ get_header();
             //input event listener
             quantityInput.addEventListener('input', function () {
                 let quantity = parseInt(quantityInput.value);
+                const cartItemKey = this.getAttribute('data-cart-item-key');
                 if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
                     updatePrice();
-                    updateCartTotals();
+                    updateCartTotals(quantity, catItemKey);
                 } else if (quantity > stockQuantity) {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
                     quantityInput.value = stockQuantity;
                     updatePrice();
-                    updateCartTotals();
+                    updateCartTotals(quantity, catItemKey);
                 } else {
                     quantityInput.value = 1;
                     updatePrice();
-                    updateCartTotals();
+                    updateCartTotals(quantity, catItemKey);
                 }
             });
 
