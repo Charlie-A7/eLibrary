@@ -3,7 +3,7 @@ $slug = get_post_field( 'post_name', get_post() );
 ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-8"> 
+        <div class="col-12"> 
             <div class="search-container d-flex justify-content-center align-items-center">
                 <form role="search" method="get" action="<?php echo esc_url( home_url('/') ); ?>" aria-label="Search for">
                     <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
