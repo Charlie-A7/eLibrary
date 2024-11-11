@@ -84,7 +84,8 @@ get_header();
                             <p class="order-sum-text">Amount of Books: <span class="order-sum-import"></span></p>
                             <p class="order-sum-text-subtotal">Subtotal: <span class="order-sum-subtotal"></span></p>
                         </div>
-                        <button class="btn cart-checkout-button w-100">CHECKOUT NOW</button>
+                        <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
+                        <a href="https://yourdomain.com/my-checkout" class="btn cart-checkout-button w-100 d-flex justify-content-center align-items-center">CHECKOUT NOW</a>
                     </div>
                 </div>
 
