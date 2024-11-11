@@ -85,7 +85,7 @@ get_header();
                             <p class="order-sum-text-subtotal">Subtotal: <span class="order-sum-subtotal"></span></p>
                         </div>
                         <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
-                        <a href="https://yourdomain.com/my-checkout" class="btn cart-checkout-button w-100 d-flex justify-content-center align-items-center">CHECKOUT NOW</a>
+                        <a href="https://charlie.e-vents.me/my-checkout" class="btn cart-checkout-button w-100 d-flex justify-content-center align-items-center">CHECKOUT NOW</a>
                     </div>
                 </div>
 
