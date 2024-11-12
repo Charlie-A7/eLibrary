@@ -82,7 +82,8 @@ get_header();
                             <h3>Order Summary</h3>
 
                             <p class="order-sum-text">Amount of Books: <span class="order-sum-import"></span></p>
-                            <p class="order-sum-text-subtotal">Subtotal: <span class="order-sum-subtotal"></span>.ل.ل
+                            <p class="order-sum-text-subtotal">Subtotal: <span
+                                    class="order-sum-subtotal"></span><span>.ل.ل </span>
                             </p>
                         </div>
                         <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
