@@ -1098,7 +1098,7 @@ footer .footer_lines::after {
   margin-bottom: 20px;
   font-family: "quicksand-bold";
 }
-.my-custom-cart-wrapper .order-sum-text {
+.my-custom-cart-wrapper .order-sum-text, .my-custom-cart-wrapper order-sum-text-subtotal {
   font-family: "quicksand-bold";
   font-size: 20px;
   margin-top: 1rem;
