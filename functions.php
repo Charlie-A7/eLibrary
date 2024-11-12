@@ -308,14 +308,13 @@ function custom_woocommerce_add_to_cart_text($text, $product)
 
 
 //cart remove button ajax request
-
 // Add the AJAX action hook
 add_action('wp_ajax_remove_cart_item', 'remove_cart_item');
 add_action('wp_ajax_nopriv_remove_cart_item', 'remove_cart_item');
 
 function remove_cart_item()
 {
-    //  the cart item key from the AJAX request
+    // Get the cart item key from the AJAX request
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
 
     // Check if the item exists in the cart
@@ -323,17 +322,20 @@ function remove_cart_item()
         // Remove the item from the cart
         WC()->cart->remove_cart_item($cart_item_key);
 
-        // Optionally, you can return the updated cart totals
+        // Recalculate totals after removal
+        WC()->cart->calculate_totals();
+
+        // Return updated cart totals and item count
         wp_send_json_success([
             'message' => 'Item removed successfully!',
-            'new_total_price' => WC()->cart->get_cart_total(), // Updated total price
+            'new_total_price' => WC()->cart->get_cart_subtotal(), // Updated subtotal with formatting
             'cart_count' => WC()->cart->get_cart_contents_count(), // Updated cart count
         ]);
     } else {
         wp_send_json_error(['message' => 'Item not found in cart!']);
     }
 
-    wp_die(); // This is required to properly terminate the AJAX request
+    wp_die(); // Required to properly terminate the AJAX request
 }
 
 // AJAX endpoint to update cart totals on quantity change
@@ -342,29 +344,31 @@ add_action('wp_ajax_nopriv_update_cart_totals', 'update_cart_totals');
 
 function update_cart_totals()
 {
-
-    $quantity = sanitize_text_field($_POST['quantity']);
+    // Get the quantity and cart item key from AJAX request
+    $quantity = (int) sanitize_text_field($_POST['quantity']);
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
-    $current_quantity = WC()->cart->get_cart()[$cart_item_key]['quantity'];
 
-    if ($quantity == 1) {
-        $new_quantity = $current_quantity + 1;
-    } else if ($quantity == -1 && $current_quantity > 1) {
-        $new_quantity = $current_quantity - 1;
-    } else if ($quantity >= 1 && $current_quantity > 1) {
-        $new_quantity = $quantity;
+    // Check if the cart item exists
+    if ($cart_item_key && isset(WC()->cart->get_cart()[$cart_item_key])) {
+        // Set the new quantity directly from the AJAX request
+        WC()->cart->set_quantity($cart_item_key, $quantity);
+
+        // Recalculate totals after updating quantity
+        WC()->cart->calculate_totals();
+
+        // Get updated total quantity and formatted subtotal
+        $total_quantity = WC()->cart->get_cart_contents_count();
+        $formatted_subtotal = WC()->cart->get_cart_subtotal();
+
+        // Send the totals as a JSON response
+        wp_send_json_success([
+            'total_quantity' => $total_quantity,
+            'subtotal' => $formatted_subtotal,
+        ]);
+    } else {
+        wp_send_json_error(['message' => 'Item not found in cart!']);
     }
-    // Update the cart item quantity
-    WC()->cart->set_quantity($cart_item_key, $new_quantity);
-    // Recalculate the totals after adjustment
-    WC()->cart->calculate_totals();
-    // Get updated total quantity and feeTotal
-    $total_quantity = WC()->cart->get_cart_contents_count();
-    $fee_total = WC()->cart->get_cart_contents_total();
 
-    // Send the totals as a JSON response
-    wp_send_json_success([
-        'total_quantity' => $total_quantity,
-        'fee_total' => $fee_total,
-    ]);
+    wp_die(); // Required to properly terminate the AJAX request
 }
+
