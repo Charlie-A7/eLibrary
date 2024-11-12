@@ -135,21 +135,18 @@ get_header();
                 bookPriceElement.textContent = formattedPrice; // Update price span
             }
 
-            function updateCartTotals(quantity, cartItemKey) {
+            function updateCartTotals(num, cartItemKey) {
                 fetch(ajaxUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams([
-                        ['action', 'update_cart_totals'],
-                        ['quantity', quantity],
-                        ['cart_item_key', cartItemKey]
-                    ])
+                    body: new URLSearchParams([['action', 'update_cart_totals'], ['quantity', num], ['cart_item_key', cartItemKey]])
                 })
                     .then(response => response.json())
                     .then(data => {
                         if (data.success) {
                             document.querySelector('.order-sum-import').textContent = data.data.total_quantity;
-                            document.querySelector('.order-sum-subtotal').textContent = data.data.subtotal;
+                            document.querySelector('.order-sum-subtotal').textContent = data.data.fee_total;
+                            console.log(data)
                         } else {
                             console.error('Failed to update totals');
                         }
