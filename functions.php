@@ -368,4 +368,3 @@ function update_cart_totals()
         'fee_total' => $fee_total,
     ]);
 }
-// Ge
