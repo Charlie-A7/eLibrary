@@ -220,49 +220,49 @@ get_header();
             quantityInput.addEventListener('input', function () {
                 clearTimeout(blurTimeout);
             });
+
+
+
         });
 
 
-    });
+        // --- Remove button functionality ---
+        const removeButtons = document.querySelectorAll('.cart-item-remove');
 
+        removeButtons.forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
 
-    // --- Remove button functionality ---
-    const removeButtons = document.querySelectorAll('.cart-item-remove');
+                // Get the cart item key
+                const cartItemKey = this.getAttribute('data-cart-item-key');
+                console.log('Cart Item Key:', cartItemKey); // This should now log the correct key
 
-    removeButtons.forEach(function (button) {
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-
-            // Get the cart item key
-            const cartItemKey = this.getAttribute('data-cart-item-key');
-            console.log('Cart Item Key:', cartItemKey); // This should now log the correct key
-
-            // AJAX call to remove the item from the cart
-            fetch(ajaxUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: new URLSearchParams([
-                    ['action', 'remove_cart_item'], // Action hook for PHP
-                    ['cart_item_key', cartItemKey] // Send cart item key to remove the item
-                ])
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data); // Log the entire response for debugging
-
-                    if (data.success) {
-                        // Remove the cart item from the DOM
-                        button.closest('.cart-item').remove();
-                        console.log('Item removed successfully!');
-                    } else {
-                        console.error('Error:', data.message);
-                    }
+                // AJAX call to remove the item from the cart
+                fetch(ajaxUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams([
+                        ['action', 'remove_cart_item'], // Action hook for PHP
+                        ['cart_item_key', cartItemKey] // Send cart item key to remove the item
+                    ])
                 })
-                .catch(error => console.error('AJAX Error:', error));
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data); // Log the entire response for debugging
+
+                        if (data.success) {
+                            // Remove the cart item from the DOM
+                            button.closest('.cart-item').remove();
+                            console.log('Item removed successfully!');
+                        } else {
+                            console.error('Error:', data.message);
+                        }
+                    })
+                    .catch(error => console.error('AJAX Error:', error));
+            });
         });
-    });
     });
 
 </script>
