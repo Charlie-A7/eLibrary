@@ -81,10 +81,16 @@ get_header();
                         <div class="order-summary p-3">
                             <h3>Order Summary</h3>
 
-                            <p class="order-sum-text">Amount of Books: <span class="order-sum-import"></span></p>
+                            <?php
+                            // Get total quantity and subtotal from WooCommerce cart
+                            $total_quantity = WC()->cart->get_cart_contents_count();
+                            $subtotal = WC()->cart->get_cart_subtotal(); // This includes currency symbol and formatting
+                            ?>
+
+                            <p class="order-sum-text">Amount of Books: <span
+                                    class="order-sum-import"><?php echo esc_html($total_quantity); ?></span></p>
                             <p class="order-sum-text-subtotal">Subtotal: <span
-                                    class="order-sum-subtotal"></span><span>.ل.ل </span>
-                            </p>
+                                    class="order-sum-subtotal"><?php echo $subtotal; ?></span><span> .ل.ل</span></p>
                         </div>
                         <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
                         <a href="https://charlie.e-vents.me/my-checkout"
