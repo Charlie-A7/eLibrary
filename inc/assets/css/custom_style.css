@@ -1103,7 +1103,7 @@ footer .footer_lines::after {
   font-size: 20px;
   margin-top: 1rem;
 }
-.my-custom-cart-wrapper .cart-right-section .order-sum-import {
+.my-custom-cart-wrapper .cart-right-section .order-sum-import, .my-custom-cart-wrapper .cart-right-section .order-sum-subtotal {
   text-align: right;
   font-family: "quicksand-regular";
   font-size: 16px;
