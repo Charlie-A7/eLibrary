@@ -1086,7 +1086,7 @@ footer .footer_lines::after {
   cursor: pointer;
   width: 3rem;
 }
-.my-custom-cart-wrapper .order-summary {
+.my-custom-cart-wrapper .cart-right-section .order-summary {
   background-color: #9eb6c5;
   text-align: left;
   font-family: "quicksand-regular";
@@ -1094,21 +1094,21 @@ footer .footer_lines::after {
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
-.my-custom-cart-wrapper .order-summary h3 {
+.my-custom-cart-wrapper .cart-right-section .order-summary h3 {
   margin-bottom: 20px;
   font-family: "quicksand-bold";
 }
-.my-custom-cart-wrapper .order-sum-text, .my-custom-cart-wrapper .order-sum-text-subtotal {
+.my-custom-cart-wrapper .cart-right-section .order-sum-text, .my-custom-cart-wrapper .cart-right-section .order-sum-text-subtotal {
   font-family: "quicksand-bold";
   font-size: 20px;
   margin-top: 1rem;
 }
-.my-custom-cart-wrapper .order-sum-import {
+.my-custom-cart-wrapper .cart-right-section .order-sum-import {
   text-align: right;
   font-family: "quicksand-regular";
   font-size: 16px;
 }
-.my-custom-cart-wrapper .cart-checkout-button {
+.my-custom-cart-wrapper .cart-right-section .cart-checkout-button {
   font-family: "quicksand-bold";
   font-size: 23px;
   background-color: #093f6c;
@@ -1119,6 +1119,7 @@ footer .footer_lines::after {
   cursor: pointer;
   height: 4rem;
 }
+
 .my-custom-checkout-wrapper {
   min-height: 72dvh;
 }/*# sourceMappingURL=custom_style.css.map */
