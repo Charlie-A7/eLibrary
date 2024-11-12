@@ -96,6 +96,7 @@ get_header();
                                         echo esc_html($subtotal);
                                     }
                                     ?>
+                                    .ل.ل
                                 </span></p>
                         </div>
                         <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
