@@ -89,8 +89,7 @@ get_header();
 
                             <p class="order-sum-text">Amount of Books: <span
                                     class="order-sum-import"><?php echo esc_html($total_quantity); ?></span></p>
-                            <p class="order-sum-text-subtotal">Subtotal: <span>
-                                    class="order-sum-subtotal">
+                            <p class="order-sum-text-subtotal">Subtotal: <span class="order-sum-subtotal">
                                     <?php
                                     if (function_exists('WC') && WC()->cart) {
                                         $subtotal = WC()->cart->get_subtotal(); // This returns the subtotal as a plain number
