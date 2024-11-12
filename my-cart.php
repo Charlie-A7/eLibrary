@@ -90,7 +90,8 @@ get_header();
                             <p class="order-sum-text">Amount of Books: <span
                                     class="order-sum-import"><?php echo esc_html($total_quantity); ?></span></p>
                             <p class="order-sum-text-subtotal">Subtotal: <span
-                                    class="order-sum-subtotal"><?php echo $subtotal; ?></span><span> .ل.ل</span></p>
+                                    class="order-sum-subtotal"><?php echo wc_price($fee_total); ?></span><span>
+                                    .ل.ل</span></p>
                         </div>
                         <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
                         <a href="https://charlie.e-vents.me/my-checkout"
@@ -98,7 +99,6 @@ get_header();
                             NOW</a>
                     </div>
                 </div>
-
             </div>
         </div>
 
