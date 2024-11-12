@@ -315,7 +315,7 @@ add_action('wp_ajax_nopriv_remove_cart_item', 'remove_cart_item');
 
 function remove_cart_item()
 {
-    // Get the cart item key from the AJAX request
+    //  the cart item key from the AJAX request
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
 
     // Check if the item exists in the cart
@@ -368,3 +368,4 @@ function update_cart_totals()
         'fee_total' => $fee_total,
     ]);
 }
+// Ge
