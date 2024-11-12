@@ -199,16 +199,23 @@ get_header();
             });
 
             // Validate on blur (when the user leaves the input field)
-            // quantityInput.addEventListener('blur', function () {
-            //     let quantity = parseInt(quantityInput.value);
-            //     if (isNaN(quantity) || quantity < 1) {
-            //         quantityInput.value = 1; // Reset to 1 if invalid
-            //     } else if (quantity > stockQuantity) {
-            //         quantityInput.value = stockQuantity; // Reset to max stock if too high
-            //     }
-            //     updatePrice(); // Always update price on blur
-            //     updateCartTotals();
-            // });
+            quantityInput.addEventListener('blur', function () {
+                let quantity = parseInt(quantityInput.value);
+                const cartItemKey = quantityInput.getAttribute('data-cart-item-key'); // Ensure we have the cart item key
+
+                // Validate the quantity
+                if (isNaN(quantity) || quantity < 1) {
+                    quantityInput.value = 1; // Reset to 1 if the value is invalid
+                } else if (quantity > stockQuantity) {
+                    quantityInput.value = stockQuantity; // Reset to max stock if too high
+                    alert('Cannot add more than available stock (' + stockQuantity + ').');
+                }
+
+                // Update the price display and cart totals
+                updatePrice();
+                updateCartTotals(quantityInput.value, cartItemKey);
+            });
+
         });
 
 
