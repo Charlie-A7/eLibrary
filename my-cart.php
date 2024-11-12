@@ -85,7 +85,9 @@ get_header();
                             <p class="order-sum-text-subtotal">Subtotal: <span class="order-sum-subtotal"></span></p>
                         </div>
                         <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
-                        <a href="https://charlie.e-vents.me/my-checkout" class="btn cart-checkout-button w-100 d-flex justify-content-center align-items-center">CHECKOUT NOW</a>
+                        <a href="https://charlie.e-vents.me/my-checkout"
+                            class="btn cart-checkout-button w-100 d-flex justify-content-center align-items-center">CHECKOUT
+                            NOW</a>
                     </div>
                 </div>
 
@@ -181,19 +183,18 @@ get_header();
             //input event listener
             quantityInput.addEventListener('input', function () {
                 let quantity = parseInt(quantityInput.value);
-                const cartItemKey = this.getAttribute('data-cart-item-key');
-                if (!isNaN(quantity) && quantity > 0 && quantity <= stockQuantity) {
+                if (quantity <= parseInt(quantityInput.dataset.stock) && quantity > 0) {
                     updatePrice();
                     updateCartTotals(quantity, cartItemKey);
-                } else if (quantity > stockQuantity) {
-                    alert('Cannot add more than available stock (' + stockQuantity + ').');
-                    quantityInput.value = stockQuantity;
+                } else if (quantity > parseInt(quantityInput.dataset.stock)) {
+                    alert('Cannot add more than available stock (' + quantityInput.dataset.stock + ').');
+                    quantityInput.value = parseInt(quantityInput.dataset.stock);
                     updatePrice();
-                    updateCartTotals(quantity, cartItemKey);
+                    updateCartTotals(quantityInput.value, cartItemKey);
                 } else {
                     quantityInput.value = 1;
                     updatePrice();
-                    updateCartTotals(quantity, cartItemKey);
+                    updateCartTotals(quantityInput.value, cartItemKey);
                 }
             });
 
