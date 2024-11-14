@@ -47,7 +47,7 @@ get_header();
 
                                     // Get product details
                                     $title = $_product->get_title();
-                                    $price = $_product->get_regular_price();
+                                    $price = 50000;
                                     $currency_symbol = get_woocommerce_currency_symbol();
                                     $image_url = wp_get_attachment_url($_product->get_image_id());
                                     $quantity = $values['quantity'];
