@@ -342,29 +342,36 @@ add_action('wp_ajax_nopriv_update_cart_totals', 'update_cart_totals');
 
 function update_cart_totals()
 {
-
-    $quantity = sanitize_text_field($_POST['quantity']);
+    // Get quantity and cart item key from the AJAX request
+    $quantity = absint($_POST['quantity']); // Ensuring quantity is a positive integer
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
-    $current_quantity = WC()->cart->get_cart()[$cart_item_key]['quantity'];
 
-    if ($quantity == 1) {
-        $new_quantity = $current_quantity + 1;
-    } else if ($quantity == -1 && $current_quantity > 1) {
-        $new_quantity = $current_quantity - 1;
-    } else if ($quantity >= 1 && $current_quantity > 1) {
-        $new_quantity = $quantity;
+    // Fetch the current cart item details
+    $cart_item = WC()->cart->get_cart_item($cart_item_key);
+
+    if ($cart_item) {
+        $stock_quantity = $cart_item['data']->get_stock_quantity(); // Get available stock
+        $new_quantity = max(1, min($quantity, $stock_quantity)); // Enforce minimum of 1, maximum of stock
+
+        // Update the cart item quantity
+        WC()->cart->set_quantity($cart_item_key, $new_quantity);
+
+        // Recalculate the cart totals after adjustment
+        WC()->cart->calculate_totals();
+
+        // Get updated total quantity and subtotal
+        $total_quantity = WC()->cart->get_cart_contents_count();
+        $fee_total = WC()->cart->get_cart_contents_total();
+
+        // Send the totals as a JSON response
+        wp_send_json_success([
+            'total_quantity' => $total_quantity,
+            'fee_total' => number_format($fee_total, 0, '', ','),
+        ]);
+    } else {
+        // Item not found in cart
+        wp_send_json_error(['message' => 'Item not found in cart']);
     }
-    // Update the cart item quantity
-    WC()->cart->set_quantity($cart_item_key, $new_quantity);
-    // Recalculate the totals after adjustment
-    WC()->cart->calculate_totals();
-    // Get updated total quantity and feeTotal
-    $total_quantity = WC()->cart->get_cart_contents_count();
-    $fee_total = WC()->cart->get_cart_contents_total();
 
-    // Send the totals as a JSON response
-    wp_send_json_success([
-        'total_quantity' => $total_quantity,
-        'fee_total' => $fee_total,
-    ]);
+    wp_die(); // Required to terminate AJAX request properly
 }

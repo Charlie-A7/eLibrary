@@ -201,19 +201,19 @@ get_header();
 
             //input event listener
             quantityInput.addEventListener('input', function () {
-                let quantity = parseInt(quantityInput.value);
-                if (quantity <= parseInt(quantityInput.dataset.stock) && quantity > 0) {
-                    updatePrice();
+                const quantity = parseInt(quantityInput.value);
+                const cartItemKey = this.getAttribute('data-cart-item-key');
+
+                // If valid quantity, update cart totals via AJAX
+                if (!isNaN(quantity) && quantity > 0) {
                     updateCartTotals(quantity, cartItemKey);
-                } else if (quantity > parseInt(quantityInput.dataset.stock)) {
-                    alert('Cannot add more than available stock (' + quantityInput.dataset.stock + ').');
-                    quantityInput.value = parseInt(quantityInput.dataset.stock);
-                    updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey);
+                } else if (quantity > stockQuantity) {
+                    alert('Cannot add more than available stock (' + stockQuantity + ').');
+                    quantityInput.value = stockQuantity; // Reset to max stock if exceeded
+                    updateCartTotals(stockQuantity, cartItemKey);
                 } else {
-                    quantityInput.value = 1;
-                    updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey);
+                    quantityInput.value = 1; // Reset to 1 if input is invalid
+                    updateCartTotals(1, cartItemKey);
                 }
             });
 
