@@ -67,7 +67,7 @@ get_header();
                                             </div>
                                             <p class="cart-item-price">
                                             Price: <span class="bookPrice">
-                                                <?php echo number_format($price * $quantity, 3, ' . ' , ', '); ?>
+                                                ' . number_format($price * $quantity, 3, '.', ',') . '
                                             </span> .ل.ل
                                             </p>
 
