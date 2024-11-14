@@ -147,12 +147,12 @@ get_header();
             });
 
             // Function to update the price based on the current quantity
-            function updatePrice() {
-                const quantity = parseInt(quantityInput.value);
-                const totalPrice = unitPrice * quantity; // Multiply base price by quantity
-                const formattedPrice = formatter.format(totalPrice); // Format the price
-                bookPriceElement.textContent = formattedPrice; // Update price span
-            }
+            // function updatePrice() {
+            //     const quantity = parseInt(quantityInput.value);
+            //     const totalPrice = unitPrice * quantity; // Multiply base price by quantity
+            //     const formattedPrice = formatter.format(totalPrice); // Format the price
+            //     bookPriceElement.textContent = formattedPrice; // Update price span
+            // }
 
             function updateCartTotals(num, cartItemKey) {
                 fetch(ajaxUrl, {
