@@ -93,7 +93,7 @@ get_header();
                                     <?php
                                     if (function_exists('WC') && WC()->cart) {
                                         $subtotal = WC()->cart->get_subtotal(); // This returns the subtotal as a plain number
-                                        echo esc_html($subtotal . '.ل.ل');
+                                        echo esc_html($subtotal);
                                     }
                                     ?>
                                     .ل.ل
@@ -159,7 +159,7 @@ get_header();
                     .then(data => {
                         if (data.success) {
                             document.querySelector('.order-sum-import').textContent = data.data.total_quantity;
-                            document.querySelector('.order-sum-subtotal').textContent = data.data.fee_total;
+                            document.querySelector('.order-sum-subtotal').textContent = data.data.fee_total + ' .ل.ل';
                             console.log(data)
                         } else {
                             console.error('Failed to update totals');
