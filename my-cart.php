@@ -47,7 +47,7 @@ get_header();
 
                                     // Get product details
                                     $title = $_product->get_title();
-                                    $raw_price = $_product->get_price();
+                                    $price = $_product->get_regular_price();
                                     $currency_symbol = get_woocommerce_currency_symbol();
                                     $image_url = wp_get_attachment_url($_product->get_image_id());
                                     $quantity = $values['quantity'];
@@ -67,7 +67,7 @@ get_header();
                                             </div>
                                             <p class="cart-item-price">
                                             Price: <span class="bookPrice">
-                                                <?php echo number_format($raw_price * $quantity, 3, ' . ', ', '); ?>
+                                                <?php echo number_format($price * $quantity, 3, ' . ' , ', '); ?>
                                             </span> .ل.ل
                                             </p>
 
