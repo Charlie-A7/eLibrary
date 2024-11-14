@@ -133,7 +133,6 @@ get_header();
             const plusButton = cartItem.querySelector('.plus');
             const minusButton = cartItem.querySelector('.minus');
             // const bookPriceElement = cartItem.querySelector('.bookPrice');
-            const cartItemKey = quantityInput.getAttribute('data-cart-item-key');
 
             // Get the stock quantity from the data attribute
             const stockQuantity = parseInt(quantityInput.getAttribute('data-stock'));
