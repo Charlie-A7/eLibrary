@@ -132,27 +132,27 @@ get_header();
             const quantityInput = cartItem.querySelector('.quantity-input');
             const plusButton = cartItem.querySelector('.plus');
             const minusButton = cartItem.querySelector('.minus');
-            // const bookPriceElement = cartItem.querySelector('.bookPrice');
+            const bookPriceElement = cartItem.querySelector('.bookPrice');
 
             // Get the stock quantity from the data attribute
             const stockQuantity = parseInt(quantityInput.getAttribute('data-stock'));
 
-            // // Base price of the product (change this to your actual product's unit price)
-            // const unitPrice = 50000;
+            // Base price of the product (change this to your actual product's unit price)
+            const unitPrice = 50000;
 
-            // // Create a number formatter for formatting with dots as thousand separators
-            // const formatter = new Intl.NumberFormat('de-DE', {
-            //     minimumFractionDigits: 0, // No decimal places
-            //     maximumFractionDigits: 3
-            // });
+            // Create a number formatter for formatting with dots as thousand separators
+            const formatter = new Intl.NumberFormat('de-DE', {
+                minimumFractionDigits: 0, // No decimal places
+                maximumFractionDigits: 3
+            });
 
-            // // Function to update the price based on the current quantity
-            // function updatePrice() {
-            //     const quantity = parseInt(quantityInput.value);
-            //     const totalPrice = unitPrice * quantity; // Multiply base price by quantity
-            //     const formattedPrice = formatter.format(totalPrice); // Format the price
-            //     bookPriceElement.textContent = formattedPrice; // Update price span
-            // }
+            // Function to update the price based on the current quantity
+            function updatePrice() {
+                const quantity = parseInt(quantityInput.value);
+                const totalPrice = unitPrice * quantity; // Multiply base price by quantity
+                const formattedPrice = formatter.format(totalPrice); // Format the price
+                bookPriceElement.textContent = formattedPrice; // Update price span
+            }
 
             function updateCartTotals(num, cartItemKey) {
                 fetch(ajaxUrl, {
