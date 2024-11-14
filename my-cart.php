@@ -93,7 +93,7 @@ get_header();
                                     <?php
                                     if (function_exists('WC') && WC()->cart) {
                                         $subtotal = WC()->cart->get_subtotal(); // This returns the subtotal as a plain number
-                                        echo esc_html($subtotal);
+                                        echo esc_html($subtotal + ".ل.ل");
                                     }
                                     ?>
                                     .ل.ل
