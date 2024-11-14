@@ -69,7 +69,7 @@ get_header();
                                             Price: <span class="bookPrice">
                                                 <?php echo number_format($raw_price * $quantity, 3, ' . ', ', '); ?>
                                             </span> .ل.ل
-                                        </p>
+                                            </p>
 
                                         </div>
                                         <button class="cart-item-remove btn" data-cart-item-key="' . esc_attr($item) . '">
