@@ -66,7 +66,7 @@ get_header();
                                                 <button class="quantity-btn plus" data-cart-item-key="' . esc_attr($item) . '"><span>+</span></button>
                                             </div>
                                             <p class="cart-item-price">
-                                            Price: <span class="bookPrice">
+                                            Estimated Donation <span class="bookPrice">
                                                 ' . number_format($price * $quantity, 0, '', ',') . '
                                             </span> .ل.ل
                                             </p>
