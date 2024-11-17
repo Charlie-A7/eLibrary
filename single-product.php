@@ -18,7 +18,7 @@ get_header(); ?>
 
             // Fetch custom fields (if using Advanced Custom Fields or similar plugins)
             $product_price = get_post_meta($product_id, '_price', true);
-            $product_description = get_post_meta($product_id, '_description', true);
+            $product_description = $_product->get_description();
             $product_image = get_the_post_thumbnail_url($product_id, 'full');
 
             // Output the product details
