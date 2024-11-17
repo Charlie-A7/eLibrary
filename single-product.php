@@ -23,28 +23,30 @@ get_header(); ?>
 
             // Output the product details
             ?>
-            <div class="product-header">
-                <h1><?php the_title(); ?></h1>
-            </div>
-            <div class="product-image">
-                <?php if ($product_image): ?>
-                    <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
-                <?php endif; ?>
-            </div>
-            <div class="product-price">
-                <span><?php echo esc_html($product_price); ?></span>
-            </div>
+            <div class="single_product_details">
+                <div class="product-header">
+                    <h1><?php the_title(); ?></h1>
+                </div>
+                <div class="product-image">
+                    <?php if ($product_image): ?>
+                        <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
+                    <?php endif; ?>
+                </div>
+                <div class="product-price">
+                    <span><?php echo esc_html($product_price); ?></span>
+                </div>
 
-            <div class="product-description">
-                <?php echo wp_kses_post($product_description); ?>
-            </div>
-            <?php
+                <div class="product-description">
+                    <?php echo wp_kses_post($product_description); ?>
+                </div>
+                <?php
 
         endwhile;
     else:
         echo '<p>No product found.</p>';
     endif;
     ?>
+    </div>
 
 </div>
 
