@@ -176,27 +176,31 @@ get_header();
 
             // Increment quantity on "+" button click
             plusButton.addEventListener('click', function () {
-                let quantity = parseInt(quantityInput.value);
-                const cartItemKey = this.getAttribute('data-cart-item-key');
-                // Check if the quantity exceeds the available stock
-                if (quantity < stockQuantity) {
-                    quantityInput.value = quantity + 1;
-                    updatePrice(); // Update the price
-                    updateCartTotals(1, cartItemKey, -1);
-                } else {
-                    alert('Cannot add more than available stock (' + stockQuantity + ').');
-                }
+                setTimeout(() => {
+                    let quantity = parseInt(quantityInput.value);
+                    const cartItemKey = this.getAttribute('data-cart-item-key');
+                    // Check if the quantity exceeds the available stock
+                    if (quantity < stockQuantity) {
+                        quantityInput.value = quantity + 1;
+                        updatePrice(); // Update the price
+                        updateCartTotals(1, cartItemKey, -1);
+                    } else {
+                        alert('Cannot add more than available stock (' + stockQuantity + ').');
+                    }
+                }, 1000)
             });
 
             // Decrement quantity on "-" button click
             minusButton.addEventListener('click', function () {
-                let quantity = parseInt(quantityInput.value);
-                const cartItemKey = this.getAttribute('data-cart-item-key');
-                if (quantity > 1) { // Prevent going below 1
-                    quantityInput.value = quantity - 1;
-                    updatePrice(); // Update the price
-                    updateCartTotals(-1, cartItemKey, -1);
-                }
+                setTimeout(() => {
+                    let quantity = parseInt(quantityInput.value);
+                    const cartItemKey = this.getAttribute('data-cart-item-key');
+                    if (quantity > 1) { // Prevent going below 1
+                        quantityInput.value = quantity - 1;
+                        updatePrice(); // Update the price
+                        updateCartTotals(-1, cartItemKey, -1);
+                    }
+                }, 1000);
             });
 
             //input event listener
