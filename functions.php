@@ -353,7 +353,7 @@ function update_cart_totals()
         $new_quantity = $current_quantity - 1;
     } else if ($quantity >= 1 && $current_quantity > 1) {
         $new_quantity = $quantity;
-    } else if ($quantity == 0 && $is_input == 1) {
+    } else if ($quantity == 1 && $is_input == 1) {
         $new_quantity = 1;
     }
     // Update the cart item quantity
