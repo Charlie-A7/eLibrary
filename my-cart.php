@@ -237,13 +237,14 @@ get_header();
                     const cartItemKey = this.getAttribute('data-cart-item-key');
                     // Check if the field is empty, or the value is invalid
                     if (isNaN(quantity) || quantity < 1) {
-                        quantityInput.value = 1; // Reset to 1 if invalid
+                        quantity = 1; // Reset to 1 if invalid
                         updatePrice();
-                        updateCartTotals(quantityInput.value, cartItemKey, 1);
+                        updateCartTotals(quantity, cartItemKey, 1);
                     } else if (quantity > stockQuantity) {
-                        quantityInput.value = stockQuantity;
+                        quantity = stockQuantity;
                         alert('Cannot add more than available stock (' + stockQuantity + ').');
                     }
+
                 }, 1000); // Delay validation by 1 second
             });
 
