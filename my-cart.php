@@ -188,7 +188,9 @@ get_header();
                     updatePrice(); // Update the price
                     updateCartTotals(1, cartItemKey, -1);
 
-                    this.disabled = true;
+                    setTimeout(() => {
+                        this.disabled = false;
+                    }, 1000);
 
 
                 } else {
