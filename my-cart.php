@@ -176,31 +176,36 @@ get_header();
 
             // Increment quantity on "+" button click
             plusButton.addEventListener('click', function () {
-                setTimeout(() => {
-                    let quantity = parseInt(quantityInput.value);
-                    const cartItemKey = this.getAttribute('data-cart-item-key');
-                    // Check if the quantity exceeds the available stock
-                    if (quantity < stockQuantity) {
-                        quantityInput.value = quantity + 1;
-                        updatePrice(); // Update the price
-                        updateCartTotals(1, cartItemKey, -1);
-                    } else {
-                        alert('Cannot add more than available stock (' + stockQuantity + ').');
-                    }
-                }, 1000)
+                let quantity = parseInt(quantityInput.value);
+                const cartItemKey = this.getAttribute('data-cart-item-key');
+                // Check if the quantity exceeds the available stock
+                if (quantity < stockQuantity) {
+                    // Disable the button
+                    this.disabled = true;
+
+                    // Increment the quantity
+                    quantityInput.value = quantity + 1;
+                    updatePrice(); // Update the price
+                    updateCartTotals(1, cartItemKey, -1);
+
+                    setTimeout(() => {
+                        this.disabled = false;
+                    }, 1000);
+
+                } else {
+                    alert('Cannot add more than available stock (' + stockQuantity + ').');
+                }
             });
 
             // Decrement quantity on "-" button click
             minusButton.addEventListener('click', function () {
-                setTimeout(() => {
-                    let quantity = parseInt(quantityInput.value);
-                    const cartItemKey = this.getAttribute('data-cart-item-key');
-                    if (quantity > 1) { // Prevent going below 1
-                        quantityInput.value = quantity - 1;
-                        updatePrice(); // Update the price
-                        updateCartTotals(-1, cartItemKey, -1);
-                    }
-                }, 1000);
+                let quantity = parseInt(quantityInput.value);
+                const cartItemKey = this.getAttribute('data-cart-item-key');
+                if (quantity > 1) { // Prevent going below 1
+                    quantityInput.value = quantity - 1;
+                    updatePrice(); // Update the price
+                    updateCartTotals(-1, cartItemKey, -1);
+                }
             });
 
             //input event listener
