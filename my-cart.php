@@ -158,7 +158,7 @@ get_header();
                 fetch(ajaxUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams([['action', 'update_cart_totals'], ['quantity', num], ['cart_item_key', cartItemKey], ['isInput', isInput]])
+                    body: new URLSearchParams([['action', 'update_cart_totals'], ['quantity', num], ['cart_item_key', cartItemKey], ['is_input', isInput]])
                 })
                     .then(response => response.json())
                     .then(data => {
