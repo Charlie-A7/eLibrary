@@ -175,7 +175,7 @@ get_header();
 
 
             // Increment quantity on "+" button click
-            plusButton.addEventListener('click', function () {
+            plusButton.addEventListener('click', async function () {
                 let quantity = parseInt(quantityInput.value);
                 const cartItemKey = this.getAttribute('data-cart-item-key');
                 // Check if the quantity exceeds the available stock
@@ -186,11 +186,10 @@ get_header();
                     // Increment the quantity
                     quantityInput.value = quantity + 1;
                     updatePrice(); // Update the price
-                    updateCartTotals(1, cartItemKey, -1);
+                    await updateCartTotals(1, cartItemKey, -1);
 
-                    setTimeout(() => {
-                        this.disabled = false;
-                    }, 1000);
+                    this.disabled = true;
+
 
                 } else {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
