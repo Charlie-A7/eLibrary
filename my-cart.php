@@ -238,13 +238,12 @@ get_header();
                     // Check if the field is empty, or the value is invalid
                     if (isNaN(quantity) || quantity < 1) {
                         quantityInput.value = 1; // Reset to 1 if invalid
+                        updatePrice();
+                        updateCartTotals(quantityInput.value, cartItemKey, 1);
                     } else if (quantity > stockQuantity) {
                         quantityInput.value = stockQuantity;
                         alert('Cannot add more than available stock (' + stockQuantity + ').');
                     }
-
-                    updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey, 1);
                 }, 1000); // Delay validation by 1 second
             });
 
