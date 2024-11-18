@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="custom-single-product">
+<div class="container single-product-container">
 
     <?php
     // Check if it's a single product page
