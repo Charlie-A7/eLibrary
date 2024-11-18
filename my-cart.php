@@ -154,11 +154,11 @@ get_header();
                 bookPriceElement.textContent = formattedPrice; // Update price span
             }
 
-            function updateCartTotals(num, cartItemKey) {
+            function updateCartTotals(num, cartItemKey, isInput) {
                 fetch(ajaxUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams([['action', 'update_cart_totals'], ['quantity', num], ['cart_item_key', cartItemKey]])
+                    body: new URLSearchParams([['action', 'update_cart_totals'], ['quantity', num], ['cart_item_key', cartItemKey], ['isInput', isInput]])
                 })
                     .then(response => response.json())
                     .then(data => {
@@ -182,7 +182,7 @@ get_header();
                 if (quantity < stockQuantity) {
                     quantityInput.value = quantity + 1;
                     updatePrice(); // Update the price
-                    updateCartTotals(1, cartItemKey);
+                    updateCartTotals(1, cartItemKey, false);
                 } else {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
                 }
@@ -195,7 +195,7 @@ get_header();
                 if (quantity > 1) { // Prevent going below 1
                     quantityInput.value = quantity - 1;
                     updatePrice(); // Update the price
-                    updateCartTotals(-1, cartItemKey);
+                    updateCartTotals(-1, cartItemKey, false);
                 }
             });
 
@@ -205,16 +205,16 @@ get_header();
                 let quantity = parseInt(quantityInput.value);
                 if (quantity <= parseInt(quantityInput.dataset.stock) && quantity > 0) {
                     updatePrice();
-                    updateCartTotals(quantity, cartItemKey);
+                    updateCartTotals(quantity, cartItemKey, true);
                 } else if (quantity > parseInt(quantityInput.dataset.stock)) {
                     alert('Cannot add more than available stock (' + quantityInput.dataset.stock + ').');
                     quantityInput.value = parseInt(quantityInput.dataset.stock);
                     updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey);
+                    updateCartTotals(quantityInput.value, cartItemKey, true);
                 } else {
                     quantityInput.value = 1;
                     updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey);
+                    updateCartTotals(quantityInput.value, cartItemKey, true);
                 }
             });
 
@@ -233,7 +233,7 @@ get_header();
                     }
 
                     updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey);
+                    updateCartTotals(quantityInput.value, cartItemKey, true);
                 }, 1000); // Delay validation by 1 second
             });
 
@@ -256,7 +256,6 @@ get_header();
 
                 // Get the cart item key
                 const cartItemKey = this.getAttribute('data-cart-item-key');
-                console.log('Cart Item Key:', cartItemKey); // This should now log the correct key
 
                 // AJAX call to remove the item from the cart
                 fetch(ajaxUrl, {

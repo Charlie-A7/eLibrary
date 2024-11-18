@@ -345,9 +345,10 @@ function update_cart_totals()
 
     $quantity = sanitize_text_field($_POST['quantity']);
     $cart_item_key = sanitize_text_field($_POST['cart_item_key']);
+    $isInput = sanitize_text_field($_POST['isInput']);
     $current_quantity = WC()->cart->get_cart()[$cart_item_key]['quantity'];
 
-    if ($quantity == 1) {
+    if ($quantity == 1 && !$isInput) {
         $new_quantity = $current_quantity + 1;
     } else if ($quantity == -1 && $current_quantity > 1) {
         $new_quantity = $current_quantity - 1;
