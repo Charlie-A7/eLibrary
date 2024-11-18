@@ -216,7 +216,7 @@ get_header();
                 if (quantity <= parseInt(quantityInput.dataset.stock) && quantity > 0) {
                     updatePrice();
                     updateCartTotals(quantity, cartItemKey, 1);
-                } else if (quantity > parseInt(quantityInput.dataset.stock)) {
+                } else if (quantity > parseInt(quantityInput.dataset.stock) && quantity > 0) {
                     alert('Cannot add more than available stock (' + quantityInput.dataset.stock + ').');
                     quantityInput.value = parseInt(quantityInput.dataset.stock);
                     updatePrice();
