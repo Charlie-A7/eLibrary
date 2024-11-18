@@ -182,7 +182,7 @@ get_header();
                 if (quantity < stockQuantity) {
                     quantityInput.value = quantity + 1;
                     updatePrice(); // Update the price
-                    updateCartTotals(1, cartItemKey, false);
+                    updateCartTotals(1, cartItemKey, -1);
                 } else {
                     alert('Cannot add more than available stock (' + stockQuantity + ').');
                 }
@@ -195,7 +195,7 @@ get_header();
                 if (quantity > 1) { // Prevent going below 1
                     quantityInput.value = quantity - 1;
                     updatePrice(); // Update the price
-                    updateCartTotals(-1, cartItemKey, false);
+                    updateCartTotals(-1, cartItemKey, -1);
                 }
             });
 
@@ -205,16 +205,16 @@ get_header();
                 let quantity = parseInt(quantityInput.value);
                 if (quantity <= parseInt(quantityInput.dataset.stock) && quantity > 0) {
                     updatePrice();
-                    updateCartTotals(quantity, cartItemKey, true);
+                    updateCartTotals(quantity, cartItemKey, 1);
                 } else if (quantity > parseInt(quantityInput.dataset.stock)) {
                     alert('Cannot add more than available stock (' + quantityInput.dataset.stock + ').');
                     quantityInput.value = parseInt(quantityInput.dataset.stock);
                     updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey, true);
+                    updateCartTotals(quantityInput.value, cartItemKey, 1);
                 } else {
                     quantityInput.value = 1;
                     updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey, true);
+                    updateCartTotals(quantityInput.value, cartItemKey, 1);
                 }
             });
 
@@ -233,7 +233,7 @@ get_header();
                     }
 
                     updatePrice();
-                    updateCartTotals(quantityInput.value, cartItemKey, true);
+                    updateCartTotals(quantityInput.value, cartItemKey, 1);
                 }, 1000); // Delay validation by 1 second
             });
 
