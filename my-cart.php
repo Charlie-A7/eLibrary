@@ -154,7 +154,7 @@ get_header();
                 bookPriceElement.textContent = formattedPrice; // Update price span
             }
 
-            async function updateCartTotals(num, cartItemKey, isInput) {
+            function updateCartTotals(num, cartItemKey, isInput) {
                 fetch(ajaxUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -175,7 +175,7 @@ get_header();
 
 
             // Increment quantity on "+" button click
-            plusButton.addEventListener('click', async function () {
+            plusButton.addEventListener('click', function () {
                 let quantity = parseInt(quantityInput.value);
                 const cartItemKey = this.getAttribute('data-cart-item-key');
                 // Check if the quantity exceeds the available stock
@@ -186,7 +186,7 @@ get_header();
                     // Increment the quantity
                     quantityInput.value = quantity + 1;
                     updatePrice(); // Update the price
-                    await updateCartTotals(1, cartItemKey, -1);
+                    updateCartTotals(1, cartItemKey, -1);
 
                     this.disabled = true;
 
