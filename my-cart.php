@@ -205,21 +205,15 @@ get_header();
                 let quantity = parseInt(quantityInput.value);
                 if (quantity <= parseInt(quantityInput.dataset.stock) && quantity > 0) {
                     updatePrice();
-                    console.log(quantityInput)
-                    console.log(cartItemKey)
                     updateCartTotals(quantity, cartItemKey);
                 } else if (quantity > parseInt(quantityInput.dataset.stock)) {
                     alert('Cannot add more than available stock (' + quantityInput.dataset.stock + ').');
                     quantityInput.value = parseInt(quantityInput.dataset.stock);
-                    console.log(quantityInput)
-                    console.log(cartItemKey)
                     updatePrice();
                     updateCartTotals(quantityInput.value, cartItemKey);
                 } else {
                     quantityInput.value = 1;
                     updatePrice();
-                    console.log(quantityInput)
-                    console.log(cartItemKey)
                     updateCartTotals(quantityInput.value, cartItemKey);
                 }
             });
@@ -228,7 +222,7 @@ get_header();
             quantityInput.addEventListener('blur', function () {
                 blurTimeout = setTimeout(() => {
                     let quantity = parseInt(quantityInput.value);
-
+                    const cartItemKey = this.getAttribute('data-cart-item-key');
                     // Check if the field is empty, or the value is invalid
                     if (isNaN(quantity) || quantity < 1) {
                         quantityInput.value = 1; // Reset to 1 if invalid
