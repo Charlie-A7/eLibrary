@@ -353,6 +353,8 @@ function update_cart_totals()
         $new_quantity = $current_quantity - 1;
     } else if ($quantity >= 1 && $current_quantity > 1) {
         $new_quantity = $quantity;
+    } else if ($quantity == 0 && $current_quantity > 0) {
+        $new_quantity = 1;
     }
     // Update the cart item quantity
     WC()->cart->set_quantity($cart_item_key, $new_quantity);
@@ -372,14 +374,15 @@ function update_cart_totals()
 
 // checkout fields
 
-add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+add_filter('woocommerce_checkout_fields', 'custom_override_checkout_fields');
 
-function custom_override_checkout_fields( $fields ) {
-    unset( $fields['billing']['billing_country'] );
-    unset( $fields['billing']['billing_city'] );
-    unset( $fields['billing']['billing_address_1'] );
-    unset( $fields['billing']['billing_address_2'] );
-    unset( $fields['billing']['billing_postcode'] );
-    unset( $fields['billing']['billing_state'] );
+function custom_override_checkout_fields($fields)
+{
+    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_state']);
     return $fields;
 }
