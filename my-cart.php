@@ -221,7 +221,13 @@ get_header();
                     quantityInput.value = parseInt(quantityInput.dataset.stock);
                     updatePrice();
                     updateCartTotals(quantityInput.value, cartItemKey, 1);
-                } else {
+                }
+                else if (quantity == 0) {
+                    quantityInput.value = 1;
+                    updatePrice();
+                    updateCartTotals(quantityInput.value, cartItemKey, 1);
+                }
+                else {
                     quantityInput.value = 1;
                     updatePrice();
                     updateCartTotals(quantityInput.value, cartItemKey, 1);
