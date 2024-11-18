@@ -219,6 +219,7 @@ get_header();
             });
 
             // Validate on blur (when the user leaves the input field)
+            let blurTimeout;
             quantityInput.addEventListener('blur', function () {
                 blurTimeout = setTimeout(() => {
                     let quantity = parseInt(quantityInput.value);
