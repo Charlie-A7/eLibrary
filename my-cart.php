@@ -154,7 +154,7 @@ get_header();
                 bookPriceElement.textContent = formattedPrice; // Update price span
             }
 
-            function updateCartTotals(num, cartItemKey, isInput) {
+            async function updateCartTotals(num, cartItemKey, isInput) {
                 fetch(ajaxUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
