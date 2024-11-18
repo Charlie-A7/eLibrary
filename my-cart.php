@@ -203,9 +203,17 @@ get_header();
                 let quantity = parseInt(quantityInput.value);
                 const cartItemKey = this.getAttribute('data-cart-item-key');
                 if (quantity > 1) { // Prevent going below 1
+                    // Disable the button
+                    this.disabled = true;
+
+                    // Decrement the quantity
                     quantityInput.value = quantity - 1;
                     updatePrice(); // Update the price
                     updateCartTotals(-1, cartItemKey, -1);
+
+                    setTimeout(() => {
+                        this.disabled = false;
+                    }, 1000);
                 }
             });
 
