@@ -28,15 +28,17 @@ get_header(); ?>
                 <div class="container single-product-inner-container">
                     <div class="row">
 
-                        <div class="product-header col-10">
-                            <h1><?php the_title(); ?></h1>
-                        </div>
-
                         <div class="product-image col-4">
                             <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
                             <?php endif; ?>
                         </div>
+
+                        <div class="product-header col-8">
+                            <h1><?php the_title(); ?></h1>
+                        </div>
+
+
 
                         <div class="product-description col-5">
                             <?php echo wp_kses_post($product_description); ?>
