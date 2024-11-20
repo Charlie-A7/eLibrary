@@ -1163,6 +1163,11 @@ padding-bottom: 5px;
 }
 
 // single product page
+.single-product-container{
+
+  min-height: calc(100dvh - $header-height - $footer-height);
+
+
 .singleProduct-blue-left-sidebar,
 .singleProduct-blue-right-sidebar {
   background-color: $Light-Gray-Blue-Color;
@@ -1175,4 +1180,5 @@ padding-bottom: 5px;
 }
 .singleProduct-blue-right-sidebar {
   right: 0;
+}
 }
