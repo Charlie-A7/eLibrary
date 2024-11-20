@@ -1145,8 +1145,15 @@ footer .footer_lines::after {
   margin-right: 8dvw;
 }
 .single-product-container .product-image {
-  height: 100%;
+  height: 60dvh;
   margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-product-container .product-image img {
+  height: 100%;
+  object-fit: contain;
 }
 .single-product-container .product-header {
   text-align: right;
