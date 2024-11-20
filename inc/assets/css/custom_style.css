@@ -1139,4 +1139,8 @@ footer .footer_lines::after {
 }
 .single-product-container .singleProduct-blue-right-sidebar {
   right: 0;
+}
+.single-product-container .single-product-inner-container {
+  margin-left: 8dvw;
+  margin-right: 8dvw;
 }/*# sourceMappingURL=custom_style.css.map */
