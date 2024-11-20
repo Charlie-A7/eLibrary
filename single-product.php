@@ -25,7 +25,7 @@ get_header(); ?>
 
                 // Output the product details
                 ?>
-                <div class="container single-product-inner-container">
+                <div class="container-fluid single-product-inner-container">
                     <div class="row">
 
                         <!-- Product Image Section -->
