@@ -28,22 +28,23 @@ get_header(); ?>
                 <div class="container single-product-inner-container">
                     <div class="row">
 
+                        <!-- Product Image Section -->
                         <div class="product-image col-4">
                             <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
                             <?php endif; ?>
                         </div>
 
-                        <div class="product-header col-8">
-                            <h1><?php the_title(); ?></h1>
+                        <!-- Product Title and Description Section -->
+                        <div class="col-6">
+                            <div class="product-header">
+                                <h1><?php the_title(); ?></h1>
+                            </div>
+
+                            <div class="product-description mt-3">
+                                <?php echo wp_kses_post($product_description); ?>
+                            </div>
                         </div>
-
-
-
-                        <div class="product-description col-5">
-                            <?php echo wp_kses_post($product_description); ?>
-                        </div>
-
                     </div>
                 </div>
                 <?php
