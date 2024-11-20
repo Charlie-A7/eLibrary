@@ -36,7 +36,7 @@ get_header(); ?>
                         </div>
 
                         <!-- Product Title and Description Section -->
-                        <div class="col-6">
+                        <div class="col-6 product_page_rightSection">
                             <div class="product-header">
                                 <h1><?php the_title(); ?></h1>
                             </div>

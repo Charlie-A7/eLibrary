@@ -1155,8 +1155,13 @@ footer .footer_lines::after {
   height: 100%;
   object-fit: contain;
 }
+.single-product-container .product_page_rightSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .single-product-container .product-header {
-  text-align: right;
   margin-top: 5%;
 }
 .single-product-container .product-description {
