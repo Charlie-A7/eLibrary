@@ -45,7 +45,7 @@ get_header(); ?>
                                 <?php echo wp_kses_post($product_description); ?>
                             </div>
 
-                            <div class="text-center d-flex flex-column align-items-center">
+                            <div class="d-flex flex-column">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_post_thumbnail('medium'); ?>
                                     <?php woocommerce_template_loop_add_to_cart(); ?>

@@ -1141,8 +1141,7 @@ footer .footer_lines::after {
   right: 0;
 }
 .single-product-container .single-product-inner-container {
-  margin-left: 8dvw;
-  margin-right: 8dvw;
+  margin-left: 6.5dvw;
 }
 .single-product-container .product-image {
   height: 60dvh;
