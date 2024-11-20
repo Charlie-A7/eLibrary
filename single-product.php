@@ -31,6 +31,7 @@ get_header(); ?>
                         <div class="product-header col-10">
                             <h1><?php the_title(); ?></h1>
                         </div>
+
                         <div class="product-image col-4">
                             <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
