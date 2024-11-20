@@ -44,6 +44,13 @@ get_header(); ?>
                             <div class="product-description mt-3">
                                 <?php echo wp_kses_post($product_description); ?>
                             </div>
+
+                            <div class="text-center pb-3 d-flex flex-column align-items-center mt-3">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_post_thumbnail('medium'); ?>
+                                    <?php woocommerce_template_loop_add_to_cart(); ?>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
