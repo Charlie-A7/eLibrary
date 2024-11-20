@@ -25,17 +25,21 @@ get_header(); ?>
 
                 // Output the product details
                 ?>
-                <div class="product-header col-5">
-                    <h1><?php the_title(); ?></h1>
-                </div>
-                <div class="product-image col-4">
-                    <?php if ($product_image): ?>
-                        <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
-                    <?php endif; ?>
-                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="product-header col-5">
+                            <h1><?php the_title(); ?></h1>
+                        </div>
+                        <div class="product-image col-4">
+                            <?php if ($product_image): ?>
+                                <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
+                            <?php endif; ?>
+                        </div>
 
-                <div class="product-description col-5">
-                    <?php echo wp_kses_post($product_description); ?>
+                        <div class="product-description col-5">
+                            <?php echo wp_kses_post($product_description); ?>
+                        </div>
+                    </div>
                 </div>
                 <?php
 
