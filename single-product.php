@@ -5,10 +5,10 @@
 
 get_header(); ?>
 
-<div class="container-fluid single-product-container position-relative z-0">
+<div class="container-fluid single-product-container position-relative">
     <div class="row">
-        <div class="singleProduct-blue-left-sidebar position-absolute z-1 col-1"></div>
-        <div class="singleProduct-blue-right-sidebar position-absolute z-1 col-1"></div>
+        <div class="singleProduct-blue-left-sidebar position-absolute col-1"></div>
+        <div class="singleProduct-blue-right-sidebar position-absolute col-1"></div>
 
         <?php
         // Check if it's a single product page
