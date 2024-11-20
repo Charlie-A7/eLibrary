@@ -1122,4 +1122,19 @@ footer .footer_lines::after {
 
 .my-custom-checkout-wrapper {
   min-height: 72dvh;
+}
+
+.singleProduct-blue-left-sidebar,
+.singleProduct-blue-right-sidebar {
+  background-color: #9eb6c5;
+  width: 7dvw;
+  height: 90%;
+}
+
+.singleProduct-blue-left-sidebar {
+  left: 0;
+}
+
+.singleProduct-blue-right-sidebar {
+  right: 0;
 }/*# sourceMappingURL=custom_style.css.map */

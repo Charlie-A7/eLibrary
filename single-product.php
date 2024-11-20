@@ -5,7 +5,10 @@
 
 get_header(); ?>
 
-<div class="container single-product-container">
+<div class="container single-product-container position-relative z-0">
+
+    <div class="singleProduct-blue-left-sidebar position-absolute z-1"></div>
+    <div class="singleProduct-blue-right-sidebar position-absolute z-1"></div>
 
     <?php
     // Check if it's a single product page

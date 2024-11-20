@@ -5,10 +5,6 @@
 
 get_header();
 ?>
-<style>
-
-
-</style>
 
 <div class="aboutUsDiv position-relative z-1">
 

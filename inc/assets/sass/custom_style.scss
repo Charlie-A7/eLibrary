@@ -1161,3 +1161,17 @@ padding-bottom: 5px;
 .my-custom-checkout-wrapper {
   min-height: calc(100dvh - $header-height - $footer-height);
 }
+
+// single product page
+.singleProduct-blue-left-sidebar,
+.singleProduct-blue-right-sidebar {
+  background-color: $Light-Gray-Blue-Color;
+  width: 7dvw;
+  height: 90%;
+}
+.singleProduct-blue-left-sidebar {
+  left: 0;
+}
+.singleProduct-blue-right-sidebar {
+  right: 0;
+}
