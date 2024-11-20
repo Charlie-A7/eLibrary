@@ -22,7 +22,7 @@ get_header(); ?>
 
             // Output the product details
             ?>
-            <div class="container">
+            <div class="single_product_container">
                 <div class="row">
                     <div class="singleProduct-blue-left-sidebar position-absolute col-1"></div>
                     <div class="singleProduct-blue-right-sidebar position-absolute col-1"></div>
