@@ -41,7 +41,7 @@ get_header(); ?>
                                 <h1><?php the_title(); ?></h1>
                             </div>
 
-                            <div class="product-description mt-3 mb-3">
+                            <div class="product-description mt-3">
                                 <?php echo wp_kses_post($product_description); ?>
                             </div>
 
