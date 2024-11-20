@@ -1161,4 +1161,7 @@ footer .footer_lines::after {
 }
 .single-product-container .product-description {
   margin-bottom: 2rem;
+}
+.single-product-container .product-description {
+  font-size: 21px;
 }/*# sourceMappingURL=custom_style.css.map */
