@@ -190,9 +190,6 @@
   footer .ministries_section p {
     font-size: 15px;
   }
-  footer .footer_lines {
-    position: static; /* Reset the position */
-  }
 }
 
 @media (max-width: 767.98px) {
