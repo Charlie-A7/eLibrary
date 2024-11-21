@@ -159,14 +159,6 @@
     /* Styles for phones with screens 480px or smaller */
     height: 40dvh;
   }
-  footer .switched_footer_headline {
-    visibility: hidden;
-    position: relative;
-  }
-  footer .location-text-switch-mobile {
-    visibility: hidden;
-    position: relative;
-  }
   footer .contactus_section,
   footer .location_section,
   footer .ministries_section {
