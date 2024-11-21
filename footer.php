@@ -72,7 +72,7 @@
     // Change the h5 text on mobile screens
     document.addEventListener("DOMContentLoaded", function () {
         const strategies = document.querySelector('.switched_footer_headline');
-        const location = document.querySelector('.switched_footer_headline');
+        const location = document.querySelector('.location-text-switch-mobile');
 
         function updateHeadlineText() {
             if (window.innerWidth <= 575) {
