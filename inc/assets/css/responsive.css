@@ -154,7 +154,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   footer {
     /* Styles for phones with screens 480px or smaller */
     height: 40dvh;
@@ -173,6 +173,14 @@
   }
   footer .footer_lines::after {
     content: none; /* Remove the pseudo-element */
+  }
+}
+@media (min-width: 576px) and (max-width: 766px) {
+  footer {
+    height: 20dvh;
+  }
+  footer .footer_lines {
+    position: static; /* Reset the position */
   }
 }
 
