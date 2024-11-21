@@ -175,15 +175,9 @@
     content: none; /* Remove the pseudo-element */
   }
 }
-@media (min-width: 576px) and (max-width: 766px) {
+@media (min-width: 575px) and (max-width: 766px) {
   footer {
     height: 30dvh;
-  }
-  footer .contactus_section,
-  footer .location_section,
-  footer .ministries_section {
-    text-align: center;
-    justify-content: center;
   }
   footer .contactus_section p,
   footer .location_section p,
