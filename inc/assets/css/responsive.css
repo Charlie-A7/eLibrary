@@ -172,9 +172,6 @@
   footer .ministries_section p {
     display: none;
   }
-  footer .location_section img {
-    display: none;
-  }
   footer .contactus_section,
   footer .location_section {
     border-bottom: 2px solid white; /* Create the border with a specific thickness and color */
