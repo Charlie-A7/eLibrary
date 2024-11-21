@@ -165,6 +165,9 @@
     text-align: center;
     justify-content: center;
   }
+  footer .ministries_section {
+    padding-top: 3px;
+  }
   footer .footer_lines {
     position: static; /* Reset the position */
   }
