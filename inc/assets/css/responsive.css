@@ -177,7 +177,12 @@
 }
 @media (min-width: 576px) and (max-width: 766px) {
   footer {
-    height: 20dvh;
+    height: 30dvh;
+  }
+  footer .contactus_section p,
+  footer .location_section p,
+  footer .ministries_section p {
+    font-size: 15px;
   }
   footer .footer_lines {
     position: static; /* Reset the position */
