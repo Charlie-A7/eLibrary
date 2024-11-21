@@ -14,7 +14,9 @@
 
             <!-- section1 -->
             <div class="col-12 col-sm-4 footer_lines location_section">
+                <p><span class="location-icon-mobile"></span>
                 <h5 class="footer_h5">Location</h5>
+                </p>
                 <a href="https://maps.app.goo.gl/RX31MfYc181fp3X5A">
                     <p class="location-text-switch-mobile">
                         <img class="footer-icon1"
@@ -73,14 +75,31 @@
     document.addEventListener("DOMContentLoaded", function () {
         const strategies = document.querySelector('.switched_footer_headline');
         const locationSpan = document.querySelector('.location-text-switch-mobile span');
+        const locationIcon = document.querySelector('.footer-icon1');
+
+        // Save the original location text
+        const originalLocationText = locationSpan.textContent;
 
         function updateHeadlineText() {
             if (window.innerWidth <= 575) {
                 strategies.textContent = "LifeAgape Lebanon";
                 locationSpan.textContent = "Dekweneh, George Matta St., Semitian Bldg, bloc A, 1st Floor.";
+
+                // Move the icon inside the span
+                if (!locationSpan.contains(locationIcon)) {
+                    locationSpan.prepend(locationIcon); // Add the icon inside the span
+                }
+
             } else {
                 strategies.textContent = "LifeAgape Strategies";
                 locationSpan.textContent = originalLocationText; // Restore original text
+
+
+                // Restore the icon to its original position (outside the span)
+                const locationParagraph = document.querySelector('.location-text-switch-mobile');
+                if (!locationParagraph.contains(locationIcon)) {
+                    locationParagraph.prepend(locationIcon); // Move the icon back to its original position
+                }
             }
         }
 
