@@ -171,6 +171,14 @@ footer {
     .ministries_section {
     padding-top: 3px;
     }
+    .contactus_section,
+    .location_section {
+      border-bottom: 2px solid white; /* Create the border with a specific thickness and color */
+      width: 60%; /* Adjust width to control the line's length */
+      margin: 0 auto; /* Center the line horizontally */
+      margin-top: 10px; /* Optional: Add some spacing above the line */
+      margin-bottom: 10px; /* Optional: Add some spacing below the line */
+  }
 
     .footer_lines {
       position: static; /* Reset the position */
@@ -183,12 +191,6 @@ footer {
   @media (min-width: 575px) and (max-width: 766px) {
     height: 30dvh;
     
-    // .contactus_section,
-    // .location_section,
-    // .ministries_section {
-    //   text-align: center;
-    //   justify-content: center;
-    // }
   }
 }
 
