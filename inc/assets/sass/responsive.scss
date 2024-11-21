@@ -183,9 +183,10 @@ footer {
     .location_section {
       border-bottom: 2px solid white; /* Create the border with a specific thickness and color */
       width: 16rem; /* Adjust width to control the line's length */
-      margin: 0 auto; /* Center the line horizontally */
       padding-top: 10px; /* Optional: Add some spacing above the line */
       padding-bottom: 10px; /* Optional: Add some spacing below the line */
+      display: flex;
+      flex-direction: column;
     }
 
     .footer_lines {
