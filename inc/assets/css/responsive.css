@@ -168,6 +168,14 @@
   footer .ministries_section {
     padding-top: 3px;
   }
+  footer .contactus_section,
+  footer .location_section {
+    border-bottom: 2px solid white; /* Create the border with a specific thickness and color */
+    width: 60%; /* Adjust width to control the line's length */
+    margin: 0 auto; /* Center the line horizontally */
+    margin-top: 10px; /* Optional: Add some spacing above the line */
+    margin-bottom: 10px; /* Optional: Add some spacing below the line */
+  }
   footer .footer_lines {
     position: static; /* Reset the position */
   }
