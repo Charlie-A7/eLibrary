@@ -162,31 +162,6 @@ footer {
 
     height: 40dvh;
     
-    .switched_footer_headline {
-      visibility: hidden;
-      position: relative;
-    }
-    .switched_footer_headline::after {
-        content: "LifeAgape Lebanon";
-        visibility: visible;
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
-    }
-    .location-text-switch-mobile{
-      visibility: hidden;
-      position: relative;
-    }
-    .location-text-switch-mobile::after{
-      content: " Dekweneh, George Matta St., Semitian Bldg, bloc A, 1st Floor.";
-        visibility: visible;
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
-    }
-
     .contactus_section,
     .location_section,
     .ministries_section {
@@ -195,7 +170,6 @@ footer {
     }
     .ministries_section {
       padding-top: 3px;
-      margin: 0 auto;
     }
     .ministries_section p {
       display: none;

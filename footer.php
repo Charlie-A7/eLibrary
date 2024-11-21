@@ -67,6 +67,28 @@
 </div>
 
 <?php wp_footer(); ?>
+
+<script>
+    // Change the h5 text on mobile screens
+    document.addEventListener("DOMContentLoaded", function () {
+        const strategies = document.querySelector('.switched_footer_headline');
+        const location = document.querySelector('.switched_footer_headline.mobile');
+        function updateHeadlineText() {
+            if (window.innerWidth <= 575) {
+                strategies.textContent = "LifeAgape Lebanon";
+                location.textContent = "Dekweneh, George Matta St., Semitian Bldg, bloc A, 1st Floor.";
+            } else {
+                strategies.textContent = "LifeAgape Strategies";
+                location.textContent = originalLocationText; // Restore original text
+            }
+        }
+
+        // Run on page load and on resize
+        updateHeadlineText();
+        window.addEventListener('resize', updateHeadlineText);
+    });
+</script>
+
 </body>
 
 </html>
