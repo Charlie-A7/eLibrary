@@ -161,6 +161,19 @@ footer {
     /* Styles for phones with screens 480px or smaller */
 
     height: 40dvh;
+    
+    .switched_footer_headline {
+      visibility: hidden;
+      position: relative;
+    }
+    .switched_footer_headline::after {
+        content: "LifeAgape Lebanon";
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+    }
 
     .contactus_section,
     .location_section,
@@ -169,8 +182,12 @@ footer {
       justify-content: center;
     }
     .ministries_section {
-    padding-top: 3px;
+      padding-top: 3px;
     }
+    .ministries_section p{
+      display: none;
+    }
+
     .contactus_section,
     .location_section {
       border-bottom: 2px solid white; /* Create the border with a specific thickness and color */
