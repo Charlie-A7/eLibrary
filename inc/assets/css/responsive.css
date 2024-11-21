@@ -154,7 +154,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   footer {
     /* Styles for phones with screens 480px or smaller */
     height: 40dvh;
