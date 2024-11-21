@@ -72,15 +72,15 @@
     // Change the h5 text on mobile screens
     document.addEventListener("DOMContentLoaded", function () {
         const strategies = document.querySelector('.switched_footer_headline');
-        const location = document.querySelector('.location-text-switch-mobile');
+        const locationSpan = document.querySelector('.location-text-switch-mobile span');
 
         function updateHeadlineText() {
             if (window.innerWidth <= 575) {
                 strategies.textContent = "LifeAgape Lebanon";
-                location.textContent = "Dekweneh, George Matta St., Semitian Bldg, bloc A, 1st Floor.";
+                locationSpan.textContent = "Dekweneh, George Matta St., Semitian Bldg, bloc A, 1st Floor.";
             } else {
                 strategies.textContent = "LifeAgape Strategies";
-                location.textContent = originalLocationText; // Restore original text
+                locationSpan.textContent = originalLocationText; // Restore original text
             }
         }
 
