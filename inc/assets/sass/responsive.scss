@@ -183,6 +183,13 @@ footer {
   @media (min-width: 576px) and (max-width: 766px) {
     height: 30dvh;
     
+    .contactus_section,
+    .location_section,
+    .ministries_section {
+      text-align: center;
+      justify-content: center;
+    }
+
     .contactus_section p,
     .location_section p,
     .ministries_section p{
