@@ -181,7 +181,13 @@ footer {
     }
   }
   @media (min-width: 576px) and (max-width: 766px) {
-    height: 20dvh;
+    height: 30dvh;
+    
+    .contactus_section p,
+    .location_section p,
+    .ministries_section p{
+      font-size: 15px;
+    }
     .footer_lines {
       position: static; /* Reset the position */
     }
