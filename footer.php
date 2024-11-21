@@ -73,6 +73,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         const strategies = document.querySelector('.switched_footer_headline');
         const location = document.querySelector('.switched_footer_headline.mobile');
+
         function updateHeadlineText() {
             if (window.innerWidth <= 575) {
                 strategies.textContent = "LifeAgape Lebanon";
