@@ -183,6 +183,8 @@
     padding-bottom: 10px; /* Optional: Add some spacing below the line */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   footer .footer_lines {
     position: static; /* Reset the position */
