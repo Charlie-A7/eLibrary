@@ -84,9 +84,6 @@
     document.addEventListener("DOMContentLoaded", function () {
         const strategies = document.querySelector('.switched_footer_headline');
         const locationSpan = document.querySelector('.location-text-switch-mobile span'); // Target the <span>
-        const locationIcon = document.querySelector('.footer-icon1'); // Target the location image
-        const locationParagraph = document.querySelector('.location-text-switch-mobile'); // Paragraph containing location
-
         // Save the original location text and image position
         const originalLocationText = locationSpan.innerHTML;
 
@@ -95,18 +92,9 @@
                 strategies.textContent = "LifeAgape Lebanon";
                 locationSpan.innerHTML = "Dekweneh, George Matta St., Semitian Bldg, bloc A, 1st Floor.";
 
-                // Move the icon inside the span (if not already there)
-                if (!locationSpan.contains(locationIcon)) {
-                    locationSpan.prepend(locationIcon); // Add the icon inside the span
-                }
             } else {
                 strategies.textContent = "LifeAgape Strategies";
                 locationSpan.innerHTML = originalLocationText; // Restore original text
-
-                // Restore the icon to its original position (outside the span)
-                if (!locationParagraph.contains(locationIcon)) {
-                    locationParagraph.prepend(locationIcon); // Move the icon back to its original position
-                }
             }
         }
         // Run on page load and on resize
