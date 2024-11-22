@@ -185,8 +185,7 @@
     flex-direction: column;
   }
   footer .footer-icon1-mobile {
-    vertical-align: middle;
-    margin-right: 5px;
+    vertical-align: text-bottom;
     width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
