@@ -159,6 +159,12 @@
     /* Styles for phones with screens 480px or smaller */
     height: 40dvh;
   }
+  footer .align-center-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   footer .contactus_section,
   footer .location_section,
   footer .ministries_section {

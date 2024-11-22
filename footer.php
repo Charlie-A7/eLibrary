@@ -10,7 +10,7 @@
 </div>
 <footer id="colophon" class="site-footer d-flex align-items-center" role="contentinfo">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row align-center-mobile">
 
             <!-- section1 -->
             <div class="col-12 col-sm-4 footer_lines location_section">

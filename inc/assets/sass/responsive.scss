@@ -162,6 +162,13 @@ footer {
 
     height: 40dvh;
     
+    .align-center-mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     .contactus_section,
     .location_section,
     .ministries_section {
