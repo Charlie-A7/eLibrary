@@ -178,9 +178,6 @@
     padding: 10px 0;
     margin: 0 auto;
   }
-  footer .ministries_section p {
-    display: none;
-  }
   footer .contactus_section,
   footer .location_section {
     padding: 10px 0;
@@ -194,7 +191,9 @@
     height: 20px;
     filter: brightness(0) invert(1);
   }
-  footer .footer-icon1 {
+  footer .footer-icon1,
+  footer .remove-on-mobile,
+  footer .ministries_section p {
     display: none;
   }
   footer .separator {

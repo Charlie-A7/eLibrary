@@ -19,9 +19,11 @@
                         <img class="footer-icon1-mobile"
                             src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
                             alt="Location Icon">
+                        <h5 class="footer_h5">Location</h5>
                     </span>
+                <h5 class="footer_h5 remove-on-mobile">Location</h5>
 
-                <h5 class="footer_h5">Location</h5>
+
                 </p>
                 <a href="https://maps.app.goo.gl/RX31MfYc181fp3X5A">
                     <p class="location-text-switch-mobile">
