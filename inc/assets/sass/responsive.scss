@@ -194,9 +194,14 @@ footer {
       flex-direction: column;
     }
 
+    .footer-icon1{
+      display: none;
+    }
+
+
+
     .separator {
-      margin: 10px auto; /* Add spacing above and below */
-      width: 80%; /* Adjust width */
+      width: 70%; /* Adjust width */
       height: 2px; /* Line thickness */
       background: linear-gradient(
         to right,
@@ -217,9 +222,16 @@ footer {
 
   @media (min-width: 575px) and (max-width: 766px) {
     height: 30dvh;
+    .location-icon-mobile{
+      display: none;
+    }
+  }
+  @media (min-width: 766px) {
+    .location-icon-mobile{
+      display: none;
+    }
   }
 }
-
 // homepage
 
 .homeDiv{
