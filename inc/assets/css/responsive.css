@@ -187,9 +187,11 @@
     display: flex;
     flex-direction: column;
   }
+  footer .footer-icon1 {
+    display: none;
+  }
   footer .separator {
-    margin: 10px auto; /* Add spacing above and below */
-    width: 80%; /* Adjust width */
+    width: 70%; /* Adjust width */
     height: 2px; /* Line thickness */
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
     border-radius: 10px;
@@ -204,6 +206,14 @@
 @media (min-width: 575px) and (max-width: 766px) {
   footer {
     height: 30dvh;
+  }
+  footer .location-icon-mobile {
+    display: none;
+  }
+}
+@media (min-width: 766px) {
+  footer .location-icon-mobile {
+    display: none;
   }
 }
 
