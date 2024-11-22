@@ -197,8 +197,11 @@
     transform: translateX(-50%);
     width: 80%; /* Adjust the line's width */
     height: 2px; /* Line thickness */
-    background: rgba(255, 255, 255, 0.8);
+    background: white;
     border-radius: 10px; /* Smooth edges */
+  }
+  footer .switched_footer_headline {
+    padding: 10px 0;
   }
   footer .footer_lines {
     position: static; /* Reset the position */
