@@ -161,6 +161,10 @@ footer {
     /* Styles for phones with screens 480px or smaller */
 
     height: 40dvh;
+
+    span{
+      font-size: 0.7rem;
+    }
     
     .align-center-mobile{
       display: flex;
