@@ -646,6 +646,11 @@ footer p {
 footer .footer-icon1 {
   margin-right: 5px;
 }
+footer .footer_h5_mobile {
+  font-size: 20px;
+  padding-bottom: 0.3;
+  font-family: "quicksand-bold";
+}
 footer .footer-icon2,
 footer .footer-icon1 {
   vertical-align: middle;
