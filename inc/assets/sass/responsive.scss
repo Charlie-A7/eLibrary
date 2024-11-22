@@ -189,21 +189,33 @@ footer {
 
     .contactus_section,
     .location_section {
-      border-bottom: 2px solid white; /* Create the border with a specific thickness and color */
-      width: 70%; /* Adjust width to control the line's length */
-      padding-top: 10px; /* Optional: Add some spacing above the line */
-      padding-bottom: 10px; /* Optional: Add some spacing below the line */
+      position: relative; /* Needed for the pseudo-element to be positioned relative to the parent */
+      padding: 10px 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
     }
+    .contactus_section::after,
+    .location_section::after {
+      content: "";
+      position: absolute;
+      bottom: 0; /* Position the line at the bottom */
+      left: 50%; /* Center the line */
+      transform: translateX(-50%);
+      width: 80%; /* Adjust the line's width */
+      height: 2px; /* Line thickness */
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%, /* Start transparent */
+        rgba(255, 255, 255, 0.8) 50%, /* Middle brighter */
+        rgba(255, 255, 255, 0) 100% /* End transparent */
+      );
+      border-radius: 10px; /* Smooth edges */
+    }
+
 
     .footer_lines {
       position: static; /* Reset the position */
     }
-
     .footer_lines::after {
       content: none; /* Remove the pseudo-element */
     }
