@@ -224,12 +224,14 @@ footer {
 
   @media (min-width: 575px) and (max-width: 766px) {
     height: 30dvh;
-    .location-icon-mobile{
+    .location-icon-mobile,
+    .separator{
       display: none;
     }
   }
   @media (min-width: 766px) {
-    .location-icon-mobile{
+    .location-icon-mobile,
+    .separator{
       display: none;
     }
   }

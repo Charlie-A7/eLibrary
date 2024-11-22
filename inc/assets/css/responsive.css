@@ -212,12 +212,14 @@
   footer {
     height: 30dvh;
   }
-  footer .location-icon-mobile {
+  footer .location-icon-mobile,
+  footer .separator {
     display: none;
   }
 }
 @media (min-width: 766px) {
-  footer .location-icon-mobile {
+  footer .location-icon-mobile,
+  footer .separator {
     display: none;
   }
 }
