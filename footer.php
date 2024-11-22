@@ -15,14 +15,12 @@
             <!-- section1 -->
             <div class="col-12 col-sm-4 footer_lines location_section">
                 <p>
-                    <span class="location-icon-mobile">
-                        <p>
-                            <img class="footer-icon1-mobile"
-                                src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
-                                alt="Location Icon">
-                        <h5 class="footer_h5">Location</h5>
+                <p class="location-icon-mobile">
+                    <img class="footer-icon1-mobile"
+                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
+                        alt="Location Icon">
+                    <span class="footer_h5">Location</span>
                 </p>
-                </span>
                 <h5 class="footer_h5 remove-on-mobile">Location</h5>
                 </p>
 
