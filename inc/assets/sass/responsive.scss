@@ -180,7 +180,7 @@ footer {
       justify-content: center;
     }
     .ministries_section {
-      padding-top: 3px;
+      padding: 10px 0;
       margin: 0 auto;
     }
     .ministries_section p {
@@ -189,26 +189,22 @@ footer {
 
     .contactus_section,
     .location_section {
-      position: relative; /* Needed for the pseudo-element to be positioned relative to the parent */
       padding: 10px 0;
       display: flex;
       flex-direction: column;
     }
-    .contactus_section::after,
-    .location_section::after {
-      content: "";
-      position: absolute;
-      bottom: 0; /* Position the line at the bottom */
-      left: 50%; /* Center the line */
-      transform: translateX(-50%);
-      width: 80%; /* Adjust the line's width */
-      height: 2px; /* Line thickness */
-      background: white;
-      border-radius: 10px; /* Smooth edges */
-    }
 
-    .switched_footer_headline{
-      padding: 10px 0;
+    .separator {
+      margin: 10px auto; /* Add spacing above and below */
+      width: 80%; /* Adjust width */
+      height: 2px; /* Line thickness */
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-radius: 10px;
     }
 
     .footer_lines {

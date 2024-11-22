@@ -29,6 +29,9 @@
                     </p>
                 </a>
             </div>
+
+            <div class="separator"></div>
+
             <!-- section2 -->
             <div class="col-12 col-sm-4 footer_lines contactus_section">
                 <h5 class="footer_h5">Contact us</h5>
@@ -53,6 +56,8 @@
                     </p>
                 </a>
             </div>
+
+            <div class="separator"></div>
 
             <!-- section3 -->
             <div class="col-12 col-sm-4 ministries_section ">
