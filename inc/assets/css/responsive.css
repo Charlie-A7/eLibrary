@@ -159,6 +159,9 @@
     /* Styles for phones with screens 480px or smaller */
     height: 40dvh;
   }
+  footer span {
+    font-size: 0.7rem;
+  }
   footer .align-center-mobile {
     display: flex;
     flex-direction: column;
