@@ -19,7 +19,7 @@
                     <img class="footer-icon1-mobile"
                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/location.png"
                         alt="Location Icon">
-                    <span class="footer_h5">Location</span>
+                    <span class="footer_h5_mobile">Location</span>
                 </p>
                 <h5 class="footer_h5 remove-on-mobile">Location</h5>
                 </p>
