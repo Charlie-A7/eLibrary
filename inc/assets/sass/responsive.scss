@@ -261,3 +261,33 @@ footer {
     }
   }
 }
+
+//about us page
+
+.aboutUsDiv{
+
+  @media (max-width: 576px) {
+    /* Styles for phones with screens 480px or smaller */
+
+
+    height: 110dvh;
+
+    .ABOUTUS-blue-right-sidebar{
+      bottom: 0;
+    }
+
+    .ABOUTUS-blue-left-sidebar{
+      display: none;
+    }
+
+    .AbtUSimg1,
+    #ENparagraph,
+    #ARparagraph,
+    .AbtUSimg2
+    {
+      z-index: 3;
+    }
+
+
+  }
+}
