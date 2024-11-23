@@ -242,4 +242,22 @@
   .custom-shop .dots-design {
     font-size: 60px;
   }
+}
+@media (max-width: 576px) {
+  .aboutUsDiv {
+    /* Styles for phones with screens 480px or smaller */
+    height: 110dvh;
+  }
+  .aboutUsDiv .ABOUTUS-blue-right-sidebar {
+    bottom: 0;
+  }
+  .aboutUsDiv .ABOUTUS-blue-left-sidebar {
+    display: none;
+  }
+  .aboutUsDiv .AbtUSimg1,
+  .aboutUsDiv #ENparagraph,
+  .aboutUsDiv #ARparagraph,
+  .aboutUsDiv .AbtUSimg2 {
+    z-index: 3;
+  }
 }/*# sourceMappingURL=responsive.css.map */
