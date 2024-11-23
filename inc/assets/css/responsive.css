@@ -251,7 +251,8 @@
   .aboutUsDiv .ABOUTUS-blue-right-sidebar {
     bottom: 0;
   }
-  .aboutUsDiv .ABOUTUS-blue-left-sidebar {
+  .aboutUsDiv .LanguageSwitchBtnAR,
+  .aboutUsDiv .LanguageSwitchBtnENG {
     display: none;
   }
   .aboutUsDiv .AbtUSimg1,
