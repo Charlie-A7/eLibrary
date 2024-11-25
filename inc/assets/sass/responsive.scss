@@ -270,8 +270,8 @@ footer {
     /* Styles for phones with screens 480px or smaller */
 
 
-    height: 110dvh;
-
+    min-height: calc(100dvh - $header-height - $footer-height);
+    
     .ABOUTUS-blue-right-sidebar,
     .ABOUTUS-blue-left-sidebar{
       width: 18dvw;
@@ -288,6 +288,8 @@ footer {
     }
     .AbtUSPart2{
       height: fit-content;
+      display: flex;
+      flex-direction: row;
     }
     .AbtUSimg1{
       width: 55%;
@@ -300,13 +302,21 @@ footer {
       margin-right: 27dvw;
     }
 
+    .AbtUs-dots-design{
+      font-size: 4rem;
+      font-style: normal;
+      font-family: none;
+      color: $Navy-Blue-Color;
+      margin-left: 14%;
+      margin-top: -5%
+    }
+
     .AbtUSimg2{
-      position: absolute;
-      right: 0;
-      width: 47%;
-      height:22%;
+      width: 40%;
+      height:100%;
       padding: 0;
-      margin-right: 2rem;
+      margin-left: auto;
+      margin-right: 2%;
     }
 
 

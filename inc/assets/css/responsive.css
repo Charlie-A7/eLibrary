@@ -246,7 +246,7 @@
 @media (max-width: 576px) {
   .aboutUsDiv {
     /* Styles for phones with screens 480px or smaller */
-    height: 110dvh;
+    min-height: 72dvh;
   }
   .aboutUsDiv .ABOUTUS-blue-right-sidebar,
   .aboutUsDiv .ABOUTUS-blue-left-sidebar {
@@ -263,6 +263,8 @@
   }
   .aboutUsDiv .AbtUSPart2 {
     height: fit-content;
+    display: flex;
+    flex-direction: row;
   }
   .aboutUsDiv .AbtUSimg1 {
     width: 55%;
@@ -273,13 +275,20 @@
     font-size: 11px;
     margin-right: 27dvw;
   }
+  .aboutUsDiv .AbtUs-dots-design {
+    font-size: 4rem;
+    font-style: normal;
+    font-family: none;
+    color: #093f6c;
+    margin-left: 14%;
+    margin-top: -5%;
+  }
   .aboutUsDiv .AbtUSimg2 {
-    position: absolute;
-    right: 0;
-    width: 47%;
-    height: 22%;
+    width: 40%;
+    height: 100%;
     padding: 0;
-    margin-right: 2rem;
+    margin-left: auto;
+    margin-right: 2%;
   }
   .aboutUsDiv .LanguageSwitchBtnAR,
   .aboutUsDiv .LanguageSwitchBtnENG,
