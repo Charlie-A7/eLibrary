@@ -299,6 +299,7 @@ footer {
 
     .AbtUSimg2{
       right: 0;
+      
     }
 
 
@@ -313,7 +314,8 @@ footer {
     #ENparagraph,
     #ARparagraph,
     .AbtUSimg2,
-    .AbtUSPart1
+    .AbtUSPart1,
+    .AbtUSPart2
     {
       z-index: 3;
     }
@@ -328,5 +330,8 @@ footer {
     .AbtUSPart1 {
       height: 100%;
     }
+    .AbtUSimg2 {
+      bottom: 0;
+      position: absolute;}
   }
 }

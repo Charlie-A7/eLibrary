@@ -930,8 +930,6 @@ footer .footer_lines::after {
 .aboutUsDiv .AbtUSimg2 {
   width: 24vw;
   height: 34dvh;
-  bottom: 0;
-  position: absolute;
   padding-bottom: 2rem;
 }
 .aboutUsDiv .main-heading-Eng,

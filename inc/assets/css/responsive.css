@@ -282,7 +282,8 @@
   .aboutUsDiv #ENparagraph,
   .aboutUsDiv #ARparagraph,
   .aboutUsDiv .AbtUSimg2,
-  .aboutUsDiv .AbtUSPart1 {
+  .aboutUsDiv .AbtUSPart1,
+  .aboutUsDiv .AbtUSPart2 {
     z-index: 3;
   }
 }
@@ -292,5 +293,9 @@
   }
   .aboutUsDiv .AbtUSPart1 {
     height: 100%;
+  }
+  .aboutUsDiv .AbtUSimg2 {
+    bottom: 0;
+    position: absolute;
   }
 }/*# sourceMappingURL=responsive.css.map */
