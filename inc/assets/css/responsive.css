@@ -285,4 +285,12 @@
   .aboutUsDiv .AbtUSPart1 {
     z-index: 3;
   }
+}
+@media (min-width: 575px) {
+  .aboutUsDiv .AbtUsRow {
+    height: 100%;
+  }
+  .aboutUsDiv .AbtUSPart1 {
+    height: 100%;
+  }
 }/*# sourceMappingURL=responsive.css.map */
