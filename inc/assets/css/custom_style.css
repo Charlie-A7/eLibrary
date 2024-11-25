@@ -884,6 +884,9 @@ footer .footer_lines::after {
   bottom: 5%;
   height: 60%;
 }
+.aboutUsDiv .AbtUsRow {
+  height: 100%;
+}
 .aboutUsDiv .AbtUSPart1 {
   padding-left: 9dvw;
   height: 100%;

@@ -12,7 +12,7 @@ get_header();
     <div class="ABOUTUS-blue-right-sidebar position-absolute z-2"></div>
 
     <div class="container-fluid h-100">
-        <div class="row h-100">
+        <div class="row AbtUsRow">
 
             <div class="AbtUSPart1 col-md-8 justify-content-center align-items-center">
 
