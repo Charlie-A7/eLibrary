@@ -269,6 +269,9 @@
     font-size: 11px;
     margin-right: 27dvw;
   }
+  .aboutUsDiv .AbtUSimg2 {
+    right: 0;
+  }
   .aboutUsDiv .LanguageSwitchBtnAR,
   .aboutUsDiv .LanguageSwitchBtnENG,
   .aboutUsDiv .main-heading-Eng,
