@@ -41,6 +41,7 @@ get_header();
                 <h1 class="main-heading-Eng z-3">LIFEAGAPE <br>
                     <span class="main-heading-Ar">حياة المحبة</span>
                 </h1>
+                <p class="AbtUs-dots-design">..........</p>
                 <img class="AbtUSimg2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
 
