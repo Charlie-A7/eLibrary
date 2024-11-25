@@ -320,4 +320,13 @@ footer {
 
 
   }
+
+  @media (min-width: 575px) {
+    .AbtUsRow{
+      height: 100%;
+    }
+    .AbtUSPart1 {
+      height: 100%;
+    }
+  }
 }
