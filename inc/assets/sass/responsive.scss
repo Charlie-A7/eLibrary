@@ -286,7 +286,9 @@ footer {
       padding-left: 1rem;
       height: fit-content;
     }
-
+    .AbtUSPart2{
+      height: fit-content;
+    }
     .AbtUSimg1{
       width: 55%;
       height: 18%;
@@ -301,6 +303,10 @@ footer {
     .AbtUSimg2{
       position: absolute;
       right: 0;
+      width: 47%;
+      height:22%;
+      padding: 0;
+      margin-right: 2rem;
     }
 
 
@@ -333,6 +339,10 @@ footer {
     }
     .AbtUSimg2 {
       bottom: 0;
-      position: absolute;}
+      position: absolute;
+    }
+    .AbtUs-dots-design{
+      display: none;
+    }
   }
 }
