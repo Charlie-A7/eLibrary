@@ -276,6 +276,14 @@
     font-size: 11px;
     margin-right: 27dvw;
   }
+  .aboutUsDiv .AbtUs-dots-design {
+    font-size: 4rem;
+    font-style: normal;
+    font-family: none;
+    color: #093f6c;
+    margin-left: 14%;
+    margin-top: -5%;
+  }
   .aboutUsDiv .AbtUSimg2 {
     position: absolute;
     right: 0;
