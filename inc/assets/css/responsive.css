@@ -253,6 +253,12 @@
   }
   .aboutUsDiv .AbtUSPart1 {
     padding: 0;
+    margin-left: 1rem;
+  }
+  .aboutUsDiv .AbtUSimg1 {
+    width: 55%;
+    height: 18%;
+    margin-top: 1.5rem;
   }
   .aboutUsDiv .AboutUsText {
     font-size: 12px;
