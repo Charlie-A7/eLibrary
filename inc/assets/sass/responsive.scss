@@ -291,6 +291,8 @@ footer {
     }
     .AbtUSPart2{
       height: fit-content;
+      display: flex;
+      flex-direction: row;
     }
     .AbtUSimg1{
       width: 55%;
