@@ -14,7 +14,7 @@ get_header();
     <div class="container-fluid h-100">
         <div class="row h-100">
 
-            <div class="AbtUSPart1 col-8 justify-content-center align-items-center h-100">
+            <div class="AbtUSPart1 col-md-8 justify-content-center align-items-center h-100">
 
                 <img class="AbtUSimg1 img-fluid z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
@@ -37,7 +37,7 @@ get_header();
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
             </div>
-            <div class="AbtUSPart2 col-4 z-3">
+            <div class="AbtUSPart2 col-md-4 z-3">
                 <h1 class="main-heading-Eng z-3">LIFEAGAPE <br>
                     <span class="main-heading-Ar">حياة المحبة</span>
                 </h1>
