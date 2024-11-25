@@ -254,8 +254,13 @@
   .aboutUsDiv .AbtUSPart1 {
     padding: 0;
   }
+  .aboutUsDiv .AboutUsText {
+    font-size: 12px;
+  }
   .aboutUsDiv .LanguageSwitchBtnAR,
-  .aboutUsDiv .LanguageSwitchBtnENG {
+  .aboutUsDiv .LanguageSwitchBtnENG,
+  .aboutUsDiv .main-heading-Eng,
+  .aboutUsDiv .main-heading-Ar {
     display: none;
   }
   .aboutUsDiv .AbtUSimg1,

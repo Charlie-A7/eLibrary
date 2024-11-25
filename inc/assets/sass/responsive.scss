@@ -280,8 +280,14 @@ footer {
       padding: 0;
     }
 
+    .AboutUsText{
+      font-size: 12px;
+    }
+
     .LanguageSwitchBtnAR,
-    .LanguageSwitchBtnENG{
+    .LanguageSwitchBtnENG,
+    .main-heading-Eng, 
+    .main-heading-Ar{
       display: none;
     }
 
