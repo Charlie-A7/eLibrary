@@ -248,8 +248,13 @@
     /* Styles for phones with screens 480px or smaller */
     height: 110dvh;
   }
+  .aboutUsDiv .ABOUTUS-blue-right-sidebar,
+  .aboutUsDiv .ABOUTUS-blue-left-sidebar {
+    width: 18dvw;
+  }
   .aboutUsDiv .ABOUTUS-blue-right-sidebar {
     bottom: 0;
+    height: 73%;
   }
   .aboutUsDiv .AbtUSPart1 {
     padding: 0;
@@ -261,7 +266,8 @@
     margin-top: 1.5rem;
   }
   .aboutUsDiv .AboutUsText {
-    font-size: 12px;
+    font-size: 11px;
+    margin-right: 27dvw;
   }
   .aboutUsDiv .LanguageSwitchBtnAR,
   .aboutUsDiv .LanguageSwitchBtnENG,

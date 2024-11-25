@@ -272,8 +272,13 @@ footer {
 
     height: 110dvh;
 
+    .ABOUTUS-blue-right-sidebar,
+    .ABOUTUS-blue-left-sidebar{
+      width: 18dvw;
+    }
     .ABOUTUS-blue-right-sidebar{
       bottom: 0;
+      height: 73%
     }
 
     .AbtUSPart1{
@@ -288,7 +293,8 @@ footer {
     }
 
     .AboutUsText{
-      font-size: 12px;
+      font-size: 11px;
+      margin-right: 27dvw;
     }
 
     .LanguageSwitchBtnAR,
