@@ -276,6 +276,10 @@ footer {
       bottom: 0;
     }
 
+    .AbtUSPart1{
+      padding: 0;
+    }
+
     .LanguageSwitchBtnAR,
     .LanguageSwitchBtnENG{
       display: none;
@@ -284,7 +288,8 @@ footer {
     .AbtUSimg1,
     #ENparagraph,
     #ARparagraph,
-    .AbtUSimg2
+    .AbtUSimg2,
+    .AbtUSPart1
     {
       z-index: 3;
     }

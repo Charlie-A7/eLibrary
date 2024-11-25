@@ -251,6 +251,9 @@
   .aboutUsDiv .ABOUTUS-blue-right-sidebar {
     bottom: 0;
   }
+  .aboutUsDiv .AbtUSPart1 {
+    padding: 0;
+  }
   .aboutUsDiv .LanguageSwitchBtnAR,
   .aboutUsDiv .LanguageSwitchBtnENG {
     display: none;
@@ -258,7 +261,8 @@
   .aboutUsDiv .AbtUSimg1,
   .aboutUsDiv #ENparagraph,
   .aboutUsDiv #ARparagraph,
-  .aboutUsDiv .AbtUSimg2 {
+  .aboutUsDiv .AbtUSimg2,
+  .aboutUsDiv .AbtUSPart1 {
     z-index: 3;
   }
 }/*# sourceMappingURL=responsive.css.map */
