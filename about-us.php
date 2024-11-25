@@ -14,7 +14,7 @@ get_header();
     <div class="container-fluid h-100">
         <div class="row h-100">
 
-            <div class="AbtUSPart1 col-md-8 justify-content-center align-items-center h-100">
+            <div class="AbtUSPart1 col-md-8 justify-content-center align-items-center">
 
                 <img class="AbtUSimg1 img-fluid z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
