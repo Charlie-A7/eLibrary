@@ -268,6 +268,7 @@
     height: fit-content;
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
   .aboutUsDiv .AbtUSimg1 {
     width: 55%;
@@ -288,7 +289,7 @@
   }
   .aboutUsDiv .AbtUSimg2 {
     width: 47%;
-    height: 22%;
+    height: 100%;
     padding: 0;
     margin-right: 2%;
   }
