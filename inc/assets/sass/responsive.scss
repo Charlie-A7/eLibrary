@@ -365,9 +365,16 @@ footer {
     height: 118dvh;
     
     .AbtUs-dots-design{
-      font-size: 2rem;
+      font-size: 3rem;
       margin-left: 14%;
       margin-top: 5%;
+      letter-spacing: 1dvw;
+    }
+    #ArParagraphMobile {
+      font-size: 14px;
+    }
+    #ENparagraph{
+      font-size: 13px;
     }
   }
   
@@ -379,6 +386,11 @@ footer {
   @media (min-width: 390px) and (max-width: 450px) {
     .AbtUs-dots-design{
       letter-spacing: 0.5dvw;
+    }
+  }
+  @media (min-width: 450px) and (max-width: 576px) {
+    .AbtUs-dots-design{
+      letter-spacing: 1dvw;
     }
   }
   @media (min-width: 450px) and (max-width: 576px) {
