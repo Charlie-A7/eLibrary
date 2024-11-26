@@ -26,7 +26,7 @@ get_header();
                 <img class="AbtUSimg1 remove-on-mobile z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
-                <p id="ENparagraph" class="AboutUsText">
+                <p id="ENparagraph" class="AboutUsText remove-on-mobile">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
                     Christian denominations. <br>
                     Our goal is to deliver the message of Jesus Christ for a better life for every person
@@ -35,18 +35,20 @@ get_header();
                     <span class="abtUsBold">Our motto:</span> Win, build and send
                     multiplying disciples to fulfill the Great Commission.
                 </p>
-                <p id="ARparagraph" class="AboutUsText">
+                <p id="ARparagraph" class="AboutUsText remove-on-mobile">
                     حياة المحبة في لبنان خدمة مسيحية تعمل مع جميع الكنائس والمذاهب المسيحية.. <br>
                     هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج و النشاطات المتنوعة التي نقوم
                     بها في مختلف شرائح المجتمع. رسالتنا: نشر الأنجيل في كل مكان. <br> <br>
                     <span class="abtUsBoldAR">شعارنا:</span> ربح، بناء و ارسال تلامين متضاعفين لتحقيق المأمورية العظمى.
                 </p>
-                <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
-                <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
+                <button id="SwitchAR" class="LanguageSwitchBtnAR remove-on-mobile"
+                    onclick="Switch('AR')">العربية</button>
+                <button id="SwitchEN" class="LanguageSwitchBtnENG remove-on-mobile"
+                    onclick="Switch('EN')">English</button>
             </div>
             <div class="AbtUSPart2 col-lg-4 z-3">
-                <h1 class="main-heading-Eng z-3">LIFEAGAPE <br>
-                    <span class="main-heading-Ar">حياة المحبة</span>
+                <h1 class="main-heading-Eng remove-on-mobile z-3">LIFEAGAPE <br>
+                    <span class="main-heading-Ar remove-on-mobile">حياة المحبة</span>
                 </h1>
                 <p class="AbtUs-dots-design">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p>
                 <img class="AbtUSimg2"

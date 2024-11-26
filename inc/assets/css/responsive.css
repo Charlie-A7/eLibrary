@@ -310,10 +310,6 @@
     font-family: "arb-fonts-regular";
     margin-top: 0.5rem;
   }
-  .aboutUsDiv .LanguageSwitchBtnAR,
-  .aboutUsDiv .LanguageSwitchBtnENG,
-  .aboutUsDiv .main-heading-Eng,
-  .aboutUsDiv .main-heading-Ar,
   .aboutUsDiv .remove-on-mobile {
     display: none;
   }
@@ -374,7 +370,7 @@
   .aboutUsDiv .LanguageSwitchBtnENG {
     margin-top: 0.5dvh;
   }
-  .aboutUsDiv .AbtUSimg1 img {
+  .aboutUsDiv .AbtUSimg1 {
     width: 100%;
     height: 25%;
   }
