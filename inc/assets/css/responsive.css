@@ -358,9 +358,9 @@
     letter-spacing: 1dvw;
   }
 }
-@media (min-width: 450px) and (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 800px) {
   .aboutUsDiv .AbtUs-dots-design {
-    letter-spacing: 1dvw;
+    letter-spacing: 1.5dvw;
   }
 }
 @media (min-width: 1024px) {
