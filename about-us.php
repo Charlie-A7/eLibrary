@@ -18,7 +18,9 @@ get_header();
 
                 <img class="AbtUSimg1 img-fluid z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
-
+                <h1 class="main-heading-Eng-Mobile z-3">LIFEAGAPE <br>
+                    <span class="main-heading-Ar-Mobile">حياة المحبة</span>
+                </h1>
                 <p id="ENparagraph" class="AboutUsText">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
                     Christian denominations. <br>
