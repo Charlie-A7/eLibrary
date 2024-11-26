@@ -360,7 +360,7 @@ footer {
 
   }
 
-  @media (min-width: 766px) and (max-width: 993px){
+  @media (min-width: 766px) and (max-width: 992px){
    
     height: 125dvh;
     
@@ -397,6 +397,15 @@ footer {
     }
     .AbtUs-dots-design{
       font-size: 2.5rem;
+    }
+  }
+
+
+  @media (min-width: 992px){
+    .AbtUs-dots-design,
+    .ArParagraphMobile,
+    .mobile-AbtUsRow{
+      display: none;
     }
   }
 }

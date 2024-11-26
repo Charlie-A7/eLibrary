@@ -326,7 +326,7 @@
     z-index: 3;
   }
 }
-@media (min-width: 766px) and (max-width: 993px) {
+@media (min-width: 766px) and (max-width: 992px) {
   .aboutUsDiv {
     height: 125dvh;
   }
@@ -362,5 +362,12 @@
   }
   .aboutUsDiv .AbtUs-dots-design {
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .aboutUsDiv .AbtUs-dots-design,
+  .aboutUsDiv .ArParagraphMobile,
+  .aboutUsDiv .mobile-AbtUsRow {
+    display: none;
   }
 }/*# sourceMappingURL=responsive.css.map */
