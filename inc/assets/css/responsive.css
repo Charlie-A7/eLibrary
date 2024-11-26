@@ -366,7 +366,7 @@
 }
 @media (min-width: 992px) {
   .aboutUsDiv .AbtUs-dots-design,
-  .aboutUsDiv .ArParagraphMobile,
+  .aboutUsDiv .AbtUsARpMobile,
   .aboutUsDiv .mobile-AbtUsRow {
     display: none;
   }

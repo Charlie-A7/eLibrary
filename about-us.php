@@ -52,7 +52,7 @@ get_header();
                 <img class="AbtUSimg2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
             </div>
-            <div class="z-3">
+            <div class="z-3 AbtUsARpMobile">
                 <p id="ArParagraphMobile" class="AboutUsTextMobile">
                     حياة المحبة في لبنان خدمة مسيحية تعمل مع جميع الكنائس والمذاهب المسيحية.. <br>
                     هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج و النشاطات المتنوعة التي
