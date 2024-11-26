@@ -17,13 +17,13 @@ get_header();
             <div class="AbtUSPart1 col-lg-8 justify-content-center align-items-center">
 
                 <div class="mobile-AbtUsRow">
-                    <img class="AbtUSimg1 img-fluid z-2"
+                    <img class="AbtUSimg1 z-2"
                         src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
                     <h1 class="main-heading-Eng-Mobile z-3">LIFEAGAPE <br>
                         <span class="main-heading-Ar-Mobile">حياة المحبة</span>
                     </h1>
                 </div>
-                <img class="AbtUSimg1 img-fluid z-2"
+                <img class="AbtUSimg1 remove-on-mobile z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
                 <p id="ENparagraph" class="AboutUsText">
