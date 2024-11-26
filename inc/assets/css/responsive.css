@@ -309,7 +309,8 @@
   .aboutUsDiv #ARparagraph,
   .aboutUsDiv .AbtUSimg2,
   .aboutUsDiv .AbtUSPart1,
-  .aboutUsDiv .AbtUSPart2 {
+  .aboutUsDiv .AbtUSPart2,
+  .aboutUsDiv #ArParagraphMobile {
     z-index: 3;
   }
 }
