@@ -296,7 +296,6 @@ footer {
       padding: 0;
     }
     .AbtUsPart2-row{
-      height: fit-content;
       display: flex;
       flex-direction: row;
     }
@@ -326,7 +325,7 @@ footer {
       margin-left: auto;
     }
 
-    #ARparagraphMobile {
+    #ArParagraphMobile {
       font-size: 11px;
       direction: rtl;
       font-family: $arabic-fonts-regular;
@@ -365,7 +364,7 @@ footer {
     //   position: absolute;
     // }
     .AbtUs-dots-design,
-    #ARparagraphMobile{
+    #ArParagraphMobile{
       display: none;
     }
   }
