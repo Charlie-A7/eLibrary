@@ -301,8 +301,7 @@
   .aboutUsDiv .LanguageSwitchBtnAR,
   .aboutUsDiv .LanguageSwitchBtnENG,
   .aboutUsDiv .main-heading-Eng,
-  .aboutUsDiv .main-heading-Ar,
-  .aboutUsDiv #ARparagraphMobile {
+  .aboutUsDiv .main-heading-Ar {
     display: none;
   }
   .aboutUsDiv .AbtUSimg1,
@@ -314,14 +313,15 @@
     z-index: 3;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 766px) {
   .aboutUsDiv .AbtUsRow {
     height: 100%;
   }
   .aboutUsDiv .AbtUSPart1 {
     height: 100%;
   }
-  .aboutUsDiv .AbtUs-dots-design {
+  .aboutUsDiv .AbtUs-dots-design,
+  .aboutUsDiv #ARparagraphMobile {
     display: none;
   }
 }

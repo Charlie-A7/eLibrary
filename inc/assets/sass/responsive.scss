@@ -331,8 +331,7 @@ footer {
     .LanguageSwitchBtnAR,
     .LanguageSwitchBtnENG,
     .main-heading-Eng, 
-    .main-heading-Ar,
-    #ARparagraphMobile{
+    .main-heading-Ar{
       display: none;
     }
 
@@ -349,7 +348,7 @@ footer {
 
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: 766px) {
     .AbtUsRow{
       height: 100%;
     }
@@ -360,7 +359,8 @@ footer {
     //   bottom: 0;
     //   position: absolute;
     // }
-    .AbtUs-dots-design{
+    .AbtUs-dots-design,
+    #ARparagraphMobile{
       display: none;
     }
   }
@@ -379,4 +379,5 @@ footer {
       letter-spacing: 1dvw;
     }
   }
+    
 }
