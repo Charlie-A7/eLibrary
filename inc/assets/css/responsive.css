@@ -328,7 +328,7 @@
 }
 @media (min-width: 766px) and (max-width: 1024px) {
   .aboutUsDiv {
-    height: 118dvh;
+    height: 125dvh;
   }
   .aboutUsDiv .AbtUs-dots-design {
     font-size: 3rem;
