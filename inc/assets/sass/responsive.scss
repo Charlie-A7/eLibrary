@@ -270,7 +270,7 @@ footer {
     /* Styles for phones with screens 480px or smaller */
 
 
-    height: 95dvh;
+    height: 105dvh;
 
     .ABOUTUS-blue-right-sidebar,
     .ABOUTUS-blue-left-sidebar{
@@ -300,7 +300,10 @@ footer {
       height: 18%;
       margin-top: 1.5rem;
     }
-
+    .mobile-AbtUsRow{
+      display: flex;
+      flex-direction: row;
+    }
     .AboutUsText{
       font-size: 11px;
       margin-right: 27dvw;

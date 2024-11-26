@@ -246,7 +246,7 @@
 @media (max-width: 576px) {
   .aboutUsDiv {
     /* Styles for phones with screens 480px or smaller */
-    height: 95dvh;
+    height: 105dvh;
   }
   .aboutUsDiv .ABOUTUS-blue-right-sidebar,
   .aboutUsDiv .ABOUTUS-blue-left-sidebar {
@@ -274,6 +274,10 @@
     width: 55%;
     height: 18%;
     margin-top: 1.5rem;
+  }
+  .aboutUsDiv .mobile-AbtUsRow {
+    display: flex;
+    flex-direction: row;
   }
   .aboutUsDiv .AboutUsText {
     font-size: 11px;
