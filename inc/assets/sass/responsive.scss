@@ -307,12 +307,10 @@ footer {
     }
 
     .AbtUs-dots-design{
-      font-size: 4rem;
-      font-style: normal;
-      font-family: none;
+      font-size: 2rem;
       color: $Navy-Blue-Color;
       margin-left: 14%;
-      margin-top: -5%
+      margin-top: 5%;
     }
 
     .AbtUSimg2{
@@ -322,7 +320,6 @@ footer {
       margin-right: 2%;
       margin-left: auto;
     }
-
 
     .LanguageSwitchBtnAR,
     .LanguageSwitchBtnENG,
@@ -344,19 +341,34 @@ footer {
 
   }
 
-  @media (min-width: 575px) {
+  @media (min-width: 576px) {
     .AbtUsRow{
       height: 100%;
     }
     .AbtUSPart1 {
       height: 100%;
     }
-    .AbtUSimg2 {
-      bottom: 0;
-      position: absolute;
-    }
+    // .AbtUSimg2 {
+    //   bottom: 0;
+    //   position: absolute;
+    // }
     .AbtUs-dots-design{
       display: none;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 390px) {
+    .AbtUs-dots-design{
+      letter-spacing: 0;
+    }
+  }
+  @media (min-width: 390px) and (max-width: 450px) {
+    .AbtUs-dots-design{
+      letter-spacing: 0.5dvw;
+    }
+  }
+  @media (min-width: 450px) and (max-width: 576px) {
+    .AbtUs-dots-design{
+      letter-spacing: 1dvw;
     }
   }
 }
