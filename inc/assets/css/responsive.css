@@ -243,7 +243,7 @@
     font-size: 60px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .aboutUsDiv {
     /* Styles for phones with screens 480px or smaller */
     height: 105dvh;
@@ -352,5 +352,10 @@
 @media (min-width: 450px) and (max-width: 576px) {
   .aboutUsDiv .AbtUs-dots-design {
     letter-spacing: 1dvw;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutUsDiv {
+    /* Styles for laptops and larger screens */
   }
 }/*# sourceMappingURL=responsive.css.map */
