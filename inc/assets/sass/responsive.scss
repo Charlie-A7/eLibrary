@@ -342,7 +342,8 @@ footer {
     .LanguageSwitchBtnAR,
     .LanguageSwitchBtnENG,
     .main-heading-Eng, 
-    .main-heading-Ar{
+    .main-heading-Ar,
+    .remove-on-mobile{
       display: none;
     }
 
@@ -407,5 +408,9 @@ footer {
     .mobile-AbtUsRow{
       display: none;
     }
+    .LanguageSwitchBtnENG{
+      margin-top: 0.5dvh;
+    }
+    
   }
 }
