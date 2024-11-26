@@ -265,7 +265,7 @@ footer {
 
 .aboutUsDiv{
 
-  @media (max-width: 576px) {
+  @media (max-width: 1024px) {
     /* Styles for phones with screens 480px or smaller */
 
 
@@ -393,4 +393,8 @@ footer {
     }
   }
     
+  @media (min-width: 1024px) {
+     /* Styles for laptops and larger screens */
+
+  }
 }
