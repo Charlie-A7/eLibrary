@@ -926,20 +926,10 @@ footer .footer_lines::after {
   height: 43%;
   margin-top: 5px;
 }
-.aboutUsDiv .AbtUSimg1 img {
-  width: 100%;
-  height: 25%;
-  margin-top: 5px;
-}
 .aboutUsDiv .AbtUSimg2 {
   width: 24%;
   height: 34%;
   padding-bottom: 2rem;
-}
-.aboutUsDiv .AbtUSimg2 img {
-  width: 100%;
-  height: 25%;
-  margin-top: 5px;
 }
 .aboutUsDiv .main-heading-Eng,
 .aboutUsDiv .main-heading-Ar {

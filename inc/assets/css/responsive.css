@@ -374,4 +374,8 @@
   .aboutUsDiv .LanguageSwitchBtnENG {
     margin-top: 0.5dvh;
   }
+  .aboutUsDiv .AbtUSimg1 img {
+    width: 100%;
+    height: 25%;
+  }
 }/*# sourceMappingURL=responsive.css.map */
