@@ -948,9 +948,6 @@ footer .footer_lines::after {
   right: 15%;
   direction: rtl;
 }
-.aboutUsDiv #ARparagraphMobile {
-  display: none;
-}
 
 .my-custom-cart-wrapper {
   height: 70dvh !important;

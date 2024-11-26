@@ -271,7 +271,6 @@
     padding: 0;
   }
   .aboutUsDiv .AbtUsPart2-row {
-    height: fit-content;
     display: flex;
     flex-direction: row;
   }
@@ -297,7 +296,7 @@
     margin-right: 2%;
     margin-left: auto;
   }
-  .aboutUsDiv #ARparagraphMobile {
+  .aboutUsDiv #ArParagraphMobile {
     font-size: 11px;
     direction: rtl;
     font-family: "arb-fonts-regular";
@@ -326,7 +325,7 @@
     height: 100%;
   }
   .aboutUsDiv .AbtUs-dots-design,
-  .aboutUsDiv #ARparagraphMobile {
+  .aboutUsDiv #ArParagraphMobile {
     display: none;
   }
 }
