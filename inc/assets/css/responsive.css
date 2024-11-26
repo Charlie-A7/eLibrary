@@ -374,4 +374,8 @@
     width: 100%;
     height: 25%;
   }
+  .aboutUsDiv .AbtUsRow,
+  .aboutUsDiv .AbtUSPart1 {
+    height: 100%;
+  }
 }/*# sourceMappingURL=responsive.css.map */

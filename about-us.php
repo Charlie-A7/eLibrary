@@ -26,7 +26,7 @@ get_header();
                 <img class="AbtUSimg1 remove-on-mobile z-2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
-                <p id="ENparagraph" class="AboutUsText remove-on-mobile">
+                <p id="ENparagraph" class="AboutUsText">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
                     Christian denominations. <br>
                     Our goal is to deliver the message of Jesus Christ for a better life for every person
