@@ -366,8 +366,6 @@ footer {
     
     .AbtUs-dots-design{
       font-size: 3rem;
-      margin-left: 14%;
-      margin-top: 5%;
       letter-spacing: 1dvw;
     }
     #ArParagraphMobile {
@@ -393,9 +391,18 @@ footer {
       letter-spacing: 1dvw;
     }
   }
-  @media (min-width: 576px) and (max-width: 800px) {
+  @media (min-width: 576px) and (max-width: 766px) {
     .AbtUs-dots-design{
-      letter-spacing: 1.5dvw;
+      letter-spacing: 1dvw;
+    }
+    .AbtUs-dots-design{
+      font-size: 2.5rem;
+    }
+  }
+  @media (min-width: 932px) and (max-width: 1024px){
+    .AbtUs-dots-design{
+      font-size: 3rem;
+      letter-spacing: 1dvw;
     }
   }
     
