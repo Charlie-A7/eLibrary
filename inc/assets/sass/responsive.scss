@@ -413,13 +413,19 @@ footer {
       height: 40%;
     }
     .AbtUSimg2{
-      width: 72%;
-      height: 30%;
+      width: 75%;
+      height: 40%;
       padding: 0;
+      margin-top: 9dvh;
     }
     .AbtUsRow,
     .AbtUSPart1{
       height: 100%;
+    }
+  }
+  @media (min-width: 1200px){
+    .main-heading-Eng{
+       font-size: 5.5dvw;
     }
   }
 }
