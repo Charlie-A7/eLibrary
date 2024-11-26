@@ -37,13 +37,15 @@ get_header();
                 <button id="SwitchAR" class="LanguageSwitchBtnAR" onclick="Switch('AR')">العربية</button>
                 <button id="SwitchEN" class="LanguageSwitchBtnENG" onclick="Switch('EN')">English</button>
             </div>
-            <div class="AbtUSPart2 col-md-4 z-3">
-                <h1 class="main-heading-Eng z-3">LIFEAGAPE <br>
-                    <span class="main-heading-Ar">حياة المحبة</span>
-                </h1>
-                <p class="AbtUs-dots-design">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p>
-                <img class="AbtUSimg2"
-                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
+            <div class="AbtUSPart2  col-md-4 z-3">
+                <div class AbtUsPart2-row>
+                    <h1 class="main-heading-Eng z-3">LIFEAGAPE <br>
+                        <span class="main-heading-Ar">حياة المحبة</span>
+                    </h1>
+                    <p class="AbtUs-dots-design">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p>
+                    <img class="AbtUSimg2"
+                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
+                </div>
                 <p id="ARparagraphMobile" class="AboutUsTextMobile">
                     حياة المحبة في لبنان خدمة مسيحية تعمل مع جميع الكنائس والمذاهب المسيحية.. <br>
                     هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج و النشاطات المتنوعة التي نقوم

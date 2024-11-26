@@ -267,8 +267,13 @@
   .aboutUsDiv .AbtUSPart2 {
     height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
+  }
+  .aboutUsDiv .AbtUsPart2-row {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
   }
   .aboutUsDiv .AbtUSimg1 {
     width: 55%;
