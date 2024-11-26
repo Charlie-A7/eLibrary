@@ -208,7 +208,7 @@
     content: none; /* Remove the pseudo-element */
   }
 }
-@media (min-width: 576px) and (max-width: 766px) {
+@media (min-width: 577px) and (max-width: 766px) {
   footer {
     height: 30dvh;
   }
