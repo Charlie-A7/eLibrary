@@ -372,7 +372,12 @@
   }
   .aboutUsDiv .AbtUSimg1 {
     width: 100%;
-    height: 25%;
+    height: 40%;
+  }
+  .aboutUsDiv .AbtUSimg2 {
+    width: 72%;
+    height: 30%;
+    padding: 0;
   }
   .aboutUsDiv .AbtUsRow,
   .aboutUsDiv .AbtUSPart1 {
