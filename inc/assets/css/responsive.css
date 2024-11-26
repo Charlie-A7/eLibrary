@@ -292,10 +292,17 @@
     margin-right: 2%;
     margin-left: auto;
   }
+  .aboutUsDiv #ARparagraphMobile {
+    font-size: 11px;
+    direction: rtl;
+    font-family: "arb-fonts-regular";
+    margin-top: 0.5rem;
+  }
   .aboutUsDiv .LanguageSwitchBtnAR,
   .aboutUsDiv .LanguageSwitchBtnENG,
   .aboutUsDiv .main-heading-Eng,
-  .aboutUsDiv .main-heading-Ar {
+  .aboutUsDiv .main-heading-Ar,
+  .aboutUsDiv #ARparagraphMobile {
     display: none;
   }
   .aboutUsDiv .AbtUSimg1,

@@ -908,7 +908,7 @@ footer {
     display: none;
     direction: rtl;
     font-family: $arabic-fonts-regular;
-    margin-top: 0.5rem;
+    // margin-top: 0.5rem;
   }
   .LanguageSwitchBtnENG,
   .LanguageSwitchBtnAR {
@@ -960,6 +960,9 @@ footer {
     font-family: $arabic-fonts-bold;
     right: 15%;
     direction: rtl;
+  }
+  #ARparagraphMobile{
+    display: none;
   }
 }
 

@@ -44,7 +44,12 @@ get_header();
                 <p class="AbtUs-dots-design">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p>
                 <img class="AbtUSimg2"
                     src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
-
+                <p id="ARparagraphMobile" class="AboutUsTextMobile">
+                    حياة المحبة في لبنان خدمة مسيحية تعمل مع جميع الكنائس والمذاهب المسيحية.. <br>
+                    هدفنا توصيل رسالة يسوع المسيح للحياة الأفضل لكل انسان من خلال البرامج و النشاطات المتنوعة التي نقوم
+                    بها في مختلف شرائح المجتمع. رسالتنا: نشر الأنجيل في كل مكان. <br> <br>
+                    <span class="abtUsBoldAR">شعارنا:</span> ربح، بناء و ارسال تلامين متضاعفين لتحقيق المأمورية العظمى.
+                </p>
             </div>
         </div>
     </div>
