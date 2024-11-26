@@ -360,23 +360,23 @@ footer {
 
   }
 
-  @media (min-width: 766px) {
-    .AbtUsRow{
-      height: 100%;
-    }
-    .AbtUSPart1 {
-      height: 100%;
-    }
-    // .AbtUSimg2 {
-    //   bottom: 0;
-    //   position: absolute;
-    // }
-    .AbtUs-dots-design,
-    #ArParagraphMobile,
-    .main-heading-Eng-Mobile{
-      display: none;
-    }
-  }
+  // @media (min-width: 766px) {
+  //   .AbtUsRow{
+  //     height: 100%;
+  //   }
+  //   .AbtUSPart1 {
+  //     height: 100%;
+  //   }
+  //   // .AbtUSimg2 {
+  //   //   bottom: 0;
+  //   //   position: absolute;
+  //   // }
+  //   .AbtUs-dots-design,
+  //   #ArParagraphMobile,
+  //   .main-heading-Eng-Mobile{
+  //     display: none;
+  //   }
+  // }
   @media (min-width: 300px) and (max-width: 390px) {
     .AbtUs-dots-design{
       letter-spacing: 0;

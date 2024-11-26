@@ -326,19 +326,6 @@
     z-index: 3;
   }
 }
-@media (min-width: 766px) {
-  .aboutUsDiv .AbtUsRow {
-    height: 100%;
-  }
-  .aboutUsDiv .AbtUSPart1 {
-    height: 100%;
-  }
-  .aboutUsDiv .AbtUs-dots-design,
-  .aboutUsDiv #ArParagraphMobile,
-  .aboutUsDiv .main-heading-Eng-Mobile {
-    display: none;
-  }
-}
 @media (min-width: 300px) and (max-width: 390px) {
   .aboutUsDiv .AbtUs-dots-design {
     letter-spacing: 0;
