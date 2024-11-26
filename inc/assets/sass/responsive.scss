@@ -321,10 +321,18 @@ footer {
       margin-left: auto;
     }
 
+    #ARparagraphMobile {
+      font-size: 11px;
+      direction: rtl;
+      font-family: $arabic-fonts-regular;
+      margin-top: 0.5rem;
+    }
+
     .LanguageSwitchBtnAR,
     .LanguageSwitchBtnENG,
     .main-heading-Eng, 
-    .main-heading-Ar{
+    .main-heading-Ar,
+    #ARparagraphMobile{
       display: none;
     }
 

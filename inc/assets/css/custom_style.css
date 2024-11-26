@@ -897,7 +897,6 @@ footer .footer_lines::after {
   display: none;
   direction: rtl;
   font-family: "arb-fonts-regular";
-  margin-top: 0.5rem;
 }
 .aboutUsDiv .LanguageSwitchBtnENG,
 .aboutUsDiv .LanguageSwitchBtnAR {
@@ -948,6 +947,9 @@ footer .footer_lines::after {
   font-family: "arb-fonts-bold";
   right: 15%;
   direction: rtl;
+}
+.aboutUsDiv #ARparagraphMobile {
+  display: none;
 }
 
 .my-custom-cart-wrapper {
