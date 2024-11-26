@@ -243,7 +243,7 @@
     font-size: 60px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 993px) {
   .aboutUsDiv {
     /* Styles for phones with screens 480px or smaller */
     height: 105dvh;
@@ -326,7 +326,7 @@
     z-index: 3;
   }
 }
-@media (min-width: 766px) and (max-width: 1024px) {
+@media (min-width: 766px) and (max-width: 993px) {
   .aboutUsDiv {
     height: 125dvh;
   }
