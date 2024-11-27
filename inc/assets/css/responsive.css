@@ -408,11 +408,29 @@
     background-color: white;
   }
   .my-custom-cart-wrapper .cart-items-container {
+    width: 90%;
     max-height: 78%;
+    margin: auto;
+    scrollbar-width: thin;
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+  }
+  .my-custom-cart-wrapper .order-summary {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem !important;
+    margin-top: 3rem !important;
+  }
+  .my-custom-cart-wrapper .cart-checkout-button {
+    width: 35% !important;
+    margin: auto;
   }
 }
 @media (min-width: 992px) {
   .my-custom-cart-wrapper .h100 {
     height: 100%;
+  }
+  .my-custom-cart-wrapper .donation-reason-mobile {
+    display: none;
   }
 }/*# sourceMappingURL=responsive.css.map */

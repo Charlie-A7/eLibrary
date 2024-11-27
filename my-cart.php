@@ -117,6 +117,9 @@ get_header();
                 </div>
             </div>
         </div>
+        <p class="donation-reason-mobile align-items-center">Your generous donation helps sustain our work, allowing us
+            to continue
+            making a meaningful impact.</p>
 
     </div>
 </div>
