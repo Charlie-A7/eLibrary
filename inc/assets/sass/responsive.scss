@@ -436,14 +436,22 @@ footer {
 //cart page
 
 .my-custom-cart-wrapper {
-  height: 105dvh !important;
-
+  //grayish: #f1f1f1
   @media (max-width: 992px) {
+
+    height: 105dvh !important;
+
     .remove-on-mobile{
       display: none;
     }
     .Cart-container{
       margin: 0;
+    }
+    .Cart-small-container{
+      background-color: white;
+    }
+    .cart-items-container{
+      max-height: 78%;
     }
 
   }
