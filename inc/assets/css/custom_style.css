@@ -1111,7 +1111,7 @@ footer .footer_lines::after {
   margin-top: 1rem;
 }
 .my-custom-cart-wrapper .cart-right-section .order-sum-import, .my-custom-cart-wrapper .cart-right-section .order-sum-subtotal {
-  text-align: right;
+  float: right;
   font-family: "quicksand-regular";
   font-size: 16px;
 }
