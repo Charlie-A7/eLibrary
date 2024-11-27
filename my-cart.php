@@ -8,7 +8,7 @@ get_header();
 <div class="my-custom-cart-wrapper position-relative z-0 h100">
 
     <div class="cart-lightblue-left-sidebar position-absolute z-1 remove-on-mobile"></div>
-    <div class="cart-darkblue-right-sidebar position-absolute z-1 "></div>
+    <div class="cart-darkblue-right-sidebar position-absolute z-1 remove-on-mobile"></div>
 
     <div class="container-fluid Cart-container h100 z-2">
         <div class="row z-2 justify-content-center align-items-center h100">

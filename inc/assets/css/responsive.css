@@ -394,15 +394,21 @@
   }
 }
 
-.my-custom-cart-wrapper {
-  height: 105dvh !important;
-}
 @media (max-width: 992px) {
+  .my-custom-cart-wrapper {
+    height: 105dvh !important;
+  }
   .my-custom-cart-wrapper .remove-on-mobile {
     display: none;
   }
   .my-custom-cart-wrapper .Cart-container {
     margin: 0;
+  }
+  .my-custom-cart-wrapper .Cart-small-container {
+    background-color: white;
+  }
+  .my-custom-cart-wrapper .cart-items-container {
+    max-height: 78%;
   }
 }
 @media (min-width: 992px) {
