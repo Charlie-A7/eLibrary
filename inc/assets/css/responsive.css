@@ -410,6 +410,9 @@
   }
 }
 @media (max-width: 992px) {
+  .my-custom-cart-wrapper .no-gutters {
+    --bs-gutter-x: 0;
+  }
   .my-custom-cart-wrapper .remove-on-mobile {
     display: none;
   }
