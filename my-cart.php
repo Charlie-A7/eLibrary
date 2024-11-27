@@ -29,9 +29,9 @@ get_header();
                         </table>
 
                         <div class="cart-items-container">
-                            <div class="Materials_title">
+                            <!-- <div class="Materials_title">
                                 <h2>Materials</h2>
-                            </div>
+                            </div> -->
                             <?php
                             // Check if the cart is empty
                             if (WC()->cart->is_empty()) {
