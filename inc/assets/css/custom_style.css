@@ -997,7 +997,7 @@ footer .footer_lines::after {
   transform: scaleX(-1);
 }
 .my-custom-cart-wrapper .cart-items-container {
-  max-height: 300px; /* Set a max height for the container */
+  max-height: 60%; /* Set a max height for the container */
   overflow-y: auto; /* Enable vertical scrolling when content overflows */
   margin-bottom: 0.5rem;
   scrollbar-width: thin; /* For Firefox */
@@ -1118,7 +1118,7 @@ footer .footer_lines::after {
 .my-custom-cart-wrapper .cart-right-section .donation-reason {
   font-family: "quicksand-regular";
   font-size: 14px;
-  margin-top: auto;
+  margin-top: 15%;
 }
 .my-custom-cart-wrapper .cart-right-section .cart-checkout-button {
   font-family: "quicksand-bold";
