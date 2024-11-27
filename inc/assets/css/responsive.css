@@ -396,7 +396,7 @@
 
 @media (max-width: 992px) {
   .my-custom-cart-wrapper {
-    height: 105dvh !important;
+    height: 140dvh !important;
   }
   .my-custom-cart-wrapper .remove-on-mobile {
     display: none;
@@ -424,6 +424,11 @@
   .my-custom-cart-wrapper .cart-checkout-button {
     width: 35% !important;
     margin: auto;
+  }
+  .my-custom-cart-wrapper .donation-reason-mobile {
+    font-family: "quicksand-regular";
+    font-size: 14px;
+    margin-top: 20%;
   }
 }
 @media (min-width: 992px) {
