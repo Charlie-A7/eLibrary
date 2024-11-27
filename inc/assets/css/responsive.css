@@ -394,6 +394,16 @@
   }
 }
 
+@media (min-width: 300px) and (max-width: 510px) {
+  .my-custom-cart-wrapper {
+    height: 175dvh !important;
+  }
+}
+@media (min-width: 510px) and (max-width: 625px) {
+  .my-custom-cart-wrapper {
+    height: 160dvh !important;
+  }
+}
 @media (max-width: 992px) {
   .my-custom-cart-wrapper {
     height: 140dvh !important;
@@ -422,7 +432,7 @@
     margin-top: 3rem !important;
   }
   .my-custom-cart-wrapper .cart-checkout-button {
-    width: 35% !important;
+    width: 50% !important;
     margin: auto;
   }
   .my-custom-cart-wrapper .donation-reason-mobile {
