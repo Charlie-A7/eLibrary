@@ -449,7 +449,9 @@ footer {
     height: 160dvh !important;
   }
   @media (max-width: 992px) {
-
+    .no-gutters {
+      --bs-gutter-x: 0;
+    }
     .remove-on-mobile{
       display: none;
     }

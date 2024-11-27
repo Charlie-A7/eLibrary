@@ -11,7 +11,7 @@ get_header();
     <div class="cart-darkblue-right-sidebar position-absolute z-1 remove-on-mobile"></div>
 
     <div class="container-fluid Cart-container h100 z-2">
-        <div class="row z-2 justify-content-center align-items-center h100">
+        <div class="row no-gutters z-2 justify-content-center align-items-center h100">
 
             <div class="col-12 col-lg-10 z-2 px-0 h100">
                 <div class="row Cart-small-container h100 z-2">
