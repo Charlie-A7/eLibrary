@@ -13,9 +13,9 @@ get_header();
     <div class="container Cart-container h-100 z-2">
         <div class="row z-2 justify-content-center align-items-center h-100">
 
-            <div class="col-12 col-md-10 z-2 px-0 h-100">
+            <div class="col-12 col-lg-10 z-2 px-0 h-100">
                 <div class="row Cart-small-container h-100 z-2">
-                    <div class="col-12 col-md-8 z-2 px-0">
+                    <div class="col-12 col-lg-8 z-2 px-0">
                         <table class="cart-title">
                             <tr>
                                 <td class="image-cell">
@@ -82,7 +82,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-4 z-2 cart-right-section">
+                    <div class="col-12 col-lg-4 z-2 cart-right-section">
                         <div class="order-summary p-3">
                             <h3>Order Summary</h3>
 
