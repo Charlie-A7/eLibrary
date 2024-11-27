@@ -82,9 +82,9 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-4 z-2 cart-right-section">
+                    <div class="col-12 col-lg-4 z-2 cart-right-section h-100">
                         <div class="order-summary p-3">
-                            <h3>Order Summary</h3>
+                            <h3>Request Summary</h3>
 
                             <?php
                             // Get total quantity and subtotal from WooCommerce cart
