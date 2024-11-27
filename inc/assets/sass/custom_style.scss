@@ -1020,7 +1020,7 @@ padding-bottom: 5px;
 }
 
 .cart-items-container {
-  max-height: 300px; /* Set a max height for the container */
+  max-height: 60%; /* Set a max height for the container */
   overflow-y: auto;  /* Enable vertical scrolling when content overflows */
   margin-bottom: 0.5rem;
   scrollbar-width: thin; /* For Firefox */
@@ -1154,7 +1154,7 @@ padding-bottom: 5px;
   .donation-reason{
     font-family: $quicksand-regular;
     font-size: 14px;
-    margin-top:auto;
+    margin-top: 15%;
   }
 
   .cart-checkout-button {

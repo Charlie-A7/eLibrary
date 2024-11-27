@@ -104,7 +104,7 @@ get_header();
                                     ?>
                                     .ل.ل
                                 </span></p>
-                            <p class="donation-reason">Your generous donation helps sustain our
+                            <p class="donation-reason align-items-center">Your generous donation helps sustain our
                                 work, allowing us to continue making a
                                 meaningful impact.</p>
                         </div>
