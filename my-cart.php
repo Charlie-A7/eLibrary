@@ -98,13 +98,15 @@ get_header();
                                     <?php
                                     if (function_exists('WC') && WC()->cart) {
                                         $subtotal = WC()->cart->get_subtotal(); // This returns the subtotal as a plain number
-                                        echo esc_html($subtotal);
                                         $formatted_subtotal = number_format($subtotal, 0, '', ',');
                                         echo esc_html($formatted_subtotal);
                                     }
                                     ?>
                                     .ل.ل
                                 </span></p>
+                            <p class="donation-reason">Your generous donation helps sustain our
+                                work, allowing us to continue making a
+                                meaningful impact.</p>
                         </div>
 
                         <a href="https://charlie.e-vents.me/my-checkout"
