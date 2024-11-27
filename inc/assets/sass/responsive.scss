@@ -445,9 +445,10 @@ footer {
     height: 160dvh !important;
   }
 
+  @media (min-width: 625px) and (max-width: 992px) {
+    height: 160dvh !important;
+  }
   @media (max-width: 992px) {
-
-    height: 140dvh !important;
 
     .remove-on-mobile{
       display: none;
