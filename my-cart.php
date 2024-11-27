@@ -13,7 +13,7 @@ get_header();
     <div class="container Cart-container h-100 z-2">
         <div class="row z-2 justify-content-center align-items-center h-100">
 
-            <div class="col-12 col-md-10 z-2 px-0">
+            <div class="col-12 col-md-10 z-2 px-0 h-100">
                 <div class="row Cart-small-container h-100 z-2">
                     <div class="col-12 col-md-8 z-2 px-0">
                         <table class="cart-title">
@@ -94,17 +94,19 @@ get_header();
 
                             <p class="order-sum-text">Amount of Books: <span
                                     class="order-sum-import"><?php echo esc_html($total_quantity); ?></span></p>
-                            <p class="order-sum-text-subtotal"> Donations: <span class="order-sum-subtotal">
+                            <p class="order-sum-text-subtotal"> Suggested Donation: <span class="order-sum-subtotal">
                                     <?php
                                     if (function_exists('WC') && WC()->cart) {
                                         $subtotal = WC()->cart->get_subtotal(); // This returns the subtotal as a plain number
                                         echo esc_html($subtotal);
+                                        $formatted_subtotal = number_format($subtotal, 0, '', ',');
+                                        echo esc_html($formatted_subtotal);
                                     }
                                     ?>
                                     .ل.ل
                                 </span></p>
                         </div>
-                        <!-- yes (charlie) pokhetsi a tag eri yev classes aveltsoutsi -->
+
                         <a href="https://charlie.e-vents.me/my-checkout"
                             class="btn cart-checkout-button w-100 d-flex justify-content-center align-items-center">CHECKOUT
                             NOW</a>
