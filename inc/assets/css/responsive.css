@@ -398,6 +398,9 @@
   height: 105dvh !important;
 }
 @media (max-width: 992px) {
+  .my-custom-cart-wrapper .remove-on-mobile {
+    display: none;
+  }
   .my-custom-cart-wrapper .Cart-container {
     margin: 0;
   }
