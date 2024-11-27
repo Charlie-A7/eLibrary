@@ -428,7 +428,10 @@
   .my-custom-cart-wrapper .donation-reason-mobile {
     font-family: "quicksand-regular";
     font-size: 14px;
-    margin-top: 20%;
+    margin-top: 3%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
