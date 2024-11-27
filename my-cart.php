@@ -5,16 +5,16 @@
 
 get_header();
 ?>
-<div class="my-custom-cart-wrapper position-relative z-0 h-100">
+<div class="my-custom-cart-wrapper position-relative z-0 h100">
 
-    <div class="cart-lightblue-left-sidebar position-absolute z-1"></div>
-    <div class="cart-darkblue-right-sidebar position-absolute z-1"></div>
+    <div class="cart-lightblue-left-sidebar position-absolute z-1 remove-on-mobile"></div>
+    <div class="cart-darkblue-right-sidebar position-absolute z-1 "></div>
 
-    <div class="container Cart-container h-100 z-2">
-        <div class="row z-2 justify-content-center align-items-center h-100">
+    <div class="container-fluid Cart-container h100 z-2">
+        <div class="row z-2 justify-content-center align-items-center h100">
 
-            <div class="col-12 col-lg-10 z-2 px-0 h-100">
-                <div class="row Cart-small-container h-100 z-2">
+            <div class="col-12 col-lg-10 z-2 px-0 h100">
+                <div class="row Cart-small-container h100 z-2">
                     <div class="col-12 col-lg-8 z-2 px-0">
                         <table class="cart-title">
                             <tr>
@@ -82,7 +82,7 @@ get_header();
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-4 z-2 cart-right-section h-100">
+                    <div class="col-12 col-lg-4 z-2 cart-right-section h100">
                         <div class="order-summary p-3">
                             <h3>Request Summary</h3>
 
@@ -104,7 +104,8 @@ get_header();
                                     ?>
                                     .ل.ل
                                 </span></p>
-                            <p class="donation-reason align-items-center">Your generous donation helps sustain our
+                            <p class="donation-reason remove-on-mobile align-items-center">Your generous donation helps
+                                sustain our
                                 work, allowing us to continue making a
                                 meaningful impact.</p>
                         </div>

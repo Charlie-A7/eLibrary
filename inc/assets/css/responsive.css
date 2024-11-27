@@ -395,7 +395,15 @@
 }
 
 @media (max-width: 992px) {
+  .my-custom-cart-wrapper {
+    height: 105dvh !important;
+  }
   .Cart-container {
     margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .h100 {
+    height: 100%;
   }
 }/*# sourceMappingURL=responsive.css.map */
