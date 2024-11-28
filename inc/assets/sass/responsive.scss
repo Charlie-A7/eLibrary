@@ -439,6 +439,19 @@ footer {
   
   @media (min-width: 300px) and (max-width: 510px) {
     height: 175dvh !important;
+    .order-summary{
+      height: 58%;
+    }
+    .cart-item{
+      padding-left: 0.5rem; 
+      padding-right: 0.5rem; 
+    }
+    .cart-item-price{
+      padding-left: 0.5rem;
+    }
+    .quantity-selector{
+      margin-left: 0.5rem;
+    }
   }
   
   @media (min-width: 510px) and (max-width: 625px) {
