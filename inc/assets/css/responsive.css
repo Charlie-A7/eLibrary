@@ -398,6 +398,19 @@
   .my-custom-cart-wrapper {
     height: 175dvh !important;
   }
+  .my-custom-cart-wrapper .order-summary {
+    height: 58%;
+  }
+  .my-custom-cart-wrapper .cart-item {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .my-custom-cart-wrapper .cart-item-price {
+    padding-left: 0.5rem;
+  }
+  .my-custom-cart-wrapper .quantity-selector {
+    margin-left: 0.5rem;
+  }
 }
 @media (min-width: 510px) and (max-width: 625px) {
   .my-custom-cart-wrapper {
