@@ -1143,15 +1143,16 @@ footer .footer_lines::after {
 .my-custom-product-page .singleProduct-darkblue-right-sidebar {
   height: 95%;
   bottom: 5%;
-  width: 50%;
 }
 .my-custom-product-page .singleProduct-lightblue-left-sidebar {
   background-color: #9eb6c5;
   left: 0;
+  width: 40%;
 }
 .my-custom-product-page .singleProduct-darkblue-right-sidebar {
   background-color: #093f6c;
   right: 0;
+  width: 60%;
 }
 .my-custom-product-page .product-image {
   height: 60dvh;

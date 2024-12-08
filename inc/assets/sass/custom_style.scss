@@ -1185,15 +1185,19 @@ padding-bottom: 5px;
 .singleProduct-darkblue-right-sidebar {
     height: 95%;
     bottom: 5%;
-    width: 50%;
 }
 .singleProduct-lightblue-left-sidebar {
   background-color: $Light-Gray-Blue-Color;
   left: 0;
+  width: 40%;
 }
 .singleProduct-darkblue-right-sidebar {
   background-color: $Navy-Blue-Color;
-  right: 0;}
+  right: 0;
+  width: 60%;
+
+}
+
 .single-product-inner-container{
 }
 .product-image{
