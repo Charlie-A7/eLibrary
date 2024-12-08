@@ -1157,17 +1157,6 @@ footer .footer_lines::after {
 .my-custom-product-page .single-product-inner-container {
   height: fit-content;
 }
-.my-custom-product-page .product-image {
-  height: 60dvh;
-  margin-top: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.my-custom-product-page .product-image img {
-  height: 100%;
-  object-fit: contain;
-}
 .my-custom-product-page .product-image-slider {
   display: flex;
   justify-content: center;
@@ -1187,9 +1176,15 @@ footer .footer_lines::after {
   transition: transform 0.5s ease-in-out;
 }
 .my-custom-product-page .slider-image {
-  min-width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 60dvh;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-custom-product-page .slider-image img {
+  height: 100%;
+  object-fit: contain;
 }
 .my-custom-product-page .slider-arrow {
   position: absolute;

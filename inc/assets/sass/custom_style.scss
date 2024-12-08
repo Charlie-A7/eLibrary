@@ -1202,19 +1202,19 @@ padding-bottom: 5px;
   height: fit-content;
 }
 
-.product-image{
-  height: 60dvh;
-  margin-top: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.product-image img{
-  height: 100%;
-  object-fit: contain;
-}
+// .product-image{
+//   height: 60dvh;
+//   margin-top: 3%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .product-image img{
+//   height: 100%;
+//   object-fit: contain;
+// }
 
-//slider-test
+  //book-gallery-slider
 .product-image-slider {
   display: flex;
   justify-content: center;
@@ -1234,10 +1234,20 @@ padding-bottom: 5px;
   transition: transform 0.5s ease-in-out;
 }
 .slider-image {
-  min-width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 60dvh;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // min-width: 100%;
+  // height: auto;
+  // object-fit: cover;
 }
+.slider-image img{
+  height: 100%;
+  object-fit: contain;
+}
+
 .slider-arrow {
   position: absolute;
   top: 50%;
