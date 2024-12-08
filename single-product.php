@@ -32,10 +32,52 @@ get_header(); ?>
                     <div class="row">
 
                         <!-- Product Image Section -->
-                        <div class="product-image col-5">
+                        <div class="product-image-slider col-5 position-relative">
 
-                            <?php if ($product_image): ?>
+                            <!-- <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
+                            <?php endif; ?> -->
+
+                            <?php
+                            // Get the main product image
+                            $main_image = get_the_post_thumbnail_url($product_id, 'full');
+
+                            // Get gallery images
+                            $gallery_images = get_post_meta($product_id, '_product_image_gallery', true);
+                            $images = array();
+
+                            // Add main image to the array
+                            if ($main_image) {
+                                $images[] = $main_image;
+                            }
+
+                            // Add gallery images to the array
+                            if (!empty($gallery_images)) {
+                                $gallery_ids = explode(',', $gallery_images); // Convert to array
+                                foreach ($gallery_ids as $id) {
+                                    $image_url = wp_get_attachment_url($id);
+                                    if ($image_url) {
+                                        $images[] = $image_url;
+                                    }
+                                }
+                            }
+
+                            // Check if there are any images
+                            if (!empty($images)):
+                                ?>
+                                <!-- Slider Wrapper -->
+                                <div class="slider-wrapper">
+                                    <div class="slider-images">
+                                        <?php foreach ($images as $image): ?>
+                                            <img src="<?php echo esc_url($image); ?>" alt="<?php the_title_attribute(); ?>"
+                                                class="slider-image">
+                                        <?php endforeach; ?>
+                                    </div>
+
+                                    <!-- Navigation Arrows -->
+                                    <button class="slider-arrow left-arrow">&#10094;</button>
+                                    <button class="slider-arrow right-arrow">&#10095;</button>
+                                </div>
                             <?php endif; ?>
 
                         </div>
@@ -68,5 +110,31 @@ get_header(); ?>
         ?>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sliderImages = document.querySelector('.slider-images');
+        const images = document.querySelectorAll('.slider-image');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+
+        let currentIndex = 0;
+
+        function updateSlider() {
+            const offset = currentIndex * -100; // Move by 100% of the width
+            sliderImages.style.transform = `translateX(${offset}%)`;
+        }
+
+        leftArrow.addEventListener('click', function () {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            updateSlider();
+        });
+
+        rightArrow.addEventListener('click', function () {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            updateSlider();
+        });
+    });
+</script>
 
 <?php get_footer(); ?>
