@@ -41,7 +41,7 @@ get_header(); ?>
                         <!-- Product Title and Description Section -->
                         <div class="col-7 product_page_rightSection">
                             <div class="product-header-box">
-                                <h1><?php the_title(); ?></h1>
+                                <h2><?php the_title(); ?></h2>
                             </div>
 
                             <div class="product-description mt-3">

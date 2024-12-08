@@ -1218,24 +1218,30 @@ padding-bottom: 5px;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  border: 1px solid #ccc;
+  width: 55%;
+  height: 27rem;
+  margin-block-start: auto;
 }
 
 .product-header-box{
   margin-top: 5%;
-  background-color: #013A63; /* Match the title background color */
-  color: white; /* Text color */
-  padding: 10px; /* Spacing inside the box */
-  text-align: center; /* Center align the title */
-  border-radius: 5px; /* Optional: Round the edges */
-  margin-bottom: 15px; /* Space below the title */
+  background-color: #013A63;
+  color: white; 
+  padding: 10px; 
+  text-align: center; 
+  margin-bottom: 15px;
 }
 
 .product-description{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.8; /* Improve readability */
+  text-align: right; /* Align text to the right */
+  max-height: 200px; /* Optional: Limit height */
+  max-width: 50%;
+  overflow-y: auto;
 }
 .product-description {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 }
