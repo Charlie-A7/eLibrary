@@ -1239,11 +1239,18 @@ padding-bottom: 5px;
   font-size: 1.1rem;
   line-height: 1.8; /* Improve readability */
   text-align: right; /* Align text to the right */
-  max-height: 200px; /* Optional: Limit height */
+  max-height: 220px; /* Optional: Limit height */
   max-width: 80%;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #888;
+  scrollbar-color: #888 transparent;
+}
+.product-description::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 10px; /* Round borders for the thumb */
+}
+.product-description::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
 }
 
 .singleProduct-addButton{
