@@ -7,8 +7,8 @@ get_header(); ?>
 
 <div class="my-custom-product-page position-relative z-0 h100">
 
-    <div class="cart-lightblue-left-sidebar position-absolute z-1"></div>
-    <div class="cart-darkblue-right-sidebar position-absolute z-1"></div>
+    <div class="singleProduct-lightblue-left-sidebar position-absolute z-1"></div>
+    <div class="singleProduct-darkblue-right-sidebar position-absolute z-1"></div>
 
 
     <div class="container-fluid single-product-container position-relative z-2">

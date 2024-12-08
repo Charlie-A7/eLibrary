@@ -1139,17 +1139,18 @@ footer .footer_lines::after {
 .single-product-container {
   min-height: 72dvh;
 }
-.single-product-container .singleProduct-blue-left-sidebar,
-.single-product-container .singleProduct-blue-right-sidebar {
-  background-color: #9eb6c5;
-  width: 7dvw;
-  top: 5dvh;
-  bottom: 5dvh;
+.single-product-container .singleProduct-lightblue-left-sidebar,
+.single-product-container .singleProduct-darkblue-right-sidebar {
+  height: 95%;
+  bottom: 5%;
+  width: 50%;
 }
-.single-product-container .singleProduct-blue-left-sidebar {
+.single-product-container .singleProduct-lightblue-left-sidebar {
+  background-color: #9eb6c5;
   left: 0;
 }
-.single-product-container .singleProduct-blue-right-sidebar {
+.single-product-container .singleProduct-darkblue-right-sidebar {
+  background-color: #093f6c;
   right: 0;
 }
 .single-product-container .product-image {
