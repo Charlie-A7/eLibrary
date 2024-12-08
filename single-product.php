@@ -45,11 +45,11 @@ get_header(); ?>
                             </div>
 
                             <div class="product-description mt-3">
-                                <?php echo wp_kses_post($product_description); ?>
+                                <p class="px-2"><?php echo wp_kses_post($product_description); ?></p>
                             </div>
 
                             <div class="d-flex flex-column">
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="<?php the_permalink(); ?>" class="singleProduct-addButton">
                                     <?php the_post_thumbnail('medium'); ?>
                                     <?php woocommerce_template_loop_add_to_cart(); ?>
                                 </a>
