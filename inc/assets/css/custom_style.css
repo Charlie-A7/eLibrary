@@ -1152,9 +1152,6 @@ footer .footer_lines::after {
 .single-product-container .singleProduct-blue-right-sidebar {
   right: 0;
 }
-.single-product-container .single-product-inner-container {
-  margin-left: 6.5dvw;
-}
 .single-product-container .product-image {
   height: 60dvh;
   margin-top: 3%;
