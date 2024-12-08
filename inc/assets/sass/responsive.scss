@@ -436,7 +436,6 @@ footer {
 //cart page
 
 .my-custom-cart-wrapper {
-  height: fit-content;
   @media (min-width: 300px) and (max-width: 530px) {
     // height: 175dvh !important;
     .order-summary{
@@ -462,6 +461,7 @@ footer {
   //   height: 160dvh !important;
   // }
   @media (max-width: 992px) {
+    height: fit-content;
     .no-gutters {
       --bs-gutter-x: 0;
     }

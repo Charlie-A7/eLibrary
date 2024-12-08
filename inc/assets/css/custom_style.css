@@ -950,7 +950,7 @@ footer .footer_lines::after {
 }
 
 .my-custom-cart-wrapper {
-  height: 70dvh !important;
+  height: 70dvh;
   /* Webkit Browsers (Chrome, Safari, Edge) */
 }
 .my-custom-cart-wrapper .Cart-container {
