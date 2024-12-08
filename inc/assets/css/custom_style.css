@@ -1196,4 +1196,7 @@ footer .footer_lines::after {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #888;
+}
+.my-custom-product-page .singleProduct-addButton {
+  margin-top: 2rem;
 }/*# sourceMappingURL=custom_style.css.map */
