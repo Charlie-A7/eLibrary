@@ -1220,33 +1220,24 @@ padding-bottom: 5px;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
   height: 100%;
 }
 .slider-wrapper {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   height: auto;
   overflow: hidden;
-  background-color: #f5f5f5;  /* Optional: Background color for padding effect */
-    padding: 10px;
 }
 .slider-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 .slider-image {
-  // height: 60dvh;
-  // margin-top: 3%;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  height: 60dvh;
+  margin-top: 7%;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure the image scales properly */
-  border-radius: 10px; /* Match the container's rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a floating effect */
+  // object-fit: cover;  Ensure the image scales properly 
 }
 // .slider-image img{
 //   height: 100%;
@@ -1257,20 +1248,17 @@ padding-bottom: 5px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 3;
   font-size: 1.5rem;
   border-radius: 50%; /* Make the arrows circular */
 }
-.left-arrow {
-  left: -20px;
-}
 .right-arrow {
-  right: -20px;
+  right: 5px;
 }
 .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.8);
