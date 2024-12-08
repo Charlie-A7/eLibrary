@@ -1154,6 +1154,9 @@ footer .footer_lines::after {
   right: 0;
   width: 50%;
 }
+.my-custom-product-page .single-product-inner-container {
+  height: fit-content;
+}
 .my-custom-product-page .product-image {
   height: 60dvh;
   margin-top: 3%;
@@ -1185,12 +1188,10 @@ footer .footer_lines::after {
 }
 .my-custom-product-page .product-description {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
   line-height: 1.8; /* Improve readability */
   text-align: right; /* Align text to the right */
   max-height: 200px; /* Optional: Limit height */
-  max-width: 50%;
+  max-width: 80%;
   overflow-y: auto;
-}
-.my-custom-product-page .product-description {
-  font-size: 1.1rem;
 }/*# sourceMappingURL=custom_style.css.map */

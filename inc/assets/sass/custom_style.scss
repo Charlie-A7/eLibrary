@@ -1199,7 +1199,9 @@ padding-bottom: 5px;
 }
 
 .single-product-inner-container{
+  height: fit-content;
 }
+
 .product-image{
   height: 60dvh;
   margin-top: 3%;
@@ -1234,14 +1236,12 @@ padding-bottom: 5px;
 
 .product-description{
   margin-bottom: 1rem;
+  font-size: 1.1rem;
   line-height: 1.8; /* Improve readability */
   text-align: right; /* Align text to the right */
   max-height: 200px; /* Optional: Limit height */
-  max-width: 50%;
+  max-width: 80%;
   overflow-y: auto;
-}
-.product-description {
-  font-size: 1.1rem;
 }
 
 }
