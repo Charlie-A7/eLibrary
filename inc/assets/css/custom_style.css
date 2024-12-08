@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .quicksand-font {
   font-family: "quicksand" !important;
 }
@@ -1139,7 +1138,6 @@ footer .footer_lines::after {
 
 .my-custom-product-page {
   min-height: 72dvh;
-  /* Style the scrollbar */
 }
 .my-custom-product-page .singleProduct-lightblue-left-sidebar,
 .my-custom-product-page .singleProduct-darkblue-right-sidebar {
@@ -1196,35 +1194,6 @@ footer .footer_lines::after {
   max-height: 200px; /* Optional: Limit height */
   max-width: 80%;
   overflow-y: auto;
-}
-.my-custom-product-page .product-description::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-.my-custom-product-page .product-description::-webkit-scrollbar-thumb {
-  background-color: #555; /* Color of the scroll thumb */
-  border-radius: 10px; /* Make it rounded */
-}
-.my-custom-product-page .product-description::-webkit-scrollbar-track {
-  background-color: #e0e0e0; /* Background of the track */
-  border-radius: 10px; /* Match rounded style */
-}
-.my-custom-product-page .product-description::-webkit-scrollbar-button:increment {
-  display: block;
-  height: 16px;
-  background-color: #e0e0e0; /* Button background */
-  content: "▼"; /* Down arrow */
-  text-align: center;
-  color: #555; /* Arrow color */
-  font-size: 10px; /* Adjust size */
-  line-height: 16px;
-}
-.my-custom-product-page .product-description::-webkit-scrollbar-button:decrement {
-  display: block;
-  height: 16px;
-  background-color: #e0e0e0; /* Button background */
-  content: "▲"; /* Up arrow */
-  text-align: center;
-  color: #555; /* Arrow color */
-  font-size: 10px; /* Adjust size */
-  line-height: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #888;
 }/*# sourceMappingURL=custom_style.css.map */
