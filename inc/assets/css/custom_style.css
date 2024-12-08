@@ -1168,6 +1168,38 @@ footer .footer_lines::after {
   height: 100%;
   object-fit: contain;
 }
+.my-custom-product-page .product-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.my-custom-product-page .product-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.my-custom-product-page .product-slider-image {
+  min-width: 100%;
+  object-fit: cover;
+}
+.my-custom-product-page .product-slider-prev, .my-custom-product-page .product-slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+.my-custom-product-page .product-slider-prev {
+  left: 10px;
+}
+.my-custom-product-page .product-slider-next {
+  right: 10px;
+}
 .my-custom-product-page .product_page_rightSection {
   text-align: center;
   display: flex;
@@ -1196,6 +1228,7 @@ footer .footer_lines::after {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #888;
+  padding-right: 0.5rem;
 }
 .my-custom-product-page .singleProduct-addButton {
   margin-top: 2rem;
