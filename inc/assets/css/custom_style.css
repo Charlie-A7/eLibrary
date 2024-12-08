@@ -1147,12 +1147,12 @@ footer .footer_lines::after {
 .my-custom-product-page .singleProduct-lightblue-left-sidebar {
   background-color: #9eb6c5;
   left: 0;
-  width: 40%;
+  width: 50%;
 }
 .my-custom-product-page .singleProduct-darkblue-right-sidebar {
   background-color: #093f6c;
   right: 0;
-  width: 60%;
+  width: 50%;
 }
 .my-custom-product-page .product-image {
   height: 60dvh;
@@ -1170,9 +1170,17 @@ footer .footer_lines::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
 }
-.my-custom-product-page .product-header {
+.my-custom-product-page .product-header-box {
   margin-top: 5%;
+  background-color: #013A63; /* Match the title background color */
+  color: white; /* Text color */
+  padding: 10px; /* Spacing inside the box */
+  text-align: center; /* Center align the title */
+  border-radius: 5px; /* Optional: Round the edges */
+  margin-bottom: 15px; /* Space below the title */
 }
 .my-custom-product-page .product-description {
   margin-bottom: 2rem;

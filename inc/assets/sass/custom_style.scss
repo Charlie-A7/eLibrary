@@ -1189,12 +1189,12 @@ padding-bottom: 5px;
 .singleProduct-lightblue-left-sidebar {
   background-color: $Light-Gray-Blue-Color;
   left: 0;
-  width: 40%;
+  width: 50%;
 }
 .singleProduct-darkblue-right-sidebar {
   background-color: $Navy-Blue-Color;
   right: 0;
-  width: 60%;
+  width: 50%;
 
 }
 
@@ -1217,10 +1217,18 @@ padding-bottom: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
 }
 
-.product-header{
+.product-header-box{
   margin-top: 5%;
+  background-color: #013A63; /* Match the title background color */
+  color: white; /* Text color */
+  padding: 10px; /* Spacing inside the box */
+  text-align: center; /* Center align the title */
+  border-radius: 5px; /* Optional: Round the edges */
+  margin-bottom: 15px; /* Space below the title */
 }
 
 .product-description{
