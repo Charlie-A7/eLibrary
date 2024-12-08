@@ -394,9 +394,6 @@
   }
 }
 
-.my-custom-cart-wrapper {
-  height: fit-content;
-}
 @media (min-width: 300px) and (max-width: 530px) {
   .my-custom-cart-wrapper .order-summary {
     height: 58%;
@@ -413,6 +410,9 @@
   }
 }
 @media (max-width: 992px) {
+  .my-custom-cart-wrapper {
+    height: fit-content;
+  }
   .my-custom-cart-wrapper .no-gutters {
     --bs-gutter-x: 0;
   }
