@@ -1213,38 +1213,6 @@ padding-bottom: 5px;
   height: 100%;
   object-fit: contain;
 }
-.product-slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.product-slider {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-.product-slider-image {
-  min-width: 100%;
-  object-fit: cover;
-}
-.product-slider-prev, .product-slider-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 10;
-}
-.product-slider-prev {
-  left: 10px;
-}
-.product-slider-next {
-  right: 10px;
-}
 
 .product_page_rightSection{
   text-align: center;

@@ -34,39 +34,10 @@ get_header(); ?>
                         <!-- Product Image Section -->
                         <div class="product-image col-5">
 
-                            <!-- <?php if ($product_image): ?>
+                            <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
-                            <?php endif; ?> -->
+                            <?php endif; ?>
 
-                            <?php
-                            // Get the product image and gallery images
-                            if ($product_image):
-                                echo '<div class="product-slider-container">';
-                                echo '<div class="product-slider">';
-
-                                // Display the main product image
-                                echo '<img src="' . esc_url($product_image) . '" alt="' . get_the_title() . '" class="product-slider-image">';
-
-                                // Get additional gallery images
-                                $gallery_image_ids = $_product->get_gallery_image_ids();
-
-                                // Loop through gallery images
-                                if (!empty($gallery_image_ids)) {
-                                    foreach ($gallery_image_ids as $gallery_image_id) {
-                                        $gallery_image_url = wp_get_attachment_url($gallery_image_id);
-                                        echo '<img src="' . esc_url($gallery_image_url) . '" alt="' . get_the_title() . '" class="product-slider-image">';
-                                    }
-                                }
-
-                                echo '</div>'; // Close slider container
-                    
-                                // Add navigation arrows
-                                echo '<button class="product-slider-prev">&lt;</button>';
-                                echo '<button class="product-slider-next">&gt;</button>';
-
-                                echo '</div>'; // Close slider wrapper
-                            endif;
-                            ?>
                         </div>
 
                         <!-- Product Title and Description Section -->
@@ -97,35 +68,5 @@ get_header(); ?>
         ?>
     </div>
 </div>
-
-<script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const slider = document.querySelector('.product-slider');
-        const slides = document.querySelectorAll('.product-slider-image');
-        const prevButton = document.querySelector('.product-slider-prev');
-        const nextButton = document.querySelector('.product-slider-next');
-        let currentIndex = 0;
-
-        function updateSliderPosition() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        prevButton.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSliderPosition();
-            }
-        });
-
-        nextButton.addEventListener('click', () => {
-            if (currentIndex < slides.length - 1) {
-                currentIndex++;
-                updateSliderPosition();
-            }
-        });
-    });
-
-</script>
 
 <?php get_footer(); ?>
