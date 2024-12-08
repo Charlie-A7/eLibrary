@@ -1197,12 +1197,6 @@ footer .footer_lines::after {
   scrollbar-width: thin;
   scrollbar-color: #888;
 }
-.my-custom-product-page .product-description::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
-}
-.my-custom-product-page .product-description::-webkit-scrollbar-thumb {
-  border-radius: 10px; /* Round borders for the thumb */
-}
 .my-custom-product-page .singleProduct-addButton {
   margin-top: 2rem;
 }/*# sourceMappingURL=custom_style.css.map */
