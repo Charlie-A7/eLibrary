@@ -38,12 +38,9 @@ get_header(); ?>
                             <?php endif; ?>
                         </div>
 
-                        <!-- blank -->
-                        <div class="col-1"></div>
-
                         <!-- Product Title and Description Section -->
-                        <div class="col-6 product_page_rightSection">
-                            <div class="product-header">
+                        <div class="col-7 product_page_rightSection">
+                            <div class="product-header-box">
                                 <h1><?php the_title(); ?></h1>
                             </div>
 
