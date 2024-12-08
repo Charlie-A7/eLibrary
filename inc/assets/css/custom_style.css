@@ -1195,14 +1195,13 @@ footer .footer_lines::after {
   max-width: 80%;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #888 transparent;
+  scrollbar-color: #888;
+}
+.my-custom-product-page .product-description::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
 }
 .my-custom-product-page .product-description::-webkit-scrollbar-thumb {
-  background-color: #888; /* Thumb color */
   border-radius: 10px; /* Round borders for the thumb */
-}
-.my-custom-product-page .product-description::-webkit-scrollbar-track {
-  background: transparent; /* Track color */
 }
 .my-custom-product-page .singleProduct-addButton {
   margin-top: 2rem;
