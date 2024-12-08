@@ -1181,19 +1181,19 @@ padding-bottom: 5px;
   min-height: calc(100dvh - $header-height - $footer-height);
 
 
-.singleProduct-blue-left-sidebar,
-.singleProduct-blue-right-sidebar {
-  background-color: $Light-Gray-Blue-Color;
-  width: 7dvw;
-  top: 5dvh;
-  bottom: 5dvh;
+.singleProduct-lightblue-left-sidebar,
+.singleProduct-darkblue-right-sidebar {
+    height: 95%;
+    bottom: 5%;
+    width: 50%;
 }
-.singleProduct-blue-left-sidebar {
+.singleProduct-lightblue-left-sidebar {
+  background-color: $Light-Gray-Blue-Color;
   left: 0;
 }
-.singleProduct-blue-right-sidebar {
-  right: 0;
-}
+.singleProduct-darkblue-right-sidebar {
+  background-color: $Navy-Blue-Color;
+  right: 0;}
 .single-product-inner-container{
 }
 .product-image{
