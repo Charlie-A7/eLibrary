@@ -5,10 +5,13 @@
 
 get_header(); ?>
 
-<div class="container-fluid single-product-container position-relative">
-    <div class="row">
-        <div class="singleProduct-blue-left-sidebar position-absolute col-1"></div>
-        <div class="singleProduct-blue-right-sidebar position-absolute col-1"></div>
+<div class="my-custom-product-page position-relative z-0 h100">
+
+    <div class="cart-lightblue-left-sidebar position-absolute z-1"></div>
+    <div class="cart-darkblue-right-sidebar position-absolute z-1"></div>
+
+
+    <div class="container-fluid single-product-container position-relative z-2">
 
         <?php
         // Check if it's a single product page
@@ -25,7 +28,7 @@ get_header(); ?>
 
                 // Output the product details
                 ?>
-                <div class="container-fluid single-product-inner-container">
+                <div class="container-fluid single-product-inner-container z-2">
                     <div class="row">
 
                         <!-- Product Image Section -->
@@ -34,6 +37,9 @@ get_header(); ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
                             <?php endif; ?>
                         </div>
+
+                        <!-- blank -->
+                        <div class="col-2"></div>
 
                         <!-- Product Title and Description Section -->
                         <div class="col-6 product_page_rightSection">
@@ -63,5 +69,4 @@ get_header(); ?>
         ?>
     </div>
 </div>
-
 <?php get_footer(); ?>
