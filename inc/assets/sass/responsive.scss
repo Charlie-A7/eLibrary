@@ -436,9 +436,9 @@ footer {
 //cart page
 
 .my-custom-cart-wrapper {
-  
+  height: fit-content;
   @media (min-width: 300px) and (max-width: 530px) {
-    height: 175dvh !important;
+    // height: 175dvh !important;
     .order-summary{
       height: 58%;
     }
@@ -454,13 +454,13 @@ footer {
     }
   }
   
-  @media (min-width: 530px) and (max-width: 625px) {
-    height: 160dvh !important;
-  }
+  // @media (min-width: 530px) and (max-width: 625px) {
+  //   height: 160dvh !important;
+  // }
 
-  @media (min-width: 625px) and (max-width: 992px) {
-    height: 160dvh !important;
-  }
+  // @media (min-width: 625px) and (max-width: 992px) {
+  //   height: 160dvh !important;
+  // }
   @media (max-width: 992px) {
     .no-gutters {
       --bs-gutter-x: 0;
