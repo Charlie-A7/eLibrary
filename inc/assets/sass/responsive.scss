@@ -453,13 +453,6 @@ footer {
     }
   }
   
-  // @media (min-width: 530px) and (max-width: 625px) {
-  //   height: 160dvh !important;
-  // }
-
-  // @media (min-width: 625px) and (max-width: 992px) {
-  //   height: 160dvh !important;
-  // }
   @media (max-width: 992px) {
     height: fit-content;
     .no-gutters {
@@ -510,4 +503,30 @@ footer {
       display: none;
     }
   }
+}
+
+//single product page
+.ABOUTUS-blue-left-sidebar{
+  @media (max-width: 992px) {
+    
+    .singleProduct-lightblue-left-sidebar,
+    .singleProduct-darkblue-right-sidebar{
+      display: none;
+    }
+
+    .product-image-slider{
+      margin-left: 0;
+    }
+    .left-arrow{
+      margin-left: auto;
+    }
+
+    .product_page_rightSection{
+      width: 100%;
+    }
+   
+  
+  }
+
+
 }

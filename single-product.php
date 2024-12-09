@@ -32,7 +32,7 @@ get_header(); ?>
                     <div class="row">
 
                         <!-- Product Image Section -->
-                        <div class="product-image-slider col-5 p-0">
+                        <div class="product-image-slider col-lg-5 p-0">
 
                             <!-- <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
@@ -86,7 +86,7 @@ get_header(); ?>
                         </div>
 
                         <!-- Product Title and Description Section -->
-                        <div class="col-7 product_page_rightSection">
+                        <div class="col-lg-7 product_page_rightSection">
                             <div class="product-header-box">
                                 <h2><?php the_title(); ?></h2>
                             </div>
