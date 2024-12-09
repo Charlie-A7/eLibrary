@@ -1159,17 +1159,15 @@ footer .footer_lines::after {
 }
 .my-custom-product-page .product-image-slider {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
   height: 100%;
 }
 .my-custom-product-page .slider-wrapper {
-  position: relative;
-  width: 100%;
   max-width: 360px;
-  height: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .my-custom-product-page .slider-images {
   display: flex;
@@ -1181,23 +1179,14 @@ footer .footer_lines::after {
   width: 100%;
 }
 .my-custom-product-page .slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: transparent;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 3;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   border-radius: 50%; /* Make the arrows hover circular */
-}
-.my-custom-product-page .left-arrow {
-  left: 8%;
-}
-.my-custom-product-page .right-arrow {
-  right: 8%;
 }
 .my-custom-product-page .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.8);
