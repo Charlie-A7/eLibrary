@@ -66,6 +66,7 @@ get_header(); ?>
                             if (!empty($images)):
                                 ?>
                                 <!-- Slider Wrapper -->
+                                <button class="slider-arrow left-arrow">&#10094;</button>
                                 <div class="slider-wrapper">
                                     <div class="slider-images">
                                         <?php foreach ($images as $image): ?>
@@ -75,9 +76,10 @@ get_header(); ?>
                                     </div>
 
                                     <!-- Navigation Arrows -->
-                                    <button class="slider-arrow left-arrow">&#10094;</button>
-                                    <button class="slider-arrow right-arrow">&#10095;</button>
+
+
                                 </div>
+                                <button class="slider-arrow right-arrow">&#10095;</button>
                             <?php endif; ?>
 
                         </div>
