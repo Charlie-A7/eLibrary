@@ -1208,6 +1208,7 @@ padding-bottom: 5px;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  margin-left: 3rem;
 }
 .slider-wrapper {
   max-width: 360px;
@@ -1229,11 +1230,13 @@ padding-bottom: 5px;
   background: transparent;
   color: white;
   border: none;
-  padding: 10px;
   cursor: pointer;
   z-index: 3;
   font-size: 3.5rem;
   border-radius: 50%; /* Make the arrows hover circular */
+}
+.right-arrow{
+  margin-right: auto;
 }
 .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.8);
