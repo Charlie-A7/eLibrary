@@ -1193,8 +1193,11 @@ footer .footer_lines::after {
   font-size: 2.5rem;
   border-radius: 50%; /* Make the arrows hover circular */
 }
+.my-custom-product-page .left-arrow {
+  left: 8%;
+}
 .my-custom-product-page .right-arrow {
-  right: 5px;
+  right: 8%;
 }
 .my-custom-product-page .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.8);
