@@ -1162,6 +1162,7 @@ footer .footer_lines::after {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  margin-left: 3rem;
 }
 .my-custom-product-page .slider-wrapper {
   max-width: 360px;
@@ -1182,11 +1183,13 @@ footer .footer_lines::after {
   background: transparent;
   color: white;
   border: none;
-  padding: 10px;
   cursor: pointer;
   z-index: 3;
   font-size: 3.5rem;
   border-radius: 50%; /* Make the arrows hover circular */
+}
+.my-custom-product-page .right-arrow {
+  margin-right: auto;
 }
 .my-custom-product-page .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.8);
