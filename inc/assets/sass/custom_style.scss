@@ -1202,32 +1202,18 @@ padding-bottom: 5px;
   height: fit-content;
 }
 
-// .product-image{
-//   height: 60dvh;
-//   margin-top: 3%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-// .product-image img{
-//   height: 100%;
-//   object-fit: contain;
-// }
-
   //book-gallery-slider
 .product-image-slider {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
   height: 100%;
 }
 .slider-wrapper {
-  position: relative;
-  width: 100%;
   max-width: 360px;
-  height: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .slider-images {
   display: flex;
@@ -1237,31 +1223,18 @@ padding-bottom: 5px;
   height: 60dvh;
   margin-top: 7%;
   width: 100%;
-  // object-fit: cover;  Ensure the image scales properly 
+  // object-fit: cover;  //Ensure the image scales properly 
 }
-// .slider-image img{
-//   height: 100%;
-//   object-fit: contain;
-// }
 
 .slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: transparent;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 3;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   border-radius: 50%; /* Make the arrows hover circular */
-}
-.left-arrow{
-  left: 8%;
-}
-.right-arrow {
-  right: 8%;
 }
 .slider-arrow:hover {
   background: rgba(0, 0, 0, 0.8);

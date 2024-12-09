@@ -32,7 +32,7 @@ get_header(); ?>
                     <div class="row">
 
                         <!-- Product Image Section -->
-                        <div class="product-image-slider col-5 position-relative">
+                        <div class="product-image-slider col-5 p-0">
 
                             <!-- <?php if ($product_image): ?>
                                 <img src="<?php echo esc_url($product_image); ?>" alt="<?php the_title_attribute(); ?>">
@@ -67,6 +67,7 @@ get_header(); ?>
                                 ?>
                                 <!-- Slider Wrapper -->
                                 <button class="slider-arrow left-arrow">&#10094;</button>
+
                                 <div class="slider-wrapper">
                                     <div class="slider-images">
                                         <?php foreach ($images as $image): ?>
