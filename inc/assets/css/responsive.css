@@ -469,10 +469,18 @@
   .my-custom-product-page .product-image-slider {
     margin-left: 0;
   }
+  .my-custom-product-page .slider-image {
+    margin-top: 0;
+    margin-bottom: 7%;
+  }
+  .my-custom-product-page .slider-arrow {
+    color: #9eb6c5;
+  }
   .my-custom-product-page .left-arrow {
     margin-left: auto;
   }
   .my-custom-product-page .product_page_rightSection {
     width: 100%;
+    background-color: gainsboro;
   }
 }/*# sourceMappingURL=responsive.css.map */

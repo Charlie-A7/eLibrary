@@ -517,12 +517,20 @@ footer {
     .product-image-slider{
       margin-left: 0;
     }
+    .slider-image{
+      margin-top: 0;
+      margin-bottom: 7%;
+    }
+    .slider-arrow {
+      color: $sec_color;
+    }
     .left-arrow{
       margin-left: auto;
     }
 
     .product_page_rightSection{
       width: 100%;
+      background-color: gainsboro;
     }
    
   

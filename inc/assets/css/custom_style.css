@@ -1186,13 +1186,9 @@ footer .footer_lines::after {
   cursor: pointer;
   z-index: 3;
   font-size: 3.5rem;
-  border-radius: 50%; /* Make the arrows hover circular */
 }
 .my-custom-product-page .right-arrow {
   margin-right: auto;
-}
-.my-custom-product-page .slider-arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
 .my-custom-product-page .product_page_rightSection {
   text-align: center;

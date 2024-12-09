@@ -1233,14 +1233,14 @@ padding-bottom: 5px;
   cursor: pointer;
   z-index: 3;
   font-size: 3.5rem;
-  border-radius: 50%; /* Make the arrows hover circular */
+  // border-radius: 50%; /* Make the arrows hover circular */
 }
 .right-arrow{
   margin-right: auto;
 }
-.slider-arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
+// .slider-arrow:hover {
+//   background: rgba(0, 0, 0, 0.8);
+// }
 
 .product_page_rightSection{
   text-align: center;
