@@ -735,7 +735,7 @@ footer .footer_lines::after {
   font-style: normal;
   font-family: none;
   color: #093f6c;
-  line-height: 0.5;
+  line-height: 1;
 }
 .homeDiv .mobile h6 {
   font-size: 0.8rem;
