@@ -58,8 +58,8 @@ get_header();
             <div class="row row3 my-0">
                 <div class="col-12">
                     <p class="dots-design text-left">..........</p>
-                    <h1 class=" rtl arabic-medium-font">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
-                    <h6 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h6>
+                    <h1 class=" rtl arabic-medium-font homepage-mobile-arabic-text-big">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
+                    <h6 class="rtl arabic-regular-font homepage-mobile-arabic-text-small">تصفح مجموعتنا، واطلب ما تحتاجه.</h6>
                 </div>
             </div>
          </div>
