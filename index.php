@@ -32,6 +32,7 @@ get_header();
                     </div>
                 </div>
                 <div class="col-6 z-1 h-100">
+                    <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="">
                 </div>
             </div>
          </div>
