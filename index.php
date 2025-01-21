@@ -35,10 +35,6 @@ get_header();
                     <div class="">
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
                     </div>
-                    
-                    <div class="d-none">
-                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic2.jpg" alt="" class="img-fluid object-fit-cover">
-                    </div>
                 </div>
             </div>
          </div>
@@ -54,6 +50,9 @@ get_header();
             </div>
             <div class="row row2">
                 <div class="col-12">
+                    <div class="">
+                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
+                    </div>
                 </div>
             </div>
             <div class="row row3">
