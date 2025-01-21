@@ -32,7 +32,13 @@ get_header();
                     </div>
                 </div>
                 <div class="col-6 z-1 h-100">
-                    <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="">
+                    <div class="">
+                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                    
+                    <div class="d-none">
+                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
                 </div>
             </div>
          </div>
