@@ -27,17 +27,17 @@ get_header();
                         <h4>Browse our selection, and order what you need.</h4>
                     </div>
                     <div id="arabicText-index" class="padding-left position-absolute hidden">
-                        <h1 class=" rtl arabic-medium-font">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
-                        <h4 class="rtl arabic-regular-font">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
+                        <h1 class="rtl arabic-medium-font homepage-desktop-arabic-text-big">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
+                        <h4 class="rtl arabic-regular-font homepage-desktop-arabic-text-small">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                     </div>
                 </div>
-                <div class="col-6 z-1 h-100">
+                <div class="col-6 z-1 h-100 d-flex align-items-center">
                     <div class="">
-                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
                     </div>
                     
                     <div class="d-none">
-                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic2.jpg" alt="" class="img-fluid object-fit-cover">
                     </div>
                 </div>
             </div>
