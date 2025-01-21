@@ -50,7 +50,7 @@ get_header();
             </div>
             <div class="row row2 my-4">
                 <div class="col-12">
-                    <div>
+                    <div class="d-flex justify-content-center">
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
                     </div>
                 </div>
