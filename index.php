@@ -41,21 +41,21 @@ get_header();
 
         <!-- mobile  rows -->
          <div class="mobile d-flex d-md-none flex-column h-100">
-            <div class="row row1">
+            <div class="row row1 my-1">
                 <div class="col-12">
                     <p class="dots-design text-right">..........</p>
                     <h1>Welcome to our<br>resource library</h1>
                     <h6>Browse our selection, and order what you need.</h6>
                 </div>
             </div>
-            <div class="row row2">
+            <div class="row row2 my-4">
                 <div class="col-12">
-                    <div class="">
+                    <div>
                         <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
                     </div>
                 </div>
             </div>
-            <div class="row row3">
+            <div class="row row3 my-1">
                 <div class="col-12">
                     <p class="dots-design text-left">..........</p>
                     <h1 class=" rtl arabic-medium-font">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
