@@ -536,13 +536,6 @@ header .mobile-menu-div button {
 header .mobile-menu-div .hamburger i::before {
   vertical-align: middle;
 }
-header .mobile-menu-div .hamburger:hover:not(.hamburger-active) {
-  background-color: #9eb6c5;
-  border-radius: 100%;
-}
-header .mobile-menu-div .hamburger:hover:not(.hamburger-active) i {
-  filter: invert(1) brightness(2);
-}
 header .mobile-menu-div .hamburger-active {
   background-color: #093f6c;
   border-radius: 100%;
@@ -555,13 +548,6 @@ header .mobile-menu-div .mobile-cart-button {
 }
 header .mobile-menu-div .mobile-cart-button img {
   vertical-align: middle;
-}
-header .mobile-menu-div .mobile-cart-button:hover:not(.mobile-cart-button-active) {
-  background-color: #9eb6c5;
-  border-radius: 100%;
-}
-header .mobile-menu-div .mobile-cart-button:hover:not(.mobile-cart-button-active) img {
-  filter: invert(1) brightness(2);
 }
 header .mobile-menu-div .mobile-cart-button-active {
   background-color: #093f6c;
