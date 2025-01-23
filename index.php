@@ -31,8 +31,8 @@ get_header();
                         <h4 class="rtl arabic-regular-font homepage-desktop-arabic-text-small">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                     </div>
                 </div>
-                <div class="col-6 z-1 h-100 d-flex align-items-center">
-                    <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
+                <div class="col-6 z-1 h-100 d-flex align-items-center justify-content-center">
+                    <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="">
                 </div>
             </div>
          </div>

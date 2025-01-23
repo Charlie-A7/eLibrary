@@ -262,9 +262,11 @@
   .aboutUsDiv .AbtUSPart1 {
     padding: 0;
     padding-left: 1rem;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .aboutUsDiv .AbtUSPart2 {
+    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -411,6 +413,7 @@
 }
 @media (max-width: 992px) {
   .my-custom-cart-wrapper {
+    height: -moz-fit-content;
     height: fit-content;
   }
   .my-custom-cart-wrapper .no-gutters {
