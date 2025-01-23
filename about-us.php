@@ -18,13 +18,13 @@ get_header();
 
                 <div class="mobile-AbtUsRow">
                     <img class="AbtUSimg1 z-2"
-                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test4.jpg">
+                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test6.jpg">
                     <h1 class="main-heading-Eng-Mobile z-3">LIFEAGAPE <br>
                         <span class="main-heading-Ar-Mobile">حياة المحبة</span>
                     </h1>
                 </div>
                 <img class="AbtUSimg1 remove-on-mobile z-2"
-                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test4.jpg">
+                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test6.jpg">
 
                 <p id="ENparagraph" class="AboutUsText">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
