@@ -32,9 +32,7 @@ get_header();
                     </div>
                 </div>
                 <div class="col-6 z-1 h-100 d-flex align-items-center">
-                    <div class="">
-                        <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
-                    </div>
+                    <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="img-fluid object-fit-cover">
                 </div>
             </div>
          </div>
