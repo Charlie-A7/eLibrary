@@ -18,13 +18,13 @@ get_header();
 
                 <div class="mobile-AbtUsRow">
                     <img class="AbtUSimg1 z-2"
-                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test6.jpg">
+                        src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
                     <h1 class="main-heading-Eng-Mobile z-3">LIFEAGAPE <br>
                         <span class="main-heading-Ar-Mobile">حياة المحبة</span>
                     </h1>
                 </div>
                 <img class="AbtUSimg1 remove-on-mobile z-2"
-                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test6.jpg">
+                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/HoldingHands.jpg">
 
                 <p id="ENparagraph" class="AboutUsText">
                     LifeAgape Lebanon is a Christian organization that works with all churches and
@@ -52,7 +52,7 @@ get_header();
                 </h1>
                 <p class="AbtUs-dots-design">&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p>
                 <img class="AbtUSimg2"
-                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/trees.jpg">
+                    src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/test4.jpg">
             </div>
             <div class="z-3 AbtUsARpMobile">
                 <p id="ArParagraphMobile" class="AboutUsTextMobile">
