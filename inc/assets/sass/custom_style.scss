@@ -683,8 +683,26 @@ footer {
   }
 
   .desktop{
+    @media (min-width: 1400px) {
+      h1 {
+        font-size: 6.5rem;
+      }
+      h4{
+        font-size: 2rem;
+      }
+      .homepage-desktop-arabic-text-big{
+        font-size: 7.5rem;
+      }
+      .homepage-desktop-arabic-text-small{
+        font-size: 3rem;
+      }
+    }
+
     h1 {
       font-size: 4.5rem;
+    }
+    h4{
+      font-size: 1.5rem;
     }
     .homepage-desktop-arabic-text-big{
       font-size: 5.5rem;
