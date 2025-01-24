@@ -664,21 +664,49 @@ footer .footer_lines::after {
 .homeDiv h4 {
   font-family: "quicksand-semibold";
 }
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .homeDiv .desktop h1 {
+    font-size: 6rem;
+  }
+  .homeDiv .desktop h4 {
+    font-size: 2.2rem;
+  }
+  .homeDiv .desktop .homepage-desktop-arabic-text-big {
     font-size: 6.5rem;
+  }
+  .homeDiv .desktop .homepage-desktop-arabic-text-small {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .homeDiv .desktop h1 {
+    font-size: 5.5rem;
   }
   .homeDiv .desktop h4 {
     font-size: 2rem;
   }
   .homeDiv .desktop .homepage-desktop-arabic-text-big {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .homeDiv .desktop .homepage-desktop-arabic-text-small {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 1399px) {
+  .homeDiv .desktop h1 {
+    font-size: 5rem;
+  }
+  .homeDiv .desktop h4 {
+    font-size: 1.7rem;
+  }
+  .homeDiv .desktop .homepage-desktop-arabic-text-big {
+    font-size: 5.7rem;
+  }
+  .homeDiv .desktop .homepage-desktop-arabic-text-small {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1399px) {
   .homeDiv .desktop h1 {
     font-size: 4.5rem;
   }
