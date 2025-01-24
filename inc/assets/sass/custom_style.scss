@@ -683,22 +683,50 @@ footer {
   }
 
   .desktop{
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       h1 {
+        font-size: 6rem;
+      }
+      h4{
+        font-size: 2.2rem;
+      }
+      .homepage-desktop-arabic-text-big{
         font-size: 6.5rem;
+      }
+      .homepage-desktop-arabic-text-small{
+        font-size: 2.7rem;
+      }
+    }
+
+    @media (min-width: 1400px) and (max-width: 1599px) {
+      h1 {
+        font-size: 5.5rem;
       }
       h4{
         font-size: 2rem;
       }
       .homepage-desktop-arabic-text-big{
-        font-size: 7rem;
+        font-size: 6rem;
       }
       .homepage-desktop-arabic-text-small{
         font-size: 2.5rem;
       }
     }
-
     @media (max-width: 1399px) {  
+      h1 {
+        font-size: 5rem;
+      }
+      h4{
+        font-size: 1.7rem;
+      }
+      .homepage-desktop-arabic-text-big{
+        font-size: 5.7rem;
+      }
+      .homepage-desktop-arabic-text-small{
+        font-size: 2.2rem;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1399px) {  
       h1 {
         font-size: 4.5rem;
       }
