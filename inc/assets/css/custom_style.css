@@ -678,21 +678,23 @@ footer .footer_lines::after {
     font-size: 3rem;
   }
 }
-.homeDiv .desktop h1 {
-  font-size: 4.5rem;
-}
-.homeDiv .desktop h4 {
-  font-size: 1.5rem;
-}
-.homeDiv .desktop .homepage-desktop-arabic-text-big {
-  font-size: 5.5rem;
-}
-.homeDiv .desktop .homepage-desktop-arabic-text-small {
-  font-size: 2rem;
-}
-.homeDiv .desktop img {
-  max-width: 100%;
-  max-height: 100%;
+@media (max-width: 1399px) {
+  .homeDiv .desktop h1 {
+    font-size: 4.5rem;
+  }
+  .homeDiv .desktop h4 {
+    font-size: 1.5rem;
+  }
+  .homeDiv .desktop .homepage-desktop-arabic-text-big {
+    font-size: 5.5rem;
+  }
+  .homeDiv .desktop .homepage-desktop-arabic-text-small {
+    font-size: 2rem;
+  }
+  .homeDiv .desktop img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 .homeDiv .blue-left-sidebar-desktop,
 .homeDiv .blue-right-sidebar-desktop,
