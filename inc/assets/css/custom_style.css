@@ -672,10 +672,10 @@ footer .footer_lines::after {
     font-size: 2rem;
   }
   .homeDiv .desktop .homepage-desktop-arabic-text-big {
-    font-size: 7.5rem;
+    font-size: 7rem;
   }
   .homeDiv .desktop .homepage-desktop-arabic-text-small {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 1399px) {
