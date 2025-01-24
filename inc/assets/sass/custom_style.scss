@@ -685,22 +685,22 @@ footer {
   .desktop{
     @media (min-width: 1600px) {
       h1 {
-        font-size: 6rem;
+        font-size: 5.5rem;
       }
       h4{
-        font-size: 2.2rem;
+        font-size: 2.25rem;
       }
       .homepage-desktop-arabic-text-big{
         font-size: 6.5rem;
       }
       .homepage-desktop-arabic-text-small{
-        font-size: 2.7rem;
+        font-size: 2.5rem;
       }
     }
 
     @media (min-width: 1400px) and (max-width: 1599px) {
       h1 {
-        font-size: 5.5rem;
+        font-size: 5rem;
       }
       h4{
         font-size: 2rem;
@@ -709,35 +709,49 @@ footer {
         font-size: 6rem;
       }
       .homepage-desktop-arabic-text-small{
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
     }
-    @media (max-width: 1399px) {  
-      h1 {
-        font-size: 5rem;
-      }
-      h4{
-        font-size: 1.7rem;
-      }
-      .homepage-desktop-arabic-text-big{
-        font-size: 5.7rem;
-      }
-      .homepage-desktop-arabic-text-small{
-        font-size: 2.2rem;
-      }
-    }
-    @media (min-width: 768px) and (max-width: 1399px) {  
+    @media (min-width: 1200px) and (max-width: 1399px) {  
       h1 {
         font-size: 4.5rem;
       }
       h4{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
       }
       .homepage-desktop-arabic-text-big{
         font-size: 5.5rem;
       }
       .homepage-desktop-arabic-text-small{
         font-size: 2rem;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {  
+      h1 {
+        font-size: 4rem;
+      }
+      h4{
+        font-size: 1.5rem;
+      }
+      .homepage-desktop-arabic-text-big{
+        font-size: 5rem;
+      }
+      .homepage-desktop-arabic-text-small{
+        font-size: 1.75rem;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {  
+      h1 {
+        font-size: 3.5rem;
+      }
+      h4{
+        font-size: 1rem;
+      }
+      .homepage-desktop-arabic-text-big{
+        font-size: 4.5rem;
+      }
+      .homepage-desktop-arabic-text-small{
+        font-size: 1.5rem;
       }
     }
     img{
