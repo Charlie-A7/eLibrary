@@ -1249,9 +1249,14 @@ padding-bottom: 5px;
   #billing_first_name,
   #billing_last_name,
   #order_comments,
+  #billing_company,
   #billing_phone,
   #billing_email{
-    border: 1px solid black;
+    border: 2px solid #00000017;
+  }
+
+  #place_order{
+    background-color: $Light-Gray-Blue-Color;
   }
 }
 
