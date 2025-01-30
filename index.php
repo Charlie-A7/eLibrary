@@ -43,7 +43,7 @@ get_header();
          <div class="mobile d-flex d-md-none flex-column h-100">
             <div class="row row1 my-0">
                 <div class="col-12">
-                    <p class="dots-design text-right">..........</p>
+                    <div class="dots-design text-left">..........</div>
                     <h1>Welcome to our<br>resource library</h1>
                     <h6>Browse our selection, and order what you need.</h6>
                 </div>
