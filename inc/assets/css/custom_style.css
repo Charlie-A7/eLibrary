@@ -782,15 +782,10 @@ footer .footer_lines::after {
   font-size: 1.8rem;
 }
 .homeDiv .mobile .dots-design {
-  font-size: 3rem;
-  font-style: normal;
-  font-family: none;
-  color: #093f6c;
-  line-height: 1;
-}
-.homeDiv .mobile .dots-design-2 {
   background-color: #093f6c;
   border-radius: 100%;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 .homeDiv .mobile h6 {
   font-size: 0.8rem;

@@ -807,18 +807,19 @@ footer {
       font-size: 1.8rem;
     }
 
-    .dots-design {
-      font-size: 3rem;
-      font-style: normal;
-      font-family: none;
-      color: $Navy-Blue-Color;
-      line-height: 1;
-    }
+    // .dots-design {
+    //   font-size: 3rem;
+    //   font-style: normal;
+    //   font-family: none;
+    //   color: $Navy-Blue-Color;
+    //   line-height: 1;
+    // }
 
-    
-    .dots-design-2{
+    .dots-design{
       background-color: #093f6c;
       border-radius: 100%;
+      width: 0.5rem;
+      height: 0.5rem;
     }
 
     h6{
