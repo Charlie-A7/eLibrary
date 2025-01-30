@@ -788,6 +788,10 @@ footer .footer_lines::after {
   color: #093f6c;
   line-height: 1;
 }
+.homeDiv .mobile .dots-design-2 {
+  background-color: #093f6c;
+  border-radius: 100%;
+}
 .homeDiv .mobile h6 {
   font-size: 0.8rem;
 }
