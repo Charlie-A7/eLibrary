@@ -14,7 +14,7 @@ get_header(); ?>
 	<div class="blue-sidebar position-absolute z-0"></div>
 	
 	<div class="container-fluid">
-		<div class="row d-flex justify-content-end pb-2">
+		<div class="row d-flex justify-content-end p-2">
 			<div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center position relative z-1">
 				<?php get_template_part('searchform'); ?>
 			</div>
