@@ -15,7 +15,7 @@ get_header(); ?>
 	
 	<div class="container-fluid">
 		<div class="row d-flex justify-content-end pb-2">
-			<div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3 d-flex justify-content-end align-items-center position relative z-1">
+			<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 d-flex justify-content-end align-items-center position relative z-1">
 				<?php get_template_part('searchform'); ?>
 			</div>
 		</div>
