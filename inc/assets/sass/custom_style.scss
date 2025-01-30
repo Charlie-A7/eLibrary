@@ -1245,6 +1245,17 @@ padding-bottom: 5px;
   background-color: #093f6c !important;
 }
 
+.my-custom-checkout-wrapper{
+  #billing_first_name,
+  #billing_last_name,
+  #order_comments,
+  #billing_phone,
+  #billing_email{
+    border: 1px solid black;
+  }
+}
+
+
 
 // single product page
 .my-custom-product-page{

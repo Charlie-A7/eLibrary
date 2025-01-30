@@ -1181,6 +1181,14 @@ footer .footer_lines::after {
   background-color: #093f6c !important;
 }
 
+.my-custom-checkout-wrapper #billing_first_name,
+.my-custom-checkout-wrapper #billing_last_name,
+.my-custom-checkout-wrapper #order_comments,
+.my-custom-checkout-wrapper #billing_phone,
+.my-custom-checkout-wrapper #billing_email {
+  border: 1px solid black;
+}
+
 .my-custom-product-page {
   min-height: 72dvh;
 }
