@@ -44,11 +44,13 @@ get_header();
             <div class="row row1 my-0">
                 <div class="col-12">
                     <!-- <div class="dots-design text-right">..........</div> -->
-                    <?php 
-                        for ($i = 0; $i < 10; $i++) {
-                            echo '<div class="dots-design mx-1"></div>';
-                        }
-                    ?>
+                    <div class="text-right">
+                        <?php 
+                            for ($i = 0; $i < 10; $i++) {
+                                echo '<div class="dots-design mx-1"></div>';
+                            }
+                        ?>
+                    </div>
                     <h1>Welcome to our<br>resource library</h1>
                     <h6>Browse our selection, and order what you need.</h6>
                 </div>
@@ -62,12 +64,14 @@ get_header();
             </div>
             <div class="row row3 my-0">
                 <div class="col-12">
-                    <!-- <div class="dots-design text-left">..........</div> --><div id="dots-container">
-                    <?php 
-                        for ($i = 0; $i < 10; $i++) {
-                            echo '<div class="dots-design mx-1"></div>';
-                        }
-                    ?>
+                    <!-- <div class="dots-design text-left">..........</div> -->
+                    <div class="text-left">
+                        <?php 
+                            for ($i = 0; $i < 10; $i++) {
+                                echo '<div class="dots-design mx-1"></div>';
+                            }
+                        ?>
+                    </div>
                     <h1 class=" rtl arabic-medium-font homepage-mobile-arabic-text-big">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
                     <h6 class="rtl arabic-regular-font homepage-mobile-arabic-text-small">تصفح مجموعتنا، واطلب ما تحتاجه.</h6>
                 </div>
