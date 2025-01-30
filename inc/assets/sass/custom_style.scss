@@ -907,9 +907,10 @@ footer {
 
 // search bar
 .search-container {
-  border: 1px solid black;
-  border-radius: 20px;
-  overflow: hidden;
+  form{
+    border: 1px solid black;
+    border-radius: 20px;
+  }
 
   .search-field {
     background: none;
