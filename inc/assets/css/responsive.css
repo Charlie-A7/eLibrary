@@ -244,6 +244,10 @@
   .custom-shop .dots-design {
     font-size: 60px;
   }
+  .custom-shop .dots-design-2 {
+    background-color: #093f6c;
+    border-radius: 100%;
+  }
 }
 @media (max-width: 993px) {
   .aboutUsDiv {
