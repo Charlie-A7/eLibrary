@@ -1184,9 +1184,13 @@ footer .footer_lines::after {
 .my-custom-checkout-wrapper #billing_first_name,
 .my-custom-checkout-wrapper #billing_last_name,
 .my-custom-checkout-wrapper #order_comments,
+.my-custom-checkout-wrapper #billing_company,
 .my-custom-checkout-wrapper #billing_phone,
 .my-custom-checkout-wrapper #billing_email {
-  border: 1px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.0901960784);
+}
+.my-custom-checkout-wrapper #place_order {
+  background-color: #9eb6c5;
 }
 
 .my-custom-product-page {
