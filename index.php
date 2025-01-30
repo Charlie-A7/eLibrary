@@ -46,7 +46,7 @@ get_header();
                     <!-- <div class="dots-design text-right">..........</div> -->
                     <?php 
                         for ($i = 0; $i < 10; $i++) {
-                            echo '<div class="dots-design"></div>';
+                            echo '<div class="dots-design mx-1"></div>';
                         }
                     ?>
                     <h1>Welcome to our<br>resource library</h1>
@@ -65,7 +65,7 @@ get_header();
                     <!-- <div class="dots-design text-left">..........</div> --><div id="dots-container">
                     <?php 
                         for ($i = 0; $i < 10; $i++) {
-                            echo '<div class="dots-design"></div>';
+                            echo '<div class="dots-design mx-1"></div>';
                         }
                     ?>
                     <h1 class=" rtl arabic-medium-font homepage-mobile-arabic-text-big">مرحباً بكم في مكتبة <br>الموارد الخاصة بنا.</h1>
