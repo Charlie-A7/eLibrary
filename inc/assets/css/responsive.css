@@ -157,7 +157,9 @@
 @media (max-width: 576px) {
   footer {
     /* Styles for phones with screens 480px or smaller */
-    height: 30dvh;
+    min-height: 30dvh;
+    max-height: 35dvh;
+    height: auto;
   }
   footer span {
     font-size: 0.7rem;
