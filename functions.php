@@ -384,3 +384,7 @@ function custom_override_checkout_fields($fields)
     unset($fields['billing']['billing_state']);
     return $fields;
 }
+
+
+// remove added to cart button
+remove_action('woocommerce_after_add_to_cart_button', 'woocommerce_template_loop_add_to_cart');
