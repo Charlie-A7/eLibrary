@@ -884,6 +884,10 @@ footer .footer_lines::after {
   margin-left: 0;
 }
 
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.loading::after {
+  justify-self: anchor-center;
+}
+
 .search-container form {
   border: 1px solid black;
   border-radius: 20px;
