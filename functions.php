@@ -386,16 +386,6 @@ function custom_override_checkout_fields($fields)
 }
 
 
-// remove added to cart button
-add_filter('woocommerce_add_to_cart_fragments', function($fragments) {
-    if (isset($fragments['.added_to_cart'])) {
-        echo "<script>console.log('Added to Cart fragment found and removed.');</script>";
-        unset($fragments['.added_to_cart']);
-    } else {
-        echo "<script>console.log('Added to Cart fragment NOT found.');</script>";
-    }
-    return $fragments;
-});
 
 
 

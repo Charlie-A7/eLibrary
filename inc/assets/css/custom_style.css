@@ -875,6 +875,10 @@ footer .footer_lines::after {
   color: white;
 }
 
+.added_to_cart {
+  display: none !important;
+}
+
 .search-container form {
   border: 1px solid black;
   border-radius: 20px;
