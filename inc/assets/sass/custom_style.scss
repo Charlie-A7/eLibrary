@@ -917,6 +917,9 @@ footer {
 .added_to_cart{
   display: none !important;
 }
+.a.button.added::after{
+  display: none !important;
+}
 
 // search bar
 .search-container {
