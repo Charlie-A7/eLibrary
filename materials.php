@@ -5,7 +5,7 @@
 
 get_header();
 ?>
-<div class="custom-shop py-2 position-relative">
+<div class="custom-shop py-0 position-relative">
 	
 	<div class="blue-sidebar position-absolute z-0"></div>
 	
