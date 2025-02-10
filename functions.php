@@ -388,5 +388,10 @@ function custom_override_checkout_fields($fields)
 
 // remove added to cart button
 // remove_action('woocommerce_after_add_to_cart_button', 'woocommerce_template_loop_add_to_cart');
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+// remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+add_filter('woocommerce_add_to_cart_fragments', function($fragments) {
+    unset($fragments['.added_to_cart']);
+    return $fragments;
+});
+
 
