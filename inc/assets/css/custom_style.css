@@ -879,6 +879,10 @@ footer .footer_lines::after {
   display: none !important;
 }
 
+.a.button.added::after {
+  display: none !important;
+}
+
 .search-container form {
   border: 1px solid black;
   border-radius: 20px;
