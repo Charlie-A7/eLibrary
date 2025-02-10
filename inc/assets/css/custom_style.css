@@ -885,7 +885,7 @@ footer .footer_lines::after {
 }
 
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.loading::after {
-  justify-self: anchor-center;
+  content: "";
 }
 
 .search-container form {
