@@ -880,7 +880,7 @@ footer .footer_lines::after {
 }
 
 .a.button.added::after {
-  display: none !important;
+  content: "" !important;
 }
 
 .search-container form {
