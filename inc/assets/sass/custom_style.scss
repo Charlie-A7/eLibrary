@@ -919,6 +919,7 @@ footer {
 }
 .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.added::after{
   content: "" !important;
+  margin-left: 0;
 }
 
 // search bar
