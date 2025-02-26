@@ -10,7 +10,10 @@
           "user-select",
           "max-width: fit-content",
           "-ms-filter",
-          "width: fit-content"
+          "width: fit-content",
+          "scrollbar-width",
+          "scrollbar-width: thin",
+          "scrollbar-color"
         ]
       }
     ]
