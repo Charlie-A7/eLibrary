@@ -9,8 +9,8 @@ get_header();
 <div class="homeDiv py-4 py-md-5 position-relative">
 
     <!-- desktop design -->
-    <div class="blue-left-sidebar-desktop position-absolute d-none d-md-block"></div>
-    <div class="blue-right-sidebar-desktop position-absolute d-none d-md-block"></div>
+    <!-- <div class="blue-left-sidebar-desktop position-absolute d-none d-md-block"></div>
+    <div class="blue-right-sidebar-desktop position-absolute d-none d-md-block"></div> -->
 
     <!-- mobile desgin -->
     <div class="blue-left-sidebar-mobile position-absolute d-block d-md-none"></div>
@@ -21,7 +21,7 @@ get_header();
         <!-- desktop  row -->
          <div class="desktop d-none d-md-flex flex-column h-100">
             <div class="row h-100">
-                <div class="col-12 z-1 h-100 d-flex flex-column justify-content-center">
+                <div class="col-12 z-1 h-100 d-flex flex-column justify-content-center align-items-center">
                     <div id="englishText-index" class="padding-left position-absolute visible">
                         <!-- <h1>Welcome to our <br> resource library</h1> -->
                         <h1>Welcome to <br> our resource <br> library</h1>

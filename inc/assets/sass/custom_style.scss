@@ -683,6 +683,7 @@ footer {
   }
 
   .desktop{
+    background-color: $Light-Gray-Blue-Color;
     @media (min-width: 1600px) {
       h1 {
         font-size: 5.5rem;

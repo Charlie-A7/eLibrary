@@ -664,6 +664,9 @@ footer .footer_lines::after {
 .homeDiv h4 {
   font-family: "quicksand-semibold";
 }
+.homeDiv .desktop {
+  background-color: #9eb6c5;
+}
 @media (min-width: 1600px) {
   .homeDiv .desktop h1 {
     font-size: 5.5rem;
