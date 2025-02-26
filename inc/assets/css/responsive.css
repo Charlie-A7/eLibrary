@@ -84,7 +84,7 @@
     font-size: 0.8rem;
   }
   header .site-branding img {
-    width: 2rem;
+    width: 3rem;
   }
   header .mobile-menu-div button i::before {
     font-size: 18px;
@@ -101,7 +101,7 @@
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   header .site-branding img {
-    width: 2.5rem;
+    width: 3.5rem;
   }
   header .mobile-menu-div button i::before {
     font-size: 25px;
@@ -118,7 +118,7 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   header .site-branding img {
-    width: 3rem;
+    width: 4rem;
   }
   header .mobile-menu-div button i::before {
     font-size: 30px;
@@ -135,7 +135,7 @@
 }
 @media (min-width: 992px) {
   header .site-branding img {
-    width: 3.5rem;
+    width: 4.5rem;
   }
   header .mobile-menu-div button i::before {
     font-size: 35px;
@@ -150,7 +150,7 @@
     font-size: 1.2rem;
   }
   header .site-branding img {
-    width: 4rem;
+    width: 5rem;
   }
 }
 
