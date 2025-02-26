@@ -669,6 +669,7 @@ footer .footer_lines::after {
 }
 .homeDiv .desktop h1, .homeDiv .desktop h4 {
   color: white;
+  text-align: center;
 }
 @media (min-width: 1600px) {
   .homeDiv .desktop h1 {
