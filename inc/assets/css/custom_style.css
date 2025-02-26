@@ -649,6 +649,9 @@ footer .footer_lines::after {
   background-color: white;
 }
 
+.homeDiv {
+  background-color: #9eb6c5;
+}
 .homeDiv .homeDivInnerImage {
   background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
   background-size: contain;
@@ -664,8 +667,8 @@ footer .footer_lines::after {
 .homeDiv h4 {
   font-family: "quicksand-semibold";
 }
-.homeDiv .desktop {
-  background-color: #9eb6c5;
+.homeDiv .desktop h1, .homeDiv .desktop h4 {
+  color: white;
 }
 @media (min-width: 1600px) {
   .homeDiv .desktop h1 {
