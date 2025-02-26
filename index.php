@@ -21,7 +21,7 @@ get_header();
         <!-- desktop  row -->
          <div class="desktop d-none d-md-flex flex-column h-100">
             <div class="row h-100">
-                <div class="col-6 z-1 h-100 d-flex flex-column justify-content-center">
+                <div class="col-12 z-1 h-100 d-flex flex-column justify-content-center">
                     <div id="englishText-index" class="padding-left position-absolute visible">
                         <!-- <h1>Welcome to our <br> resource library</h1> -->
                         <h1>Welcome to <br> our resource <br> library</h1>
@@ -33,9 +33,9 @@ get_header();
                         <h4 class="rtl arabic-regular-font homepage-desktop-arabic-text-small">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
                     </div>
                 </div>
-                <div class="col-6 z-1 h-100 d-flex align-items-center justify-content-center">
+                <!-- <div class="col-6 z-1 h-100 d-flex align-items-center justify-content-center">
                     <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/homepage/pic1.jpg" alt="" class="">
-                </div>
+                </div> -->
             </div>
          </div>
 
