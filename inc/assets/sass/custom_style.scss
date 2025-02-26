@@ -663,6 +663,7 @@ footer {
 
 // Homepage
 .homeDiv {
+  background-color: $Light-Gray-Blue-Color;
   .homeDivInnerImage {
     background-image: url("https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/Library_img.jpg");
     background-size: contain;
@@ -683,7 +684,9 @@ footer {
   }
 
   .desktop{
-    background-color: $Light-Gray-Blue-Color;
+    h1,h4{
+      color: white;
+    }
     @media (min-width: 1600px) {
       h1 {
         font-size: 5.5rem;
