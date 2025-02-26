@@ -499,6 +499,7 @@ header #site-navigation li a {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  border: 1px solid #231f20;
 }
 header #site-navigation li a:hover,
 header #site-navigation li.current-menu-item a {
