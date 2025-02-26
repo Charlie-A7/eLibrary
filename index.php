@@ -22,12 +22,12 @@ get_header();
          <div class="desktop d-none d-md-flex flex-column h-100">
             <div class="row h-100">
                 <div class="col-12 z-1 h-100 d-flex flex-column justify-content-center align-items-center">
-                    <div id="englishText-index" class="padding-left position-absolute visible">
+                    <div id="englishText-index" class="position-absolute visible">
                         <!-- <h1>Welcome to our <br> resource library</h1> -->
                         <h1>Welcome to <br> our resource <br> library</h1>
                         <h4>Browse our selection, and order what you need.</h4>
                     </div>
-                    <div id="arabicText-index" class="padding-left position-absolute hidden">
+                    <div id="arabicText-index" class="position-absolute hidden">
                         <h1 class="rtl arabic-medium-font homepage-desktop-arabic-text-big">مرحباً بكم في<br>مكتبة الموارد<br>الخاصة بنا.</h1>
                         <!-- <h1 class="rtl arabic-medium-font homepage-desktop-arabic-text-big">مرحباً بكم في مكتبة<br>.المواردالخاصة بنا</h1> -->
                         <h4 class="rtl arabic-regular-font homepage-desktop-arabic-text-small">تصفح مجموعتنا، واطلب ما تحتاجه.</h4>
