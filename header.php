@@ -32,7 +32,7 @@
                     <div class="col-8 col-lg-4 site-branding d-flex justify-content-start align-items-center px-3 px-md-4">
                         <div class="row w-100">
                             <div class="col-12 d-flex justify-content-start align-items-center px-1">
-                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo.jpg" alt="LifeAgape">
+                                <img src="https://charlie.e-vents.me/wp-content/themes/main/inc/assets/images/header/Life_Agape_Logo_main.png" alt="LifeAgape">
                                 <h4 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                                 rel="home"> <span class="arabic-mediumbold-font">حياة المحبة في لبنان</span> <br><?php bloginfo('name'); ?></a></h4>
                             </div>
