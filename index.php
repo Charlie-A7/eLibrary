@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<div class="homeDiv py-4 py-md-5 position-relative">
+<div class="homeDiv pb-4 pb-md-5 position-relative">
 
     <!-- desktop design -->
     <!-- <div class="blue-left-sidebar-desktop position-absolute d-none d-md-block"></div>
@@ -21,7 +21,7 @@ get_header();
         <!-- desktop  row -->
          <div class="desktop d-none d-md-flex flex-column h-100">
             <div class="row h-100">
-                <div class="col-12 z-1 h-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-12 z-1 h-100 d-flex flex-column justify-content-center align-items-center pb-5">
                     <div id="englishText-index" class="position-absolute visible">
                         <!-- <h1>Welcome to our <br> resource library</h1> -->
                         <h1>Welcome to <br> our resource <br> library</h1>
